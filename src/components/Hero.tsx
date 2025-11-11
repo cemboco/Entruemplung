@@ -81,11 +81,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-12 left-0 right-0 flex justify-center">
-        <div className="w-6 h-10 border border-gray-300 rounded-full flex items-start justify-center p-2 animate-bounce">
-          <div className="w-1 h-3 bg-gray-400 rounded-full"></div>
-        </div>
-      </div>
     </section>
   );
 }
