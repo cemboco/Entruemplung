@@ -35,7 +35,7 @@ export default function Header() {
             href="#"
             className="text-xl font-light text-gray-900 transition-colors duration-300 tracking-tight"
           >
-            Serviceplus
+            S+
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
