@@ -18,6 +18,9 @@ export default function Hero() {
             }`}
           >
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-gray-900 mb-8 leading-tight tracking-tight">
+              <span className="block font-bold mb-2">
+                Serviceplus
+              </span>
               Professionelle
               <span className="block font-normal mt-2">
                 Entrümpelung
