@@ -9,47 +9,42 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-dark via-primary to-primary-light overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400 rounded-full blur-3xl animate-pulse animation-delay-400"></div>
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+    <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
         <div
           className={`transition-all duration-1000 transform ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight text-balance">
-            Professionelle Entrümpelung
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-white mt-2">
-              in Stuttgart & Umgebung
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-gray-900 mb-8 leading-tight tracking-tight">
+            Professionelle
+            <span className="block font-normal mt-2">
+              Entrümpelung
             </span>
           </h1>
 
-          <p className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto text-balance">
-            Wir räumen auf - Sie atmen auf!
+          <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto font-light">
+            Stuttgart & Umgebung
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <a
               href="#kontakt"
-              className="group bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 flex items-center gap-2 shadow-xl hover:shadow-2xl hover:scale-105"
+              className="group bg-gray-900 text-white px-10 py-5 rounded-full font-medium text-base hover:bg-gray-800 transition-all duration-300 flex items-center gap-2"
             >
               Kostenlose Beratung
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
             </a>
             <a
               href="tel:+4971112345678"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-300 flex items-center gap-2 shadow-xl hover:scale-105"
+              className="bg-white border border-gray-300 text-gray-900 px-10 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-2"
             >
-              <Phone size={20} />
+              <Phone size={18} />
               0711 / 123 456 78
             </a>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto pt-8 border-t border-gray-200">
             {[
               { number: '24h', label: 'Express-Service' },
               { number: '100%', label: 'Zufriedenheit' },
@@ -57,22 +52,22 @@ export default function Hero() {
             ].map((stat, index) => (
               <div
                 key={index}
-                className={`bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 transition-all duration-700 hover:bg-white/20 hover:scale-105 ${
+                className={`transition-all duration-700 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                 }`}
                 style={{ transitionDelay: `${index * 100 + 400}ms` }}
               >
-                <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.number}</div>
-                <div className="text-sm sm:text-base text-gray-200">{stat.label}</div>
+                <div className="text-3xl sm:text-4xl font-light text-gray-900 mb-2">{stat.number}</div>
+                <div className="text-sm sm:text-base text-gray-600 font-light">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-white/50 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-12 left-0 right-0 flex justify-center">
+        <div className="w-6 h-10 border border-gray-300 rounded-full flex items-start justify-center p-2 animate-bounce">
+          <div className="w-1 h-3 bg-gray-400 rounded-full"></div>
         </div>
       </div>
     </section>

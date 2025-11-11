@@ -59,34 +59,34 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="leistungen" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
+    <section id="leistungen" className="py-32 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl sm:text-6xl font-light text-gray-900 mb-6">
             Unsere Leistungen
           </h2>
-          <p className="text-xl text-secondary-light max-w-2xl mx-auto">
-            Von der Wohnungsauflösung bis zur Gewerbe-Entrümpelung - wir bieten den kompletten Service
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
+            Von der Wohnungsauflösung bis zur Gewerbe-Entrümpelung
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                className="group bg-white p-10 hover:bg-gray-50 transition-colors duration-300"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <Icon className="text-white" size={32} />
+                <div className="mb-6">
+                  <Icon className="text-gray-900" size={28} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-2xl font-bold text-primary mb-3">{service.title}</h3>
-                <p className="text-secondary-light leading-relaxed mb-4">{service.description}</p>
+                <h3 className="text-xl font-medium text-gray-900 mb-3">{service.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm font-light mb-4">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm text-secondary">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <li key={idx} className="flex items-center gap-2 text-xs text-gray-500 font-light">
+                      <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
                       {feature}
                     </li>
                   ))}
@@ -96,21 +96,17 @@ export default function Services() {
           })}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-primary to-primary-light rounded-2xl p-8 sm:p-12 text-white shadow-2xl">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-center md:text-left">
-              <h3 className="text-3xl font-bold mb-2">24-Stunden Express-Service</h3>
-              <p className="text-gray-200 text-lg">
-                Notfall? Wir sind auch am Wochenende und an Feiertagen für Sie da!
-              </p>
-            </div>
-            <a
-              href="#kontakt"
-              className="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 whitespace-nowrap hover:scale-105 shadow-xl"
-            >
-              Jetzt anfragen
-            </a>
-          </div>
+        <div className="mt-20 bg-gray-900 rounded-none p-12 sm:p-16 text-white text-center">
+          <h3 className="text-3xl sm:text-4xl font-light mb-4">24-Stunden Express-Service</h3>
+          <p className="text-gray-300 text-lg font-light mb-8 max-w-2xl mx-auto">
+            Notfall? Wir sind auch am Wochenende und an Feiertagen für Sie da
+          </p>
+          <a
+            href="#kontakt"
+            className="inline-block bg-white text-gray-900 px-10 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all duration-300"
+          >
+            Jetzt anfragen
+          </a>
         </div>
       </div>
     </section>

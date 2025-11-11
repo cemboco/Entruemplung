@@ -25,22 +25,17 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white shadow-lg py-4'
-          : 'bg-transparent py-6'
+          ? 'bg-white border-b border-gray-200 py-4'
+          : 'bg-white/95 backdrop-blur-sm py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <a
             href="#"
-            className={`text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-primary' : 'text-white'
-            }`}
+            className="text-xl font-light text-gray-900 transition-colors duration-300 tracking-tight"
           >
-            <span className="inline-block">Serviceplus</span>
-            <span className={`block text-sm font-normal ${isScrolled ? 'text-secondary' : 'text-gray-200'}`}>
-              Entrümplungen
-            </span>
+            Serviceplus
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -48,56 +43,46 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`font-medium transition-colors duration-300 hover:scale-105 ${
-                  isScrolled
-                    ? 'text-secondary hover:text-primary'
-                    : 'text-white hover:text-gray-200'
-                }`}
+                className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-300"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="tel:+4971112345678"
-              className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 ${
-                isScrolled
-                  ? 'bg-primary text-white hover:bg-primary-dark'
-                  : 'bg-white text-primary hover:bg-gray-100'
-              }`}
+              className="flex items-center gap-2 px-6 py-2 rounded-full bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-all duration-300"
             >
-              <Phone size={18} />
+              <Phone size={16} />
               <span className="hidden lg:inline">0711 / 123 456 78</span>
             </a>
           </nav>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors ${
-              isScrolled ? 'text-primary' : 'text-white'
-            }`}
+            className="md:hidden p-2 text-gray-900"
           >
-            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-6 py-6 bg-white rounded-lg shadow-xl">
+          <div className="md:hidden mt-6 py-6 border-t border-gray-200">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-6 py-3 text-secondary hover:text-primary hover:bg-gray-50 font-medium transition-colors"
+                  className="px-0 py-2 text-sm font-light text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
               <a
                 href="tel:+4971112345678"
-                className="mx-6 flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+                className="mt-2 flex items-center justify-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
               >
-                <Phone size={18} />
+                <Phone size={16} />
                 0711 / 123 456 78
               </a>
             </nav>
