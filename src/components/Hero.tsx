@@ -72,7 +72,7 @@ export default function Hero() {
           >
             <div className="aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/4506270/pexels-photo-4506270.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://images.pexels.com/photos/4506103/pexels-photo-4506103.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Professionelle Entrümpelung"
                 className="w-full h-full object-cover"
               />
