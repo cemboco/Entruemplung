@@ -62,6 +62,9 @@ export default function Services() {
     <section id="leistungen" className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
+          <p className="text-xl sm:text-2xl text-gray-600 mb-8 font-light italic">
+            "Wir räumen auf - Sie atmen auf"
+          </p>
           <h2 className="text-5xl sm:text-6xl font-light text-midnight mb-6">
             Unsere Leistungen
           </h2>
