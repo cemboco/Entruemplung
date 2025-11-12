@@ -35,7 +35,7 @@ export default function Header() {
             href="#"
             className="flex items-center gap-3 transition-colors duration-300"
           >
-            <img src="/sdf.png" alt="Serviceplus Logo" className="h-6 w-auto" />
+            <img src="/sdf.png" alt="Serviceplus Logo" className="h-60 w-auto" />
             <span className="text-2xl font-light text-midnight tracking-tight">S+</span>
           </a>
 
