@@ -27,6 +27,10 @@ export default function Hero() {
               </span>
             </h1>
 
+            <p className="text-xl sm:text-2xl text-gray-600 mb-4 font-light italic">
+              "Wir räumen auf - Sie atmen auf"
+            </p>
+
             <p className="text-xl sm:text-2xl text-gray-600 mb-12 font-light">
               Stuttgart & Umgebung
             </p>
