@@ -33,7 +33,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <a
             href="#"
-            className="text-xl font-light text-gray-900 transition-colors duration-300 tracking-tight"
+            className="text-xl font-light text-midnight transition-colors duration-300 tracking-tight"
           >
             S+
           </a>
@@ -43,14 +43,14 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-300"
+                className="text-sm font-light text-gray-600 hover:text-midnight transition-colors duration-300"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="tel:+4971112345678"
-              className="flex items-center gap-2 px-6 py-2 rounded-full bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 transition-all duration-300"
+              className="flex items-center gap-2 px-6 py-2 rounded-full bg-midnight text-white text-sm font-medium hover:bg-midnight-dark transition-all duration-300"
             >
               <Phone size={16} />
               <span className="hidden lg:inline">0711 / 123 456 78</span>
@@ -59,7 +59,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-gray-900"
+            className="md:hidden p-2 text-midnight"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -73,14 +73,14 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-0 py-2 text-sm font-light text-gray-600 hover:text-gray-900 transition-colors"
+                  className="px-0 py-2 text-sm font-light text-gray-600 hover:text-midnight transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
               <a
                 href="tel:+4971112345678"
-                className="mt-2 flex items-center justify-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
+                className="mt-2 flex items-center justify-center gap-2 bg-midnight text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-midnight-dark transition-colors"
               >
                 <Phone size={16} />
                 0711 / 123 456 78

@@ -62,7 +62,7 @@ export default function Services() {
     <section id="leistungen" className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-5xl sm:text-6xl font-light text-gray-900 mb-6">
+          <h2 className="text-5xl sm:text-6xl font-light text-midnight mb-6">
             Unsere Leistungen
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
@@ -79,9 +79,9 @@ export default function Services() {
                 className="group bg-white p-10 hover:bg-gray-50 transition-colors duration-300"
               >
                 <div className="mb-6">
-                  <Icon className="text-gray-900" size={28} strokeWidth={1.5} />
+                  <Icon className="text-midnight" size={28} strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl font-medium text-gray-900 mb-3">{service.title}</h3>
+                <h3 className="text-xl font-medium text-midnight mb-3">{service.title}</h3>
                 <p className="text-gray-600 leading-relaxed text-sm font-light mb-4">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
@@ -96,14 +96,14 @@ export default function Services() {
           })}
         </div>
 
-        <div className="mt-20 bg-gray-900 rounded-none p-12 sm:p-16 text-white text-center">
+        <div className="mt-20 bg-midnight rounded-none p-12 sm:p-16 text-white text-center">
           <h3 className="text-3xl sm:text-4xl font-light mb-4">24-Stunden Express-Service</h3>
           <p className="text-gray-300 text-lg font-light mb-8 max-w-2xl mx-auto">
             Notfall? Wir sind auch am Wochenende und an Feiertagen für Sie da
           </p>
           <a
             href="#kontakt"
-            className="inline-block bg-white text-gray-900 px-10 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all duration-300"
+            className="inline-block bg-white text-midnight px-10 py-4 rounded-full font-medium text-base hover:bg-gray-100 transition-all duration-300"
           >
             Jetzt anfragen
           </a>

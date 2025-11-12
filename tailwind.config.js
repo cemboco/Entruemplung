@@ -14,6 +14,11 @@ export default {
           dark: '#2d3748',
           light: '#718096',
         },
+        midnight: {
+          DEFAULT: '#003366',
+          dark: '#002147',
+          light: '#004080',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],

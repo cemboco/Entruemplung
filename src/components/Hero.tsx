@@ -17,7 +17,7 @@ export default function Hero() {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-gray-900 mb-8 leading-tight tracking-tight">
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-midnight mb-8 leading-tight tracking-tight">
               <span className="block font-bold mb-2">
                 Serviceplus
               </span>
@@ -34,14 +34,14 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
               <a
                 href="#kontakt"
-                className="group bg-gray-900 text-white px-10 py-5 rounded-full font-medium text-base hover:bg-gray-800 transition-all duration-300 flex items-center gap-2 justify-center"
+                className="group bg-midnight text-white px-10 py-5 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 flex items-center gap-2 justify-center"
               >
                 Kostenlose Beratung
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </a>
               <a
                 href="tel:+4971112345678"
-                className="bg-white border border-gray-300 text-gray-900 px-10 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-2 justify-center"
+                className="bg-white border border-gray-300 text-midnight px-10 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-2 justify-center"
               >
                 <Phone size={18} />
                 0711 / 123 456 78
@@ -61,7 +61,7 @@ export default function Hero() {
                   }`}
                   style={{ transitionDelay: `${index * 100 + 400}ms` }}
                 >
-                  <div className="text-2xl sm:text-3xl font-light text-gray-900 mb-2">{stat.number}</div>
+                  <div className="text-2xl sm:text-3xl font-light text-midnight mb-2">{stat.number}</div>
                   <div className="text-xs sm:text-sm text-gray-600 font-light">{stat.label}</div>
                 </div>
               ))}

@@ -40,7 +40,7 @@ export default function Showcase() {
     <section className="py-32 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-5xl sm:text-6xl font-light text-gray-900 mb-6">
+          <h2 className="text-5xl sm:text-6xl font-light text-midnight mb-6">
             Erfolgsgeschichten
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
@@ -56,17 +56,17 @@ export default function Showcase() {
             >
               <div className="flex items-start justify-between mb-6">
                 <div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-1">{project.type}</h3>
+                  <h3 className="text-xl font-medium text-midnight mb-1">{project.type}</h3>
                   <p className="text-sm text-gray-500 font-light">{project.location}</p>
                 </div>
-                <CheckCircle className="text-gray-900" size={24} strokeWidth={1.5} />
+                <CheckCircle className="text-midnight" size={24} strokeWidth={1.5} />
               </div>
 
               <p className="text-gray-600 mb-6 leading-relaxed text-sm font-light">{project.description}</p>
 
               <div className="grid grid-cols-3 gap-4">
                 <div className="border-l border-gray-200 pl-4">
-                  <div className="text-lg font-medium text-gray-900 mb-1">{project.size}</div>
+                  <div className="text-lg font-medium text-midnight mb-1">{project.size}</div>
                   <div className="text-xs text-gray-500 font-light">Fläche</div>
                 </div>
                 <div className="border-l border-gray-200 pl-4">
@@ -107,9 +107,9 @@ export default function Showcase() {
                 className="text-center p-12 bg-white"
               >
                 <div className="mb-4">
-                  <Icon className="text-gray-900 mx-auto" size={28} strokeWidth={1.5} />
+                  <Icon className="text-midnight mx-auto" size={28} strokeWidth={1.5} />
                 </div>
-                <div className="text-3xl font-light text-gray-900 mb-2">{item.stat}</div>
+                <div className="text-3xl font-light text-midnight mb-2">{item.stat}</div>
                 <div className="text-sm text-gray-600 font-light">{item.label}</div>
               </div>
             );

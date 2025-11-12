@@ -25,7 +25,7 @@ export default function Contact() {
     <section id="kontakt" className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-5xl sm:text-6xl font-light text-gray-900 mb-6">
+          <h2 className="text-5xl sm:text-6xl font-light text-midnight mb-6">
             Jetzt kostenlos beraten lassen
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
@@ -37,7 +37,7 @@ export default function Contact() {
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-xs font-medium text-gray-900 mb-2 uppercase tracking-wide">
+                <label htmlFor="name" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
                   Name
                 </label>
                 <input
@@ -47,13 +47,13 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-gray-900 focus:outline-none focus:ring-0 transition-colors duration-300 text-gray-900"
+                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
                   placeholder="Ihr vollständiger Name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-xs font-medium text-gray-900 mb-2 uppercase tracking-wide">
+                <label htmlFor="email" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
                   E-Mail
                 </label>
                 <input
@@ -63,13 +63,13 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-gray-900 focus:outline-none focus:ring-0 transition-colors duration-300 text-gray-900"
+                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
                   placeholder="ihre@email.de"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-xs font-medium text-gray-900 mb-2 uppercase tracking-wide">
+                <label htmlFor="phone" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
                   Telefon
                 </label>
                 <input
@@ -79,13 +79,13 @@ export default function Contact() {
                   required
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-gray-900 focus:outline-none focus:ring-0 transition-colors duration-300 text-gray-900"
+                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
                   placeholder="0711 / 123 456 78"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-xs font-medium text-gray-900 mb-2 uppercase tracking-wide">
+                <label htmlFor="message" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
                   Nachricht
                 </label>
                 <textarea
@@ -102,7 +102,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-gray-900 text-white py-4 rounded-full font-medium text-base hover:bg-gray-800 transition-all duration-300 mt-8"
+                className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8"
               >
                 Anfrage senden
               </button>
@@ -111,13 +111,13 @@ export default function Contact() {
 
           <div className="space-y-8">
             <div>
-              <h3 className="text-xs font-medium text-gray-900 mb-4 uppercase tracking-wide">Kontakt</h3>
+              <h3 className="text-xs font-medium text-midnight mb-4 uppercase tracking-wide">Kontakt</h3>
               <div className="space-y-4">
                 <div>
                   <div className="text-sm text-gray-600 font-light mb-1">Telefon</div>
                   <a
                     href="tel:+4971112345678"
-                    className="text-base text-gray-900 hover:text-gray-600 transition-colors"
+                    className="text-base text-midnight hover:text-gray-600 transition-colors"
                   >
                     0711 / 123 456 78
                   </a>
@@ -135,7 +135,7 @@ export default function Contact() {
 
                 <div>
                   <div className="text-sm text-gray-600 font-light mb-1">Adresse</div>
-                  <p className="text-base text-gray-900">
+                  <p className="text-base text-midnight">
                     Musterstraße 123<br />
                     70173 Stuttgart
                   </p>
@@ -144,8 +144,8 @@ export default function Contact() {
             </div>
 
             <div className="pt-8 border-t border-gray-200">
-              <h3 className="text-xs font-medium text-gray-900 mb-4 uppercase tracking-wide">Erreichbarkeit</h3>
-              <div className="text-base text-gray-900 space-y-1">
+              <h3 className="text-xs font-medium text-midnight mb-4 uppercase tracking-wide">Erreichbarkeit</h3>
+              <div className="text-base text-midnight space-y-1">
                 <p>Mo - Fr: 07:00 - 20:00 Uhr</p>
                 <p>Sa: 08:00 - 18:00 Uhr</p>
                 <p>So: Notfall-Hotline</p>
@@ -153,17 +153,17 @@ export default function Contact() {
             </div>
 
             <div className="pt-8 border-t border-gray-200">
-              <h3 className="text-xs font-medium text-gray-900 mb-4 uppercase tracking-wide">24h Express-Hotline</h3>
+              <h3 className="text-xs font-medium text-midnight mb-4 uppercase tracking-wide">24h Express-Hotline</h3>
               <a
                 href="tel:+491771234567"
-                className="text-2xl font-light text-gray-900 hover:text-gray-600 transition-colors"
+                className="text-2xl font-light text-midnight hover:text-gray-600 transition-colors"
               >
                 0177 / 123 45 67
               </a>
             </div>
 
             <div className="pt-8 border-t border-gray-200">
-              <h3 className="text-xs font-medium text-gray-900 mb-4 uppercase tracking-wide">Einzugsgebiet</h3>
+              <h3 className="text-xs font-medium text-midnight mb-4 uppercase tracking-wide">Einzugsgebiet</h3>
               <p className="text-sm text-gray-600 font-light leading-relaxed">
                 Stuttgart und Umgebung (30 km Radius): Esslingen, Ludwigsburg, Böblingen, Sindelfingen,
                 Waiblingen, Fellbach, Kornwestheim, Leonberg und weitere Ortschaften.
