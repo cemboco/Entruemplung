@@ -33,10 +33,10 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <a
             href="#"
-            className="flex items-center gap-2 transition-colors duration-300"
+            className="flex items-center gap-3 transition-colors duration-300"
           >
-            <img src="/sdf.png" alt="Serviceplus Logo" className="h-8 w-auto" />
-            <span className="text-xl font-light text-midnight tracking-tight">S+</span>
+            <img src="/sdf.png" alt="Serviceplus Logo" className="h-12 w-auto" />
+            <span className="text-2xl font-light text-midnight tracking-tight">S+</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
