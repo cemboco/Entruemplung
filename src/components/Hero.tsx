@@ -52,7 +52,7 @@ export default function Hero() {
               {[
                 { number: '24h', label: 'Express-Service' },
                 { number: '100%', label: 'Zufriedenheit' },
-                { number: '100%', label: 'Nachhaltig' },
+                { number: '100%', label: 'Nachhaltig & Umweltbewusst' },
               ].map((stat, index) => (
                 <div
                   key={index}
