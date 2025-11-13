@@ -48,11 +48,11 @@ export default function Hero() {
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </a>
               <a
-                href="tel:+4971112345678"
+                href="tel:+4915560850344"
                 className="bg-white border border-gray-300 text-midnight px-10 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-2 justify-center"
               >
                 <Phone size={18} />
-                0711 / 123 456 78
+                0155-60850344
               </a>
             </div>
 

@@ -42,8 +42,8 @@ export default function Footer() {
             <h4 className="text-xs font-medium uppercase tracking-wide mb-6">Kontakt</h4>
             <ul className="space-y-3 text-gray-400 text-sm font-light">
               <li>
-                <a href="tel:+4971112345678" className="hover:text-white transition-colors">
-                  0711 / 123 456 78
+                <a href="tel:+4915560850344" className="hover:text-white transition-colors">
+                  0155-60850344
                 </a>
               </li>
               <li>

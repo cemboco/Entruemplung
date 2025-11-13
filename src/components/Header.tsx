@@ -49,11 +49,11 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="tel:+4971112345678"
+              href="tel:+4915560850344"
               className="flex items-center gap-2 px-6 py-2 rounded-full bg-midnight text-white text-sm font-medium hover:bg-midnight-dark transition-all duration-300"
             >
               <Phone size={16} />
-              <span className="hidden lg:inline">0711 / 123 456 78</span>
+              <span className="hidden lg:inline">0155-60850344</span>
             </a>
           </nav>
 
@@ -79,11 +79,11 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="tel:+4971112345678"
+                href="tel:+4915560850344"
                 className="mt-2 flex items-center justify-center gap-2 bg-midnight text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-midnight-dark transition-colors"
               >
                 <Phone size={16} />
-                0711 / 123 456 78
+                0155-60850344
               </a>
             </nav>
           </div>
