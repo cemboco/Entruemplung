@@ -51,10 +51,6 @@ export default function Footer() {
                   info@serviceplus-entrümpelung.de
                 </a>
               </li>
-              <li>
-                Musterstraße 123<br />
-                70173 Stuttgart
-              </li>
             </ul>
           </div>
 
