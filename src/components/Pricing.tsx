@@ -85,7 +85,7 @@ export default function Pricing() {
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-2 flex-wrap">
-                    <span className="text-4xl sm:text-5xl font-bold text-primary">{pkg.price}€</span>
+                    <span className="text-4xl sm:text-5xl font-bold text-primary">{pkg.price}€*</span>
                     <span className="text-secondary-light text-sm">Festpreis</span>
                   </div>
                 </div>
@@ -156,6 +156,12 @@ export default function Pricing() {
             Individuelles Angebot anfordern
             <ArrowRight size={20} />
           </a>
+        </div>
+
+        <div className="mt-8 text-center">
+          <p className="text-secondary-light text-sm">
+            * Festpreis zzgl. Anfahrt und eventuelle Zusatzleistungen
+          </p>
         </div>
       </div>
     </section>
