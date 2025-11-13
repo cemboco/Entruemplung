@@ -67,7 +67,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-6 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-xs font-light text-center md:text-left">
             <p>
-              © 2024 Serviceplus Entrümplungen
+              © 2025 Serviceplus Entrümplungen
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <a href="#" className="hover:text-gray-300 transition-colors">
