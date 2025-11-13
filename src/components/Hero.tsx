@@ -10,7 +10,15 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <div className="absolute inset-0 lg:hidden">
+        <img
+          src="/ChatGPT Image 5. Nov. 2025, 21_16_33.png"
+          alt="Professionelle Entrümpelung Background"
+          className="w-full h-full object-cover opacity-20"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div
             className={`transition-all duration-1000 transform ${
@@ -69,7 +77,7 @@ export default function Hero() {
           </div>
 
           <div
-            className={`relative transition-all duration-1000 transform ${
+            className={`hidden lg:block relative transition-all duration-1000 transform ${
               isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
             }`}
           >
