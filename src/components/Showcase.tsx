@@ -21,7 +21,7 @@ const values = [
 const features = [
   {
     icon: Clock,
-    text: 'Meist innerhalb von 24 Stunden vor Ort',
+    text: 'Meist innerhalb weniger Minuten vor Ort',
   },
   {
     icon: MapPin,
