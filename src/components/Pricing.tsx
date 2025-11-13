@@ -114,7 +114,13 @@ export default function Pricing() {
           ))}
         </div>
 
-        <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 md:p-12">
+        <div className="mt-8 text-center">
+          <p className="text-secondary-light text-sm">
+            * Festpreis zzgl. Anfahrt und eventuelle Zusatzleistungen
+          </p>
+        </div>
+
+        <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 md:p-12 mt-12">
           <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-6 text-center">
             Weitere Kostenvorteile
           </h3>
@@ -156,12 +162,6 @@ export default function Pricing() {
             Individuelles Angebot anfordern
             <ArrowRight size={20} />
           </a>
-        </div>
-
-        <div className="mt-8 text-center">
-          <p className="text-secondary-light text-sm">
-            * Festpreis zzgl. Anfahrt und eventuelle Zusatzleistungen
-          </p>
         </div>
       </div>
     </section>
