@@ -5,7 +5,6 @@ import Process from './components/Process';
 import Pricing from './components/Pricing';
 import Coverage from './components/Coverage';
 import Showcase from './components/Showcase';
-import Trust from './components/Trust';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -20,7 +19,6 @@ function App() {
       <Pricing />
       <Coverage />
       <Showcase />
-      <Trust />
       <FAQ />
       <Contact />
       <Footer />
