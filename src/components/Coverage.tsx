@@ -42,7 +42,6 @@ export default function Coverage() {
 
             <div className="space-y-4 mb-8">
               {[
-                'Kostenlose Anfahrt im gesamten Stadtgebiet Stuttgart',
                 'Schnelle Reaktionszeiten durch lokale Präsenz',
                 'Kenntnis der regionalen Entsorgungsstellen',
                 'Flexible Terminvereinbarung auch kurzfristig',
