@@ -47,8 +47,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@serviceplus-entruempelung.de" className="hover:text-white transition-colors break-all">
-                  info@serviceplus-entruempelung.de
+                <a href="mailto:info@serviceplus-entrümpelung.de" className="hover:text-white transition-colors break-all">
+                  info@serviceplus-entrümpelung.de
                 </a>
               </li>
               <li>
