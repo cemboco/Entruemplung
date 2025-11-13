@@ -133,13 +133,6 @@ export default function Contact() {
                   </a>
                 </div>
 
-                <div>
-                  <div className="text-sm text-gray-600 font-light mb-1">Adresse</div>
-                  <p className="text-base text-midnight">
-                    Musterstraße 123<br />
-                    70173 Stuttgart
-                  </p>
-                </div>
               </div>
             </div>
 
