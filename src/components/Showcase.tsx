@@ -1,37 +1,35 @@
-import { CheckCircle, Clock, TrendingUp } from 'lucide-react';
+import { Heart, Shield, Users, Clock, MapPin, Handshake } from 'lucide-react';
 
-const projects = [
+const values = [
   {
-    type: 'Haushaltsauflösung',
-    location: 'Stuttgart-West',
-    size: '120 m² Wohnung',
-    duration: '1 Tag',
-    volume: '45 m³',
-    description: 'Komplette Wohnungsauflösung inkl. Entsorgung und besenreiner Übergabe',
+    icon: Shield,
+    title: 'Zuverlässigkeit',
+    description: 'Wir halten unsere Versprechen - termingerecht und wie vereinbart. Darauf können Sie sich verlassen.',
   },
   {
-    type: 'Gewerbe-Entrümpelung',
-    location: 'Esslingen',
-    size: '300 m² Bürofläche',
-    duration: '2 Tage',
-    volume: '80 m³',
-    description: 'Büroauflösung mit Entsorgung von IT-Equipment und Möbeln',
+    icon: Heart,
+    title: 'Freundlichkeit',
+    description: 'Jeder Auftrag wird mit Respekt und Einfühlungsvermögen behandelt, besonders in schwierigen Situationen.',
   },
   {
-    type: 'Keller-Entrümpelung',
-    location: 'Ludwigsburg',
-    size: '60 m² Keller',
-    duration: '4 Stunden',
-    volume: '20 m³',
-    description: 'Vollständige Kellerentrümpelung inkl. Sondermüll-Entsorgung',
+    icon: Handshake,
+    title: 'Vertrauen',
+    description: 'Diskretion und Ehrlichkeit sind für uns selbstverständlich. Ihre Zufriedenheit steht an erster Stelle.',
+  },
+];
+
+const features = [
+  {
+    icon: Clock,
+    text: 'Meist innerhalb von 24 Stunden vor Ort',
   },
   {
-    type: 'Messie-Wohnung',
-    location: 'Stuttgart-Süd',
-    size: '85 m² Wohnung',
-    duration: '1,5 Tage',
-    volume: '35 m³',
-    description: 'Diskrete Reinigung und professionelle Entsorgung',
+    icon: MapPin,
+    text: 'Regional verwurzelt in Stuttgart und Umgebung',
+  },
+  {
+    icon: Users,
+    text: 'Persönlicher Service - kein Callcenter',
   },
 ];
 
@@ -41,79 +39,68 @@ export default function Showcase() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-midnight mb-6">
-            Erfolgsgeschichten
+            Über Uns
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
-            Über 5.000 zufriedene Kunden vertrauen auf unsere Expertise
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
+            Wir, das sind Cemil und Jermaine, sind ein junges Team aus Stuttgart, das anpackt, wo andere zögern.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-px bg-gray-200 mb-20">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 sm:p-10 hover:bg-gray-50 transition-colors duration-300"
-            >
-              <div className="flex items-start justify-between mb-6">
-                <div>
-                  <h3 className="text-lg sm:text-xl font-medium text-midnight mb-1">{project.type}</h3>
-                  <p className="text-xs sm:text-sm text-gray-500 font-light">{project.location}</p>
-                </div>
-                <CheckCircle className="text-midnight flex-shrink-0" size={24} strokeWidth={1.5} />
-              </div>
+        <div className="bg-white rounded-2xl p-8 sm:p-12 md:p-16 mb-16 shadow-sm">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-xl sm:text-2xl text-gray-700 font-light leading-relaxed mb-8 text-center">
+              Ob Entrümpelung, Haushaltsauflösung oder Messie-Wohnung - wir schaffen Platz.
+              Auf Wunsch vermitteln wir auch frei gewordene Wohnungen.
+            </p>
 
-              <p className="text-gray-600 mb-6 leading-relaxed text-sm font-light">{project.description}</p>
-
-              <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                <div className="border-l border-gray-200 pl-2 sm:pl-4">
-                  <div className="text-base sm:text-lg font-medium text-midnight mb-1">{project.size}</div>
-                  <div className="text-xs text-gray-500 font-light">Fläche</div>
-                </div>
-                <div className="border-l border-gray-200 pl-2 sm:pl-4">
-                  <div className="text-base sm:text-lg font-medium text-gray-900 mb-1">{project.volume}</div>
-                  <div className="text-xs text-gray-500 font-light">Volumen</div>
-                </div>
-                <div className="border-l border-gray-200 pl-2 sm:pl-4">
-                  <div className="text-base sm:text-lg font-medium text-gray-900 mb-1">{project.duration}</div>
-                  <div className="text-xs text-gray-500 font-light">Dauer</div>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+              {features.map((feature, index) => {
+                const Icon = feature.icon;
+                return (
+                  <div key={index} className="flex flex-col items-center text-center">
+                    <div className="mb-4 p-3 bg-gray-50 rounded-full">
+                      <Icon className="text-midnight" size={24} strokeWidth={1.5} />
+                    </div>
+                    <p className="text-sm text-gray-600 font-light">{feature.text}</p>
+                  </div>
+                );
+              })}
             </div>
-          ))}
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-gray-200">
-          {[
-            {
-              icon: CheckCircle,
-              stat: '98%',
-              label: 'Termingerechte Fertigstellung',
-            },
-            {
-              icon: Clock,
-              stat: '< 24h',
-              label: 'Durchschnittliche Reaktionszeit',
-            },
-            {
-              icon: TrendingUp,
-              stat: '5.000+',
-              label: 'Erfolgreich abgeschlossene Projekte',
-            },
-          ].map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={idx}
-                className="text-center p-8 sm:p-12 bg-white"
-              >
-                <div className="mb-4">
-                  <Icon className="text-midnight mx-auto" size={28} strokeWidth={1.5} />
+        <div className="mb-16">
+          <h3 className="text-2xl sm:text-3xl font-light text-midnight mb-12 text-center">
+            Unsere Werte
+          </h3>
+          <div className="grid sm:grid-cols-3 gap-px bg-gray-200">
+            {values.map((value, index) => {
+              const Icon = value.icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-white p-8 sm:p-10 hover:bg-gray-50 transition-colors duration-300"
+                >
+                  <div className="mb-6">
+                    <Icon className="text-midnight" size={32} strokeWidth={1.5} />
+                  </div>
+                  <h4 className="text-xl font-medium text-midnight mb-4">{value.title}</h4>
+                  <p className="text-gray-600 leading-relaxed font-light">{value.description}</p>
                 </div>
-                <div className="text-2xl sm:text-3xl font-light text-midnight mb-2">{item.stat}</div>
-                <div className="text-xs sm:text-sm text-gray-600 font-light">{item.label}</div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="bg-midnight text-white rounded-2xl p-8 sm:p-12 text-center">
+          <h3 className="text-2xl sm:text-3xl font-light mb-6">
+            Unser Versprechen
+          </h3>
+          <p className="text-lg font-light leading-relaxed max-w-3xl mx-auto opacity-90">
+            Am Ende zählt nur eines: Ihre Zufriedenheit. Jeder Auftrag wird mit der gleichen Sorgfalt behandelt,
+            egal ob 20m² Keller oder 300m² Gewerbe. Mit Respekt, Diskretion und Verlässlichkeit
+            verwandeln wir überladene Räume in neue Möglichkeiten.
+          </p>
         </div>
       </div>
     </section>
