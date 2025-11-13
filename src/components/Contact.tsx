@@ -126,10 +126,10 @@ export default function Contact() {
                 <div>
                   <div className="text-sm text-gray-600 font-light mb-1">E-Mail</div>
                   <a
-                    href="mailto:info@serviceplus-entruempelung.de"
+                    href="mailto:info@serviceplus-entrümpelung.de"
                     className="text-base text-gray-900 hover:text-gray-600 transition-colors break-all"
                   >
-                    info@serviceplus-entruempelung.de
+                    info@serviceplus-entrümpelung.de
                   </a>
                 </div>
 
