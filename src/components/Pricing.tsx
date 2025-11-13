@@ -3,7 +3,7 @@ import { Check, ArrowRight } from 'lucide-react';
 const packages = [
   {
     name: 'Basis',
-    price: 'ab 299',
+    price: 'ab 399',
     description: 'Perfekt für kleinere Entrümpelungen',
     features: [
       'Bis zu 10 m³ Volumen',
