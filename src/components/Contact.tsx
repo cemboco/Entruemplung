@@ -25,7 +25,7 @@ export default function Contact() {
     <section id="kontakt" className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-5xl sm:text-6xl font-light text-midnight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-midnight mb-6">
             Jetzt kostenlos beraten lassen
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
@@ -33,7 +33,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>

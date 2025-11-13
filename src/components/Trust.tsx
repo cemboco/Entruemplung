@@ -53,38 +53,38 @@ export default function Trust() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
             Warum Serviceplus vertrauen?
           </h2>
-          <p className="text-xl text-secondary-light max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-secondary-light max-w-2xl mx-auto">
             Qualität und Zuverlässigkeit seit über 15 Jahren - darauf können Sie sich verlassen
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {trustFactors.map((factor, index) => {
             const Icon = factor.icon;
             return (
               <div
                 key={index}
-                className="group text-center p-8 rounded-xl hover:bg-gray-50 transition-all duration-300"
+                className="group text-center p-6 sm:p-8 rounded-xl hover:bg-gray-50 transition-all duration-300"
               >
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <Icon className="text-white" size={36} />
+                <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary to-primary-light rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <Icon className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-3">{factor.title}</h3>
-                <p className="text-secondary-light leading-relaxed">{factor.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-primary mb-3">{factor.title}</h3>
+                <p className="text-sm sm:text-base text-secondary-light leading-relaxed">{factor.description}</p>
               </div>
             );
           })}
         </div>
 
-        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 sm:p-12">
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 sm:p-8 md:p-12">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold text-primary mb-8 text-center">
+            <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-8 text-center">
               Kundenstimmen
             </h3>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
                   name: 'Familie Müller',

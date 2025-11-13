@@ -55,10 +55,10 @@ export default function FAQ() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
             Häufige Fragen
           </h2>
-          <p className="text-xl text-secondary-light">
+          <p className="text-lg sm:text-xl text-secondary-light">
             Antworten auf die wichtigsten Fragen rund um unseren Service
           </p>
         </div>
@@ -71,9 +71,9 @@ export default function FAQ() {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
+                className="w-full flex items-center justify-between p-4 sm:p-6 text-left hover:bg-gray-50 transition-colors"
               >
-                <span className="text-lg font-semibold text-primary pr-4">{faq.question}</span>
+                <span className="text-base sm:text-lg font-semibold text-primary pr-4">{faq.question}</span>
                 <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                   {openIndex === index ? (
                     <Minus className="text-white" size={20} />
@@ -88,7 +88,7 @@ export default function FAQ() {
                   openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 } overflow-hidden`}
               >
-                <div className="px-6 pb-6 text-secondary-light leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6 text-sm sm:text-base text-secondary-light leading-relaxed">
                   {faq.answer}
                 </div>
               </div>

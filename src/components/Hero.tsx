@@ -17,7 +17,7 @@ export default function Hero() {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light text-midnight mb-8 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-midnight mb-8 leading-tight tracking-tight">
               <span className="block font-bold mb-2">
                 Serviceplus
               </span>
@@ -27,7 +27,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-gray-600 mb-12 font-light">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-12 font-light">
               Stuttgart & Umgebung
             </p>
 
@@ -48,7 +48,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 border-t border-gray-200">
               {[
                 { number: '24h', label: 'Express-Service' },
                 { number: '100%', label: 'Zufriedenheit' },

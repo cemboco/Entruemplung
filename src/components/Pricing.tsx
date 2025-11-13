@@ -53,21 +53,21 @@ export default function Pricing() {
     <section id="preise" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
             Transparente Preise
           </h2>
-          <p className="text-xl text-secondary-light max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-secondary-light max-w-2xl mx-auto">
             Faire Festpreise ohne versteckte Kosten. Kostenlose Besichtigung und Angebot vor Ort.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {packages.map((pkg, index) => (
             <div
               key={index}
               className={`relative bg-white rounded-2xl shadow-xl border-2 transition-all duration-300 hover:-translate-y-2 ${
                 pkg.popular
-                  ? 'border-primary scale-105 hover:scale-110'
+                  ? 'border-primary sm:scale-105 sm:hover:scale-110'
                   : 'border-gray-200 hover:border-primary'
               }`}
             >
@@ -114,11 +114,11 @@ export default function Pricing() {
           ))}
         </div>
 
-        <div className="bg-gray-50 rounded-2xl p-8 sm:p-12">
-          <h3 className="text-3xl font-bold text-primary mb-6 text-center">
+        <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 md:p-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-6 text-center">
             Weitere Kostenvorteile
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 title: 'Wertanrechnung',
