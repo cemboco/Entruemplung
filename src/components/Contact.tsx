@@ -148,10 +148,10 @@ export default function Contact() {
             <div className="pt-8 border-t border-gray-200">
               <h3 className="text-xs font-medium text-midnight mb-4 uppercase tracking-wide">24h Express-Hotline</h3>
               <a
-                href="tel:+491771234567"
+                href="tel:+4915560850344"
                 className="text-2xl font-light text-midnight hover:text-gray-600 transition-colors"
               >
-                0177 / 123 45 67
+                0155-60850344
               </a>
             </div>
 
