@@ -16,9 +16,9 @@ export default function Header() {
 
   const navLinks = [
     { href: '#leistungen', label: 'Leistungen' },
+    { href: '#preise', label: 'Preise' },
     { href: '#ueber-uns', label: 'Über uns' },
     { href: '#ablauf', label: 'Ablauf' },
-    { href: '#preise', label: 'Preise' },
     { href: '#kontakt', label: 'Kontakt' },
   ];
 
