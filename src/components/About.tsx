@@ -101,6 +101,9 @@ export default function About() {
             egal ob 20m² Keller oder 300m² Gewerbe. Mit Respekt, Diskretion und Verlässlichkeit
             verwandeln wir überladene Räume in neue Möglichkeiten.
           </p>
+          <p className="text-base font-light leading-relaxed max-w-3xl mx-auto opacity-90 mt-6">
+            Bei Unklarheiten bitte kontaktieren.
+          </p>
         </div>
       </div>
     </section>
