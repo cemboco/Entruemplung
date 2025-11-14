@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Hero />
       <Services />
-      <Process />
       <About />
+      <Process />
       <Pricing />
       <Coverage />
       <Showcase />
