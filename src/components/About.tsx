@@ -44,26 +44,6 @@ export default function About() {
           </p>
         </div>
 
-        <div className="bg-white rounded-3xl p-8 sm:p-12 mb-12 shadow-2xl">
-          <p className="text-xl text-center text-gray-700 mb-12 leading-relaxed">
-            Ob Entrümpelung, Haushaltsauflösung oder Messie-Wohnung - wir schaffen Platz. Auf Wunsch vermitteln wir auch frei gewordene Wohnungen.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <div key={index} className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 bg-midnight/10 rounded-full flex items-center justify-center mb-4">
-                    <Icon className="text-midnight" size={32} />
-                  </div>
-                  <p className="text-gray-700 font-medium">{feature.title}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
         <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => {
             const Icon = value.icon;
