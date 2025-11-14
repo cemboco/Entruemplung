@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Process from './components/Process';
+import About from './components/About';
 import Pricing from './components/Pricing';
 import Coverage from './components/Coverage';
 import Showcase from './components/Showcase';
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Services />
       <Process />
+      <About />
       <Pricing />
       <Coverage />
       <Showcase />
