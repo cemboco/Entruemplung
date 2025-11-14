@@ -64,30 +64,19 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mb-12">
-          <h3 className="text-3xl sm:text-4xl font-bold text-center mb-12">Unsere Werte</h3>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {values.map((value, index) => {
-              const Icon = value.icon;
-              return (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
-                  <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mb-6">
-                    <Icon className="text-white" size={28} />
-                  </div>
-                  <h4 className="text-2xl font-bold mb-4">{value.title}</h4>
-                  <p className="text-gray-300 leading-relaxed">{value.description}</p>
+        <div className="grid md:grid-cols-3 gap-8">
+          {values.map((value, index) => {
+            const Icon = value.icon;
+            return (
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
+                <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mb-6">
+                  <Icon className="text-white" size={28} />
                 </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-primary to-primary-light rounded-3xl p-8 sm:p-12 shadow-2xl">
-          <h3 className="text-3xl sm:text-4xl font-bold text-center mb-6">Unser Versprechen</h3>
-          <p className="text-xl text-center leading-relaxed max-w-4xl mx-auto">
-            Am Ende zählt nur eines: Ihre Zufriedenheit. Jeder Auftrag wird mit der gleichen Sorgfalt behandelt, egal ob 20m² Keller oder 300m² Gewerbe. Mit Respekt, Diskretion und Verlässlichkeit verwandeln wir überladene Räume in neue Möglichkeiten.
-          </p>
+                <h4 className="text-2xl font-bold mb-4">{value.title}</h4>
+                <p className="text-gray-300 leading-relaxed">{value.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
