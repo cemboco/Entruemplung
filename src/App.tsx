@@ -10,6 +10,7 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CallToActionPopup from './components/CallToActionPopup';
+import FeedbackTab from './components/FeedbackTab';
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
       <Contact />
       <Footer />
       <CallToActionPopup />
+      <FeedbackTab />
     </div>
   );
 }
