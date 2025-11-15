@@ -1,38 +1,39 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Phone, X } from 'lucide-react';
 
 export default function CallToActionPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const hasTriggered = useRef(false);
 
   useEffect(() => {
-    const hasSeenPopup = localStorage.getItem('hasSeenCTAPopup');
-
-    if (hasSeenPopup) {
-      return;
-    }
-
     const aboutSection = document.getElementById('about');
 
     if (!aboutSection) {
+      console.log('About section not found');
       return;
     }
+
+    console.log('About section found, setting up observer');
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !isVisible) {
+          console.log('Intersection observed:', entry.isIntersecting, 'hasTriggered:', hasTriggered.current);
+          if (entry.isIntersecting && !hasTriggered.current) {
+            hasTriggered.current = true;
+            console.log('Triggering popup');
             setTimeout(() => {
               setIsVisible(true);
               setTimeout(() => {
                 setIsAnimating(true);
               }, 100);
-            }, 1000);
+            }, 500);
           }
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.2,
       }
     );
 
@@ -41,13 +42,13 @@ export default function CallToActionPopup() {
     return () => {
       observer.disconnect();
     };
-  }, [isVisible]);
+  }, []);
 
   const handleClose = () => {
+    console.log('Closing popup');
     setIsAnimating(false);
     setTimeout(() => {
       setIsVisible(false);
-      localStorage.setItem('hasSeenCTAPopup', 'true');
     }, 300);
   };
 
