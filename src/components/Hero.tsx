@@ -47,13 +47,10 @@ export default function Hero() {
                 Kostenlose Beratung
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </a>
-              <a
-                href="tel:+4915560850344"
-                className="bg-white border border-gray-300 text-midnight px-10 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-2 justify-center"
-              >
+              <div className="bg-white border border-gray-300 text-midnight px-10 py-5 rounded-full font-medium text-base flex items-center gap-2 justify-center">
                 <Phone size={18} />
                 0155-60850344
-              </a>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 border-t border-gray-200">
