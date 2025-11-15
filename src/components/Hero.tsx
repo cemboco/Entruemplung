@@ -12,7 +12,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center bg-white overflow-hidden">
       <div className="absolute inset-0 lg:hidden">
         <img
-          src="/ChatGPT Image 5. Nov. 2025, 21_16_33.png"
+          src="/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png"
           alt="Professionelle Entrümpelung Background"
           className="w-full h-full object-cover opacity-20"
         />
@@ -83,7 +83,7 @@ export default function Hero() {
           >
             <div className="aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden">
               <img
-                src="/ChatGPT Image 5. Nov. 2025, 21_16_33.png"
+                src="/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png"
                 alt="Professionelle Entrümpelung"
                 className="w-full h-full object-cover"
               />
