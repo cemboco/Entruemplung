@@ -73,7 +73,7 @@ export default function FeedbackTab() {
           <div className="bg-blue-600 text-white p-4 rounded-tl-xl flex items-center justify-between">
             <div className="flex items-center gap-2">
               <MessageSquare size={20} />
-              <h3 className="font-semibold">Feedback</h3>
+              <h3 className="font-semibold">Termin vereinbaren</h3>
             </div>
             <button
               onClick={() => setIsOpen(false)}
