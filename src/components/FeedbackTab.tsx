@@ -57,7 +57,7 @@ export default function FeedbackTab() {
       >
         <span className="flex items-center gap-2 text-sm font-semibold tracking-wider">
           <MessageSquare size={18} />
-          FEEDBACK
+          TERMIN VEREINBAREN
         </span>
       </button>
 
