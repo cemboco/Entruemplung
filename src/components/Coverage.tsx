@@ -21,20 +21,30 @@ const regions = [
 
 export default function Coverage() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-midnight text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
+          <div className="order-2 lg:order-1">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="/Design ohne Titel.png"
+                alt="Serviceplus Entrümpelung Transporter"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div className="order-1 lg:order-2">
+            <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full mb-6">
               <MapPin size={20} />
               <span className="font-semibold">Unser Einzugsgebiet</span>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-6">
+            <h2 className="text-4xl sm:text-5xl font-light text-white mb-6 leading-tight">
               In ganz Stuttgart und Umgebung für Sie da
             </h2>
 
-            <p className="text-xl text-secondary-light mb-8 leading-relaxed">
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed font-light">
               Mit unserem Firmensitz in Stuttgart sind wir Ihr lokaler Partner für professionelle
               Entrümpelungen. Wir kennen die Region und garantieren schnelle Anfahrtszeiten
               innerhalb eines 30 km Radius.
@@ -47,43 +57,38 @@ export default function Coverage() {
                 'Flexible Terminvereinbarung auch kurzfristig',
               ].map((feature, idx) => (
                 <div key={idx} className="flex items-start gap-3">
-                  <CheckCircle className="text-primary flex-shrink-0 mt-1" size={24} />
-                  <span className="text-secondary text-lg">{feature}</span>
+                  <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
+                  <span className="text-gray-300 text-lg font-light">{feature}</span>
                 </div>
               ))}
             </div>
 
             <a
               href="#kontakt"
-              className="inline-block bg-gradient-to-r from-primary to-primary-light text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="inline-block bg-white text-midnight px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-100 transition-all duration-300"
             >
               Jetzt Verfügbarkeit prüfen
             </a>
-          </div>
 
-          <div className="relative">
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-primary mb-6">Wir sind aktiv in:</h3>
+            <div className="mt-12 pt-8 border-t border-white/20">
+              <h3 className="text-2xl font-light text-white mb-6">Wir sind aktiv in:</h3>
               <div className="grid grid-cols-2 gap-4">
                 {regions.map((region, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-2 text-secondary hover:text-primary transition-colors group"
+                    className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors group"
                   >
-                    <div className="w-2 h-2 bg-primary rounded-full group-hover:scale-150 transition-transform"></div>
-                    <span className="font-medium">{region}</span>
+                    <div className="w-2 h-2 bg-white rounded-full group-hover:scale-150 transition-transform"></div>
+                    <span className="font-light">{region}</span>
                   </div>
                 ))}
               </div>
-              <div className="mt-6 pt-6 border-t border-gray-300">
-                <p className="text-secondary-light text-sm">
+              <div className="mt-6 pt-6 border-t border-white/20">
+                <p className="text-gray-400 text-sm font-light">
                   Weitere Orte in der Region Stuttgart auf Anfrage. Rufen Sie uns an!
                 </p>
               </div>
             </div>
-
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl -z-10"></div>
           </div>
         </div>
       </div>
