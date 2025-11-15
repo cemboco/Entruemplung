@@ -65,7 +65,7 @@ export default function Services() {
           <p className="text-xl sm:text-2xl text-gray-600 mb-8 font-light italic">
             "Wir räumen auf - Sie atmen auf"
           </p>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-midnight mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-midnight mb-6">
             Unsere Leistungen
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
@@ -99,7 +99,7 @@ export default function Services() {
           })}
         </div>
 
-        <div className="mt-20 bg-midnight rounded-none p-8 sm:p-12 md:p-16 text-white text-center">
+        <div className="mt-20 bg-midnight rounded-lg sm:rounded-none p-8 sm:p-12 md:p-16 text-white text-center">
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-light mb-4">24-Stunden Express-Service</h3>
           <p className="text-gray-300 text-base sm:text-lg font-light mb-8 max-w-2xl mx-auto">
             Notfall? Wir sind auch am Wochenende und an Feiertagen für Sie da

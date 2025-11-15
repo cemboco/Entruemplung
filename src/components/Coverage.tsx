@@ -30,11 +30,11 @@ export default function Coverage() {
               <span className="font-semibold">Unser Einzugsgebiet</span>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-6">
               In ganz Stuttgart und Umgebung für Sie da
             </h2>
 
-            <p className="text-xl text-secondary-light mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-secondary-light mb-8 leading-relaxed">
               Mit unserem Firmensitz in Stuttgart sind wir Ihr lokaler Partner für professionelle
               Entrümpelungen. Wir kennen die Region und garantieren schnelle Anfahrtszeiten
               innerhalb eines 30 km Radius.
@@ -61,7 +61,7 @@ export default function Coverage() {
             </a>
           </div>
 
-          <div className="relative">
+          <div className="relative mt-8 lg:mt-0">
             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-primary mb-6">Wir sind aktiv in:</h3>
               <div className="grid grid-cols-2 gap-4">
