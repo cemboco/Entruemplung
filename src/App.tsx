@@ -9,6 +9,7 @@ import Coverage from './components/Coverage';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CallToActionPopup from './components/CallToActionPopup';
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
       <FAQ />
       <Contact />
       <Footer />
+      <CallToActionPopup />
     </div>
   );
 }
