@@ -33,8 +33,15 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="ablauf" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="ablauf" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+      <div className="absolute inset-0 lg:hidden">
+        <img
+          src="/Design ohne Titel (1).png"
+          alt="Background"
+          className="w-full h-full object-cover opacity-20"
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
             So einfach geht's
