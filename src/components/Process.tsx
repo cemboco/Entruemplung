@@ -34,7 +34,7 @@ const steps = [
 export default function Process() {
   return (
     <section id="ablauf" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
-      <div className="absolute inset-0 lg:hidden">
+      <div className="absolute inset-0">
         <img
           src="/Design ohne Titel (1).png"
           alt="Background"
