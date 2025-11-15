@@ -57,40 +57,40 @@ export default function CallToActionPopup() {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 z-50 transition-all duration-500 ease-out ${
+      className={`fixed bottom-8 right-8 z-[100] transition-all duration-500 ease-out ${
         isAnimating
           ? 'translate-x-0 opacity-100'
           : 'translate-x-full opacity-0'
       }`}
     >
-      <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-sm relative border border-gray-100">
+      <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md relative border-4 border-blue-500">
         <button
           onClick={handleClose}
           className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
           aria-label="Popup schließen"
         >
-          <X size={20} strokeWidth={1.5} />
+          <X size={24} strokeWidth={2} />
         </button>
 
-        <div className="flex items-start gap-4 pr-6">
-          <div className="flex-shrink-0 bg-midnight p-3 rounded-full">
-            <Phone className="text-white" size={24} strokeWidth={1.5} />
+        <div className="flex items-start gap-4 pr-8">
+          <div className="flex-shrink-0 bg-midnight p-4 rounded-full">
+            <Phone className="text-white" size={28} strokeWidth={2} />
           </div>
 
           <div className="flex-1">
-            <h3 className="text-lg font-medium text-midnight mb-2">
+            <h3 className="text-xl font-semibold text-midnight mb-3">
               Jetzt anrufen!
             </h3>
-            <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+            <p className="text-base text-gray-600 mb-6 leading-relaxed">
               Ruf uns jetzt für ein unverbindliches Angebot an
             </p>
 
             <a
-              href="tel:+491234567890"
-              className="inline-flex items-center gap-2 bg-midnight text-white px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors font-medium text-sm"
+              href="tel:+4915560850344"
+              className="inline-flex items-center gap-3 bg-midnight text-white px-6 py-3.5 rounded-lg hover:bg-gray-800 transition-colors font-semibold text-base"
             >
-              <Phone size={18} strokeWidth={1.5} />
-              <span>0123 456 7890</span>
+              <Phone size={20} strokeWidth={2} />
+              <span>0155-60850344</span>
             </a>
           </div>
         </div>
