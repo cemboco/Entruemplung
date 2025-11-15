@@ -86,7 +86,8 @@ export default function FeedbackTab() {
           {/* Form */}
           <form onSubmit={handleSubmit} className="p-6">
             <p className="text-gray-600 text-sm mb-4">
-              Wir freuen uns über Ihr Feedback! Teilen Sie uns Ihre Meinung mit.
+              Jetzt kostenlos beraten lassen<br />
+              Kontaktieren Sie uns für ein unverbindliches Angebot
             </p>
 
             <div className="space-y-4">
