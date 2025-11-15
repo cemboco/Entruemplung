@@ -50,7 +50,7 @@ export default function FeedbackTab() {
       {/* Tab Button - Always Visible */}
       <button
         onClick={() => setIsOpen(true)}
-        className={`fixed right-0 top-1/2 -translate-y-1/2 bg-blue-600 bg-opacity-70 hover:bg-opacity-100 text-white px-4 py-6 rounded-l-lg shadow-lg transition-all duration-300 z-50 ${
+        className={`fixed right-0 top-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-6 rounded-l-lg shadow-lg transition-all duration-300 z-50 ${
           isOpen ? 'translate-x-full opacity-0 pointer-events-none' : 'translate-x-0 opacity-100'
         }`}
         style={{ writingMode: 'vertical-rl' }}

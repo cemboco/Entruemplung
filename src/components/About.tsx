@@ -38,7 +38,7 @@ export default function About() {
     <section id="about" className="py-32 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-midnight mb-6">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-midnight mb-6">
             Über Uns
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
@@ -46,7 +46,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-12 md:p-16 mb-16 shadow-sm">
+        <div className="bg-white rounded-2xl p-8 sm:p-12 md:p-16 mb-16 shadow-sm">
           <div className="max-w-3xl mx-auto">
             <p className="text-xl sm:text-2xl text-gray-700 font-light leading-relaxed mb-8 text-center">
               Ob Entrümpelung, Haushaltsauflösung oder Messie-Wohnung - wir schaffen Platz.
@@ -92,7 +92,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-midnight text-white rounded-xl sm:rounded-2xl p-6 sm:p-12 text-center">
+        <div className="bg-midnight text-white rounded-2xl p-8 sm:p-12 text-center">
           <h3 className="text-2xl sm:text-3xl font-light mb-6">
             Unser Versprechen
           </h3>

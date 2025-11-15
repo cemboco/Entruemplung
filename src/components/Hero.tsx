@@ -25,7 +25,7 @@ export default function Hero() {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-midnight mb-8 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-midnight mb-8 leading-tight tracking-tight">
               <span className="block font-bold mb-2">
                 Serviceplus
               </span>
@@ -47,18 +47,20 @@ export default function Hero() {
                 Kostenlose Beratung
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </a>
-              <div className="bg-white border border-gray-300 text-midnight px-10 py-5 rounded-full font-medium text-base flex items-center gap-2 justify-center">
+              <a
+                href="tel:+4915560850344"
+                className="bg-white border border-gray-300 text-midnight px-10 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-2 justify-center"
+              >
                 <Phone size={18} />
                 0155-60850344
-              </div>
+              </a>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 border-t border-gray-200">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 border-t border-gray-200">
               {[
                 { number: '24h', label: 'Express-Service' },
                 { number: '100%', label: 'Zufriedenheit' },
                 { number: '100%', label: 'Nachhaltig & Umweltbewusst' },
-                { number: '100%', label: 'Kundenorientiert' },
               ].map((stat, index) => (
                 <div
                   key={index}

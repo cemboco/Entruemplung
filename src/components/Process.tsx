@@ -33,20 +33,13 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="ablauf" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src="/Design ohne Titel (1).png"
-          alt="Background"
-          className="w-full h-full object-cover opacity-20"
-        />
-      </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="ablauf" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
             So einfach geht's
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-secondary-light max-w-2xl mx-auto">
+          <p className="text-xl text-secondary-light max-w-2xl mx-auto">
             In nur 4 Schritten zu Ihrer professionellen Entrümpelung
           </p>
         </div>

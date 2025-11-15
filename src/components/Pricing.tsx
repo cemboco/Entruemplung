@@ -67,7 +67,7 @@ export default function Pricing() {
               key={index}
               className={`relative bg-white rounded-2xl shadow-xl border-2 transition-all duration-300 hover:-translate-y-2 ${
                 pkg.popular
-                  ? 'border-primary lg:scale-105 lg:hover:scale-110'
+                  ? 'border-primary sm:scale-105 sm:hover:scale-110'
                   : 'border-gray-200 hover:border-primary'
               }`}
             >
