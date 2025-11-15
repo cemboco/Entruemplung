@@ -132,7 +132,7 @@ export default function FeedbackTab() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                  placeholder="Ihr Feedback..."
+                  placeholder="Ihre Nachricht"
                 />
               </div>
 
