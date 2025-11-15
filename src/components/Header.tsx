@@ -37,9 +37,9 @@ export default function Header() {
             className="flex items-center gap-2"
           >
             <img
-              src="/sdf (1).png"
+              src="/sdf (7).png"
               alt="Serviceplus Logo"
-              className="h-6 w-6"
+              className="h-8 w-8"
             />
             <span className="text-xl font-light text-midnight transition-colors duration-300 tracking-tight">
               S+
