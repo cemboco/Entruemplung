@@ -105,10 +105,10 @@ export default function Services() {
             Notfall? Wir sind auch am Wochenende und an Feiertagen für Sie da
           </p>
           <a
-            href="#kontakt"
+            href="#schnellanfrage"
             className="inline-block bg-white text-midnight px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-gray-100 transition-all duration-300"
           >
-            Jetzt anfragen
+            Jetzt zur kostenlosen Schnellanfrage
           </a>
         </div>
       </div>
