@@ -121,7 +121,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div id="schnellanfrage" className="bg-gray-50 rounded-2xl p-6 sm:p-8 md:p-12 mt-12">
+        <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 md:p-12 mt-12">
           <QuickQuote />
         </div>
 
