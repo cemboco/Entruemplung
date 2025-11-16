@@ -44,14 +44,6 @@ export default function Process() {
           </p>
         </div>
 
-        <div className="mb-16 flex justify-center">
-          <img
-            src="/Haushaltsauflösungen.png"
-            alt="Haushaltsauflösungen Illustration"
-            className="max-w-3xl w-full h-auto rounded-2xl shadow-lg"
-          />
-        </div>
-
         <div className="relative">
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-primary to-green-500 transform -translate-y-1/2 mx-20"></div>
 
