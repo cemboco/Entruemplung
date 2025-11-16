@@ -104,12 +104,20 @@ export default function Services() {
           <p className="text-gray-300 text-base sm:text-lg font-light mb-8 max-w-2xl mx-auto">
             Notfall? Wir sind auch am Wochenende und an Feiertagen für Sie da
           </p>
-          <a
-            href="#kontakt"
-            className="inline-block bg-white text-midnight px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-gray-100 transition-all duration-300"
-          >
-            Jetzt anfragen
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="#kontakt"
+              className="inline-block bg-white text-midnight px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-gray-100 transition-all duration-300"
+            >
+              Jetzt anfragen
+            </a>
+            <a
+              href="#preise"
+              className="inline-block bg-transparent border-2 border-white text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-white hover:text-midnight transition-all duration-300"
+            >
+              Schnellanfrage starten
+            </a>
+          </div>
         </div>
       </div>
     </section>
