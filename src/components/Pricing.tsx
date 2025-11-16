@@ -1,4 +1,5 @@
 import { Check, ArrowRight } from 'lucide-react';
+import QuickQuote from './QuickQuote';
 
 const packages = [
   {
@@ -121,37 +122,7 @@ export default function Pricing() {
         </div>
 
         <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 md:p-12 mt-12">
-          <h3 className="text-2xl sm:text-3xl font-bold text-primary mb-6 text-center">
-            Weitere Kostenvorteile
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: 'Wertanrechnung',
-                text: 'Verwertbare Möbel und Gegenstände werden fair vom Preis abgezogen',
-              },
-              {
-                title: 'Kostenlose Besichtigung',
-                text: 'Unverbindliche Vor-Ort-Besichtigung und Festpreis-Angebot',
-              },
-              {
-                title: 'Keine Nachzahlung',
-                text: 'Garantierter Festpreis - auch wenn es mehr wird als geschätzt',
-              },
-              {
-                title: 'Samstags inkl.',
-                text: 'Samstags-Termine ohne Aufpreis im Premium-Paket verfügbar',
-              },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white rounded-lg p-6 border border-gray-200 hover:border-primary transition-colors duration-300"
-              >
-                <h4 className="font-bold text-primary mb-2 text-lg">{item.title}</h4>
-                <p className="text-secondary-light text-sm">{item.text}</p>
-              </div>
-            ))}
-          </div>
+          <QuickQuote />
         </div>
 
         <div className="mt-12 text-center">
