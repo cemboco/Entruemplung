@@ -35,7 +35,14 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-gray-50">
+    <section id="about" className="py-32 bg-gray-50 relative overflow-hidden">
+      <div className="absolute top-8 right-4 md:right-12 lg:right-20 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 opacity-15 pointer-events-none">
+        <img
+          src="/Haushaltsauflösungen.png"
+          alt="Illustration"
+          className="w-full h-full object-contain"
+        />
+      </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-midnight mb-6">
