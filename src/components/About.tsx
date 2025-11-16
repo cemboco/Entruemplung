@@ -37,10 +37,20 @@ export default function About() {
   return (
     <section id="about" className="py-32 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-midnight mb-6">
-            Über Uns
-          </h2>
+        <div className="text-center mb-20 relative">
+          <div className="flex justify-center items-start mb-6">
+            <div className="flex-1"></div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-midnight flex-1">
+              Über Uns
+            </h2>
+            <div className="flex-1 flex justify-end">
+              <img
+                src="/Haushaltsauflösungen.png"
+                alt="Haushaltsauflösungen Team"
+                className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover rounded-lg"
+              />
+            </div>
+          </div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
             Wir, das sind Cemil und Jermaine, sind ein junges Team aus Stuttgart, das anpackt, wo andere zögern.
           </p>
