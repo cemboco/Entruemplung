@@ -112,7 +112,7 @@ export default function Services() {
               Jetzt anfragen
             </a>
             <a
-              href="#preise"
+              href="#schnellanfrage"
               className="inline-block bg-transparent border-2 border-white text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-white hover:text-midnight transition-all duration-300"
             >
               Schnellanfrage starten
