@@ -91,17 +91,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-12 left-0 right-0 z-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
-          <a
-            href="#schnellanfrage"
-            className="bg-midnight text-white px-12 py-6 rounded-full font-medium text-lg hover:bg-midnight-dark transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-105 transform"
-          >
-            Schnellanfrage starten
-          </a>
-        </div>
-      </div>
     </section>
   );
 }

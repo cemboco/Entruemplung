@@ -21,6 +21,14 @@ function App() {
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <div className="py-16 bg-white flex justify-center">
+        <a
+          href="#schnellanfrage"
+          className="bg-midnight text-white px-16 py-7 rounded-full font-medium text-xl hover:bg-midnight-dark transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-105 transform"
+        >
+          Schnellanfrage starten
+        </a>
+      </div>
       <Services />
       <About />
       <Process />
