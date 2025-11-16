@@ -112,7 +112,7 @@ export default function QuickQuote() {
             Kostenlose Schnellanfrage
           </h2>
           <p className="text-sm text-gray-600 mb-4">
-            Beantworte ein paar kurze Fragen – so können wir dir schnell ein
+            Beantworten Sie ein paar kurze Fragen – so können wir Ihnen schnell ein
             unverbindliches Angebot machen.
           </p>
 
