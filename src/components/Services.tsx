@@ -99,14 +99,14 @@ export default function Services() {
           })}
         </div>
 
-        <div className="mt-20 bg-midnight rounded-none p-8 sm:p-12 md:p-16 text-white text-center">
+        <div className="mt-20 bg-midnight p-12 sm:p-16 md:p-20 text-white text-center -mx-4 sm:-mx-6 lg:-mx-8">
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-light mb-4">24-Stunden Express-Service</h3>
-          <p className="text-gray-300 text-base sm:text-lg font-light mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-300 text-base sm:text-lg font-light mb-10 max-w-2xl mx-auto">
             Notfall? Wir sind auch am Wochenende und an Feiertagen für Sie da
           </p>
           <a
             href="#schnellanfrage"
-            className="inline-block bg-white text-midnight px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:bg-gray-100 transition-all duration-300"
+            className="inline-block bg-white text-midnight px-12 sm:px-14 py-4 sm:py-5 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg"
           >
             Jetzt zur kostenlosen Schnellanfrage
           </a>
