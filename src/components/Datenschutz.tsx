@@ -119,7 +119,7 @@ export default function Datenschutz({ onBack }: DatenschutzProps) {
             </p>
             <div className="mt-3 text-gray-700 font-light space-y-1">
               <p>Serviceplus Entrümpelung</p>
-              <p>[Ihr Name]</p>
+              <p>Geschäftsführer und Gesellschafter: Cemil Bocohonsi, Jermaine Anderson</p>
               <p>[Straße und Hausnummer]</p>
               <p>[PLZ] [Ort]</p>
               <p className="mt-2">Telefon: 0155-60850344</p>

@@ -23,7 +23,7 @@ export default function Impressum({ onBack }: ImpressumProps) {
             <h2 className="text-xl font-medium text-midnight mb-4">Angaben gemäß § 5 TMG</h2>
             <div className="space-y-2 text-gray-700 font-light">
               <p className="font-medium">Serviceplus Entrümpelung</p>
-              <p>Inhaber: [Ihr Name]</p>
+              <p>Geschäftsführer und Gesellschafter: Cemil Bocohonsi, Jermaine Anderson</p>
               <p>[Straße und Hausnummer]</p>
               <p>[PLZ] [Ort]</p>
             </div>
@@ -67,7 +67,7 @@ export default function Impressum({ onBack }: ImpressumProps) {
           <section>
             <h2 className="text-xl font-medium text-midnight mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
             <div className="space-y-2 text-gray-700 font-light">
-              <p>[Ihr Name]</p>
+              <p>Cemil Bocohonsi, Jermaine Anderson</p>
               <p>[Straße und Hausnummer]</p>
               <p>[PLZ] [Ort]</p>
             </div>
