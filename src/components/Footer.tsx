@@ -1,6 +1,10 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 
-export default function Footer() {
+interface FooterProps {
+  onNavigateToImpressum?: () => void;
+}
+
+export default function Footer({ onNavigateToImpressum }: FooterProps = {}) {
   return (
     <footer className="bg-midnight text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -70,9 +74,12 @@ export default function Footer() {
               © 2025 Serviceplus Entrümpelung
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-              <a href="#" className="hover:text-gray-300 transition-colors">
+              <button
+                onClick={onNavigateToImpressum}
+                className="hover:text-gray-300 transition-colors"
+              >
                 Impressum
-              </a>
+              </button>
               <a href="#" className="hover:text-gray-300 transition-colors">
                 Datenschutz
               </a>

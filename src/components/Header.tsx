@@ -1,7 +1,11 @@
 import { Phone, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
-export default function Header() {
+interface HeaderProps {
+  onNavigateToImpressum?: () => void;
+}
+
+export default function Header({ onNavigateToImpressum }: HeaderProps = {}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
