@@ -1,4 +1,5 @@
 import { Phone, Calendar, Truck, CheckCircle } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 
 const steps = [
   {
@@ -32,10 +33,45 @@ const steps = [
 ];
 
 export default function Process() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [visibleSteps, setVisibleSteps] = useState(0);
+  const [isComplete, setIsComplete] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current || isComplete) return;
+
+      const section = sectionRef.current;
+      const rect = section.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      if (rect.top <= viewportHeight * 0.3 && rect.bottom >= viewportHeight * 0.3) {
+        const scrollProgress = Math.max(0, Math.min(1, (viewportHeight * 0.3 - rect.top) / (viewportHeight * 0.5)));
+        const newVisibleSteps = Math.min(4, Math.floor(scrollProgress * 5));
+
+        setVisibleSteps(newVisibleSteps);
+
+        if (newVisibleSteps === 4 && !isComplete) {
+          setIsComplete(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isComplete]);
+
   return (
-    <section id="ablauf" className="relative py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+    <section
+      ref={sectionRef}
+      id="ablauf"
+      className="relative py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden"
+      style={{ minHeight: '150vh' }}
+    >
       <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/4350943.jpg)' }}></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
             So einfach geht's
@@ -51,12 +87,16 @@ export default function Process() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 relative">
             {steps.map((step, index) => {
               const Icon = step.icon;
+              const isVisible = index < visibleSteps;
+
               return (
                 <div
                   key={index}
                   className="relative group"
                   style={{
-                    animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
+                    opacity: isVisible ? 1 : 0,
+                    transform: isVisible ? 'translateY(0)' : 'translateY(100px)',
+                    transition: 'all 0.6s ease-out',
                   }}
                 >
                   <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 h-full">
@@ -80,7 +120,14 @@ export default function Process() {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
+        <div
+          className="mt-16 text-center"
+          style={{
+            opacity: visibleSteps === 4 ? 1 : 0,
+            transform: visibleSteps === 4 ? 'translateY(0)' : 'translateY(50px)',
+            transition: 'all 0.6s ease-out 0.3s',
+          }}
+        >
           <a
             href="#kontakt"
             className="inline-block bg-gradient-to-r from-primary to-primary-light text-white px-10 py-5 rounded-lg font-semibold text-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
@@ -89,21 +136,6 @@ export default function Process() {
           </a>
         </div>
       </div>
-
-      <style>
-        {`
-          @keyframes fadeInUp {
-            from {
-              opacity: 0;
-              transform: translateY(30px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-        `}
-      </style>
     </section>
   );
 }
