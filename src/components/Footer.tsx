@@ -2,9 +2,10 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react
 
 interface FooterProps {
   onNavigateToImpressum?: () => void;
+  onNavigateToDatenschutz?: () => void;
 }
 
-export default function Footer({ onNavigateToImpressum }: FooterProps = {}) {
+export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz }: FooterProps = {}) {
   return (
     <footer className="bg-midnight text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -80,9 +81,12 @@ export default function Footer({ onNavigateToImpressum }: FooterProps = {}) {
               >
                 Impressum
               </button>
-              <a href="#" className="hover:text-gray-300 transition-colors">
+              <button
+                onClick={onNavigateToDatenschutz}
+                className="hover:text-gray-300 transition-colors"
+              >
                 Datenschutz
-              </a>
+              </button>
               <a href="#" className="hover:text-gray-300 transition-colors">
                 AGB
               </a>

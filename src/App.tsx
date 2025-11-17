@@ -11,9 +11,10 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CallToActionPopup from './components/CallToActionPopup';
 import Impressum from './components/Impressum';
+import Datenschutz from './components/Datenschutz';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'impressum'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz'>('home');
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
@@ -24,12 +25,20 @@ function App() {
     const hash = window.location.hash;
     if (hash === '#impressum') {
       setCurrentPage('impressum');
+    } else if (hash === '#datenschutz') {
+      setCurrentPage('datenschutz');
     }
   }, []);
 
   const navigateToImpressum = () => {
     setCurrentPage('impressum');
     window.location.hash = 'impressum';
+    window.scrollTo(0, 0);
+  };
+
+  const navigateToDatenschutz = () => {
+    setCurrentPage('datenschutz');
+    window.location.hash = 'datenschutz';
     window.scrollTo(0, 0);
   };
 
@@ -42,16 +51,26 @@ function App() {
   if (currentPage === 'impressum') {
     return (
       <div className="min-h-screen">
-        <Header onNavigateToImpressum={navigateToImpressum} />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <Impressum onBack={navigateToHome} />
-        <Footer onNavigateToImpressum={navigateToImpressum} />
+        <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+      </div>
+    );
+  }
+
+  if (currentPage === 'datenschutz') {
+    return (
+      <div className="min-h-screen">
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Datenschutz onBack={navigateToHome} />
+        <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       </div>
     );
   }
 
   return (
     <div className="min-h-screen">
-      <Header onNavigateToImpressum={navigateToImpressum} />
+      <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       <Hero />
       <Services />
       <About />
@@ -60,7 +79,7 @@ function App() {
       <Coverage />
       <FAQ />
       <Contact />
-      <Footer onNavigateToImpressum={navigateToImpressum} />
+      <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       <CallToActionPopup />
     </div>
   );

@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react';
 
 interface HeaderProps {
   onNavigateToImpressum?: () => void;
+  onNavigateToDatenschutz?: () => void;
 }
 
-export default function Header({ onNavigateToImpressum }: HeaderProps = {}) {
+export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz }: HeaderProps = {}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
