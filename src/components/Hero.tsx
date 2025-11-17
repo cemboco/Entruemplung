@@ -27,7 +27,7 @@ export default function Hero() {
           >
             <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-midnight mb-8 leading-tight tracking-tight">
               <span className="block font-bold mb-2">
-                Serviceplus GbR
+                Serviceplus
               </span>
               Professionelle
               <span className="block font-normal mt-2">
