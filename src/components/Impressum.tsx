@@ -24,8 +24,8 @@ export default function Impressum({ onBack }: ImpressumProps) {
             <div className="space-y-2 text-gray-700 font-light">
               <p className="font-medium">Serviceplus Entrümpelung GbR</p>
               <p>Geschäftsführer und Gesellschafter: Cemil Bocohonsi, Jermaine Anderson</p>
-              <p>[Straße und Hausnummer]</p>
-              <p>[PLZ] [Ort]</p>
+              <p>Karlsbaderweg 5</p>
+              <p>73652 Welzheim</p>
             </div>
           </section>
 
@@ -68,8 +68,8 @@ export default function Impressum({ onBack }: ImpressumProps) {
             <h2 className="text-xl font-medium text-midnight mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
             <div className="space-y-2 text-gray-700 font-light">
               <p>Cemil Bocohonsi, Jermaine Anderson</p>
-              <p>[Straße und Hausnummer]</p>
-              <p>[PLZ] [Ort]</p>
+              <p>Karlsbaderweg 5</p>
+              <p>73652 Welzheim</p>
             </div>
           </section>
 
