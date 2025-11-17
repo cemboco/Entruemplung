@@ -39,25 +39,29 @@ export default function Process() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (!sectionRef.current || isComplete) return;
+      if (!sectionRef.current) return;
 
       const section = sectionRef.current;
       const rect = section.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
 
-      if (rect.top <= viewportHeight * 0.3 && rect.bottom >= viewportHeight * 0.3) {
-        const scrollProgress = Math.max(0, Math.min(1, (viewportHeight * 0.3 - rect.top) / (viewportHeight * 0.5)));
-        const newVisibleSteps = Math.min(4, Math.floor(scrollProgress * 5));
+      if (rect.top <= viewportHeight * 0.2) {
+        const scrolled = viewportHeight * 0.2 - rect.top;
+        const totalScrollDistance = viewportHeight * 1.2;
+        const progress = Math.max(0, Math.min(1, scrolled / totalScrollDistance));
 
+        const newVisibleSteps = progress * 4;
         setVisibleSteps(newVisibleSteps);
 
-        if (newVisibleSteps === 4 && !isComplete) {
+        if (newVisibleSteps >= 4 && !isComplete) {
           setIsComplete(true);
         }
+      } else {
+        setVisibleSteps(0);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
@@ -87,16 +91,17 @@ export default function Process() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 relative">
             {steps.map((step, index) => {
               const Icon = step.icon;
-              const isVisible = index < visibleSteps;
+              const stepProgress = Math.max(0, Math.min(1, visibleSteps - index));
+              const translateY = (1 - stepProgress) * 150;
+              const opacity = stepProgress;
 
               return (
                 <div
                   key={index}
                   className="relative group"
                   style={{
-                    opacity: isVisible ? 1 : 0,
-                    transform: isVisible ? 'translateY(0)' : 'translateY(100px)',
-                    transition: 'all 0.6s ease-out',
+                    opacity: opacity,
+                    transform: `translateY(${translateY}px)`,
                   }}
                 >
                   <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 h-full">
@@ -123,9 +128,8 @@ export default function Process() {
         <div
           className="mt-16 text-center"
           style={{
-            opacity: visibleSteps === 4 ? 1 : 0,
-            transform: visibleSteps === 4 ? 'translateY(0)' : 'translateY(50px)',
-            transition: 'all 0.6s ease-out 0.3s',
+            opacity: Math.max(0, Math.min(1, (visibleSteps - 3.5) * 2)),
+            transform: `translateY(${Math.max(0, (4 - visibleSteps) * 30)}px)`,
           }}
         >
           <a
