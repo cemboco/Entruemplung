@@ -1,5 +1,4 @@
 import { Home, Trash2, Package, Truck, Briefcase, Recycle, Building2, Warehouse, Sofa } from 'lucide-react';
-import { useState } from 'react';
 
 const services = [
   {
@@ -59,10 +58,8 @@ const services = [
 ];
 
 export default function Services() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   return (
-    <section id="leistungen" className="py-12 md:py-16 lg:py-20 bg-white relative overflow-hidden">
+    <section id="leistungen" className="py-12 md:py-16 lg:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <p className="text-xl sm:text-2xl text-gray-600 mb-8 font-light italic">
@@ -76,25 +73,21 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200 relative">
-          <div
-            className="absolute inset-0 pointer-events-none transition-all duration-700 ease-out"
-            style={{
-              backgroundImage: 'url(/4257357.jpg)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              opacity: hoveredIndex !== null ? 0.2 : 0,
-              transform: hoveredIndex !== null ? `rotate(${(hoveredIndex % 3) * 5 - 5}deg) scale(1.05)` : 'rotate(0deg) scale(1)',
-            }}
-          ></div>
+        <div className="mb-16 -mx-4 sm:-mx-6 lg:-mx-8">
+          <img
+            src="/4257357.jpg"
+            alt="Entrümpelung Service"
+            className="w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group bg-white p-10 hover:bg-gray-50 transition-all duration-300 relative z-10"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
+                className="group bg-white p-10 hover:bg-gray-50 transition-colors duration-300"
               >
                 <div className="mb-6">
                   <Icon className="text-midnight" size={28} strokeWidth={1.5} />
