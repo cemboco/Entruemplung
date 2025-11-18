@@ -73,14 +73,6 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="mb-16 -mx-4 sm:-mx-6 lg:-mx-8">
-          <img
-            src="/4257357.jpg"
-            alt="Entrümpelung Service"
-            className="w-full h-auto rounded-lg shadow-lg"
-          />
-        </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
           {services.map((service, index) => {
             const Icon = service.icon;
