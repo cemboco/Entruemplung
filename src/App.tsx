@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import CallToActionPopup from './components/CallToActionPopup';
 import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
+import StructuredData from './components/StructuredData';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz'>('home');
@@ -51,6 +52,7 @@ function App() {
   if (currentPage === 'impressum') {
     return (
       <div className="min-h-screen">
+        <StructuredData />
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <Impressum onBack={navigateToHome} />
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
@@ -61,6 +63,7 @@ function App() {
   if (currentPage === 'datenschutz') {
     return (
       <div className="min-h-screen">
+        <StructuredData />
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <Datenschutz onBack={navigateToHome} />
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
@@ -70,6 +73,7 @@ function App() {
 
   return (
     <div className="min-h-screen">
+      <StructuredData />
       <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       <Hero />
       <Services />
