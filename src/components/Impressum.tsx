@@ -48,14 +48,6 @@ export default function Impressum({ onBack }: ImpressumProps) {
           </section>
 
           <section>
-            <h2 className="text-xl font-medium text-midnight mb-4">Umsatzsteuer-ID</h2>
-            <p className="text-gray-700 font-light">
-              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-              [Ihre USt-IdNr.]
-            </p>
-          </section>
-
-          <section>
             <h2 className="text-xl font-medium text-midnight mb-4">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
             <div className="text-gray-700 font-light space-y-2">
               <p>Berufsbezeichnung: Entrümpelungsservice</p>
