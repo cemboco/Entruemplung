@@ -47,7 +47,7 @@ export default function Process() {
 
       if (rect.top <= viewportHeight * 0.3) {
         const scrolled = viewportHeight * 0.3 - rect.top;
-        const totalScrollDistance = viewportHeight * 0.8;
+        const totalScrollDistance = viewportHeight * 0.6;
         const progress = Math.max(0, Math.min(1, scrolled / totalScrollDistance));
 
         const newVisibleSteps = progress * 4;
@@ -72,7 +72,7 @@ export default function Process() {
       ref={sectionRef}
       id="ablauf"
       className="relative py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden"
-      style={{ minHeight: '130vh' }}
+      style={{ minHeight: '120vh' }}
     >
       <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/4350943.jpg)' }}></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-20">
