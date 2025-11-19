@@ -26,7 +26,7 @@ export default function Hero() {
             }`}
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-midnight mb-4 leading-tight tracking-tight">
-              ServicePlus Entrümpelung GbR
+              ServicePlus Entrümpelung Stuttgart
             </h1>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-midnight mb-6 leading-tight">
