@@ -1,15 +1,15 @@
 export const generateOrganizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://serviceplus-entrümpelung.de/#organization",
-  "name": "Serviceplus Entrümpelung",
-  "alternateName": "Serviceplus",
+  "@id": "https://serviceplus-entruempelung.de/#organization",
+  "name": "ServicePlus Entrümpelung GbR",
+  "alternateName": "ServicePlus",
   "description": "Professionelle Entrümpelung, Haushaltsauflösungen und Messie-Wohnungen in Stuttgart und Umgebung. 24-Stunden Express-Service verfügbar.",
-  "url": "https://serviceplus-entrümpelung.de",
+  "url": "https://serviceplus-entruempelung.de",
   "telephone": "+4915560850344",
-  "email": "info@serviceplus-entrümpelung.de",
+  "email": "info@serviceplus-entruempelung.de",
   "priceRange": "€€",
-  "image": "https://serviceplus-entrümpelung.de/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png",
+  "image": "https://serviceplus-entruempelung.de/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Stuttgart",
@@ -102,7 +102,7 @@ export const generateOrganizationSchema = () => ({
     },
     {
       "@type": "ContactPoint",
-      "email": "info@serviceplus-entrümpelung.de",
+      "email": "info@serviceplus-entruempelung.de",
       "contactType": "customer service",
       "availableLanguage": ["de"]
     }
@@ -121,12 +121,12 @@ export const generateOrganizationSchema = () => ({
 export const generateServicesSchema = () => [
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#haushaltsauflösungen",
+    "@id": "https://serviceplus-entruempelung.de/#haushaltsaufloesungen",
     "name": "Haushaltsauflösungen",
     "description": "Komplette Wohnungsauflösungen nach Todesfall, Umzug oder bei Pflegebedürftigkeit. Wir übernehmen die gesamte Abwicklung inklusive Verwertung, Entsorgung und besenreiner Übergabe.",
     "serviceType": "Haushaltsauflösung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -140,12 +140,12 @@ export const generateServicesSchema = () => [
   },
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#entrümpelungen",
+    "@id": "https://serviceplus-entruempelung.de/#entrümpelungen",
     "name": "Entrümpelungen",
     "description": "Professionelle Entrümpelung von Kellern, Dachböden, Garagen und Scheunen. Auch bei stark vermüllten Objekten sind wir der richtige Partner.",
     "serviceType": "Entrümpelung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -159,12 +159,12 @@ export const generateServicesSchema = () => [
   },
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#messie-wohnungen",
+    "@id": "https://serviceplus-entruempelung.de/#messie-wohnungen",
     "name": "Messie-Wohnungen",
     "description": "Einfühlsame und diskrete Reinigung von Messie-Wohnungen. Unser geschultes Team arbeitet respektvoll und verständnisvoll.",
     "serviceType": "Messie-Wohnung Reinigung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -178,12 +178,12 @@ export const generateServicesSchema = () => [
   },
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#sperrmüll-abholung",
+    "@id": "https://serviceplus-entruempelung.de/#sperrmüll-abholung",
     "name": "Sperrmüll-Abholung",
     "description": "Schnelle und unkomplizierte Abholung von Sperrmüll, Altmöbeln und Elektrogeräten. Wir holen direkt bei Ihnen ab - ohne Wartezeit.",
     "serviceType": "Sperrmüll-Abholung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -197,12 +197,12 @@ export const generateServicesSchema = () => [
   },
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#gewerbe-entrümpelung",
+    "@id": "https://serviceplus-entruempelung.de/#gewerbe-entrümpelung",
     "name": "Gewerbe-Entrümpelung",
     "description": "Effiziente Räumung von Büros, Praxen, Geschäftsräumen und Lagerhallen. Auch außerhalb der Geschäftszeiten möglich.",
     "serviceType": "Gewerbe-Entrümpelung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -216,12 +216,12 @@ export const generateServicesSchema = () => [
   },
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#immobilienräumung",
+    "@id": "https://serviceplus-entruempelung.de/#immobilienräumung",
     "name": "Immobilienräumung",
     "description": "Spezialservice für Hausverwaltungen und Immobilienmakler. Schnelle Objektfreimachung für Neuvermietung oder Verkauf.",
     "serviceType": "Immobilienräumung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -235,12 +235,12 @@ export const generateServicesSchema = () => [
   },
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#keller-dachboden",
+    "@id": "https://serviceplus-entruempelung.de/#keller-dachboden",
     "name": "Keller & Dachboden Entrümpelung",
     "description": "Professionelle Entrümpelung von vollgestellten Kellern und Dachböden. Inklusive Entsorgung von Sondermüll und Schadstoffen.",
     "serviceType": "Keller- und Dachboden-Entrümpelung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -254,12 +254,12 @@ export const generateServicesSchema = () => [
   },
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#möbel-entsorgung",
+    "@id": "https://serviceplus-entruempelung.de/#möbel-entsorgung",
     "name": "Möbel-Entsorgung",
     "description": "Fachgerechte Entsorgung von Altmöbeln, Küchen, Sofas und kompletten Einrichtungen. Mit Wertanrechnung für gut erhaltene Stücke.",
     "serviceType": "Möbel-Entsorgung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -273,12 +273,12 @@ export const generateServicesSchema = () => [
   },
   {
     "@type": "Service",
-    "@id": "https://serviceplus-entrümpelung.de/#wertanrechnung",
+    "@id": "https://serviceplus-entruempelung.de/#wertanrechnung",
     "name": "Wertanrechnung",
     "description": "Verwertbare Möbel, Antiquitäten und Gegenstände werden von unseren Experten fair bewertet und vom Gesamtpreis abgezogen.",
     "serviceType": "Wertanrechnung",
     "provider": {
-      "@id": "https://serviceplus-entrümpelung.de/#organization"
+      "@id": "https://serviceplus-entruempelung.de/#organization"
     },
     "areaServed": {
       "@type": "City",
@@ -318,7 +318,7 @@ export const generateOffersSchema = () => ({
         "description": "Bis zu 10 m³ Volumen, Professionelle Entsorgung, Besenreine Übergabe"
       },
       "seller": {
-        "@id": "https://serviceplus-entrümpelung.de/#organization"
+        "@id": "https://serviceplus-entruempelung.de/#organization"
       }
     },
     {
@@ -343,7 +343,7 @@ export const generateOffersSchema = () => ({
         "description": "Bis zu 30 m³ Volumen, Komplette Wohnungsauflösung, Express-Service verfügbar"
       },
       "seller": {
-        "@id": "https://serviceplus-entrümpelung.de/#organization"
+        "@id": "https://serviceplus-entruempelung.de/#organization"
       }
     },
     {
@@ -363,7 +363,7 @@ export const generateOffersSchema = () => ({
         "description": "Unbegrenztes Volumen, 24h Express-Service, Persönlicher Ansprechpartner"
       },
       "seller": {
-        "@id": "https://serviceplus-entrümpelung.de/#organization"
+        "@id": "https://serviceplus-entruempelung.de/#organization"
       }
     }
   ]
@@ -454,18 +454,18 @@ export const generateBreadcrumbSchema = (items: Array<{ name: string; url: strin
 export const generateWebsiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://serviceplus-entrümpelung.de/#website",
-  "url": "https://serviceplus-entrümpelung.de",
+  "@id": "https://serviceplus-entruempelung.de/#website",
+  "url": "https://serviceplus-entruempelung.de",
   "name": "Serviceplus Entrümpelung",
   "description": "Professionelle Entrümpelung und Haushaltsauflösungen in Stuttgart und Umgebung",
   "publisher": {
-    "@id": "https://serviceplus-entrümpelung.de/#organization"
+    "@id": "https://serviceplus-entruempelung.de/#organization"
   },
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://serviceplus-entrümpelung.de/?s={search_term_string}"
+      "urlTemplate": "https://serviceplus-entruempelung.de/?s={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }

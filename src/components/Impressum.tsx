@@ -40,8 +40,8 @@ export default function Impressum({ onBack }: ImpressumProps) {
               </div>
               <div className="flex items-center gap-3 text-gray-700">
                 <Mail size={18} className="text-midnight" />
-                <a href="mailto:info@serviceplus-entrümpelung.de" className="hover:text-midnight transition-colors">
-                  info@serviceplus-entrümpelung.de
+                <a href="mailto:info@serviceplus-entruempelung.de" className="hover:text-midnight transition-colors">
+                  info@serviceplus-entruempelung.de
                 </a>
               </div>
             </div>

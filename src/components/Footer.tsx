@@ -52,8 +52,8 @@ export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz 
                 </a>
               </li>
               <li>
-                <a href="mailto:info@serviceplus-entrümpelung.de" className="hover:text-white transition-colors break-all">
-                  info@serviceplus-entrümpelung.de
+                <a href="mailto:info@serviceplus-entruempelung.de" className="hover:text-white transition-colors break-all">
+                  info@serviceplus-entruempelung.de
                 </a>
               </li>
             </ul>

@@ -1,4 +1,4 @@
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Phone, Mail, MessageSquare } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Hero() {
@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute inset-0 lg:hidden">
         <img
           src="/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png"
-          alt="Professionelle Entrümpelung Background"
+          alt="ServicePlus Entrümpelung Stuttgart - Professionelles Team bei Haushaltsauflösung und Wohnungsräumung"
           className="w-full h-full object-cover opacity-20"
         />
       </div>
@@ -25,34 +25,46 @@ export default function Hero() {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-midnight mb-8 leading-tight tracking-tight">
-              <span className="block font-bold mb-2">
-                Serviceplus
-              </span>
-              Professionelle
-              <span className="block font-normal mt-2">
-                Entrümpelung
-              </span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-midnight mb-4 leading-tight tracking-tight">
+              ServicePlus Entrümpelung GbR
             </h1>
 
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-12 font-light">
-              Stuttgart & Umgebung
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-midnight mb-6 leading-tight">
+              Entrümpelung & Räumung - Professionell, günstig & nachhaltig
+            </h2>
+
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-10 font-light leading-relaxed max-w-3xl">
+              Schnelle und diskrete Entrümpelung in Stuttgart. Wohnungen, Keller, Haushaltsauflösungen – fair, zuverlässig, besenrein. Jetzt kostenlose Beratung oder Schnellanfrage sichern.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-16">
               <a
                 href="#kontakt"
-                className="group bg-midnight text-white px-10 py-5 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 flex items-center gap-2 justify-center"
+                className="group bg-midnight text-white px-6 py-4 rounded-full font-medium text-sm hover:bg-midnight-dark transition-all duration-300 flex items-center gap-2 justify-center"
               >
                 Kostenlose Beratung
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={16} />
               </a>
               <a
                 href="tel:+4915560850344"
-                className="bg-white border border-gray-300 text-midnight px-10 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-2 justify-center"
+                className="bg-white border-2 border-midnight text-midnight px-6 py-4 rounded-full font-medium text-sm hover:bg-midnight hover:text-white transition-all duration-300 flex items-center gap-2 justify-center"
               >
-                <Phone size={18} />
+                <Phone size={16} />
                 0155-60850344
+              </a>
+              <a
+                href="mailto:info@serviceplus-entruempelung.de"
+                className="bg-white border border-gray-300 text-midnight px-6 py-4 rounded-full font-medium text-sm hover:border-gray-400 transition-all duration-300 flex items-center gap-2 justify-center"
+              >
+                <Mail size={16} />
+                E-Mail
+              </a>
+              <a
+                href="#schnellanfrage"
+                className="bg-gray-100 text-midnight px-6 py-4 rounded-full font-medium text-sm hover:bg-gray-200 transition-all duration-300 flex items-center gap-2 justify-center"
+              >
+                <MessageSquare size={16} />
+                Schnellanfrage
               </a>
             </div>
 
@@ -84,7 +96,7 @@ export default function Hero() {
             <div className="aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden">
               <img
                 src="/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png"
-                alt="Professionelle Entrümpelung"
+                alt="ServicePlus Entrümpelung Stuttgart - Team bei professioneller Wohnungsauflösung und Entrümpelung"
                 className="w-full h-full object-cover"
               />
             </div>
