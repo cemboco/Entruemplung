@@ -1,0 +1,18 @@
+# robots.txt für Serviceplus Entrümpelung Stuttgart
+# https://serviceplus-entrümpelung.de
+
+User-agent: *
+Allow: /
+
+# Wichtige Seiten priorisieren
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+
+# Sitemap
+Sitemap: https://serviceplus-entrümpelung.de/sitemap.xml
+
+# Crawl-delay für alle Bots
+Crawl-delay: 1
