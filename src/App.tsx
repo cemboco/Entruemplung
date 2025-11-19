@@ -13,9 +13,10 @@ import CallToActionPopup from './components/CallToActionPopup';
 import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import StructuredData from './components/StructuredData';
+import AdminDashboard from './components/AdminDashboard';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz' | 'admin'>('home');
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
@@ -28,6 +29,8 @@ function App() {
       setCurrentPage('impressum');
     } else if (hash === '#datenschutz') {
       setCurrentPage('datenschutz');
+    } else if (hash === '#admin') {
+      setCurrentPage('admin');
     }
   }, []);
 
@@ -67,6 +70,14 @@ function App() {
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <Datenschutz onBack={navigateToHome} />
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+      </div>
+    );
+  }
+
+  if (currentPage === 'admin') {
+    return (
+      <div className="min-h-screen">
+        <AdminDashboard />
       </div>
     );
   }

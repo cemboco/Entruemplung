@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { supabase } from '../lib/supabase';
 
 type Step =
   | 'objekt'
@@ -94,11 +95,35 @@ export default function QuickQuote() {
 
     setSubmitting(true);
     try {
-      console.log('SEND DATA', data);
+      const { error } = await supabase
+        .from('quote_requests')
+        .insert([{
+          objekt: data.objekt,
+          objekt_sonstiges: data.objektSonstiges,
+          flaeche: data.flaeche,
+          flaeche_hinweis: data.flaecheHinweis,
+          etage: data.etage,
+          aufzug: data.aufzug,
+          etage_hinweis: data.etageHinweis,
+          fuellgrad: data.fuellgrad,
+          plz: data.plz,
+          ort: data.ort,
+          termin: data.termin,
+          termin_datum: data.terminDatum,
+          termin_hinweis: data.terminHinweis,
+          name: data.name,
+          email: data.email,
+          telefon: data.telefon,
+          rueckruf_zeit: data.rueckrufZeit,
+        }]);
+
+      if (error) throw error;
+
       setSubmitted(true);
       setStep('fertig');
     } catch (err) {
-      console.error(err);
+      console.error('Error submitting quote request:', err);
+      alert('Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
     } finally {
       setSubmitting(false);
     }
