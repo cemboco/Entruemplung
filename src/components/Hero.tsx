@@ -10,16 +10,16 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center bg-white overflow-hidden">
-      <div className="absolute inset-0 lg:hidden">
+      <div className="absolute inset-0">
         <img
-          src="/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png"
+          src="/Entruempelung_serviceplus_stuttgart.jpg"
           alt="ServicePlus Entrümpelung Stuttgart - Professionelles Team bei Haushaltsauflösung und Wohnungsräumung"
           className="w-full h-full object-cover opacity-20"
         />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-1 gap-16 items-center">
           <div
             className={`transition-all duration-1000 transform ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
@@ -37,33 +37,33 @@ export default function Hero() {
               Schnelle und diskrete Entrümpelung in Stuttgart. Wohnungen, Keller, Haushaltsauflösungen – fair, zuverlässig, besenrein. Jetzt kostenlose Beratung oder Schnellanfrage sichern.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16 max-w-4xl">
               <a
                 href="#kontakt"
-                className="group bg-midnight text-white px-6 py-4 rounded-full font-medium text-sm hover:bg-midnight-dark transition-all duration-300 flex items-center gap-2 justify-center"
+                className="group bg-midnight text-white px-8 py-5 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
               >
                 Kostenlose Beratung
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={16} />
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </a>
               <a
                 href="tel:+4915560850344"
-                className="bg-white border-2 border-midnight text-midnight px-6 py-4 rounded-full font-medium text-sm hover:bg-midnight hover:text-white transition-all duration-300 flex items-center gap-2 justify-center"
+                className="bg-white border-2 border-midnight text-midnight px-8 py-5 rounded-full font-medium text-base hover:bg-midnight hover:text-white transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
               >
-                <Phone size={16} />
+                <Phone size={20} />
                 0155-60850344
               </a>
               <a
                 href="mailto:info@serviceplus-entruempelung.de"
-                className="bg-white border border-gray-300 text-midnight px-6 py-4 rounded-full font-medium text-sm hover:border-gray-400 transition-all duration-300 flex items-center gap-2 justify-center"
+                className="bg-white border border-gray-300 text-midnight px-8 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
               >
-                <Mail size={16} />
-                E-Mail
+                <Mail size={20} />
+                info@serviceplus-entruempelung.de
               </a>
               <a
                 href="#schnellanfrage"
-                className="bg-gray-100 text-midnight px-6 py-4 rounded-full font-medium text-sm hover:bg-gray-200 transition-all duration-300 flex items-center gap-2 justify-center"
+                className="bg-gray-100 text-midnight px-8 py-5 rounded-full font-medium text-base hover:bg-gray-200 transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
               >
-                <MessageSquare size={16} />
+                <MessageSquare size={20} />
                 Schnellanfrage
               </a>
             </div>
@@ -88,19 +88,6 @@ export default function Hero() {
             </div>
           </div>
 
-          <div
-            className={`hidden lg:block relative transition-all duration-1000 transform ${
-              isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
-            }`}
-          >
-            <div className="aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden">
-              <img
-                src="/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png"
-                alt="ServicePlus Entrümpelung Stuttgart - Team bei professioneller Wohnungsauflösung und Entrümpelung"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
         </div>
       </div>
 
