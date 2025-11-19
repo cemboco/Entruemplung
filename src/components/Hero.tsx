@@ -34,7 +34,7 @@ export default function Hero() {
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-900 font-normal leading-relaxed max-w-3xl mb-10">
-              Schnelle und diskrete Entrümpelung in Stuttgart. Wohnungen, Keller, Haushaltsauflösungen – fair, zuverlässig, besenrein. Jetzt kostenlose Beratung oder Schnellanfrage sichern.
+              Schnelle und diskrete Entrümpelung in Stuttgart & Umgebung. Wohnungen, Keller, Haushaltsauflösungen – fair, zuverlässig, besenrein. Jetzt kostenlose Beratung oder Schnellanfrage sichern.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16 max-w-4xl">
