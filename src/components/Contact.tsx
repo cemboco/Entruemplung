@@ -1,6 +1,5 @@
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useState } from 'react';
-import { supabase } from '../lib/supabase';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -10,35 +9,9 @@ export default function Contact() {
     message: '',
   });
 
-  const [submitting, setSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitting(true);
-    setSubmitError('');
-    setSubmitSuccess(false);
-
-    try {
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert([formData]);
-
-      if (error) throw error;
-
-      setSubmitSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-      });
-    } catch (error: any) {
-      setSubmitError(error.message || 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
-    } finally {
-      setSubmitting(false);
-    }
+    console.log('Form submitted:', formData);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -127,24 +100,11 @@ export default function Contact() {
                 />
               </div>
 
-              {submitSuccess && (
-                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm">
-                  Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.
-                </div>
-              )}
-
-              {submitError && (
-                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm">
-                  {submitError}
-                </div>
-              )}
-
               <button
                 type="submit"
-                disabled={submitting}
-                className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8"
               >
-                {submitting ? 'Wird gesendet...' : 'Anfrage senden'}
+                Anfrage senden
               </button>
             </form>
           </div>
