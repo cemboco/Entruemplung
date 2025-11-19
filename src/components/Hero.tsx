@@ -12,7 +12,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center bg-white overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/Entruempelung_serviceplus_stuttgart.jpg"
+          src="/Serviceplus_Entruempelung_stuttgart_Baden_wuerttemberg.png"
           alt="ServicePlus Entrümpelung Stuttgart - Professionelles Team bei Haushaltsauflösung und Wohnungsräumung"
           className="w-full h-full object-cover opacity-20"
         />
