@@ -33,11 +33,9 @@ export default function Hero() {
               Entrümpelung & Räumung - Professionell, günstig & nachhaltig
             </h2>
 
-            <div className="mb-10 max-w-3xl">
-              <p className="text-base sm:text-lg md:text-xl text-gray-900 font-normal leading-relaxed border-2 border-gray-300 rounded-lg p-6 bg-white/80 backdrop-blur-sm shadow-md">
-                Schnelle und diskrete Entrümpelung in Stuttgart. Wohnungen, Keller, Haushaltsauflösungen – fair, zuverlässig, besenrein. Jetzt kostenlose Beratung oder Schnellanfrage sichern.
-              </p>
-            </div>
+            <p className="text-base sm:text-lg md:text-xl text-gray-900 font-normal leading-relaxed max-w-3xl mb-10">
+              Schnelle und diskrete Entrümpelung in Stuttgart. Wohnungen, Keller, Haushaltsauflösungen – fair, zuverlässig, besenrein. Jetzt kostenlose Beratung oder Schnellanfrage sichern.
+            </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16 max-w-4xl">
               <a
