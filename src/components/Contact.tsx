@@ -1,5 +1,5 @@
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useState } from 'react';
-import { supabase } from '../lib/supabase';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,44 +8,10 @@ export default function Contact() {
     phone: '',
     message: '',
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-    setErrorMessage('');
-
-    try {
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert([
-          {
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            message: formData.message,
-          },
-        ]);
-
-      if (error) throw error;
-
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-      });
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitStatus('error');
-      setErrorMessage('Es gab einen Fehler beim Senden Ihrer Nachricht. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an.');
-    } finally {
-      setIsSubmitting(false);
-    }
+    console.log('Form submitted:', formData);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -134,24 +100,11 @@ export default function Contact() {
                 />
               </div>
 
-              {submitStatus === 'success' && (
-                <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-                  Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.
-                </div>
-              )}
-
-              {submitStatus === 'error' && (
-                <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
-                  {errorMessage}
-                </div>
-              )}
-
               <button
                 type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8"
               >
-                {isSubmitting ? 'Wird gesendet...' : 'Anfrage senden'}
+                Anfrage senden
               </button>
             </form>
           </div>

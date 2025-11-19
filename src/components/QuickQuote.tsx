@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { supabase } from '../lib/supabase';
 
 type Step =
   | 'objekt'
@@ -68,7 +67,6 @@ export default function QuickQuote() {
   const [data, setData] = useState<FormData>(initialData);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState<string>('');
 
   const currentIndex = steps.indexOf(step);
   const progress = ((currentIndex + 1) / steps.length) * 100;
@@ -95,40 +93,12 @@ export default function QuickQuote() {
     if (!data.datenschutz) return;
 
     setSubmitting(true);
-    setError('');
-
     try {
-      const { error: insertError } = await supabase
-        .from('quote_requests')
-        .insert([
-          {
-            objekt: data.objekt,
-            objekt_sonstiges: data.objektSonstiges,
-            flaeche: data.flaeche,
-            flaeche_hinweis: data.flaecheHinweis,
-            etage: data.etage,
-            aufzug: data.aufzug,
-            etage_hinweis: data.etageHinweis,
-            fuellgrad: data.fuellgrad,
-            plz: data.plz,
-            ort: data.ort,
-            termin: data.termin,
-            termin_datum: data.terminDatum,
-            termin_hinweis: data.terminHinweis,
-            name: data.name,
-            email: data.email,
-            telefon: data.telefon,
-            rueckruf_zeit: data.rueckrufZeit,
-          },
-        ]);
-
-      if (insertError) throw insertError;
-
+      console.log('SEND DATA', data);
       setSubmitted(true);
       setStep('fertig');
     } catch (err) {
-      console.error('Error submitting quote request:', err);
-      setError('Es gab einen Fehler beim Senden Ihrer Anfrage. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an: 0155-60850344');
+      console.error(err);
     } finally {
       setSubmitting(false);
     }
@@ -515,12 +485,6 @@ export default function QuickQuote() {
                   Datenschutzerklärung einverstanden.
                 </span>
               </label>
-
-              {error && (
-                <div className="bg-red-50 border border-red-200 text-red-800 px-3 py-2 rounded-lg text-xs">
-                  {error}
-                </div>
-              )}
             </div>
           </div>
         )}
