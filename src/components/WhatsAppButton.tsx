@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
     >
       <MessageCircle className="w-7 h-7" />
       <span className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-        Schnellanfrage
+        WhatsApp Chat
       </span>
     </a>
   );
