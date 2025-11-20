@@ -94,9 +94,18 @@ export default function QuickQuote() {
 
     setSubmitting(true);
     try {
-      console.log('SEND DATA', data);
-      setSubmitted(true);
-      setStep('fertig');
+      const response = await fetch('https://formspree.io/f/meonwoje', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setStep('fertig');
+      }
     } catch (err) {
       console.error(err);
     } finally {
