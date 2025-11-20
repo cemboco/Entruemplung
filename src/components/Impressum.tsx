@@ -51,7 +51,6 @@ export default function Impressum({ onBack }: ImpressumProps) {
             <h2 className="text-xl font-medium text-midnight mb-4">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
             <div className="text-gray-700 font-light space-y-2">
               <p>Berufsbezeichnung: Entrümpelungsservice</p>
-              <p>Zuständige Kammer: [Falls zutreffend]</p>
               <p>Verliehen in: Deutschland</p>
             </div>
           </section>
