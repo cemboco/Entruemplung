@@ -15,6 +15,7 @@ import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import StructuredData from './components/StructuredData';
 import WhatsAppButton from './components/WhatsAppButton';
+import QuickQuoteTab from './components/QuickQuoteTab';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz'>('home');
@@ -59,6 +60,7 @@ function App() {
         <Impressum onBack={navigateToHome} />
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <WhatsAppButton />
+        <QuickQuoteTab />
       </div>
     );
   }
@@ -71,6 +73,7 @@ function App() {
         <Datenschutz onBack={navigateToHome} />
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <WhatsAppButton />
+        <QuickQuoteTab />
       </div>
     );
   }
@@ -91,6 +94,7 @@ function App() {
       <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       <CallToActionPopup />
       <WhatsAppButton />
+      <QuickQuoteTab />
     </div>
   );
 }
