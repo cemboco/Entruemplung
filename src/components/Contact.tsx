@@ -8,10 +8,36 @@ export default function Contact() {
     phone: '',
     message: '',
   });
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setSubmitting(true);
+
+    try {
+      const response = await fetch('https://formspree.io/f/myzoayyp', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -100,11 +126,18 @@ export default function Contact() {
                 />
               </div>
 
+              {submitted && (
+                <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-xl text-sm">
+                  Vielen Dank! Ihre Nachricht wurde erfolgreich versendet. Wir melden uns in Kürze bei Ihnen.
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8"
+                disabled={submitting}
+                className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Anfrage senden
+                {submitting ? 'Wird gesendet...' : 'Anfrage senden'}
               </button>
             </form>
           </div>
