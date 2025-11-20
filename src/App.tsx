@@ -14,6 +14,7 @@ import CallToActionPopup from './components/CallToActionPopup';
 import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import StructuredData from './components/StructuredData';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz'>('home');
@@ -57,6 +58,7 @@ function App() {
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <Impressum onBack={navigateToHome} />
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <WhatsAppButton />
       </div>
     );
   }
@@ -68,6 +70,7 @@ function App() {
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <Datenschutz onBack={navigateToHome} />
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <WhatsAppButton />
       </div>
     );
   }
@@ -87,6 +90,7 @@ function App() {
       <Contact />
       <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       <CallToActionPopup />
+      <WhatsAppButton />
     </div>
   );
 }
