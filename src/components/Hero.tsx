@@ -37,7 +37,7 @@ export default function Hero() {
               Schnelle und diskrete Entrümpelung in Stuttgart & Umgebung. Wohnungen, Keller, Haushaltsauflösungen – fair, zuverlässig, besenrein. Jetzt kostenlose Beratung oder Schnellanfrage sichern.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16 max-w-4xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 max-w-4xl">
               <a
                 href="#kontakt"
                 className="group bg-midnight text-white px-8 py-5 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
@@ -54,17 +54,10 @@ export default function Hero() {
               </a>
               <a
                 href="mailto:info@serviceplus-entruempelung.de"
-                className="bg-white border border-gray-300 text-midnight px-8 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
+                className="bg-white border border-gray-300 text-midnight px-8 py-5 rounded-full font-medium text-base hover:border-gray-400 transition-all duration-300 flex items-center gap-3 justify-center shadow-lg sm:col-span-2 lg:col-span-1"
               >
                 <Mail size={20} />
                 info@serviceplus-entruempelung.de
-              </a>
-              <a
-                href="#schnellanfrage"
-                className="bg-gray-100 text-midnight px-8 py-5 rounded-full font-medium text-base hover:bg-gray-200 transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
-              >
-                <MessageSquare size={20} />
-                Schnellanfrage
               </a>
             </div>
 
