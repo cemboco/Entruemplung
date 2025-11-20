@@ -34,8 +34,8 @@ export default function Impressum({ onBack }: ImpressumProps) {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-700">
                 <Phone size={18} className="text-midnight" />
-                <a href="tel:+4915560850344" className="hover:text-midnight transition-colors">
-                  0155-60850344
+                <a href="tel:+4915732649483" className="hover:text-midnight transition-colors">
+                  01573 2649483
                 </a>
               </div>
               <div className="flex items-center gap-3 text-gray-700">

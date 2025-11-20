@@ -6,7 +6,7 @@ export const generateOrganizationSchema = () => ({
   "alternateName": "ServicePlus",
   "description": "Professionelle Entrümpelung, Haushaltsauflösungen und Messie-Wohnungen in Stuttgart und Umgebung. 24-Stunden Express-Service verfügbar.",
   "url": "https://serviceplus-entruempelung.de",
-  "telephone": "+4915560850344",
+  "telephone": "+4915732649483",
   "email": "info@serviceplus-entruempelung.de",
   "priceRange": "€€",
   "image": "https://serviceplus-entruempelung.de/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png",
@@ -91,7 +91,7 @@ export const generateOrganizationSchema = () => ({
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+4915560850344",
+      "telephone": "+4915732649483",
       "contactType": "customer service",
       "availableLanguage": ["de"],
       "areaServed": "DE",

@@ -87,11 +87,11 @@ export default function CallToActionPopup() {
             </p>
 
             <a
-              href="tel:+4915560850344"
+              href="tel:+4915732649483"
               className="inline-flex items-center gap-3 bg-midnight text-white px-6 py-3.5 rounded-lg hover:bg-gray-800 transition-colors font-semibold text-base"
             >
               <Phone size={20} strokeWidth={2} />
-              <span>0155-60850344</span>
+              <span>01573 2649483</span>
             </a>
           </div>
         </div>

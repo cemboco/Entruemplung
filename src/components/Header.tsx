@@ -62,11 +62,11 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz 
               </a>
             ))}
             <a
-              href="tel:+4915560850344"
+              href="tel:+4915732649483"
               className="flex items-center gap-2 px-6 py-2 rounded-full bg-midnight text-white text-sm font-medium hover:bg-midnight-dark transition-all duration-300"
             >
               <Phone size={16} />
-              <span className="hidden lg:inline">0155-60850344</span>
+              <span className="hidden lg:inline">01573 2649483</span>
             </a>
           </nav>
 
@@ -92,11 +92,11 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz 
                 </a>
               ))}
               <a
-                href="tel:+4915560850344"
+                href="tel:+4915732649483"
                 className="mt-2 flex items-center justify-center gap-2 bg-midnight text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-midnight-dark transition-colors"
               >
                 <Phone size={16} />
-                0155-60850344
+                01573 2649483
               </a>
             </nav>
           </div>

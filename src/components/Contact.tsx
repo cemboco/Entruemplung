@@ -80,7 +80,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
-                  placeholder="0155-60850344"
+                  placeholder="01573 2649483"
                 />
               </div>
 
@@ -116,10 +116,10 @@ export default function Contact() {
                 <div>
                   <div className="text-sm text-gray-600 font-light mb-1">Telefon</div>
                   <a
-                    href="tel:+4915560850344"
+                    href="tel:+4915732649483"
                     className="text-base text-midnight hover:text-gray-600 transition-colors"
                   >
-                    0155-60850344
+                    01573 2649483
                   </a>
                 </div>
 
@@ -148,10 +148,10 @@ export default function Contact() {
             <div className="pt-8 border-t border-gray-200">
               <h3 className="text-xs font-medium text-midnight mb-4 uppercase tracking-wide">24h Express-Hotline</h3>
               <a
-                href="tel:+4915560850344"
+                href="tel:+4915732649483"
                 className="text-2xl font-light text-midnight hover:text-gray-600 transition-colors"
               >
-                0155-60850344
+                01573 2649483
               </a>
             </div>
 

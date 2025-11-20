@@ -46,11 +46,11 @@ export default function Hero() {
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </a>
               <a
-                href="tel:+4915560850344"
+                href="tel:+4915732649483"
                 className="bg-white border-2 border-midnight text-midnight px-8 py-5 rounded-full font-medium text-base hover:bg-midnight hover:text-white transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
               >
                 <Phone size={20} />
-                0155-60850344
+                01573 2649483
               </a>
               <a
                 href="mailto:info@serviceplus-entruempelung.de"

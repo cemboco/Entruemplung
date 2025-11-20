@@ -122,7 +122,7 @@ export default function Datenschutz({ onBack }: DatenschutzProps) {
               <p>Geschäftsführer und Gesellschafter: Cemil Bocohonsi, Jermaine Anderson</p>
               <p>[Straße und Hausnummer]</p>
               <p>[PLZ] [Ort]</p>
-              <p className="mt-2">Telefon: 0155-60850344</p>
+              <p className="mt-2">Telefon: 01573 2649483</p>
               <p>E-Mail: info@serviceplus-entruempelung.de</p>
             </div>
             <p className="text-gray-700 font-light leading-relaxed mt-3">
