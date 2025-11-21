@@ -120,8 +120,8 @@ export default function Datenschutz({ onBack }: DatenschutzProps) {
             <div className="mt-3 text-gray-700 font-light space-y-1">
               <p>Serviceplus Entrümpelung GbR</p>
               <p>Geschäftsführer und Gesellschafter: Cemil Bocohonsi, Jermaine Anderson</p>
-              <p>[Straße und Hausnummer]</p>
-              <p>[PLZ] [Ort]</p>
+              <p>Karlsbaderweg 5</p>
+              <p>70374 Stuttgart</p>
               <p className="mt-2">Telefon: 01573 2649483</p>
               <p>E-Mail: info@serviceplus-entruempelung.de</p>
             </div>
