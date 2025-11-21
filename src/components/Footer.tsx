@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Star } from 'lucide-react';
 
 interface FooterProps {
   onNavigateToImpressum?: () => void;
@@ -54,6 +54,32 @@ export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz 
               <li>
                 <a href="mailto:info@serviceplus-entruempelung.de" className="hover:text-white transition-colors break-all">
                   info@serviceplus-entruempelung.de
+                </a>
+              </li>
+            </ul>
+
+            <h4 className="text-xs font-medium uppercase tracking-wide mb-4 mt-8">Folgen Sie uns</h4>
+            <ul className="space-y-3 text-gray-400 text-sm font-light">
+              <li>
+                <a
+                  href="https://share.google/6WMIxPfu1CcFrAcEl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <MapPin className="w-4 h-4" />
+                  Finden Sie uns auf Google Maps
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://share.google/6WMIxPfu1CcFrAcEl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <Star className="w-4 h-4" />
+                  Bewerten Sie uns auf Google
                 </a>
               </li>
             </ul>
