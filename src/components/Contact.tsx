@@ -7,6 +7,7 @@ export default function Contact() {
     email: '',
     phone: '',
     message: '',
+    privacyAccepted: false,
   });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -31,6 +32,7 @@ export default function Contact() {
           email: '',
           phone: '',
           message: '',
+          privacyAccepted: false,
         });
       }
     } catch (error) {
@@ -41,9 +43,11 @@ export default function Contact() {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const target = e.target as HTMLInputElement;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [target.name]: value,
     });
   };
 
@@ -126,6 +130,28 @@ export default function Contact() {
                 />
               </div>
 
+              <div className="pt-4">
+                <label className="flex items-start gap-3 text-sm text-gray-600 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    name="privacyAccepted"
+                    checked={formData.privacyAccepted}
+                    onChange={handleChange}
+                    className="mt-1 w-4 h-4 rounded border-gray-300 text-midnight focus:ring-midnight"
+                  />
+                  <span className="font-light leading-relaxed">
+                    Mit dem Absenden des Formulars erkläre ich mich damit einverstanden, dass meine Angaben zur Kontaktaufnahme verwendet werden. Weitere Infos in der{' '}
+                    <a
+                      href="#datenschutz"
+                      className="text-midnight underline hover:text-gray-600 transition-colors"
+                    >
+                      Datenschutzerklärung
+                    </a>
+                    .
+                  </span>
+                </label>
+              </div>
+
               {submitted && (
                 <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-xl text-sm">
                   Vielen Dank! Ihre Nachricht wurde erfolgreich versendet. Wir melden uns in Kürze bei Ihnen.
@@ -134,7 +160,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                disabled={submitting}
+                disabled={submitting || !formData.privacyAccepted}
                 className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {submitting ? 'Wird gesendet...' : 'Anfrage senden'}

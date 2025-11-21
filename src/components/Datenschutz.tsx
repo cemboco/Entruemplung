@@ -258,6 +258,31 @@ export default function Datenschutz({ onBack }: DatenschutzProps) {
           <section>
             <h2 className="text-xl font-medium text-midnight mb-4">4. Datenerfassung auf dieser Website</h2>
 
+            <h3 className="text-lg font-medium text-midnight mb-3 mt-6">Formularverarbeitung mit Formspree</h3>
+            <p className="text-gray-700 font-light leading-relaxed">
+              Wir verwenden für die Verarbeitung unserer Kontakt- und Angebotsformulare den Dienst Formspree (Formspree Inc., 3900 S Wadsworth Blvd Ste 330, Lakewood, CO 80235, USA). Formspree ist ein externer Dienstleister, der die Übermittlung und Verarbeitung von Formulardaten ermöglicht.
+            </p>
+            <p className="text-gray-700 font-light leading-relaxed mt-2">
+              Wenn Sie ein Formular auf unserer Website ausfüllen und absenden, werden Ihre eingegebenen Daten (Name, E-Mail-Adresse, Telefonnummer, Nachricht und weitere angegebene Informationen) an die Server von Formspree in den USA übertragen und dort verarbeitet. Formspree leitet diese Daten anschließend an uns weiter, damit wir Ihre Anfrage bearbeiten können.
+            </p>
+            <p className="text-gray-700 font-light leading-relaxed mt-2">
+              Die Datenübertragung erfolgt verschlüsselt über SSL/TLS. Formspree hat sich verpflichtet, angemessene technische und organisatorische Maßnahmen zum Schutz der übermittelten Daten zu treffen. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der effizienten Bearbeitung von Anfragen) sowie Ihrer ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO, die Sie durch Aktivierung der Datenschutz-Checkbox vor dem Absenden erteilen.
+            </p>
+            <p className="text-gray-700 font-light leading-relaxed mt-2">
+              Bitte beachten Sie, dass bei der Übertragung von Daten in die USA kein mit der EU vergleichbares Datenschutzniveau garantiert werden kann. Wir haben mit Formspree jedoch Standardvertragsklauseln vereinbart, um ein angemessenes Schutzniveau zu gewährleisten.
+            </p>
+            <p className="text-gray-700 font-light leading-relaxed mt-2">
+              Weitere Informationen zum Datenschutz bei Formspree finden Sie in der Datenschutzerklärung von Formspree:{' '}
+              <a
+                href="https://formspree.io/legal/privacy-policy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-midnight underline hover:text-gray-600 transition-colors"
+              >
+                https://formspree.io/legal/privacy-policy/
+              </a>
+            </p>
+
             <h3 className="text-lg font-medium text-midnight mb-3 mt-6">Kontaktformular</h3>
             <p className="text-gray-700 font-light leading-relaxed">
               Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem

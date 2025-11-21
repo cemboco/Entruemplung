@@ -487,11 +487,17 @@ export default function QuickQuote() {
                   onChange={(e) =>
                     update({ datenschutz: e.target.checked })
                   }
-                  className="mt-0.5"
+                  className="mt-0.5 w-4 h-4 rounded border-gray-300 text-blue-700 focus:ring-blue-600"
                 />
-                <span>
-                  Ich bin mit der Verarbeitung meiner Daten gemäß
-                  Datenschutzerklärung einverstanden.
+                <span className="font-light leading-relaxed">
+                  Mit dem Absenden des Formulars erkläre ich mich damit einverstanden, dass meine Angaben zur Kontaktaufnahme verwendet werden. Weitere Infos in der{' '}
+                  <a
+                    href="#datenschutz"
+                    className="text-blue-700 underline hover:text-blue-600 transition-colors"
+                  >
+                    Datenschutzerklärung
+                  </a>
+                  .
                 </span>
               </label>
             </div>
