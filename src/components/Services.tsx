@@ -68,9 +68,29 @@ export default function Services() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-midnight mb-6">
             Unsere Leistungen
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
-            Von der Wohnungsauflösung bis zur Gewerbe-Entrümpelung
-          </p>
+          <div className="text-base sm:text-lg text-gray-600 max-w-4xl mx-auto font-light leading-relaxed space-y-4">
+            <p>
+              Zeit ist kostbar - besonders wenn eine Wohnung <strong className="font-semibold text-midnight">schnell geräumt</strong> werden muss. Ob für die <strong className="font-semibold text-midnight">Neuvermietung einer Immobilie</strong>, nach einer Räumungsklage oder weil der Umzugstermin näher rückt: In solchen Situationen benötigen Sie einen Partner, der <strong className="font-semibold text-midnight">schnell, professionell und zuverlässig</strong> handelt. Genau hier setzen wir an.
+            </p>
+            <p>
+              Unser Leistungsspektrum umfasst <strong className="font-semibold text-midnight">9 spezialisierte Dienstleistungen</strong>: Von der kompletten <strong className="font-semibold text-midnight">Haushaltsauflösung mit Wertanrechnung</strong> über die diskrete Bearbeitung von <strong className="font-semibold text-midnight">Messie-Wohnungen</strong> bis zur effizienten <strong className="font-semibold text-midnight">Gewerbeentrümpelung außerhalb der Geschäftszeiten</strong>. Jeder Auftrag wird individuell geplant und von unserem <strong className="font-semibold text-midnight">geschulten Fachteam</strong> durchgeführt - schnell, zuverlässig und zu <strong className="font-semibold text-midnight">transparenten Festpreisen</strong>.
+            </p>
+            <p>
+              Dabei übernehmen wir nicht nur den reinen Abtransport: Wir kümmern uns um die <strong className="font-semibold text-midnight">fachgerechte Entsorgung</strong>, trennen verwertbare Materialien, berücksichtigen Sondermüll und Schadstoffe und übergeben Ihre Räumlichkeiten <strong className="font-semibold text-midnight">besenrein</strong>. Gut erhaltene Möbel, Antiquitäten und Wertgegenstände werden fair bewertet und vom Gesamtpreis abgezogen. So sparen Sie Kosten und handeln nachhaltig.
+            </p>
+            <p>
+              Besonders wichtig ist uns der <strong className="font-semibold text-midnight">sensible Umgang mit emotionalen Situationen</strong>. Bei Haushaltsauflösungen nach Todesfällen arbeiten wir mit großem <strong className="font-semibold text-midnight">Einfühlungsvermögen und Diskretion</strong>. Wertvolle Erinnerungsstücke werden sorgfältig aussortiert und Ihnen übergeben. Bei Messie-Wohnungen garantieren wir <strong className="font-semibold text-midnight">absolute Verschwiegenheit</strong> - kein Aufsehen, keine neugierigen Blicke der Nachbarn.
+            </p>
+            <p>
+              Was uns auszeichnet: <strong className="font-semibold text-midnight">Transparente Kalkulation mit Festpreisgarantie</strong>, keine versteckten Kosten, fachgerechte Entsorgung nach allen Vorschriften und ein eingespieltes Team, das diskret, respektvoll und effizient arbeitet. Mit moderner Ausrüstung, ausreichend Personal und jahrelanger Erfahrung schaffen wir auch große Projekte in kürzester Zeit.
+            </p>
+            <p>
+              Wir erstellen Ihnen <strong className="font-semibold text-midnight">innerhalb von 24 Stunden ein kostenloses und unverbindliches Angebot</strong> - nach Besichtigung vor Ort oder auf Basis Ihrer Fotos und Angaben. Dabei beraten wir Sie ehrlich: Manchmal können Sie durch Eigenleistung Kosten sparen, manchmal ist der Komplettservice die wirtschaftlichere Lösung. Wir finden gemeinsam den besten Weg für Ihre Situation.
+            </p>
+            <p>
+              Rufen Sie uns an oder nutzen Sie unsere Schnellanfrage. Unser freundliches Team beantwortet Ihre Fragen und vereinbart gerne einen unverbindlichen Besichtigungstermin - auch <strong className="font-semibold text-midnight">kurzfristig am selben oder nächsten Tag</strong>.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
