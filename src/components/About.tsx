@@ -156,9 +156,8 @@ export default function About() {
         >
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent"></div>
           <div className="relative z-10">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
-              <Handshake size={18} strokeWidth={2} />
-              <span>Unser Commitment</span>
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-6 backdrop-blur-sm">
+              <Handshake size={32} strokeWidth={1.5} />
             </div>
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
               Unser Versprechen
