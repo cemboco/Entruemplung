@@ -73,27 +73,31 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
+        <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group bg-white p-10 hover:bg-gray-50 transition-colors duration-300"
+                className="bg-white border border-gray-200 p-8 hover:shadow-lg transition-all duration-300"
               >
-                <div className="mb-6">
-                  <Icon className="text-midnight" size={28} strokeWidth={1.5} />
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <Icon className="text-midnight" size={32} strokeWidth={1.5} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-medium text-midnight mb-3">{service.title}</h3>
+                    <p className="text-gray-600 leading-relaxed text-sm font-light mb-4">{service.description}</p>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-center gap-2 text-xs text-gray-500 font-light">
+                          <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <h3 className="text-xl font-medium text-midnight mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm font-light mb-4">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-xs text-gray-500 font-light">
-                      <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
               </div>
             );
           })}
