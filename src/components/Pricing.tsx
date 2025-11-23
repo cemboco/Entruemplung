@@ -32,7 +32,7 @@ const packages = [
   },
   {
     name: 'Premium',
-    price: 'ab 1.299',
+    price: 'ab 999',
     description: 'Für große Objekte & Gewerbe',
     features: [
       'Unbegrenztes Volumen',
