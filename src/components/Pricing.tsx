@@ -17,7 +17,7 @@ const packages = [
   },
   {
     name: 'Komfort',
-    price: 'ab 699',
+    price: 'ab 499',
     description: 'Ideal für Wohnungsauflösungen',
     features: [
       'Bis zu 30 m³ Volumen',
