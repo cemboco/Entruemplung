@@ -133,15 +133,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <img
-              src="/Bildschirmfoto 2025-11-19 um 23.08.07.png"
-              alt=""
-              className="w-auto h-auto max-w-full max-h-full object-contain opacity-20"
-            />
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 relative z-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -178,7 +170,6 @@ export default function Services() {
               </div>
             );
           })}
-          </div>
         </div>
 
         <div
