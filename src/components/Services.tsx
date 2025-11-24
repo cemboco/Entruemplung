@@ -1,4 +1,4 @@
-import { Home, Trash2, Package, Truck, Briefcase, Recycle, Building2, Warehouse, Sofa } from 'lucide-react';
+import { Home, Trash2, Package, Truck, Briefcase, Recycle, Building2, Warehouse, Sofa, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 const services = [
@@ -60,7 +60,38 @@ const services = [
 
 export default function Services() {
   const [isVisible, setIsVisible] = useState(false);
+  const [sliderPosition, setSliderPosition] = useState(50);
+  const [isDragging, setIsDragging] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleMove = (clientX: number) => {
+    if (!containerRef.current) return;
+
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const percentage = (x / rect.width) * 100;
+    const bounded = Math.min(Math.max(percentage, 0), 100);
+    setSliderPosition(bounded);
+  };
+
+  const handleMouseDown = () => {
+    setIsDragging(true);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!isDragging) return;
+    handleMove(e.clientX);
+  };
+
+  const handleTouchMove = (e: TouchEvent) => {
+    if (!isDragging) return;
+    handleMove(e.touches[0].clientX);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -85,6 +116,22 @@ export default function Services() {
     };
   }, []);
 
+  useEffect(() => {
+    if (isDragging) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+      window.addEventListener('touchmove', handleTouchMove);
+      window.addEventListener('touchend', handleMouseUp);
+    }
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleMouseUp);
+    };
+  }, [isDragging]);
+
   return (
     <section id="leistungen" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -104,8 +151,11 @@ export default function Services() {
             "Wir räumen auf - Sie atmen auf"
           </p>
 
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
           <div
-            className={`text-base sm:text-lg text-gray-600 max-w-4xl mx-auto font-light leading-relaxed space-y-6 mt-12 transition-all duration-1000 delay-200 ${
+            className={`text-base sm:text-lg text-gray-600 font-light leading-relaxed space-y-6 transition-all duration-1000 delay-200 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
@@ -118,18 +168,52 @@ export default function Services() {
             <p>
               Dabei übernehmen wir nicht nur den reinen Abtransport: Wir kümmern uns um die <strong className="font-semibold text-midnight">fachgerechte Entsorgung</strong>, trennen verwertbare Materialien, berücksichtigen Sondermüll und Schadstoffe und übergeben Ihre Räumlichkeiten <strong className="font-semibold text-midnight">besenrein</strong>. Gut erhaltene Möbel, Antiquitäten und Wertgegenstände werden fair bewertet und vom Gesamtpreis abgezogen. So sparen Sie Kosten und handeln nachhaltig.
             </p>
-            <p>
-              Besonders wichtig ist uns der <strong className="font-semibold text-midnight">sensible Umgang mit emotionalen Situationen</strong>. Bei Haushaltsauflösungen nach Todesfällen arbeiten wir mit großem <strong className="font-semibold text-midnight">Einfühlungsvermögen und Diskretion</strong>. Wertvolle Erinnerungsstücke werden sorgfältig aussortiert und Ihnen übergeben. Bei Messie-Wohnungen garantieren wir <strong className="font-semibold text-midnight">absolute Verschwiegenheit</strong> - kein Aufsehen, keine neugierigen Blicke der Nachbarn.
-            </p>
-            <p>
-              Was uns auszeichnet: <strong className="font-semibold text-midnight">Transparente Kalkulation mit Festpreisgarantie</strong>, keine versteckten Kosten, fachgerechte Entsorgung nach allen Vorschriften und ein eingespieltes Team, das diskret, respektvoll und effizient arbeitet. Mit moderner Ausrüstung, ausreichend Personal und jahrelanger Erfahrung schaffen wir auch große Projekte in kürzester Zeit.
-            </p>
-            <p>
-              Wir erstellen Ihnen <strong className="font-semibold text-midnight">innerhalb von 24 Stunden ein kostenloses und unverbindliches Angebot</strong> - nach Besichtigung vor Ort oder auf Basis Ihrer Fotos und Angaben. Dabei beraten wir Sie ehrlich: Manchmal können Sie durch Eigenleistung Kosten sparen, manchmal ist der Komplettservice die wirtschaftlichere Lösung. Wir finden gemeinsam den besten Weg für Ihre Situation.
-            </p>
-            <p>
-              Rufen Sie uns an oder nutzen Sie unsere Schnellanfrage. Unser freundliches Team beantwortet Ihre Fragen und vereinbart gerne einen unverbindlichen Besichtigungstermin - auch <strong className="font-semibold text-midnight">kurzfristig am selben oder nächsten Tag</strong>.
-            </p>
+          </div>
+
+          <div
+            ref={containerRef}
+            className="relative w-full aspect-[3/2] overflow-hidden rounded-2xl shadow-2xl select-none"
+            style={{ touchAction: 'none' }}
+          >
+            <img
+              src="/vorher.jpg"
+              alt="Vorher - Leerer Raum"
+              className="absolute inset-0 w-full h-full object-cover"
+              draggable="false"
+            />
+
+            <div
+              className="absolute inset-0 overflow-hidden"
+              style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
+            >
+              <img
+                src="/nachher.jpg"
+                alt="Nachher - Eingerichteter Raum"
+                className="absolute inset-0 w-full h-full object-cover"
+                draggable="false"
+              />
+            </div>
+
+            <div
+              className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize"
+              style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
+            >
+              <div
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center cursor-ew-resize hover:scale-110 transition-transform"
+                onMouseDown={handleMouseDown}
+                onTouchStart={() => setIsDragging(true)}
+              >
+                <ChevronLeft className="w-5 h-5 text-midnight absolute left-1" />
+                <ChevronRight className="w-5 h-5 text-midnight absolute right-1" />
+              </div>
+            </div>
+
+            <div className="absolute top-4 left-4 bg-midnight/80 text-white px-3 py-1.5 rounded-lg text-xs font-medium">
+              Vorher
+            </div>
+            <div className="absolute top-4 right-4 bg-gold/90 text-midnight px-3 py-1.5 rounded-lg text-xs font-medium">
+              Nachher
+            </div>
           </div>
         </div>
 

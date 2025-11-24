@@ -5,7 +5,6 @@ import LocationTicker from './components/LocationTicker';
 import StructuredData from './components/StructuredData';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
-import BeforeAfterSlider from './components/BeforeAfterSlider';
 
 const Services = lazy(() => import('./components/Services'));
 const About = lazy(() => import('./components/About'));
@@ -94,7 +93,6 @@ function App() {
       <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       <Hero />
       <LocationTicker />
-      <BeforeAfterSlider />
       <Suspense fallback={<div className="py-20 text-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight mx-auto"></div></div>}>
         <Services />
         <About />
