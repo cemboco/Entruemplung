@@ -35,7 +35,7 @@ const packages = [
     price: 'ab 999',
     description: 'Für große Objekte & Gewerbe',
     features: [
-      'Unbegrenztes Volumen',
+      '100 m³ und mehr',
       'Gewerbe & Privat',
       'Besenreine Übergabe',
       'Inkl. Transport & Entsorgung',
