@@ -1,21 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import LocationTicker from './components/LocationTicker';
-import Services from './components/Services';
-import About from './components/About';
-import Process from './components/Process';
-import Pricing from './components/Pricing';
-import Coverage from './components/Coverage';
-import FAQ from './components/FAQ';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import CallToActionPopup from './components/CallToActionPopup';
-import Impressum from './components/Impressum';
-import Datenschutz from './components/Datenschutz';
 import StructuredData from './components/StructuredData';
 import WhatsAppButton from './components/WhatsAppButton';
-import QuickQuoteTab from './components/QuickQuoteTab';
+import Footer from './components/Footer';
+
+const Services = lazy(() => import('./components/Services'));
+const About = lazy(() => import('./components/About'));
+const Process = lazy(() => import('./components/Process'));
+const Pricing = lazy(() => import('./components/Pricing'));
+const Coverage = lazy(() => import('./components/Coverage'));
+const FAQ = lazy(() => import('./components/FAQ'));
+const Contact = lazy(() => import('./components/Contact'));
+const CallToActionPopup = lazy(() => import('./components/CallToActionPopup'));
+const QuickQuoteTab = lazy(() => import('./components/QuickQuoteTab'));
+const Impressum = lazy(() => import('./components/Impressum'));
+const Datenschutz = lazy(() => import('./components/Datenschutz'));
 
 function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz'>('home');
@@ -57,10 +58,14 @@ function App() {
       <div className="min-h-screen">
         <StructuredData />
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
-        <Impressum onBack={navigateToHome} />
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
+          <Impressum onBack={navigateToHome} />
+        </Suspense>
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <WhatsAppButton />
-        <QuickQuoteTab />
+        <Suspense fallback={null}>
+          <QuickQuoteTab />
+        </Suspense>
       </div>
     );
   }
@@ -70,10 +75,14 @@ function App() {
       <div className="min-h-screen">
         <StructuredData />
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
-        <Datenschutz onBack={navigateToHome} />
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
+          <Datenschutz onBack={navigateToHome} />
+        </Suspense>
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <WhatsAppButton />
-        <QuickQuoteTab />
+        <Suspense fallback={null}>
+          <QuickQuoteTab />
+        </Suspense>
       </div>
     );
   }
@@ -84,17 +93,23 @@ function App() {
       <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       <Hero />
       <LocationTicker />
-      <Services />
-      <About />
-      <Process />
-      <Pricing />
-      <Coverage />
-      <FAQ />
-      <Contact />
+      <Suspense fallback={<div className="py-20 text-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight mx-auto"></div></div>}>
+        <Services />
+        <About />
+        <Process />
+        <Pricing />
+        <Coverage />
+        <FAQ />
+        <Contact />
+      </Suspense>
       <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
-      <CallToActionPopup />
+      <Suspense fallback={null}>
+        <CallToActionPopup />
+      </Suspense>
       <WhatsAppButton />
-      <QuickQuoteTab />
+      <Suspense fallback={null}>
+        <QuickQuoteTab />
+      </Suspense>
     </div>
   );
 }
