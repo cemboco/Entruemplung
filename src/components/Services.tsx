@@ -86,9 +86,8 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="leistungen" className="relative py-8 md:py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-      <div className="absolute inset-0 bg-cover bg-center opacity-20 pointer-events-none" style={{ backgroundImage: 'url(/Bildschirmfoto%202025-11-19%20um%2023.08.07.png)' }}></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="leistungen" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={sectionRef}
           className={`text-center mb-24 transition-all duration-1000 ${
@@ -134,7 +133,15 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="relative">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <img
+              src="/Bildschirmfoto 2025-11-19 um 23.08.07.png"
+              alt=""
+              className="w-auto h-auto max-w-full max-h-full object-contain opacity-20"
+            />
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 relative z-10">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -171,6 +178,7 @@ export default function Services() {
               </div>
             );
           })}
+          </div>
         </div>
 
         <div
