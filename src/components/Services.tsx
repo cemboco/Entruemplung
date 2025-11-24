@@ -86,8 +86,9 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="leistungen" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="leistungen" className="relative py-8 md:py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <div className="absolute inset-0 bg-cover bg-center opacity-20 pointer-events-none" style={{ backgroundImage: 'url(/Bildschirmfoto%202025-11-19%20um%2023.08.07.png)' }}></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           ref={sectionRef}
           className={`text-center mb-24 transition-all duration-1000 ${
