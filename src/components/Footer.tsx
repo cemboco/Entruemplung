@@ -11,7 +11,7 @@ export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
           <div>
-            <h3 className="text-xl font-light mb-6">Serviceplus GbR</h3>
+            <h3 className="text-xl font-light mb-6">Serviceplus Entrümpelung GbR</h3>
             <p className="text-gray-400 text-sm font-light leading-relaxed">
               Ihr zuverlässiger Partner für professionelle Entrümpelungen in Stuttgart und Umgebung.
             </p>
