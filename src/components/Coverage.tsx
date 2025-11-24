@@ -21,7 +21,7 @@ const regions = [
 
 export default function Coverage() {
   return (
-    <section className="py-20 bg-midnight text-white">
+    <section className="py-8 bg-midnight text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">

@@ -62,7 +62,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="py-20 md:py-28 lg:py-32 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+    <section id="about" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={sectionRef}

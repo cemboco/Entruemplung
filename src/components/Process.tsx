@@ -71,7 +71,7 @@ export default function Process() {
     <section
       ref={sectionRef}
       id="ablauf"
-      className="relative py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden"
+      className="relative py-8 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden"
       style={{ minHeight: '120vh' }}
     >
       <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/4350943.jpg)' }}></div>

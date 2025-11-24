@@ -86,7 +86,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="leistungen" className="py-20 md:py-28 lg:py-32 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section id="leistungen" className="py-8 md:py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={sectionRef}
