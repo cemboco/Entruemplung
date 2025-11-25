@@ -96,6 +96,9 @@ export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz 
         </div>
 
         <div className="border-t border-gray-800 pt-6 sm:pt-8">
+          <p className="text-gray-500 text-xs font-light leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+            Hinweis: Alle Preise verstehen sich als Richtwerte. Der endgültige Preis wird nach einer kostenlosen Besichtigung individuell berechnet und richtet sich nach Aufwand, Volumen, Entsorgungskosten und Zugänglichkeit.
+          </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-xs font-light text-center md:text-left">
             <p>
               © 2025 Serviceplus Entrümpelung GbR
