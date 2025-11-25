@@ -31,8 +31,8 @@ const packages = [
     popular: true,
   },
   {
-    name: 'Premium',
-    price: 'ab 999',
+    name: 'Exklusiv',
+    price: 'ab 1299',
     description: 'Für große Objekte & Gewerbe',
     features: [
       '100 m³ und mehr',
