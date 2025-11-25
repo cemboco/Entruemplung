@@ -4,7 +4,7 @@ import QuickQuote from './QuickQuote';
 const packages = [
   {
     name: 'Basis',
-    price: 'ab 199',
+    price: 'ab 249',
     description: 'Perfekt für kleinere Entrümpelungen',
     features: [
       'Bis zu 10 m³ Volumen',
@@ -17,7 +17,7 @@ const packages = [
   },
   {
     name: 'Komfort',
-    price: 'ab 499',
+    price: 'ab 549',
     description: 'Ideal für Wohnungsauflösungen',
     features: [
       'Bis zu 30 m³ Volumen',
