@@ -45,9 +45,9 @@ export default function Process() {
       const rect = section.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
 
-      if (rect.top <= viewportHeight * 0.3) {
-        const scrolled = viewportHeight * 0.3 - rect.top;
-        const totalScrollDistance = viewportHeight * 0.6;
+      if (rect.top <= viewportHeight * 0.6) {
+        const scrolled = viewportHeight * 0.6 - rect.top;
+        const totalScrollDistance = viewportHeight * 0.3;
         const progress = Math.max(0, Math.min(1, scrolled / totalScrollDistance));
 
         const newVisibleSteps = progress * 4;
@@ -71,13 +71,13 @@ export default function Process() {
     <section
       ref={sectionRef}
       id="ablauf"
-      className="relative py-8 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden"
-      style={{ minHeight: '120vh' }}
+      className="relative py-12 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden"
+      style={{ minHeight: '100vh' }}
     >
       <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/4350943.jpg)' }}></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-32">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-24">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-3">
             So einfach geht's
           </h2>
           <p className="text-xl text-secondary-light max-w-2xl mx-auto">
@@ -88,11 +88,11 @@ export default function Process() {
         <div className="relative">
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-primary to-green-500 transform -translate-y-1/2 mx-20"></div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 relative">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 relative">
             {steps.map((step, index) => {
               const Icon = step.icon;
               const stepProgress = Math.max(0, Math.min(1, visibleSteps - index));
-              const translateY = (1 - stepProgress) * 150;
+              const translateY = (1 - stepProgress) * 80;
               const opacity = stepProgress;
 
               return (
@@ -104,19 +104,19 @@ export default function Process() {
                     transform: `translateY(${translateY}px)`,
                   }}
                 >
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 h-full">
+                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 h-full">
                     <div className="flex flex-col items-center text-center">
                       <div
-                        className={`relative w-20 h-20 bg-gradient-to-br ${step.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                        className={`relative w-16 h-16 bg-gradient-to-br ${step.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                       >
-                        <Icon className="text-white" size={36} />
-                        <div className="absolute -top-3 -right-3 w-10 h-10 bg-white rounded-full flex items-center justify-center font-bold text-primary shadow-md border-2 border-gray-100">
+                        <Icon className="text-white" size={32} />
+                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center font-bold text-primary shadow-md border-2 border-gray-100 text-sm">
                           {index + 1}
                         </div>
                       </div>
 
-                      <h3 className="text-2xl font-bold text-primary mb-4">{step.title}</h3>
-                      <p className="text-secondary-light leading-relaxed">{step.description}</p>
+                      <h3 className="text-xl font-bold text-primary mb-3">{step.title}</h3>
+                      <p className="text-secondary-light leading-relaxed text-sm">{step.description}</p>
                     </div>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function Process() {
         </div>
 
         <div
-          className="mt-16 text-center"
+          className="mt-10 text-center"
           style={{
             opacity: Math.max(0, Math.min(1, (visibleSteps - 3.5) * 2)),
             transform: `translateY(${Math.max(0, (4 - visibleSteps) * 30)}px)`,
