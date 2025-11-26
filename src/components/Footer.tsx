@@ -8,8 +8,8 @@ interface FooterProps {
 export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz }: FooterProps = {}) {
   return (
     <footer className="bg-midnight text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
             <h3 className="text-xl font-light mb-6">Serviceplus Entrümpelung GbR</h3>
             <p className="text-gray-400 text-sm font-light leading-relaxed">
@@ -95,11 +95,11 @@ export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz 
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-6 sm:pt-8">
-          <p className="text-gray-500 text-xs font-light leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+        <div className="border-t border-gray-800 pt-4 sm:pt-6">
+          <p className="text-gray-500 text-xs font-light leading-relaxed mb-4 text-center max-w-4xl mx-auto">
             Hinweis: Alle Preise verstehen sich als Richtwerte. Der endgültige Preis wird nach einer kostenlosen Besichtigung individuell berechnet und richtet sich nach Aufwand, Volumen, Entsorgungskosten und Zugänglichkeit.
           </p>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-xs font-light text-center md:text-left">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-gray-500 text-xs font-light text-center md:text-left">
             <p>
               © 2025 Serviceplus Entrümpelung GbR
             </p>
