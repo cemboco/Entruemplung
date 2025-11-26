@@ -126,7 +126,7 @@ export default function Process() {
         </div>
 
         <div
-          className="mt-16 text-center"
+          className="mt-8 text-center"
           style={{
             opacity: Math.max(0, Math.min(1, (visibleSteps - 3.5) * 2)),
             transform: `translateY(${Math.max(0, (4 - visibleSteps) * 30)}px)`,
