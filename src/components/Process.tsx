@@ -45,8 +45,8 @@ export default function Process() {
       const rect = section.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
 
-      if (rect.top <= viewportHeight * 0.6) {
-        const scrolled = viewportHeight * 0.6 - rect.top;
+      if (rect.top <= viewportHeight * 0.5) {
+        const scrolled = viewportHeight * 0.5 - rect.top;
         const totalScrollDistance = viewportHeight * 0.3;
         const progress = Math.max(0, Math.min(1, scrolled / totalScrollDistance));
 
