@@ -47,7 +47,7 @@ export default function Hero() {
               </a>
               <a
                 href="tel:+4915732649483"
-                className="bg-white border-2 border-midnight text-midnight px-8 py-5 rounded-full font-medium text-base hover:bg-midnight hover:text-white transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
+                className="group bg-midnight text-white px-8 py-5 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 flex items-center gap-3 justify-center shadow-lg"
               >
                 <Phone size={20} />
                 01573 2649483
