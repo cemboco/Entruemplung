@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useState } from 'react';
+import { trackContactFormSubmit, trackPhoneClick } from '../utils/analytics';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,6 +28,7 @@ export default function Contact() {
 
       if (response.ok) {
         setSubmitted(true);
+        trackContactFormSubmit();
         setFormData({
           name: '',
           email: '',
@@ -177,6 +179,7 @@ export default function Contact() {
                   <a
                     href="tel:+4915732649483"
                     className="text-base text-midnight hover:text-gray-600 transition-colors"
+                    onClick={trackPhoneClick}
                   >
                     01573 2649483
                   </a>
@@ -209,6 +212,7 @@ export default function Contact() {
               <a
                 href="tel:+4915732649483"
                 className="text-2xl font-light text-midnight hover:text-gray-600 transition-colors"
+                onClick={trackPhoneClick}
               >
                 01573 2649483
               </a>

@@ -326,7 +326,57 @@ export default function Datenschutz({ onBack }: DatenschutzProps) {
           </section>
 
           <section>
-            <h2 className="text-xl font-medium text-midnight mb-4">5. Newsletter</h2>
+            <h2 className="text-xl font-medium text-midnight mb-4">5. Analyse-Tools und Werbung</h2>
+
+            <h3 className="text-lg font-medium text-midnight mb-3 mt-6">Google Analytics</h3>
+            <p className="text-gray-700 font-light leading-relaxed">
+              Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Ireland Limited („Google"), Gordon House, Barrow Street, Dublin 4, Irland.
+            </p>
+            <p className="text-gray-700 font-light leading-relaxed mt-2">
+              Google Analytics ermöglicht es dem Websitebetreiber, das Verhalten der Websitebesucher zu analysieren. Hierbei erhält der Websitebetreiber verschiedene Nutzungsdaten, wie z.B. Seitenaufrufe, Verweildauer, verwendete Betriebssysteme und Herkunft des Nutzers. Diese Daten werden von Google ggf. in einem Profil zusammengefasst, das dem jeweiligen Nutzer bzw. dessen Endgerät zugeordnet ist.
+            </p>
+            <p className="text-gray-700 font-light leading-relaxed mt-2">
+              Die Nutzung dieses Analyse-Tools erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der Analyse des Nutzerverhaltens, um sowohl sein Webangebot als auch seine Werbung zu optimieren. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z.B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die Einwilligung ist jederzeit widerrufbar.
+            </p>
+            <p className="text-gray-700 font-light leading-relaxed mt-2">
+              Die Datenübertragung in die USA wird auf die Standardvertragsklauseln der EU-Kommission gestützt. Details finden Sie hier:{' '}
+              <a
+                href="https://privacy.google.com/businesses/controllerterms/mccs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-midnight underline hover:text-gray-600 transition-colors"
+              >
+                https://privacy.google.com/businesses/controllerterms/mccs/
+              </a>
+            </p>
+            <p className="text-gray-700 font-light leading-relaxed mt-2">
+              Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der Datenschutzerklärung von Google:{' '}
+              <a
+                href="https://support.google.com/analytics/answer/6004245?hl=de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-midnight underline hover:text-gray-600 transition-colors"
+              >
+                https://support.google.com/analytics/answer/6004245?hl=de
+              </a>
+            </p>
+
+            <h3 className="text-lg font-medium text-midnight mb-3 mt-6">Speicherdauer</h3>
+            <p className="text-gray-700 font-light leading-relaxed">
+              Bei Google gespeicherte Daten auf Nutzer- und Ereignisebene, die mit Cookies, Nutzerkennungen (z.B. User ID) oder Werbe-IDs (z.B. DoubleClick-Cookies, Android-Werbe-ID) verknüpft sind, werden nach 14 Monaten anonymisiert bzw. gelöscht. Details hierzu ersehen Sie unter folgendem Link:{' '}
+              <a
+                href="https://support.google.com/analytics/answer/7667196?hl=de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-midnight underline hover:text-gray-600 transition-colors"
+              >
+                https://support.google.com/analytics/answer/7667196?hl=de
+              </a>
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-medium text-midnight mb-4">6. Newsletter</h2>
 
             <h3 className="text-lg font-medium text-midnight mb-3 mt-6">Newsletter-Daten</h3>
             <p className="text-gray-700 font-light leading-relaxed">

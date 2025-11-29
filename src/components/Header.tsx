@@ -1,5 +1,6 @@
 import { Phone, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { trackPhoneClick } from '../utils/analytics';
 
 interface HeaderProps {
   onNavigateToImpressum?: () => void;
@@ -64,6 +65,7 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz 
             <a
               href="tel:+4915732649483"
               className="flex items-center gap-2 px-6 py-2 rounded-full bg-midnight text-white text-sm font-medium hover:bg-midnight-dark transition-all duration-300"
+              onClick={trackPhoneClick}
             >
               <Phone size={16} />
               <span className="hidden lg:inline">01573 2649483</span>
@@ -94,6 +96,7 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz 
               <a
                 href="tel:+4915732649483"
                 className="mt-2 flex items-center justify-center gap-2 bg-midnight text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-midnight-dark transition-colors"
+                onClick={trackPhoneClick}
               >
                 <Phone size={16} />
                 01573 2649483

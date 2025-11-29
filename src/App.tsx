@@ -5,6 +5,7 @@ import LocationTicker from './components/LocationTicker';
 import StructuredData from './components/StructuredData';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
+import { trackPageView } from './utils/analytics';
 
 const Services = lazy(() => import('./components/Services'));
 const About = lazy(() => import('./components/About'));
@@ -30,8 +31,12 @@ function App() {
     const hash = window.location.hash;
     if (hash === '#impressum') {
       setCurrentPage('impressum');
+      trackPageView('/impressum', 'Impressum');
     } else if (hash === '#datenschutz') {
       setCurrentPage('datenschutz');
+      trackPageView('/datenschutz', 'Datenschutz');
+    } else {
+      trackPageView('/', 'Entrümpelung Stuttgart');
     }
   }, []);
 
@@ -39,18 +44,21 @@ function App() {
     setCurrentPage('impressum');
     window.location.hash = 'impressum';
     window.scrollTo(0, 0);
+    trackPageView('/impressum', 'Impressum');
   };
 
   const navigateToDatenschutz = () => {
     setCurrentPage('datenschutz');
     window.location.hash = 'datenschutz';
     window.scrollTo(0, 0);
+    trackPageView('/datenschutz', 'Datenschutz');
   };
 
   const navigateToHome = () => {
     setCurrentPage('home');
     window.location.hash = '';
     window.scrollTo(0, 0);
+    trackPageView('/', 'Entrümpelung Stuttgart');
   };
 
   if (currentPage === 'impressum') {
