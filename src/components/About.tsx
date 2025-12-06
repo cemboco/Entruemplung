@@ -76,19 +76,9 @@ export default function About() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-midnight mb-6">
             Über Uns
           </h2>
-          <p className="text-base text-gray-600 max-w-2xl mx-auto font-light mb-8">
+          <p className="text-base text-gray-600 max-w-2xl mx-auto font-light">
             Wir, das sind Cemil und Jermaine, sind ein junges Team aus Stuttgart, das anpackt, wo andere zögern.
           </p>
-
-          <div className="max-w-4xl mx-auto mb-4">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src="/stuttgart-entrümpelung-serviceplus.png"
-                alt="ServicePlus Entrümpelung Team in Stuttgart - Cemil und Jermaine mit Transporter"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </div>
         </div>
 
         <div
