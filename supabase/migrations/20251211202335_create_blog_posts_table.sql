@@ -54,6 +54,7 @@ ALTER TABLE blog_posts ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Public can read published blog posts"
   ON blog_posts
   FOR SELECT
+  TO anon, authenticated
   USING (published = true);
 
 CREATE POLICY "Authenticated users can insert blog posts"
