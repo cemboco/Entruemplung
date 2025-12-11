@@ -9,6 +9,8 @@ import { trackPageView } from './utils/analytics';
 
 const Services = lazy(() => import('./components/Services'));
 const About = lazy(() => import('./components/About'));
+const Blog = lazy(() => import('./components/Blog'));
+const BlogPost = lazy(() => import('./components/BlogPost'));
 const Process = lazy(() => import('./components/Process'));
 const Pricing = lazy(() => import('./components/Pricing'));
 const Coverage = lazy(() => import('./components/Coverage'));
@@ -21,7 +23,8 @@ const Datenschutz = lazy(() => import('./components/Datenschutz'));
 const ThankYou = lazy(() => import('./components/ThankYou'));
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz' | 'danke'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz' | 'danke' | 'blog' | 'blog-post'>('home');
+  const [currentBlogSlug, setCurrentBlogSlug] = useState<string>('');
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
@@ -39,6 +42,14 @@ function App() {
     } else if (hash === '#danke') {
       setCurrentPage('danke');
       trackPageView('/danke', 'Danke');
+    } else if (hash === '#blog') {
+      setCurrentPage('blog');
+      trackPageView('/blog', 'Blog');
+    } else if (hash.startsWith('#blog/')) {
+      const slug = hash.replace('#blog/', '');
+      setCurrentBlogSlug(slug);
+      setCurrentPage('blog-post');
+      trackPageView(`/blog/${slug}`, `Blog: ${slug}`);
     } else {
       trackPageView('/', 'Entrümpelung Stuttgart');
     }
@@ -71,6 +82,55 @@ function App() {
     window.scrollTo(0, 0);
     trackPageView('/danke', 'Danke');
   };
+
+  const navigateToBlog = () => {
+    setCurrentPage('blog');
+    window.location.hash = 'blog';
+    window.scrollTo(0, 0);
+    trackPageView('/blog', 'Blog');
+  };
+
+  const navigateToBlogPost = (slug: string) => {
+    setCurrentBlogSlug(slug);
+    setCurrentPage('blog-post');
+    window.location.hash = `blog/${slug}`;
+    window.scrollTo(0, 0);
+    trackPageView(`/blog/${slug}`, `Blog: ${slug}`);
+  };
+
+  if (currentPage === 'blog-post') {
+    return (
+      <div className="min-h-screen">
+        <StructuredData />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
+          <BlogPost slug={currentBlogSlug} onBack={navigateToBlog} />
+        </Suspense>
+        <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <WhatsAppButton />
+        <Suspense fallback={null}>
+          <QuickQuoteTab />
+        </Suspense>
+      </div>
+    );
+  }
+
+  if (currentPage === 'blog') {
+    return (
+      <div className="min-h-screen">
+        <StructuredData />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
+          <Blog onNavigateToPost={navigateToBlogPost} />
+        </Suspense>
+        <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <WhatsAppButton />
+        <Suspense fallback={null}>
+          <QuickQuoteTab />
+        </Suspense>
+      </div>
+    );
+  }
 
   if (currentPage === 'danke') {
     return (
@@ -128,6 +188,7 @@ function App() {
       <Suspense fallback={<div className="py-20 text-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight mx-auto"></div></div>}>
         <Services />
         <About />
+        <Blog onNavigateToPost={navigateToBlogPost} />
         <Process />
         <Pricing />
         <Coverage />
