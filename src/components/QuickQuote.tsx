@@ -346,6 +346,7 @@ export default function QuickQuote() {
                   type="text"
                   value={data.plz}
                   onChange={(e) => update({ plz: e.target.value })}
+                  autoComplete="postal-code"
                   className="w-full border rounded-xl px-3 py-2 text-sm border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
                   maxLength={5}
                 />
@@ -358,6 +359,7 @@ export default function QuickQuote() {
                   type="text"
                   value={data.ort}
                   onChange={(e) => update({ ort: e.target.value })}
+                  autoComplete="address-level2"
                   className="w-full border rounded-xl px-3 py-2 text-sm border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
               </div>
@@ -440,6 +442,7 @@ export default function QuickQuote() {
                   type="text"
                   value={data.name}
                   onChange={(e) => update({ name: e.target.value })}
+                  autoComplete="name"
                   className="w-full border rounded-xl px-3 py-2 text-sm border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
               </div>
@@ -451,6 +454,7 @@ export default function QuickQuote() {
                   type="email"
                   value={data.email}
                   onChange={(e) => update({ email: e.target.value })}
+                  autoComplete="email"
                   className="w-full border rounded-xl px-3 py-2 text-sm border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
               </div>
@@ -462,6 +466,7 @@ export default function QuickQuote() {
                   type="tel"
                   value={data.telefon}
                   onChange={(e) => update({ telefon: e.target.value })}
+                  autoComplete="tel"
                   className="w-full border rounded-xl px-3 py-2 text-sm border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
               </div>

@@ -73,6 +73,7 @@ export default function Contact({ onNavigateToDanke }: ContactProps) {
                   id="name"
                   name="name"
                   required
+                  autoComplete="name"
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
@@ -89,6 +90,7 @@ export default function Contact({ onNavigateToDanke }: ContactProps) {
                   id="email"
                   name="email"
                   required
+                  autoComplete="email"
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
@@ -105,6 +107,7 @@ export default function Contact({ onNavigateToDanke }: ContactProps) {
                   id="phone"
                   name="phone"
                   required
+                  autoComplete="tel"
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
