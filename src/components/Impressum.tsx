@@ -26,7 +26,6 @@ export default function Impressum({ onBack }: ImpressumProps) {
               <p>Geschäftsführer und Gesellschafter: Cemil Bocohonsi, Jermaine Anderson</p>
               <p>Karlsbaderweg 5</p>
               <p>73652 Welzheim</p>
-              <p className="pt-2">Steuernummer: 82003/20050</p>
             </div>
           </section>
 
