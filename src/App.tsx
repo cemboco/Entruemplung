@@ -18,9 +18,10 @@ const CallToActionPopup = lazy(() => import('./components/CallToActionPopup'));
 const QuickQuoteTab = lazy(() => import('./components/QuickQuoteTab'));
 const Impressum = lazy(() => import('./components/Impressum'));
 const Datenschutz = lazy(() => import('./components/Datenschutz'));
+const ThankYou = lazy(() => import('./components/ThankYou'));
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'impressum' | 'datenschutz' | 'danke'>('home');
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
@@ -35,6 +36,9 @@ function App() {
     } else if (hash === '#datenschutz') {
       setCurrentPage('datenschutz');
       trackPageView('/datenschutz', 'Datenschutz');
+    } else if (hash === '#danke') {
+      setCurrentPage('danke');
+      trackPageView('/danke', 'Danke');
     } else {
       trackPageView('/', 'Entrümpelung Stuttgart');
     }
@@ -60,6 +64,26 @@ function App() {
     window.scrollTo(0, 0);
     trackPageView('/', 'Entrümpelung Stuttgart');
   };
+
+  const navigateToDanke = () => {
+    setCurrentPage('danke');
+    window.location.hash = 'danke';
+    window.scrollTo(0, 0);
+    trackPageView('/danke', 'Danke');
+  };
+
+  if (currentPage === 'danke') {
+    return (
+      <div className="min-h-screen">
+        <StructuredData />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
+          <ThankYou onBack={navigateToHome} />
+        </Suspense>
+        <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+      </div>
+    );
+  }
 
   if (currentPage === 'impressum') {
     return (
@@ -108,7 +132,7 @@ function App() {
         <Pricing />
         <Coverage />
         <FAQ />
-        <Contact />
+        <Contact onNavigateToDanke={navigateToDanke} />
       </Suspense>
       <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
       <Suspense fallback={null}>

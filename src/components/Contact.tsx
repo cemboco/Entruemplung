@@ -2,7 +2,11 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useState } from 'react';
 import { trackContactFormSubmit, trackPhoneClick } from '../utils/analytics';
 
-export default function Contact() {
+interface ContactProps {
+  onNavigateToDanke: () => void;
+}
+
+export default function Contact({ onNavigateToDanke }: ContactProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,7 +15,6 @@ export default function Contact() {
     privacyAccepted: false,
   });
   const [submitting, setSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,15 +30,8 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        setSubmitted(true);
         trackContactFormSubmit();
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          message: '',
-          privacyAccepted: false,
-        });
+        onNavigateToDanke();
       }
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -153,12 +149,6 @@ export default function Contact() {
                   </span>
                 </label>
               </div>
-
-              {submitted && (
-                <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-xl text-sm">
-                  Vielen Dank! Ihre Nachricht wurde erfolgreich versendet. Wir melden uns in Kürze bei Ihnen.
-                </div>
-              )}
 
               <button
                 type="submit"

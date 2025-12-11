@@ -61,3 +61,11 @@ export const trackCTAClick = (ctaLocation: string) => {
     event_label: ctaLocation,
   });
 };
+
+export const trackConversion = () => {
+  trackEvent('conversion', {
+    event_category: 'Lead Generation',
+    event_label: 'Form Submission Success',
+    send_to: 'AW-CONVERSION_ID/CONVERSION_LABEL',
+  });
+};
