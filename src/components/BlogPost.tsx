@@ -18,6 +18,12 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
 
   const loadPost = async () => {
     try {
+      if (!supabase) {
+        console.warn('Supabase client not initialized');
+        setLoading(false);
+        return;
+      }
+
       const { data, error } = await supabase
         .from('blog_posts')
         .select('*')
@@ -25,15 +31,24 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
         .eq('published', true)
         .maybeSingle();
 
-      if (error) throw error;
+      if (error) {
+        console.error('Supabase error:', error);
+        setPost(null);
+        setLoading(false);
+        return;
+      }
 
       if (data) {
         setPost(data);
 
-        await supabase
-          .from('blog_posts')
-          .update({ views: data.views + 1 })
-          .eq('id', data.id);
+        try {
+          await supabase
+            .from('blog_posts')
+            .update({ views: data.views + 1 })
+            .eq('id', data.id);
+        } catch (viewError) {
+          console.warn('Could not update view count:', viewError);
+        }
 
         if (data.meta_description) {
           const metaDescription = document.querySelector('meta[name="description"]');
@@ -46,6 +61,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
       }
     } catch (error) {
       console.error('Error loading blog post:', error);
+      setPost(null);
     } finally {
       setLoading(false);
     }

@@ -5,6 +5,7 @@ import LocationTicker from './components/LocationTicker';
 import StructuredData from './components/StructuredData';
 import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { trackPageView } from './utils/analytics';
 
 const Services = lazy(() => import('./components/Services'));
@@ -103,9 +104,11 @@ function App() {
       <div className="min-h-screen">
         <StructuredData />
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
-        <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
-          <BlogPost slug={currentBlogSlug} onBack={navigateToBlog} />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
+            <BlogPost slug={currentBlogSlug} onBack={navigateToBlog} />
+          </Suspense>
+        </ErrorBoundary>
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <WhatsAppButton />
         <Suspense fallback={null}>
@@ -120,9 +123,11 @@ function App() {
       <div className="min-h-screen">
         <StructuredData />
         <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
-        <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
-          <Blog onNavigateToPost={navigateToBlogPost} />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
+            <Blog onNavigateToPost={navigateToBlogPost} />
+          </Suspense>
+        </ErrorBoundary>
         <Footer onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
         <WhatsAppButton />
         <Suspense fallback={null}>
@@ -188,7 +193,9 @@ function App() {
       <Suspense fallback={<div className="py-20 text-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight mx-auto"></div></div>}>
         <Services />
         <About />
-        <Blog onNavigateToPost={navigateToBlogPost} />
+        <ErrorBoundary>
+          <Blog onNavigateToPost={navigateToBlogPost} />
+        </ErrorBoundary>
         <Process />
         <Pricing />
         <Coverage />

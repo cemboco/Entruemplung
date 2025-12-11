@@ -17,16 +17,27 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
 
   const loadPosts = async () => {
     try {
+      if (!supabase) {
+        console.warn('Supabase client not initialized');
+        setLoading(false);
+        return;
+      }
+
       const { data, error } = await supabase
         .from('blog_posts')
         .select('*')
         .eq('published', true)
         .order('published_at', { ascending: false });
 
-      if (error) throw error;
-      setPosts(data || []);
+      if (error) {
+        console.error('Supabase error:', error);
+        setPosts([]);
+      } else {
+        setPosts(data || []);
+      }
     } catch (error) {
       console.error('Error loading blog posts:', error);
+      setPosts([]);
     } finally {
       setLoading(false);
     }
