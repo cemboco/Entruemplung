@@ -18,12 +18,6 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
 
   const loadPost = async () => {
     try {
-      if (!supabase) {
-        console.warn('Supabase client not initialized');
-        setLoading(false);
-        return;
-      }
-
       const { data, error } = await supabase
         .from('blog_posts')
         .select('*')
@@ -32,10 +26,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
         .maybeSingle();
 
       if (error) {
-        console.error('Supabase error:', error);
-        setPost(null);
-        setLoading(false);
-        return;
+        throw error;
       }
 
       if (data) {

@@ -9,6 +9,7 @@ interface BlogProps {
 export default function Blog({ onNavigateToPost }: BlogProps) {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('Alle');
 
   useEffect(() => {
@@ -17,26 +18,22 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
 
   const loadPosts = async () => {
     try {
-      if (!supabase) {
-        console.warn('Supabase client not initialized');
-        setLoading(false);
-        return;
-      }
+      setError(null);
 
-      const { data, error } = await supabase
+      const { data, error: supabaseError } = await supabase
         .from('blog_posts')
         .select('*')
         .eq('published', true)
         .order('published_at', { ascending: false });
 
-      if (error) {
-        console.error('Supabase error:', error);
-        setPosts([]);
-      } else {
-        setPosts(data || []);
+      if (supabaseError) {
+        throw supabaseError;
       }
-    } catch (error) {
-      console.error('Error loading blog posts:', error);
+
+      setPosts(data || []);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Fehler beim Laden der Blog-Artikel';
+      setError(errorMessage);
       setPosts([]);
     } finally {
       setLoading(false);
@@ -107,7 +104,19 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
           ))}
         </div>
 
-        {filteredPosts.length === 0 ? (
+        {error ? (
+          <div className="text-center py-20">
+            <p className="text-red-600 text-lg mb-4">
+              {error}
+            </p>
+            <button
+              onClick={() => loadPosts()}
+              className="bg-ocean text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all"
+            >
+              Erneut versuchen
+            </button>
+          </div>
+        ) : filteredPosts.length === 0 ? (
           <div className="text-center py-20">
             <p className="text-gray-600 text-lg">
               Aktuell sind keine Blog-Artikel verfügbar. Schauen Sie bald wieder vorbei!
