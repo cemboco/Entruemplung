@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react';
-import { supabase, BlogPost } from '../lib/supabase';
+import { supabase, isSupabaseConfigured, BlogPost } from '../lib/supabase';
 
 interface BlogProps {
   onNavigateToPost: (slug: string) => void;
@@ -17,9 +17,13 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
   }, []);
 
   const loadPosts = async () => {
+    if (!isSupabaseConfigured || !supabase) {
+      setLoading(false);
+      return;
+    }
+
     try {
       setError(null);
-      console.log('Loading blog posts...');
 
       const { data, error: supabaseError } = await supabase
         .from('blog_posts')
@@ -27,18 +31,13 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
         .eq('published', true)
         .order('published_at', { ascending: false });
 
-      console.log('Supabase response:', { data, error: supabaseError });
-
       if (supabaseError) {
-        console.error('Supabase error:', supabaseError);
         throw supabaseError;
       }
 
-      console.log('Loaded posts:', data?.length || 0);
       setPosts(data || []);
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Fehler beim Laden der Blog-Artikel';
-      console.error('Error loading posts:', err);
       setError(errorMessage);
       setPosts([]);
     } finally {

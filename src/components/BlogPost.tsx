@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, Tag, Share2 } from 'lucide-react';
-import { supabase, BlogPost as BlogPostType } from '../lib/supabase';
+import { supabase, isSupabaseConfigured, BlogPost as BlogPostType } from '../lib/supabase';
 
 interface BlogPostProps {
   slug: string;
@@ -17,6 +17,11 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
   }, [slug]);
 
   const loadPost = async () => {
+    if (!isSupabaseConfigured || !supabase) {
+      setLoading(false);
+      return;
+    }
+
     try {
       const { data, error } = await supabase
         .from('blog_posts')
@@ -38,7 +43,6 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
             .update({ views: data.views + 1 })
             .eq('id', data.id);
         } catch (viewError) {
-          console.warn('Could not update view count:', viewError);
         }
 
         if (data.meta_description) {
@@ -51,7 +55,6 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
         document.title = `${data.title} | ServicePlus Stuttgart`;
       }
     } catch (error) {
-      console.error('Error loading blog post:', error);
       setPost(null);
     } finally {
       setLoading(false);
