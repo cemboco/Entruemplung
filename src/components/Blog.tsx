@@ -68,7 +68,7 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
 
   if (loading) {
     return (
-      <section className="py-20 bg-gray-50">
+      <section className="pt-32 pb-20 bg-gray-50 min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center py-20">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div>
@@ -79,15 +79,15 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
   }
 
   return (
-    <section id="blog" className="py-20 bg-gray-50">
+    <section id="blog" className="pt-32 pb-20 bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-ocean text-sm font-semibold tracking-wider uppercase mb-2">
             Ratgeber & Tipps
           </p>
-          <h2 className="text-4xl font-bold text-midnight mb-4">
-            Aktuelles aus unserem Blog
-          </h2>
+          <h1 className="text-4xl md:text-5xl font-bold text-midnight mb-4">
+            Unser Blog
+          </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Nützliche Informationen rund um Entrümpelung, Haushaltsauflösung und Wohnungsräumung in Stuttgart
           </p>

@@ -103,7 +103,7 @@ function App() {
     return (
       <div className="min-h-screen">
         <StructuredData />
-        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} onNavigateToBlog={navigateToBlog} onNavigateToHome={navigateToHome} />
         <ErrorBoundary>
           <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
             <BlogPost slug={currentBlogSlug} onBack={navigateToBlog} />
@@ -122,7 +122,7 @@ function App() {
     return (
       <div className="min-h-screen">
         <StructuredData />
-        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} onNavigateToBlog={navigateToBlog} onNavigateToHome={navigateToHome} />
         <ErrorBoundary>
           <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
             <Blog onNavigateToPost={navigateToBlogPost} />
@@ -141,7 +141,7 @@ function App() {
     return (
       <div className="min-h-screen">
         <StructuredData />
-        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} onNavigateToBlog={navigateToBlog} onNavigateToHome={navigateToHome} />
         <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
           <ThankYou onBack={navigateToHome} />
         </Suspense>
@@ -154,7 +154,7 @@ function App() {
     return (
       <div className="min-h-screen">
         <StructuredData />
-        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} onNavigateToBlog={navigateToBlog} onNavigateToHome={navigateToHome} />
         <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
           <Impressum onBack={navigateToHome} />
         </Suspense>
@@ -171,7 +171,7 @@ function App() {
     return (
       <div className="min-h-screen">
         <StructuredData />
-        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+        <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} onNavigateToBlog={navigateToBlog} onNavigateToHome={navigateToHome} />
         <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight"></div></div>}>
           <Datenschutz onBack={navigateToHome} />
         </Suspense>
@@ -187,15 +187,12 @@ function App() {
   return (
     <div className="min-h-screen">
       <StructuredData />
-      <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} />
+      <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} onNavigateToBlog={navigateToBlog} onNavigateToHome={navigateToHome} />
       <Hero />
       <LocationTicker />
       <Suspense fallback={<div className="py-20 text-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight mx-auto"></div></div>}>
         <Services />
         <About />
-        <ErrorBoundary>
-          <Blog onNavigateToPost={navigateToBlogPost} />
-        </ErrorBoundary>
         <Process />
         <Pricing />
         <Coverage />

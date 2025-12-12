@@ -5,9 +5,11 @@ import { trackPhoneClick } from '../utils/analytics';
 interface HeaderProps {
   onNavigateToImpressum?: () => void;
   onNavigateToDatenschutz?: () => void;
+  onNavigateToBlog?: () => void;
+  onNavigateToHome?: () => void;
 }
 
-export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz }: HeaderProps = {}) {
+export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz, onNavigateToBlog, onNavigateToHome }: HeaderProps = {}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -28,6 +30,36 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz 
     { href: '#kontakt', label: 'Kontakt' },
   ];
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (onNavigateToHome) {
+      onNavigateToHome();
+    } else {
+      window.location.hash = '';
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const handleNavClick = (e: React.MouseEvent, href: string) => {
+    if (href.startsWith('#') && onNavigateToHome) {
+      const isOnHomePage = window.location.hash === '' ||
+        window.location.hash === '#' ||
+        !window.location.hash.includes('/') &&
+        !['#impressum', '#datenschutz', '#danke', '#blog'].includes(window.location.hash);
+
+      if (!isOnHomePage) {
+        e.preventDefault();
+        onNavigateToHome();
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      }
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -40,6 +72,7 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz 
         <div className="flex items-center justify-between">
           <a
             href="#"
+            onClick={handleLogoClick}
             className="flex items-center gap-2"
           >
             <img
@@ -57,11 +90,18 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz 
               <a
                 key={link.href}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="text-sm font-light text-gray-600 hover:text-midnight transition-colors duration-300"
               >
                 {link.label}
               </a>
             ))}
+            <button
+              onClick={onNavigateToBlog}
+              className="text-sm font-light text-gray-600 hover:text-midnight transition-colors duration-300"
+            >
+              Blog
+            </button>
             <a
               href="tel:+4915732649483"
               className="flex items-center gap-2 px-6 py-2 rounded-full bg-midnight text-white text-sm font-medium hover:bg-midnight-dark transition-all duration-300"
@@ -87,12 +127,24 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz 
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    handleNavClick(e, link.href);
+                    setIsMobileMenuOpen(false);
+                  }}
                   className="px-0 py-2 text-sm font-light text-gray-600 hover:text-midnight transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
+              <button
+                onClick={() => {
+                  onNavigateToBlog?.();
+                  setIsMobileMenuOpen(false);
+                }}
+                className="px-0 py-2 text-sm font-light text-gray-600 hover:text-midnight transition-colors text-left"
+              >
+                Blog
+              </button>
               <a
                 href="tel:+4915732649483"
                 className="mt-2 flex items-center justify-center gap-2 bg-midnight text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-midnight-dark transition-colors"
