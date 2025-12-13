@@ -74,4 +74,83 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- Blog Hauptseite -->
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/wohnungsraeumung-nach-todesfall-stuttgart</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/entruempelung-stuttgart-kosten</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/haushaltsauflosung-todesfall</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/messie-wohnung-entruempeln</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/kosten-entruempelung-preise-stuttgart</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/entruempelung-todesfall-haushaltsaufloesung</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/haushaltsaufloesung-stuttgart-beachten</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/messie-entruempelung-professionelle-hilfe</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/nachhaltigkeit-entrümpelung-umweltschutz</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://serviceplus-entruempelung.de/#blog/entrümpelung-stuttgart-leitfaden-2025</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
