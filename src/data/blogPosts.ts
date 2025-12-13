@@ -1568,7 +1568,7 @@ export const fallbackPosts: BlogPost[] = [
 </ul>
 
 <p><strong>Wir sind für Sie da in dieser schweren Zeit. Kontaktieren Sie uns für ein einfühlsames Erstgespräch.</strong></p>`,
-    featured_image: '/stuttgart-entruempelung-serviceplus.png',
+    featured_image: '/messi.jpg',
     author: 'ServicePlus Stuttgart Team',
     category: 'Haushaltsauflösung',
     tags: ['Todesfall', 'Haushaltsauflösung', 'Nachlassverwaltung', 'Stuttgart'],
