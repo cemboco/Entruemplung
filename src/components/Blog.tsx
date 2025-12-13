@@ -6,8 +6,234 @@ interface BlogProps {
   onNavigateToPost: (slug: string) => void;
 }
 
+const fallbackPosts: BlogPost[] = [
+  {
+    id: '1',
+    title: 'Entrümpelung in Stuttgart: Der komplette Leitfaden für 2025',
+    slug: 'entrümpelung-stuttgart-leitfaden-2025',
+    excerpt: 'Alles, was Sie über professionelle Entrümpelung in Stuttgart wissen müssen. Von Kosten über Ablauf bis zu wichtigen Tipps für Ihre Wohnungsräumung.',
+    content: `Eine professionelle Entrümpelung in Stuttgart erfordert Erfahrung und Sorgfalt. In diesem umfassenden Leitfaden erfahren Sie alles über den Ablauf, die Kosten und worauf Sie achten sollten.
+
+## Warum eine professionelle Entrümpelung?
+
+Eine professionelle Entrümpelung spart nicht nur Zeit, sondern auch Nerven. Unsere erfahrenen Teams kennen sich mit allen Arten von Räumungen aus und wissen, wie man effizient und umweltbewusst vorgeht.
+
+## Die Kosten im Überblick
+
+Die Kosten für eine Entrümpelung in Stuttgart hängen von verschiedenen Faktoren ab:
+- Größe der Wohnung oder des Hauses
+- Menge und Art des zu entsorgenden Materials
+- Zugänglichkeit (Stockwerk, Aufzug vorhanden?)
+- Zeitaufwand
+
+## Unser Service
+
+Wir bieten Ihnen:
+- Kostenlose Besichtigung und Angebotserstellung
+- Fachgerechte Entsorgung und Recycling
+- Diskrete und schnelle Abwicklung
+- Faire und transparente Preise`,
+    featured_image: '/Entruempelung_serviceplus_stuttgart.jpg',
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Entrümpelung',
+    tags: ['Entrümpelung', 'Stuttgart', 'Wohnungsräumung', 'Kosten'],
+    meta_description: 'Kompletter Leitfaden für Entrümpelung in Stuttgart 2025. Kosten, Ablauf und Tipps.',
+    meta_keywords: 'Entrümpelung Stuttgart, Wohnungsräumung, Kosten',
+    published: true,
+    published_at: '2025-12-04T21:20:52.541505+00:00',
+    views: 0,
+    created_at: '2025-12-04T21:20:52.541505+00:00',
+    updated_at: '2025-12-04T21:20:52.541505+00:00'
+  },
+  {
+    id: '2',
+    title: 'Haushaltsauflösung Stuttgart: Was Sie beachten sollten',
+    slug: 'haushaltsaufloesung-stuttgart-beachten',
+    excerpt: 'Eine Haushaltsauflösung ist mehr als nur Entrümpeln. Erfahren Sie, worauf es ankommt und wie Sie dabei viel Zeit und Geld sparen können.',
+    content: `Eine Haushaltsauflösung ist eine emotionale und logistische Herausforderung. Mit der richtigen Planung und professioneller Unterstützung wird dieser Prozess deutlich einfacher.
+
+## Was gehört zur Haushaltsauflösung?
+
+Eine komplette Haushaltsauflösung umfasst:
+- Sortierung aller Gegenstände
+- Entsorgung oder Verkauf von Möbeln
+- Fachgerechte Entsorgung von Elektrogeräten
+- Endreinigung der Räume
+
+## Wertanrechnung
+
+Viele Haushalte enthalten noch wertvolle Gegenstände. Wir rechnen den Wert dieser Gegenstände gegen die Entrümpelungskosten auf.
+
+## Zeitersparnis
+
+Eine professionelle Haushaltsauflösung kann innerhalb von 1-2 Tagen abgeschlossen werden, während dies in Eigenregie oft Wochen dauert.`,
+    featured_image: '/4257357.jpg',
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Haushaltsauflösung',
+    tags: ['Haushaltsauflösung', 'Stuttgart', 'Wohnungsauflösung'],
+    meta_description: 'Haushaltsauflösung Stuttgart - Worauf Sie achten sollten und wie Sie sparen können.',
+    meta_keywords: 'Haushaltsauflösung Stuttgart, Wohnungsauflösung',
+    published: true,
+    published_at: '2025-11-27T21:21:31.050198+00:00',
+    views: 0,
+    created_at: '2025-11-27T21:21:31.050198+00:00',
+    updated_at: '2025-11-27T21:21:31.050198+00:00'
+  },
+  {
+    id: '3',
+    title: 'Messie-Entrümpelung: Professionelle Hilfe mit Fingerspitzengefühl',
+    slug: 'messie-entruempelung-professionelle-hilfe',
+    excerpt: 'Messie-Entrümpelungen erfordern besondere Sensibilität und Erfahrung. Wie wir Betroffenen in Stuttgart diskret und professionell helfen.',
+    content: `Messie-Entrümpelungen sind eine besondere Herausforderung, die viel Einfühlungsvermögen erfordert. Wir behandeln jeden Fall mit der nötigen Diskretion und Respekt.
+
+## Besondere Anforderungen
+
+Bei Messie-Wohnungen sind besondere Maßnahmen erforderlich:
+- Vorsortierung wichtiger Dokumente
+- Sensible Kommunikation mit Betroffenen
+- Oft mehrere Durchgänge nötig
+- Zusammenarbeit mit Beratern
+
+## Unser Ansatz
+
+Wir arbeiten eng mit Betroffenen zusammen und gehen Schritt für Schritt vor, um niemanden zu überfordern.
+
+## Diskret und professionell
+
+Alle unsere Mitarbeiter sind geschult im Umgang mit besonderen Situationen und behandeln jeden Fall vertraulich.`,
+    featured_image: '/4350943.jpg',
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Tipps & Ratgeber',
+    tags: ['Messie', 'Entrümpelung', 'Stuttgart', 'Hilfe'],
+    meta_description: 'Messie-Entrümpelung Stuttgart - Professionelle und diskrete Hilfe.',
+    meta_keywords: 'Messie Entrümpelung Stuttgart, Messie Wohnung',
+    published: true,
+    published_at: '2025-11-20T21:21:31.050198+00:00',
+    views: 0,
+    created_at: '2025-11-20T21:21:31.050198+00:00',
+    updated_at: '2025-11-20T21:21:31.050198+00:00'
+  },
+  {
+    id: '4',
+    title: 'Nachhaltigkeit bei der Entrümpelung: Umweltschutz beginnt bei uns',
+    slug: 'nachhaltigkeit-entrümpelung-umweltschutz',
+    excerpt: 'Entrümpeln muss nicht gleich wegwerfen bedeuten. Wie wir bei ServicePlus Stuttgart auf Nachhaltigkeit und Umweltschutz achten.',
+    content: `Nachhaltigkeit ist uns wichtig. Deshalb sortieren wir jeden Gegenstand sorgfältig und führen ihn der bestmöglichen Verwertung zu.
+
+## Unsere Nachhaltigkeitsstrategie
+
+1. **Wiederverwendung**: Noch brauchbare Möbel und Gegenstände spenden wir an soziale Einrichtungen
+2. **Recycling**: Materialien werden fachgerecht getrennt und recycelt
+3. **Fachgerechte Entsorgung**: Sondermüll wird ordnungsgemäß entsorgt
+
+## Partnerschaften
+
+Wir arbeiten mit lokalen Recyclinghöfen und sozialen Einrichtungen zusammen.
+
+## Umweltbilanz
+
+Durch unsere Sortiermethode können wir bis zu 70% der Materialien dem Recycling zuführen.`,
+    featured_image: '/nachher.jpg',
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Nachhaltigkeit',
+    tags: ['Nachhaltigkeit', 'Recycling', 'Umweltschutz', 'Stuttgart'],
+    meta_description: 'Nachhaltige Entrümpelung Stuttgart - Umweltschutz und Recycling.',
+    meta_keywords: 'Nachhaltige Entrümpelung, Recycling Stuttgart',
+    published: true,
+    published_at: '2025-11-13T21:21:31.050198+00:00',
+    views: 0,
+    created_at: '2025-11-13T21:21:31.050198+00:00',
+    updated_at: '2025-11-13T21:21:31.050198+00:00'
+  },
+  {
+    id: '5',
+    title: 'Kosten einer Entrümpelung: Was Sie wirklich zahlen',
+    slug: 'kosten-entruempelung-preise-stuttgart',
+    excerpt: 'Transparente Preisübersicht: Welche Faktoren beeinflussen die Kosten einer Entrümpelung und wie können Sie Geld sparen?',
+    content: `Entrümpelungskosten sind oft undurchsichtig. Wir bringen Licht ins Dunkel und zeigen Ihnen, worauf Sie achten sollten.
+
+## Kostenfaktoren
+
+Die Kosten setzen sich aus verschiedenen Faktoren zusammen:
+- **Raumgröße**: Je größer die Fläche, desto höher die Kosten
+- **Menge**: Das Volumen des zu entsorgenden Materials
+- **Anfahrt**: Entfernung zum Objekt
+- **Stockwerk**: Mit oder ohne Aufzug
+- **Sperrgut**: Besonders große oder schwere Gegenstände
+
+## Durchschnittspreise in Stuttgart
+
+- 1-Zimmer-Wohnung: 400-800€
+- 3-Zimmer-Wohnung: 800-1.500€
+- Haus: 1.500-3.000€
+
+## Spartipps
+
+- Vorsortierung selbst vornehmen
+- Wertgegenstände verkaufen oder spenden
+- Mehrere Angebote einholen`,
+    featured_image: '/vorher.jpg',
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Tipps & Ratgeber',
+    tags: ['Kosten', 'Preise', 'Entrümpelung', 'Stuttgart'],
+    meta_description: 'Entrümpelung Kosten Stuttgart - Transparente Preisübersicht und Spartipps.',
+    meta_keywords: 'Entrümpelung Kosten Stuttgart, Preise',
+    published: true,
+    published_at: '2025-11-06T21:21:31.050198+00:00',
+    views: 0,
+    created_at: '2025-11-06T21:21:31.050198+00:00',
+    updated_at: '2025-11-06T21:21:31.050198+00:00'
+  },
+  {
+    id: '6',
+    title: 'Entrümpelung nach Todesfall: Einfühlsame Unterstützung in schwerer Zeit',
+    slug: 'entruempelung-todesfall-haushaltsaufloesung',
+    excerpt: 'Der Verlust eines geliebten Menschen ist schwer genug. Wir nehmen Ihnen die Last der Wohnungsauflösung ab – respektvoll und professionell.',
+    content: `Der Verlust eines geliebten Menschen ist eine schwere Zeit. Die anschließende Wohnungsauflösung kann zusätzlich belasten. Wir helfen Ihnen dabei mit Respekt und Einfühlungsvermögen.
+
+## Besondere Sensibilität
+
+Eine Entrümpelung nach einem Todesfall erfordert:
+- Respektvoller Umgang mit persönlichen Gegenständen
+- Zeit für Angehörige zum Abschiednehmen
+- Sorgfältige Sortierung wichtiger Dokumente
+- Diskrete Durchführung
+
+## Unser Service
+
+Wir bieten:
+- Flexible Terminvereinbarung
+- Behutsame Räumung
+- Aufbewahrung wichtiger Gegenstände
+- Unterstützung bei Behördengängen
+
+## Wichtige Dokumente
+
+Wir achten besonders auf:
+- Testamente und Vollmachten
+- Versicherungsunterlagen
+- Bankdokumente
+- Persönliche Erinnerungsstücke
+
+## Zeitrahmen
+
+Wir passen uns Ihrem Tempo an und drängen nicht zur Eile.`,
+    featured_image: '/stuttgart-entrümpelung-serviceplus.png',
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Haushaltsauflösung',
+    tags: ['Todesfall', 'Haushaltsauflösung', 'Nachlassverwaltung', 'Stuttgart'],
+    meta_description: 'Entrümpelung nach Todesfall Stuttgart - Einfühlsame und professionelle Unterstützung.',
+    meta_keywords: 'Entrümpelung Todesfall Stuttgart, Nachlassverwaltung',
+    published: true,
+    published_at: '2025-10-30T21:21:31.050198+00:00',
+    views: 0,
+    created_at: '2025-10-30T21:21:31.050198+00:00',
+    updated_at: '2025-10-30T21:21:31.050198+00:00'
+  }
+];
+
 export default function Blog({ onNavigateToPost }: BlogProps) {
-  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [posts, setPosts] = useState<BlogPost[]>(fallbackPosts);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('Alle');
@@ -18,6 +244,7 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
 
   const loadPosts = async () => {
     if (!isSupabaseConfigured || !supabase) {
+      setPosts(fallbackPosts);
       setLoading(false);
       return;
     }
@@ -35,11 +262,10 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
         throw supabaseError;
       }
 
-      setPosts(data || []);
+      setPosts(data && data.length > 0 ? data : fallbackPosts);
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Fehler beim Laden der Blog-Artikel';
-      setError(errorMessage);
-      setPosts([]);
+      console.error('Error loading blog posts:', err);
+      setPosts(fallbackPosts);
     } finally {
       setLoading(false);
     }
