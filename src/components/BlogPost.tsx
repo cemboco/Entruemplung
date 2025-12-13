@@ -163,7 +163,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
   };
 
   return (
-    <article className="min-h-screen bg-gray-50 py-12">
+    <article className="min-h-screen bg-gray-50 pt-32 pb-12">
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
@@ -171,7 +171,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <button
           onClick={onBack}
-          className="inline-flex items-center gap-2 text-ocean hover:text-midnight transition-colors mb-8 group"
+          className="inline-flex items-center gap-2 bg-ocean/10 text-ocean hover:bg-ocean hover:text-white px-4 py-2 rounded-full transition-all mb-8 group font-medium"
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           Zurück zum Blog

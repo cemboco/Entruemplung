@@ -101,8 +101,8 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
                 selectedCategory === category
-                  ? 'bg-ocean text-white shadow-lg'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
+                  ? 'bg-midnight text-white shadow-lg'
+                  : 'bg-white text-midnight border border-gray-200 hover:bg-midnight hover:text-white'
               }`}
             >
               {category}
