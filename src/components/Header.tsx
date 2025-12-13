@@ -42,20 +42,22 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz,
 
   const handleNavClick = (e: React.MouseEvent, href: string) => {
     if (href.startsWith('#') && onNavigateToHome) {
-      const isOnHomePage = window.location.hash === '' ||
-        window.location.hash === '#' ||
-        !window.location.hash.includes('/') &&
-        !['#impressum', '#datenschutz', '#danke', '#blog'].includes(window.location.hash);
+      const currentHash = window.location.hash;
+      const isOnHomePage = currentHash === '' ||
+        currentHash === '#' ||
+        (currentHash.startsWith('#') &&
+         !currentHash.startsWith('#blog') &&
+         !['#impressum', '#datenschutz', '#danke'].includes(currentHash));
 
       if (!isOnHomePage) {
         e.preventDefault();
-        onNavigateToHome();
+        window.location.hash = '';
         setTimeout(() => {
           const element = document.querySelector(href);
           if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
           }
-        }, 100);
+        }, 150);
       }
     }
   };

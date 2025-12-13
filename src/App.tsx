@@ -32,28 +32,46 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
+  const handleHashChange = () => {
     const hash = window.location.hash;
     if (hash === '#impressum') {
       setCurrentPage('impressum');
       trackPageView('/impressum', 'Impressum');
+      window.scrollTo(0, 0);
     } else if (hash === '#datenschutz') {
       setCurrentPage('datenschutz');
       trackPageView('/datenschutz', 'Datenschutz');
+      window.scrollTo(0, 0);
     } else if (hash === '#danke') {
       setCurrentPage('danke');
       trackPageView('/danke', 'Danke');
+      window.scrollTo(0, 0);
     } else if (hash === '#blog') {
       setCurrentPage('blog');
       trackPageView('/blog', 'Blog');
+      window.scrollTo(0, 0);
     } else if (hash.startsWith('#blog/')) {
       const slug = hash.replace('#blog/', '');
       setCurrentBlogSlug(slug);
       setCurrentPage('blog-post');
       trackPageView(`/blog/${slug}`, `Blog: ${slug}`);
-    } else {
+      window.scrollTo(0, 0);
+    } else if (hash === '' || hash === '#' || !hash.startsWith('#')) {
+      setCurrentPage('home');
       trackPageView('/', 'Entrümpelung Stuttgart');
     }
+  };
+
+  useEffect(() => {
+    handleHashChange();
+
+    window.addEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener('popstate', handleHashChange);
+    };
   }, []);
 
   const navigateToImpressum = () => {
