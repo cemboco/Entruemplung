@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Calendar, Clock, ArrowLeft, Tag, Share2 } from 'lucide-react';
 import { supabase, isSupabaseConfigured, BlogPost as BlogPostType } from '../lib/supabase';
+import { fallbackPosts } from '../data/blogPosts';
 
 interface BlogPostProps {
   slug: string;
@@ -18,6 +19,11 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
 
   const loadPost = async () => {
     if (!isSupabaseConfigured || !supabase) {
+      const fallbackPost = fallbackPosts.find(p => p.slug === slug);
+      setPost(fallbackPost || null);
+      if (fallbackPost) {
+        document.title = `${fallbackPost.title} | ServicePlus Stuttgart`;
+      }
       setLoading(false);
       return;
     }
@@ -53,9 +59,19 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
         }
 
         document.title = `${data.title} | ServicePlus Stuttgart`;
+      } else {
+        const fallbackPost = fallbackPosts.find(p => p.slug === slug);
+        setPost(fallbackPost || null);
+        if (fallbackPost) {
+          document.title = `${fallbackPost.title} | ServicePlus Stuttgart`;
+        }
       }
     } catch (error) {
-      setPost(null);
+      const fallbackPost = fallbackPosts.find(p => p.slug === slug);
+      setPost(fallbackPost || null);
+      if (fallbackPost) {
+        document.title = `${fallbackPost.title} | ServicePlus Stuttgart`;
+      }
     } finally {
       setLoading(false);
     }
@@ -217,7 +233,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
           <div className="prose prose-lg max-w-none">
             <div
               className="text-gray-700 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }}
+              dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </div>
 
