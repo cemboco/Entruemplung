@@ -310,7 +310,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
                   Haben Sie Fragen oder brauchen Sie Hilfe?
                 </h3>
                 <p className="text-white/80 mb-8 text-lg leading-relaxed">
-                  Unser Team steht Ihnen gerne zur Verfugung. Kontaktieren Sie uns fur ein kostenloses und unverbindliches Angebot!
+                  Unser Team steht Ihnen gerne zur Verfugung. Kontaktieren Sie uns für ein kostenloses und unverbindliches Angebot!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button
