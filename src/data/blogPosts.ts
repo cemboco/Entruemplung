@@ -491,7 +491,7 @@ export const fallbackPosts: BlogPost[] = [
 </ul>
 
 <p><strong>Sie sind nicht allein. Kontaktieren Sie uns vertraulich für ein erstes Gespräch!</strong></p>`,
-    featured_image: '/4350943.jpg',
+    featured_image: '/messi.png',
     author: 'ServicePlus Stuttgart Team',
     category: 'Tipps & Ratgeber',
     tags: ['Messie', 'Entrümpelung', 'Stuttgart', 'Hilfe'],
