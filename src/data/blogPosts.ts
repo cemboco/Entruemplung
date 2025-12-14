@@ -564,7 +564,8 @@ Genau hier setzen wir mit Sortierung und Weitergabe an.</li>
 <p>Nicht recycelbare Materialien werden in modernen Anlagen verbrannt und zur Energiegewinnung genutzt.</p>
 
 <p><strong>Stufe 5 - Deponie:</strong></p>
-<p>Nur das absolut Notwendige landet auf der Deponie – bei uns sind das weniger als 5%!</p>
+<p>Unser Ziel ist es, den Restmüllanteil so niedrig wie möglich zu halten. 
+Wie viel tatsächlich wiederverwendet oder recycelt werden kann, hängt stark vom Objekt und Materialmix ab.</p>
 
 <h2>Unsere Partnerschaften für Nachhaltigkeit</h2>
 
@@ -572,11 +573,8 @@ Genau hier setzen wir mit Sortierung und Weitergabe an.</li>
 
 <p><strong>Soziale Einrichtungen:</strong></p>
 <ul>
-<li>Caritas Stuttgart</li>
-<li>Diakonie</li>
-<li>Sozialkaufhäuser</li>
-<li>Flüchtlingshilfe</li>
-<li>Obdachlosenhilfe</li>
+<li>Wir versuchen – wo sinnvoll und möglich – mit regionalen Annahmestellen, Sozialkaufhäusern oder Weitergabewegen zu arbeiten. 
+Welche Wege passen, klären wir projektbezogen.</li>
 </ul>
 
 <p><strong>Recyclinghöfe:</strong></p>
