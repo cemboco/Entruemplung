@@ -609,7 +609,7 @@ export const fallbackPosts: BlogPost[] = [
 </ul>
 
 <h3>Elektrogeräte</h3>
-<p>Nach dem Elektrogerät gesetzlich geregelt:</p>
+<p>Nach dem ElektroG gesetzlich geregelt:</p>
 <ul>
 <li>Funktionsfähige Geräte: Weiterverkauf oder Spende</li>
 <li>Defekte Geräte: Fachgerechtes Recycling</li>
