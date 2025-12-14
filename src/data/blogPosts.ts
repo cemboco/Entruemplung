@@ -18,8 +18,8 @@ export const fallbackPosts: BlogPost[] = [
 <li><strong>Zeitersparnis:</strong> Was Laien Wochen kostet, erledigen Profis oft in 1-2 Tagen</li>
 <li><strong>Fachgerechte Entsorgung:</strong> Wir kennen die Vorschriften und Recyclingmöglichkeiten</li>
 <li><strong>Körperliche Entlastung:</strong> Schwere Möbel und Sperrgut werden von uns transportiert</li>
-<li><strong>Wertanrechnung:</strong> Noch verwertbare Gegenstände werden gegen die Kosten aufgerechnet</li>
-<li><strong>Versicherungsschutz:</strong> Professionelle Firmen sind versichert</li>
+<li><strong>Wertanrechnung (falls sinnvoll):</strong> Verwertbare Gegenstände können den Gesamtpreis reduzieren – abhängig von Zustand, Nachfrage und Verwertungsweg</li>
+<li><strong>Versicherungsschutz:</strong> Achte bei der Auswahl auf Haftpflicht/Versicherungsschutz – seriöse Anbieter können das auf Nachfrage transparent darlegen</li>
 </ul>
 
 <h2>Die Kosten einer Entrümpelung in Stuttgart</h2>
@@ -37,7 +37,7 @@ export const fallbackPosts: BlogPost[] = [
 <li><strong>Anfahrtsweg:</strong> Entfernung zum Objekt spielt eine Rolle</li>
 </ul>
 
-<p><strong>Durchschnittliche Preise in Stuttgart (2025):</strong></p>
+<p><strong>Orientierungswerte (Stand 2025): Die folgenden Spannen sind typische Richtwerte – der tatsächliche Preis hängt vom Füllgrad, Stockwerk, Zugänglichkeit und Entsorgungsanteil ab:</strong></p>
 
 <ul>
 <li>1-Zimmer-Wohnung: 400-800 Euro</li>
@@ -58,13 +58,13 @@ export const fallbackPosts: BlogPost[] = [
 <p>Sie erhalten ein detailliertes, transparentes Angebot ohne versteckte Kosten. Dabei werden auch verwertbare Gegenstände berücksichtigt, die den Preis reduzieren können.</p>
 
 <p><strong>3. Terminvereinbarung:</strong></p>
-<p>Nach Ihrer Auftragserteilung vereinbaren wir einen passenden Termin. Oft können wir kurzfristig innerhalb weniger Tage starten.</p>
+<p>Nach Ihrer Auftragserteilung vereinbaren wir einen passenden Termin. In vielen Fällen sind kurzfristige Termine möglich – je nach Auslastung und Objektumfang finden wir meist schnell eine passende Lösung.</p>
 
 <p><strong>4. Durchführung der Entrümpelung:</strong></p>
 <p>Unser erfahrenes Team kommt mit allen notwendigen Werkzeugen und Transportmitteln. Wir arbeiten zügig, sorgfältig und diskret.</p>
 
 <p><strong>5. Fachgerechte Entsorgung:</strong></p>
-<p>Alle Materialien werden sortiert und fachgerecht entsorgt oder dem Recycling zugeführt. Wir arbeiten nach den aktuellen Umweltstandards.</p>
+<p>Alle Materialien werden sortiert und fachgerecht entsorgt oder dem Recycling zugeführt. Wir trennen Materialien sorgfältig und führen sie – soweit möglich – Wiederverwendung, Recycling oder fachgerechter Entsorgung zu.</p>
 
 <p><strong>6. Besenreine Übergabe:</strong></p>
 <p>Die Räume werden besenrein übergeben. Auf Wunsch bieten wir auch eine Endreinigung an.</p>
