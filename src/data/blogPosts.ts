@@ -168,8 +168,8 @@ export const fallbackPosts: BlogPost[] = [
 
 <p>Vorteile:</p>
 <ul>
-<li>Schnelle Abwicklung (1-3 Tage)</li>
-<li>Professionelle Wertermittlung</li>
+<li>Schnelle Abwicklung (Je nach Umfang 1-3 Tage)</li>
+<li>Wir geben eine praxisnahe Einschätzung, welche Gegenstände realistisch verwertbar sind, und berücksichtigen das transparent im Angebot.</li>
 <li>Körperliche Entlastung</li>
 <li>Fachgerechte Entsorgung</li>
 <li>Nettoverfahren: Wertgegenstände werden angerechnet</li>
@@ -197,7 +197,7 @@ export const fallbackPosts: BlogPost[] = [
 <li>Teppiche und Kunstwerke</li>
 </ul>
 
-<p>In vielen Fällen gleichen sich die Kosten für die Haushaltsauflösung und der Wert der verwertbaren Gegenstände aus – manchmal bleibt sogar ein Gewinn übrig!</p>
+<p>Je nach Nachlass kann eine Wertanrechnung die Kosten deutlich senken. Ob und in welchem Umfang das möglich ist, zeigt sich nach Sichtung und realistischer Einschätzung.</p>
 
 <h2>Was kostet eine Haushaltsauflösung in Stuttgart?</h2>
 
@@ -248,8 +248,7 @@ export const fallbackPosts: BlogPost[] = [
 <p>Bei einer Haushaltsauflösung nach einem Todesfall sollten rechtliche Aspekte beachtet werden:</p>
 
 <ul>
-<li>Warten Sie die Testamentseröffnung ab</li>
-<li>Klären Sie Erbansprüche</li>
+<li>Bei ungeklärter Erb-/Vollmachtssituation ist es sinnvoll, vor größeren Entsorgungsentscheidungen Klarheit zu schaffen (z. B. wer entscheidungsbefugt ist).</li>
 <li>Kündigen Sie Mietverträge fristgerecht</li>
 <li>Informieren Sie Vermieter rechtzeitig</li>
 <li>Dokumentieren Sie wertvolle Gegenstände</li>
@@ -258,7 +257,7 @@ export const fallbackPosts: BlogPost[] = [
 <h2>Warum ServicePlus Stuttgart für Ihre Haushaltsauflösung?</h2>
 
 <ul>
-<li><strong>Erfahrung:</strong> Über 15 Jahre Erfahrung in Stuttgart</li>
+<li><strong>Erfahrung:</strong> Aus vielen Projekten in Stuttgart & Umgebung. Wir wissen, worauf es bei Haushaltsauflösungen in der Region ankommt – organisatorisch wie menschlich.</li>
 <li><strong>Einfühlsamkeit:</strong> Besonders bei emotionalen Situationen</li>
 <li><strong>Faire Preise:</strong> Transparentes Nettoverfahren</li>
 <li><strong>Schnelligkeit:</strong> Meist innerhalb von 1-3 Tagen</li>
@@ -326,7 +325,7 @@ export const fallbackPosts: BlogPost[] = [
 <h2>Unser Ansatz bei Messie-Entrümpelungen</h2>
 
 <p><strong>1. Vorgespräch und Beratung:</strong></p>
-<p>Wir nehmen uns Zeit für ein ausführliches Gespräch. Dabei bauen wir Vertrauen auf und besprechen die Wünsche und Ängste des Betroffenen. Wenn möglich, arbeiten wir mit Therapeuten oder Messie-Helfern zusammen.</p>
+<p>Wir nehmen uns Zeit für ein ausführliches Gespräch. Dabei bauen wir Vertrauen auf und besprechen die Wünsche und Ängste des Betroffenen. Wenn gewünscht, stimmen wir uns mit Angehörigen, Betreuern oder begleitenden Fachstellen ab – damit die Räumung im Tempo der betroffenen Person erfolgen kann.</p>
 
 <p><strong>2. Schrittweises Vorgehen:</strong></p>
 <p>Anders als bei normalen Entrümpelungen gehen wir bei Messie-Wohnungen Schritt für Schritt vor:</p>
@@ -432,7 +431,7 @@ export const fallbackPosts: BlogPost[] = [
 <p>Wir verstehen, dass eine Messie-Wohnung für Betroffene extrem schambesetzt ist. Deshalb garantieren wir:</p>
 
 <ul>
-<li><strong>Neutrale Fahrzeuge:</strong> Keine auffällige Beschriftung</li>
+<li><strong>Neutrale Fahrzeuge:</strong> Diskretion hat Priorität – wir achten auf einen respektvollen Auftritt und eine ruhige Abwicklung vor Ort</li>
 <li><strong>Geschultes Personal:</strong> Alle Mitarbeiter sind im Umgang mit Betroffenen geschult</li>
 <li><strong>Flexible Arbeitszeiten:</strong> Auch abends oder am Wochenende möglich</li>
 <li><strong>Verschwiegenheit:</strong> Absolute Diskretion gegenüber Dritten</li>
@@ -523,9 +522,8 @@ export const fallbackPosts: BlogPost[] = [
 
 <p><strong>Erschreckende Zahlen:</strong></p>
 <ul>
-<li>Pro Haushalt landen durchschnittlich 10% noch brauchbare Gegenstände im Müll</li>
-<li>Nur etwa 30% des Sperrmülls wird recycelt</li>
-<li>Ein Großteil landet in Müllverbrennungsanlagen</li>
+<li>Bei vielen Räumungen zeigt sich: Ein Teil der Dinge wäre grundsätzlich noch nutzbar, landet aber aus Zeitdruck im Abfall. 
+Genau hier setzen wir mit Sortierung und Weitergabe an.</li>
 </ul>
 
 <h2>Unser nachhaltiges Konzept</h2>
