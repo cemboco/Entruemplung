@@ -729,11 +729,11 @@ Welche Wege passen, klären wir projektbezogen.</li>
 <p>Wir ruhen uns nicht auf unseren Erfolgen aus und haben ehrgeizige Ziele:</p>
 
 <ul>
-<li>Erhöhung der Wiederverwendungsquote auf 80%</li>
-<li>Reduzierung der Deponiemenge auf unter 1%</li>
-<li>Elektrifizierung unserer Fahrzeugflotte</li>
-<li>Noch mehr Partnerschaften mit sozialen Einrichtungen</li>
-<li>Entwicklung einer App zur Weitervermittlung von Gegenständen</li>
+<li>Unsere Sortierung weiter verbessern und den Restmüllanteil konsequent senken</li>
+<li>Wiederverwendung und Recycling dort stärken, wo es sinnvoll und möglich ist</li>
+<li>Logistik und Abläufe weiter optimieren (z. B. weniger Leerfahrten)</li>
+<li>Regionale Weitergabewege ausbauen (projektbezogen und passend zum Objekt)</li>
+<li>Digitale Lösungen testen, um Weitergabe und Verwertung einfacher zu machen</li>
 </ul>
 
 <h2>Warum nachhaltige Entrümpelung wichtig ist</h2>
@@ -840,11 +840,12 @@ Welche Wege passen, klären wir projektbezogen.</li>
 
 <p><strong>Teuer zu entsorgen:</strong></p>
 <ul>
-<li>Sondermüll (Farben, Chemikalien): 50-200€ extra</li>
-<li>Asbest: Ab 500€ zusätzlich</li>
-<li>Elektroschrott: Teilweise kostenlos, teilweise kostenpflichtig</li>
-<li>Sperrmüll: 150-300€ pro Tonne</li>
-<li>Bauschutt: 80-150€ pro Tonne</li>
+<li>Sondermüll (Farben, Chemikalien): je nach Menge und Entsorgungsweg oft mit Zusatzkosten verbunden</li>
+<li>Asbestverdächtige Materialien: hier gelten besondere Vorschriften – in der Regel braucht es Spezialfirmen und eine gesonderte Kalkulation</li>
+<li>Elektroschrott: je nach Gerät und Abgabestelle unterschiedlich</li>
+<li>Sperrmüll und Restabfälle: Kosten variieren je nach Entsorger und regionalen Gebühren</li>
+<li>Bauschutt: ebenfalls stark abhängig von Material, Menge und Entsorger</li>
+
 </ul>
 
 <h3>5. Wertanrechnung</h3>
@@ -1082,11 +1083,11 @@ Welche Wege passen, klären wir projektbezogen.</li>
 <p>Unter Umständen absetzbar:</p>
 
 <ul>
-<li><strong>Haushaltsnahe Dienstleistung:</strong> 20% von max. 20.000€ = bis zu 4.000€ Steuerersparnis</li>
-<li><strong>Bei Vermietung:</strong> Als Werbungskosten voll absetzbar</li>
-<li><strong>Bei Erbschaft:</strong> Als Nachlassverbindlichkeit absetzbar</li>
-<li><strong>Bei Pflegegrad:</strong> Über Pflegeversicherung möglich</li>
+<li><strong>Je nach Situation</strong> kann eine Entrümpelung steuerlich relevant sein (z. B. als haushaltsnahe Dienstleistung oder bei Vermietung).</li>
+<li><strong>Wichtig ist in jedem Fall:</strong> eine ordentliche Rechnung und unbare Zahlung (Überweisung).</li>
+<li><strong>Im Zweifel:</strong> die konkreten Voraussetzungen mit Steuerberatung oder Finanzamt klären.</li>
 </ul>
+
 
 <p><strong>Wichtig:</strong> Rechnung muss vorliegen und überwiesen werden (keine Barzahlung!)</p>
 
@@ -1178,11 +1179,13 @@ Welche Wege passen, klären wir projektbezogen.</li>
 <p>Wichtig zu wissen:</p>
 
 <ul>
-<li><strong>Vor Testamentseröffnung:</strong> Vorsicht! Nichts eigenmächtig entsorgen</li>
-<li><strong>Bei bekannten Erben:</strong> Alle Erben müssen zustimmen</li>
-<li><strong>Bei Erbengemeinschaft:</strong> Beschlüsse protokollieren</li>
-<li><strong>Bei Erbausschlagung:</strong> Finger weg von Gegenständen (Annahmevermutung!)</li>
+<li>Wenn Erben oder Bevollmächtigte noch nicht eindeutig feststehen, sollten größere Entsorgungsentscheidungen erst getroffen werden, wenn klar ist, wer entscheiden darf.</li>
+<li>Bei mehreren Beteiligten (z. B. Erbengemeinschaft) ist es hilfreich, Absprachen schriftlich festzuhalten.</li>
+<li>Bei Erbausschlagung oder unklarer Erbfolge ist besondere Vorsicht sinnvoll – klären Sie die Entscheidungsbefugnis, bevor Gegenstände entfernt werden.</li>
 </ul>
+
+<p><strong>Unser Hinweis:</strong> Sobald die Zuständigkeiten geklärt sind, können wir die Räumung strukturiert und zügig umsetzen.</p>
+
 
 <p><strong>Unser Tipp:</strong> Warten Sie die Testamentseröffnung ab und klären Sie die Erbrechtslage. Wir helfen Ihnen dann umso schneller!</p>
 
