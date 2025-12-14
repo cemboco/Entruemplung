@@ -89,7 +89,7 @@ export const fallbackPosts: BlogPost[] = [
 
 <h2>Warum ServicePlus Stuttgart?</h2>
 
-<p>Mit über 15 Jahren Erfahrung in Stuttgart und Umgebung sind wir Ihr verlässlicher Partner für alle Arten von Entrümpelungen. Wir bieten:</p>
+<p>Mit mehreren Jahren Erfahrung in Stuttgart und Umgebung sind wir Ihr verlässlicher Partner für alle Arten von Entrümpelungen. Wir bieten:</p>
 
 <ul>
 <li>Faire und transparente Preise</li>
