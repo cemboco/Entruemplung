@@ -1219,7 +1219,7 @@ Welche Wege passen, klären wir projektbezogen.</li>
 
 <h3>Besichtigung vor Ort</h3>
 
-<p>Bei der Besichtigung achten wir besonders auf:</p>
+<p>Wir gehen strukturiert vor und achten besonders darauf, dass wichtige Unterlagen und Erinnerungsstücke nicht versehentlich verloren gehen:</p>
 
 <ul>
 <li><strong>Wichtige Dokumente:</strong> Testament, Versicherungen, Bankpapiere</li>
@@ -1540,7 +1540,7 @@ Welche Wege passen, klären wir projektbezogen.</li>
 <h2>Warum ServicePlus Stuttgart?</h2>
 
 <ul>
-<li><strong>Erfahrung in Stuttgart und Umgebung</strong>
+<li><strong>Erfahrung mit sensiblen Räumungen:</strong> Wir arbeiten respektvoll, dokumentiert und in dem Tempo, das für Angehörige machbar ist</li>
 <li><strong>Speziell geschulte Mitarbeiter</strong> für sensible Situationen</li>
 <li><strong>Absolute Diskretion</strong> und Respekt</li>
 <li><strong>Faire Preise</strong> mit transparenter Wertanrechnung</li>
