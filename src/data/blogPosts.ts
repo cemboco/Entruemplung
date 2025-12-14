@@ -629,21 +629,8 @@ Welche Wege passen, klären wir projektbezogen.</li>
 
 <h2>Unsere Umweltbilanz in Zahlen</h2>
 
-<p>Diese Zahlen sprechen für sich (Stand 2024):</p>
-
 <ul>
-<li><strong>72% Wiederverwendungsquote:</strong> Fast drei Viertel aller Gegenstände finden ein zweites Leben</li>
-<li><strong>23% Recyclingquote:</strong> Materialien werden dem Kreislauf zurückgeführt</li>
-<li><strong>4% Energetische Verwertung:</strong> Restwärme wird genutzt</li>
-<li><strong>Nur 1% Deponie:</strong> Minimale Belastung der Umwelt</li>
-</ul>
-
-<p><strong>Das bedeutet konkret:</strong></p>
-<ul>
-<li>Über 500 Tonnen Material wiederverwendet oder recycelt</li>
-<li>Ca. 200 Tonnen CO2 eingespart</li>
-<li>Tausende Möbelstücke vor der Vernichtung bewahrt</li>
-<li>Hunderte von Familien mit günstigen Möbeln versorgt</li>
+<li>Wir dokumentieren auf Wunsch Entsorgungswege und trennen Materialien konsequent, um Wiederverwendung und Recycling maximal zu fördern.</li>
 </ul>
 
 <h2>Spezielle Entsorgung von Schadstoffen</h2>
@@ -1072,7 +1059,7 @@ Welche Wege passen, klären wir projektbezogen.</li>
 <li>⚠ Nur telefonisches Angebot ohne Besichtigung</li>
 <li>⚠ Verdächtig günstiger Preis</li>
 <li>⚠ Keine Festpreisgarantie</li>
-<li>⚠ Barzahlung gewünscht (Schwarzarbeit!)</li>
+<li>⚠ Barzahlung gewünscht</li>
 <li>⚠ Keine Rechnung/Quittung</li>
 <li>⚠ Kein Impressum/keine Adresse</li>
 <li>⚠ Vorkasse gefordert</li>
@@ -1137,7 +1124,7 @@ Welche Wege passen, klären wir projektbezogen.</li>
 <li><strong>Faire Wertanrechnung</strong> nach Marktwert</li>
 <li><strong>Festpreis-Garantie</strong> – keine Nachforderungen</li>
 <li><strong>Alle Leistungen inklusive</strong> (Entsorgung, Transport, Personal)</li>
-<li><strong>Rechnung mit ausgewiesener MwSt.</strong></li>
+<li><strong>Sie erhalten eine ordentliche Rechnung – die Ausweisung der Umsatzsteuer erfolgt entsprechend der jeweiligen steuerlichen Einordnung.</strong></li>
 <li><strong>Entsorgungsnachweise</strong> inklusive</li>
 <li><strong>Volle Versicherung</strong></li>
 </ul>
@@ -1202,7 +1189,7 @@ Welche Wege passen, klären wir projektbezogen.</li>
 <h3>Wichtige Fristen</h3>
 
 <ul>
-<li><strong>Mietwohnung:</strong> Gesetzliche Kündigungsfrist 3 Monate, aber: Sonderkündigungsrecht bei Tod</li>
+<li><strong>Mietwohnung:</strong> Gesetzliche Kündigungsfrist 3 Monate, aber: In Todesfällen können besondere Konstellationen gelten (z. B. Eintritt von Angehörigen in den Mietvertrag). Klären Sie die Situation frühzeitig mit Vermieter/Verwaltung oder rechtlicher Beratung</li>
 <li><strong>Eigentum:</strong> Keine Fristen, aber Nebenkosten laufen weiter</li>
 <li><strong>Pflegeheim:</strong> Oft nur 14 Tage Zeit!</li>
 </ul>
@@ -1553,7 +1540,7 @@ Welche Wege passen, klären wir projektbezogen.</li>
 <h2>Warum ServicePlus Stuttgart?</h2>
 
 <ul>
-<li><strong>Über 15 Jahre Erfahrung</strong> mit Haushaltsauflösungen nach Todesfall</li>
+<li><strong>Erfahrung in Stuttgart und Umgebung</strong>
 <li><strong>Speziell geschulte Mitarbeiter</strong> für sensible Situationen</li>
 <li><strong>Absolute Diskretion</strong> und Respekt</li>
 <li><strong>Faire Preise</strong> mit transparenter Wertanrechnung</li>
