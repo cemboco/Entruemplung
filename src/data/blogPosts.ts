@@ -1147,7 +1147,7 @@ export const fallbackPosts: BlogPost[] = [
 </ul>
 
 <p><strong>Fordern Sie jetzt Ihr kostenloses und unverbindliches Angebot an!</strong></p>`,
-    featured_image: '/vorher.jpg',
+    featured_image: '/stuttgart-entrümpelung-serviceplus.jpg',
     author: 'ServicePlus Stuttgart Team',
     category: 'Tipps & Ratgeber',
     tags: ['Kosten', 'Preise', 'Entrümpelung', 'Stuttgart'],
