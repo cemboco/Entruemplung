@@ -91,10 +91,10 @@ Ordentliche Rückgabe der Immobilie.</p>
     meta_description: 'Entrümpelung in Stuttgart 2026: Kosten, Ablauf, Tipps & professionelle Hilfe. Der komplette Leitfaden.',
     meta_keywords: 'Entrümpelung Stuttgart, Entrümpelungsfirma Stuttgart, Haushaltsauflösung Stuttgart, Kosten Entrümpelung',
     published: true,
-    published_at: '2026-01-05T10:00:00.000Z',
+    published_at: '2025-12-19T10:00:00.000Z',
     views: 0,
-    created_at: '2026-01-05T10:00:00.000Z',
-    updated_at: '2026-01-05T10:00:00.000Z'
+    created_at: '2025-12-19T10:00:00.000Z',
+    updated_at: '2025-12-019T10:00:00.000Z'
   },
   {
     id: '2',
