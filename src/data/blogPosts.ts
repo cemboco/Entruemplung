@@ -609,7 +609,6 @@ Ordentliche Rückgabe der Immobilie.</p>
       'Entrümpelung nachhaltig',
       'Entrümpelung Familie',
       'Haushaltsauflösung Stuttgart West'
-      'Haushaltsauflösung Stuttgart Ost'
     ],
     meta_description: 'Nachhaltige Entrümpelung in Stuttgart für Familien & Umweltbewusste. ♻️ Wir recyceln, spenden & entsorgen fair. Jetzt Angebot anfragen!', // Optimiert
     meta_keywords: 'nachhaltige Entrümpelung, Recycling Stuttgart, ökologische Entrümpelung, Entrümpelung Familie, Haushaltsauflösung nachhaltig',
