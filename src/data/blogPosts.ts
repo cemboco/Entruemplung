@@ -2,6 +2,101 @@ import { BlogPost } from '../lib/supabase';
 
 export const fallbackPosts: BlogPost[] = [
   {
+    id: '1',
+    title: 'Entrümpelung in Stuttgart: Der komplette Leitfaden für 2026',
+    slug: 'entruempelung-stuttgart-leitfaden-2026',
+    excerpt: 'Alles, was Sie 2026 über professionelle Entrümpelung in Stuttgart wissen müssen – Kosten, Ablauf, Tipps und häufige Fehler.',
+    content: `<p>Stuttgart ist eine wachsende Stadt – und mit Wachstum entstehen Veränderungen. Umzüge, Haushaltsauflösungen, Todesfälle oder einfach der Wunsch nach mehr Ordnung führen dazu, dass immer mehr Menschen professionelle Entrümpelungsfirmen beauftragen. Im Jahr 2026 ist Entrümpelung längst mehr als nur „alles raus und weg".</p>
+
+<p>In diesem Leitfaden erfahren Sie, worauf es bei einer <strong>Entrümpelung in Stuttgart</strong> wirklich ankommt, welche Kosten realistisch sind und wie Sie typische Fehler vermeiden.</p>
+
+<h2>Was bedeutet Entrümpelung heute?</h2>
+
+<p>Eine professionelle Entrümpelung umfasst weit mehr als das bloße Entfernen von Möbeln. Seriöse Anbieter kümmern sich um:</p>
+
+<ul>
+  <li>strukturierte Räumung aller Räume</li>
+  <li>Sortierung nach Entsorgung, Verwertung und Weitergabe</li>
+  <li>fachgerechte Entsorgung nach gesetzlichen Vorgaben</li>
+  <li>diskreten und respektvollen Umgang mit Eigentum</li>
+  <li>besenreine Übergabe der Immobilie</li>
+</ul>
+
+<p>Gerade in Stuttgart – mit engen Straßen, Parkplatzmangel und vielen Mehrfamilienhäusern – ist Erfahrung entscheidend.</p>
+
+<h2>Wann ist eine Entrümpelung sinnvoll?</h2>
+
+<ul>
+  <li>Wohnungsauflösung nach Todesfall</li>
+  <li>Haushaltsauflösung bei Umzug oder Trennung</li>
+  <li>Messie-Wohnungen</li>
+  <li>Räumung vor Verkauf oder Vermietung</li>
+  <li>Keller-, Dachboden- oder Garagenräumungen</li>
+</ul>
+
+<h2>Was kostet eine Entrümpelung in Stuttgart 2026?</h2>
+
+<p>Die Kosten für eine Entrümpelung in Stuttgart hängen von mehreren Faktoren ab. Pauschalpreise ohne Besichtigung sind meist unseriös.</p>
+
+<ul>
+  <li>Wohnungsgröße und Füllgrad</li>
+  <li>Stockwerk und Aufzug</li>
+  <li>Art des Materials</li>
+  <li>Zugänglichkeit und Parksituation</li>
+</ul>
+
+<p><strong>Richtwerte für 2026:</strong></p>
+
+<ul>
+  <li>1-Zimmer-Wohnung: ca. 400–800 €</li>
+  <li>2-Zimmer-Wohnung: ca. 600–1.200 €</li>
+  <li>3-Zimmer-Wohnung: ca. 800–1.500 €</li>
+  <li>Einfamilienhaus: ca. 1.500–3.500 €</li>
+</ul>
+
+<h2>Der Ablauf einer professionellen Entrümpelung</h2>
+
+<p><strong>1. Kostenlose Besichtigung</strong><br>
+Realistische Einschätzung vor Ort.</p>
+
+<p><strong>2. Transparentes Angebot</strong><br>
+Festpreis ohne versteckte Kosten.</p>
+
+<p><strong>3. Durchführung</strong><br>
+Strukturiert, diskret und zuverlässig.</p>
+
+<p><strong>4. Fachgerechte Entsorgung</strong><br>
+Sortiert und umweltgerecht.</p>
+
+<p><strong>5. Besenreine Übergabe</strong><br>
+Ordentliche Rückgabe der Immobilie.</p>
+
+<h2>Warum ServicePlus Stuttgart?</h2>
+
+<ul>
+  <li>regionale Erfahrung in Stuttgart & Umgebung</li>
+  <li>klare Abläufe & feste Ansprechpartner</li>
+  <li>faire und transparente Festpreise</li>
+  <li>respektvoller Umgang – auch in sensiblen Situationen</li>
+  <li>umweltbewusste Entsorgung</li>
+</ul>
+
+<p><strong>Wir begleiten Sie ruhig, strukturiert und zuverlässig – von der ersten Anfrage bis zur Übergabe.</strong></p>
+
+<p>Kontaktieren Sie uns gern für eine unverbindliche Besichtigung.</p>`,
+    featured_image: '/entruempelung_stuttgart_serviceplus_dienstleistung.png',
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Entrümpelung',
+    tags: ['Entrümpelung Stuttgart', 'Haushaltsauflösung', 'Wohnungsauflösung', 'Kosten Entrümpelung', 'Entrümpelung 2026'],
+    meta_description: 'Entrümpelung in Stuttgart 2026: Kosten, Ablauf, Tipps & professionelle Hilfe. Der komplette Leitfaden.',
+    meta_keywords: 'Entrümpelung Stuttgart, Entrümpelungsfirma Stuttgart, Haushaltsauflösung Stuttgart, Kosten Entrümpelung',
+    published: true,
+    published_at: '2026-01-05T10:00:00.000Z',
+    views: 0,
+    created_at: '2026-01-05T10:00:00.000Z',
+    updated_at: '2026-01-05T10:00:00.000Z'
+  },
+  {
     id: '2',
     title: 'Haushaltsauflösung Stuttgart: Was Sie beachten sollten',
     slug: 'haushaltsaufloesung-stuttgart-beachten',
