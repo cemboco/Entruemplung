@@ -14,6 +14,15 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('Alle');
 
   useEffect(() => {
+    console.log('isSupabaseConfigured', isSupabaseConfigured);
+    console.log('fallback ids', fallbackPosts.map(p => p.id));
+  }, []);
+
+  useEffect(() => {
+    console.log('posts state ids', posts.map(p => p.id));
+  }, [posts]);
+
+  useEffect(() => {
     loadPosts();
   }, []);
 
@@ -46,26 +55,24 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
     }
   };
 
-  const categories = ['Alle', ...Array.from(new Set(posts.map(post => post.category)))];
+  const formatDate = (dateString: unknown) => {
+    const d = new Date(typeof dateString === 'string' ? dateString : '');
+    if (isNaN(d.getTime())) return '';
+    return d.toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' });
+  };
+
+  const getReadingTime = (content: unknown) => {
+    const text = typeof content === 'string' ? content : '';
+    const words = text.trim().split(/\s+/).filter(Boolean).length;
+    const minutes = Math.max(1, Math.ceil(words / 200));
+    return `${minutes} Min. Lesezeit`;
+  };
+
+  const categories = ['Alle', ...Array.from(new Set(posts.map(post => post.category || 'Unkategorisiert')))];
 
   const filteredPosts = selectedCategory === 'Alle'
     ? posts
-    : posts.filter(post => post.category === selectedCategory);
-
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('de-DE', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-  };
-
-  const getReadingTime = (content: string) => {
-    const wordsPerMinute = 200;
-    const words = content.split(/\s+/).length;
-    const minutes = Math.ceil(words / wordsPerMinute);
-    return `${minutes} Min. Lesezeit`;
-  };
+    : posts.filter(post => (post.category || 'Unkategorisiert') === selectedCategory);
 
   if (loading) {
     return (
@@ -143,10 +150,11 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       loading="lazy"
+                      onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
                     />
                     <div className="absolute top-4 left-4">
                       <span className="bg-ocean text-white px-3 py-1 rounded-full text-xs font-semibold">
-                        {post.category}
+                        {post.category || 'Unkategorisiert'}
                       </span>
                     </div>
                   </div>
