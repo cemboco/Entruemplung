@@ -16,6 +16,8 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
   const articleRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    console.log('BlogPost: Searching for slug:', slug);
+    console.log('BlogPost: Available slugs:', fallbackPosts.map(p => p.slug));
     loadPost();
     window.scrollTo(0, 0);
   }, [slug]);
@@ -42,8 +44,12 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
   }, []);
 
   const loadPost = async () => {
+    console.log('BlogPost: loadPost called with slug:', slug);
+    console.log('BlogPost: isSupabaseConfigured:', isSupabaseConfigured);
+
     if (!isSupabaseConfigured || !supabase) {
       const fallbackPost = fallbackPosts.find(p => p.slug === slug);
+      console.log('BlogPost: Found fallback post:', fallbackPost ? fallbackPost.title : 'NOT FOUND');
       setPost(fallbackPost || null);
       if (fallbackPost) {
         document.title = `${fallbackPost.title} | ServicePlus Stuttgart`;
@@ -101,18 +107,16 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
     }
   };
 
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('de-DE', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
+  const formatDate = (dateString: unknown) => {
+    const d = new Date(typeof dateString === 'string' ? dateString : '');
+    if (isNaN(d.getTime())) return '';
+    return d.toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' });
   };
 
-  const getReadingTime = (content: string) => {
-    const wordsPerMinute = 200;
-    const words = content.split(/\s+/).length;
-    const minutes = Math.ceil(words / wordsPerMinute);
+  const getReadingTime = (content: unknown) => {
+    const text = typeof content === 'string' ? content : '';
+    const words = text.trim().split(/\s+/).filter(Boolean).length;
+    const minutes = Math.max(1, Math.ceil(words / 200));
     return `${minutes} Min. Lesezeit`;
   };
 
@@ -239,11 +243,12 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
                 src={post.featured_image}
                 alt={post.title}
                 className="w-full h-full object-cover"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <span className="inline-block bg-ocean text-white px-4 py-1.5 rounded-full text-sm font-semibold mb-4 shadow-lg">
-                  {post.category}
+                  {post.category || 'Unkategorisiert'}
                 </span>
               </div>
             </div>
