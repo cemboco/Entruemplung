@@ -1,5 +1,3 @@
-console.log("BLOG POSTS FILE LOADED ✅", fallbackPosts.map(p => p.id));
-
 import { BlogPost } from '../lib/supabase';
 
 export const fallbackPosts: BlogPost[] = [
