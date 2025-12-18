@@ -16,8 +16,6 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
   const articleRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    console.log('BlogPost: Searching for slug:', slug);
-    console.log('BlogPost: Available slugs:', fallbackPosts.map(p => p.slug));
     loadPost();
     window.scrollTo(0, 0);
   }, [slug]);
@@ -44,12 +42,8 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
   }, []);
 
   const loadPost = async () => {
-    console.log('BlogPost: loadPost called with slug:', slug);
-    console.log('BlogPost: isSupabaseConfigured:', isSupabaseConfigured);
-
     if (!isSupabaseConfigured || !supabase) {
       const fallbackPost = fallbackPosts.find(p => p.slug === slug);
-      console.log('BlogPost: Found fallback post:', fallbackPost ? fallbackPost.title : 'NOT FOUND');
       setPost(fallbackPost || null);
       if (fallbackPost) {
         document.title = `${fallbackPost.title} | ServicePlus Stuttgart`;
