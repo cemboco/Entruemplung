@@ -3,8 +3,8 @@ import { BlogPost } from '../lib/supabase';
 export const fallbackPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Entrümpelung in Stuttgart: Der komplette Leitfaden für 2025',
-    slug: 'entrümpelung-stuttgart-leitfaden-2025',
+    title: 'Entrümpelung in Stuttgart: Der komplette Leitfaden für 2026',
+    slug: 'entrümpelung-stuttgart-leitfaden-2026',
     excerpt: 'Alles, was Sie über professionelle Entrümpelung in Stuttgart wissen müssen. Von Kosten über Ablauf bis zu wichtigen Tipps für Ihre Wohnungsräumung.',
     content: `<p>Stuttgart und Umgebung wachsen stetig, und mit dem Wachstum steigt auch der Bedarf an professionellen Entrümpelungsdiensten. Ob Wohnungsauflösung, Kellerräumung oder komplette Haushaltsauflösung – eine Entrümpelung ist oft zeitaufwendig und körperlich anstrengend. In diesem umfassenden Leitfaden erfahren Sie alles Wichtige über professionelle Entrümpelungen in Stuttgart.</p>
 
