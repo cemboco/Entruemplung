@@ -1428,8 +1428,7 @@ Ordentliche Rückgabe der Immobilie.</p>
     title: 'Minimalismus in Stuttgart: 10 praktische Tipps für ein einfacheres Leben',
     slug: 'minimalismus-stuttgart-tipps-einfacher-leben',
     excerpt: 'Weniger besitzen, mehr erleben. Entdecken Sie 10 konkrete Tipps, wie Sie Minimalismus in Ihrem Stuttgarter Alltag umsetzen können – für mehr Freiheit und Klarheit.',
-    content: `
-<p>In einer pulsierenden Stadt wie Stuttgart kann das Leben schnell voll und komplex werden. Der Wunsch nach mehr Einfachheit, Klarheit und bewusstem Konsum wächst. Minimalismus ist die Antwort – eine Lebensphilosophie, die nicht Verzicht, sondern eine Bereicherung bedeutet.</p>
+    content: `<p>In einer pulsierenden Stadt wie Stuttgart kann das Leben schnell voll und komplex werden. Der Wunsch nach mehr Einfachheit, Klarheit und bewusstem Konsum wächst. Minimalismus ist die Antwort – eine Lebensphilosophie, die nicht Verzicht, sondern eine Bereicherung bedeutet.</p>
 
 <p>Minimalismus heißt, sich von unnötigem Ballast zu befreien, um Platz für das zu schaffen, was wirklich zählt: Zeit, Beziehungen und Erlebnisse. Hier sind 10 praktische Tipps, wie Sie diesen Weg in Stuttgart beginnen können.</p>
 
