@@ -90,7 +90,7 @@ export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz 
             <ul className="space-y-2 text-gray-400 text-sm font-light">
               <li>Mo - Fr: 07:00 - 20:00</li>
               <li>Sa: 08:00 - 18:00</li>
-              <li>So: Notfall-Hotline</li>
+              <li>So: Geschlossen</li>
             </ul>
           </div>
         </div>
