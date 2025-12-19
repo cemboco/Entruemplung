@@ -196,7 +196,7 @@ export default function Contact({ onNavigateToDanke }: ContactProps) {
               <div className="text-base text-midnight space-y-1">
                 <p>Mo - Fr: 07:00 - 20:00 Uhr</p>
                 <p>Sa: 08:00 - 18:00 Uhr</p>
-                <p>So: Notfall-Hotline</p>
+                <p>So: Geschlossen</p>
               </div>
             </div>
 
