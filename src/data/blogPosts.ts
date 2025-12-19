@@ -92,7 +92,7 @@ Ordentliche Rückgabe der Immobilie.</p>
     meta_keywords: 'Entrümpelung Stuttgart, Entrümpelungsfirma Stuttgart, Haushaltsauflösung Stuttgart, Kosten Entrümpelung',
     published: true,
     published_at: '2025-12-19T10:00:00.000Z',
-    views: 0,
+    views: 43,
     created_at: '2025-12-19T10:00:00.000Z',
     updated_at: '2025-12-019T10:00:00.000Z'
   },
