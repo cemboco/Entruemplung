@@ -1488,4 +1488,211 @@ Ordentliche Rückgabe der Immobilie.</p>
     created_at: '2025-12-19T09:00:00.000Z',
     updated_at: '2025-12-19T09:00:00.000Z'
   },
+    {
+    id: '8',
+    title: 'Wohnungsübergabe in Stuttgart: Checkliste für eine stressfreie Übergabe 2025',
+    slug: 'wohnungsuebergabe-stuttgart-checkliste-tipps',
+    excerpt: 'Von besenrein bis zur finalen Abnahme: Was Sie bei der Wohnungsübergabe in Stuttgart beachten müssen, um Ihre Kaution zurückzubekommen.',
+    featured_image: '/wohnungsuebergabe-stuttgart-besenrein.jpg',
+    content: `
+<p>Die Wohnungsübergabe markiert das Ende eines Mietvertrags – und oft den Beginn von Stress. Gerade in Stuttgart, wo die Wohnungssuche herausfordernd ist und Vermieter hohe Ansprüche haben, ist eine professionelle Übergabe entscheidend. In diesem Leitfaden erfahren Sie, wie Sie Ihre Wohnung richtig vorbereiten und böse Überraschungen vermeiden.</p>
+
+<h2>Was bedeutet "besenrein" eigentlich?</h2>
+
+<p>Der Begriff "besenrein" sorgt immer wieder für Verwirrung. Rechtlich bedeutet besenrein:</p>
+
+<ul>
+  <li>Grober Schmutz ist entfernt (Staub, Spinnweben, Krümel)</li>
+  <li>Böden sind gekehrt oder gewischt</li>
+  <li>Fenster müssen NICHT geputzt werden</li>
+  <li>Keine professionelle Reinigung erforderlich</li>
+  <li>Wohnung ist geräumt und leer</li>
+</ul>
+
+<p><strong>Achtung:</strong> Viele Vermieter in Stuttgart erwarten mehr als "besenrein". Im Mietvertrag stehen oft Klauseln wie "in gereinigtem Zustand" oder "renoviert" – diese haben Vorrang.</p>
+
+<h2>Die vollständige Checkliste für die Wohnungsübergabe</h2>
+
+<h3>4-6 Wochen vorher</h3>
+
+<ul>
+  <li>Kündigungsfrist prüfen (meist 3 Monate)</li>
+  <li>Kündigung schriftlich beim Vermieter einreichen</li>
+  <li>Übergabetermin vereinbaren</li>
+  <li>Entrümpelung planen (bei Bedarf Firma beauftragen)</li>
+  <li>Renovierungsbedarf klären (Mietvertrag prüfen)</li>
+</ul>
+
+<h3>2-4 Wochen vorher</h3>
+
+<ul>
+  <li>Schönheitsreparaturen durchführen (Streichen, Spachteln)</li>
+  <li>Defekte Dinge reparieren lassen (Türklinken, Lichtschalter)</li>
+  <li>Alle Räume komplett ausräumen</li>
+  <li>Keller und Dachboden nicht vergessen!</li>
+  <li>Stellplatz/Garage räumen</li>
+</ul>
+
+<h3>1 Woche vorher</h3>
+
+<ul>
+  <li>Gründliche Endreinigung durchführen</li>
+  <li>Fenster putzen (innen und außen)</li>
+  <li>Küche und Bad intensiv reinigen</li>
+  <li>Alle Schränke auswischen</li>
+  <li>Heizkörper abstauben</li>
+  <li>Zählerstände notieren (Strom, Wasser, Gas, Heizung)</li>
+</ul>
+
+<h3>Am Übergabetag</h3>
+
+<ul>
+  <li>Alle Schlüssel bereithalten (Wohnung, Keller, Briefkasten, Haustür)</li>
+  <li>Übergabeprotokoll gründlich prüfen</li>
+  <li>Mängel dokumentieren (Fotos!)</li>
+  <li>Zählerstände gemeinsam ablesen</li>
+  <li>Protokoll unterschreiben (nur wenn alles korrekt ist)</li>
+</ul>
+
+<h2>Typische Streitpunkte bei der Wohnungsübergabe in Stuttgart</h2>
+
+<h3>1. Schönheitsreparaturen</h3>
+
+<p>In Stuttgart verlangen viele Vermieter frisch gestrichene Wände. Das ist nur rechtens, wenn:</p>
+
+<ul>
+  <li>Die Klausel im Mietvertrag wirksam formuliert ist</li>
+  <li>Sie die Wohnung unrenoviert übernommen haben</li>
+  <li>Die Fristen eingehalten sind (je nach Raum 3-8 Jahre)</li>
+</ul>
+
+<p><strong>Tipp:</strong> Lassen Sie bei Unsicherheit einen Mieterschutzbund prüfen, ob die Renovierungspflicht besteht.</p>
+
+<h3>2. Kleinreparaturen</h3>
+
+<p>Defekte Wasserhähne, kaputte Lichtschalter oder lose Türgriffe müssen Sie ersetzen, wenn die Kleinreparaturklausel im Vertrag steht (maximal 100-120€ pro Reparatur).</p>
+
+<h3>3. Normale Abnutzung vs. Schäden</h3>
+
+<p>Normale Gebrauchsspuren sind erlaubt:</p>
+
+<ul>
+  <li>Leichte Kratzer im Parkett</li>
+  <li>Verfärbungen durch Sonne</li>
+  <li>Abgenutzter Teppich (bei langer Mietdauer)</li>
+</ul>
+
+<p>Schäden, die Sie zahlen müssen:</p>
+
+<ul>
+  <li>Brandlöcher im Teppich</li>
+  <li>Tiefe Kratzer im Parkett</li>
+  <li>Bohrlöcher (größer als für Bilderrahmen)</li>
+  <li>Beschädigte Fliesen</li>
+</ul>
+
+<h2>Wann lohnt sich eine professionelle Endreinigung?</h2>
+
+<p>Eine professionelle Reinigungsfirma kostet in Stuttgart für eine 3-Zimmer-Wohnung etwa 200-400€. Das lohnt sich, wenn:</p>
+
+<ul>
+  <li>Sie wenig Zeit haben</li>
+  <li>Die Wohnung stark verschmutzt ist</li>
+  <li>Der Vermieter sehr anspruchsvoll ist</li>
+  <li>Sie Ihre Kaution (oft 2-3 Monatsmieten) schützen wollen</li>
+</ul>
+
+<h2>Entrümpelung vor der Wohnungsübergabe</h2>
+
+<p>Viele Mieter unterschätzen den Aufwand der Entrümpelung. Besonders in Stuttgarter Altbauwohnungen sammelt sich über Jahre viel an:</p>
+
+<ul>
+  <li>Keller voll mit alten Möbeln</li>
+  <li>Dachboden mit Kartons und Kisten</li>
+  <li>Sperrmüll, der nicht mehr passt</li>
+  <li>Alte Elektrogeräte</li>
+</ul>
+
+<p><strong>Unser Service:</strong> Wir übernehmen die komplette Entrümpelung, fachgerechte Entsorgung und können die Wohnung auf Wunsch besenrein oder komplett gereinigt übergeben.</p>
+
+<h2>Das Übergabeprotokoll – darauf müssen Sie achten</h2>
+
+<p>Das Übergabeprotokoll ist das wichtigste Dokument. Es dokumentiert den Zustand der Wohnung zum Zeitpunkt der Rückgabe.</p>
+
+<h3>Was muss ins Protokoll?</h3>
+
+<ul>
+  <li>Datum und Uhrzeit der Übergabe</li>
+  <li>Anwesende Personen</li>
+  <li>Zählerstände aller Versorgungsträger</li>
+  <li>Zustand jedes einzelnen Raumes</li>
+  <li>Vorhandene Mängel und Schäden</li>
+  <li>Anzahl der übergebenen Schlüssel</li>
+  <li>Vereinbarungen zu eventuellen Mängeln</li>
+</ul>
+
+<h3>Wichtige Tipps zum Protokoll</h3>
+
+<ul>
+  <li>Lesen Sie alles genau durch, bevor Sie unterschreiben</li>
+  <li>Machen Sie eigene Fotos als Beweissicherung</li>
+  <li>Unterschreiben Sie nicht unter Druck</li>
+  <li>Notieren Sie Vorbehalte schriftlich</li>
+  <li>Nehmen Sie eine Vertrauensperson mit</li>
+</ul>
+
+<h2>Häufige Fehler vermeiden</h2>
+
+<ul>
+  <li><strong>Zu spät anfangen:</strong> Beginnen Sie mindestens 4 Wochen vor dem Termin mit der Vorbereitung</li>
+  <li><strong>Mietvertrag nicht prüfen:</strong> Was steht wirklich zu Renovierung und Reinigung drin?</li>
+  <li><strong>Kleine Schäden ignorieren:</strong> Eine lose Türklinke kostet 20€ – die Abmahnung später viel mehr</li>
+  <li><strong>Keine Fotos machen:</strong> Dokumentieren Sie alles vor und nach der Reinigung</li>
+  <li><strong>Schlüssel vergessen:</strong> Fehlende Schlüssel können teuer werden (Schließanlage austauschen)</li>
+</ul>
+
+<h2>Kaution zurückbekommen – wie lange darf das dauern?</h2>
+
+<p>Nach der Übergabe beginnt das Warten auf die Kaution. Rechtlich gilt:</p>
+
+<ul>
+  <li>Der Vermieter darf einen Teil einbehalten für offene Nebenkostenabrechnungen (max. 6 Monate)</li>
+  <li>Der Rest muss innerhalb von 3-6 Monaten zurückgezahlt werden</li>
+  <li>Bei unrechtmäßigem Einbehalt können Sie mit Verzugszinsen rechnen</li>
+</ul>
+
+<h2>Unser Service bei ServicePlus Stuttgart</h2>
+
+<p>Wir unterstützen Sie bei allen Schritten der Wohnungsübergabe:</p>
+
+<ul>
+  <li><strong>Komplette Entrümpelung</strong> von Wohnung, Keller und Dachboden</li>
+  <li><strong>Besenreine Übergabe</strong> oder professionelle Endreinigung</li>
+  <li><strong>Kleine Reparaturen</strong> und Schönheitsreparaturen</li>
+  <li><strong>Entsorgung</strong> aller Gegenstände – fachgerecht und nachhaltig</li>
+  <li><strong>Flexible Termine</strong> – auch kurzfristig möglich</li>
+</ul>
+
+<p><strong>Stressfrei aus der alten Wohnung – wir machen das für Sie.</strong></p>
+
+<p>Kontaktieren Sie uns für ein unverbindliches Angebot zur Wohnungsübergabe in Stuttgart.</p>
+`,
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Tipps & Ratgeber',
+    tags: [
+      'Wohnungsübergabe Stuttgart',
+      'Besenrein',
+      'Endreinigung',
+      'Mietrecht',
+      'Kaution',
+      'Umzug Stuttgart'
+    ],
+    meta_description: 'Wohnungsübergabe Stuttgart: Vollständige Checkliste für besenreine Übergabe, Mängel vermeiden & Kaution zurückbekommen. Jetzt informieren!',
+    meta_keywords: 'Wohnungsübergabe Stuttgart, besenrein, Endreinigung Stuttgart, Kaution zurück, Mietrecht Stuttgart',
+    published: true,
+    published_at: '2025-12-29T10:00:00.000Z',
+    views: 0,
+    created_at: '2025-12-29T10:00:00.000Z',
+    updated_at: '2025-12-29T10:00:00.000Z'
+  },
 ];
