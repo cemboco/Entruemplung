@@ -1,8 +1,8 @@
 import { Heart, Shield, Users, Clock, MapPin, Handshake } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
-// Stellen Sie sicher, dass das Bild im public Ordner liegt oder importieren Sie es:
-// import teamImage from '../assets/serviceplus-team-entruempelung.jpg';
+// Hinweis: Stellen Sie sicher, dass das Bild '/serviceplus-team-entruempelung.jpg'
+// in Ihrem 'public'-Ordner liegt.
 
 const values = [
   {
@@ -78,17 +78,25 @@ export default function About() {
             <p className="text-xs uppercase tracking-[0.3em] text-midnight/60 mb-3 font-medium">
               About Us
             </p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-midnight mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-midnight mb-8 leading-tight">
               Über Uns
             </h2>
             
-            <div className="prose prose-lg text-gray-600 font-light mb-8">
-              <p className="mb-4 text-lg">
-                Wir, das sind <span className="font-medium text-midnight">Cemil und Jermaine</span>, sind ein junges Team aus Stuttgart, das anpackt, wo andere zögern.
+            <div className="prose prose-lg text-gray-600 font-light mb-10 space-y-6">
+              <p className="text-lg">
+                Wir, das sind <span className="font-medium text-midnight">Cemil und Jermaine</span>, sind ein junges Team aus Stuttgart, das anpackt, wo andere zögern. Gegründet aus der Überzeugung, dass Dienstleistung wieder wörtlich genommen werden muss: Dienen und Leisten.
               </p>
+              
               <p>
-                Ob Entrümpelung, Haushaltsauflösung oder Messie-Wohnung – wir schaffen Platz. 
-                Auf Wunsch vermitteln wir auch frei gewordene Wohnungen direkt weiter.
+                <strong>Warum ServicePlus?</strong> Weil wir mehr bieten als nur leere Räume. Wir verstehen, dass hinter jeder Auflösung eine Geschichte steckt – oft ein Neuanfang, ein Umzug oder ein Abschied. Deshalb arbeiten wir nicht nur schnell, sondern mit dem nötigen Feingefühl.
+              </p>
+
+              <p>
+                Unser Ansatz ist nachhaltig: Nicht alles ist Müll. Wir sortieren sorgfältig, führen Rohstoffe dem Recycling zu und spenden brauchbare Möbel an soziale Einrichtungen in der Region. So sparen Sie Entsorgungskosten und tun der Umwelt etwas Gutes.
+              </p>
+
+              <p>
+                Ob schwierige Messie-Wohnung, sensibler Nachlass oder gewerbliche Entkernung: Wir sind Ihr Partner mit Handschlagqualität. Und wenn die Räume leer sind? Helfen wir Ihnen auf Wunsch direkt bei der Weitervermittlung der Immobilie. Alles aus einer Hand.
               </p>
             </div>
 
@@ -112,17 +120,17 @@ export default function About() {
           <div className={`flex justify-center lg:justify-end transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           }`}>
-            {/* Wrapper für Größenbegrenzung (max-w-sm macht es nicht zu riesig) */}
+            {/* Wrapper für Größenbegrenzung */}
             <div className="relative w-full max-w-sm"> 
               
               {/* Dekorativer Hintergrund-Rahmen */}
               <div className="absolute inset-0 bg-midnight/5 rounded-2xl transform translate-x-4 translate-y-4 -z-10" />
               
-              {/* Das Bild im Hochformat (aspect-[3/4]) damit Logos sichtbar bleiben */}
+              {/* Das Bild im Hochformat (aspect-[3/4]) */}
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white group">
                 <img 
                   src="/serviceplus-team-entruempelung.jpg" 
-                  alt="Cemil und Jermaine von Serviceplus" 
+                  alt="Cemil und Jermaine von Serviceplus - Ihr Team für Entrümpelungen in Stuttgart" 
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
                 
