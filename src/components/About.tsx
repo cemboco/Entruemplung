@@ -115,7 +115,7 @@ export default function About() {
             {/* Das Bild - Hier bitte DEIN Bild einfügen */}
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white">
               <img 
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1632&auto=format&fit=crop" 
+                src="serviceplus-team-entruempelung.jpg" 
                 alt="Das Serviceplus Team bei der Arbeit" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
