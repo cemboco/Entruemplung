@@ -1,5 +1,8 @@
-import { Heart, Shield, Users, Clock, MapPin, Handshake, CheckCircle2 } from 'lucide-react';
+import { Heart, Shield, Users, Clock, MapPin, Handshake } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
+
+// Stellen Sie sicher, dass das Bild im public Ordner liegt oder importieren Sie es:
+// import teamImage from '../assets/serviceplus-team-entruempelung.jpg';
 
 const values = [
   {
@@ -65,10 +68,10 @@ export default function About() {
     <section id="about" className="py-16 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Hauptbereich: Split Layout (Links Text, Rechts Bild) */}
+        {/* Split Layout: Text Links, Bild Rechts */}
         <div ref={sectionRef} className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
           
-          {/* Linke Spalte: Text */}
+          {/* Linke Seite: Text */}
           <div className={`transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
@@ -89,7 +92,7 @@ export default function About() {
               </p>
             </div>
 
-            {/* Features Liste (jetzt vertikal unter dem Text) */}
+            {/* Features vertikal */}
             <div className="space-y-4">
               {features.map((feature, index) => {
                 const Icon = feature.icon;
@@ -105,20 +108,29 @@ export default function About() {
             </div>
           </div>
 
-          {/* Rechte Spalte: Bild */}
-          <div className={`relative transition-all duration-1000 delay-200 ${
+          {/* Rechte Seite: Bild */}
+          <div className={`flex justify-center lg:justify-end transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           }`}>
-            {/* Dekorativer Hintergrund-Rahmen */}
-            <div className="absolute inset-0 bg-midnight/5 rounded-2xl transform translate-x-4 translate-y-4 -z-10" />
-            
-            {/* Das Bild - Hier bitte DEIN Bild einfügen */}
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white">
-              <img 
-                src="serviceplus-team-entruempelung.jpg" 
-                alt="Das Serviceplus Team bei der Arbeit" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
+            {/* Wrapper für Größenbegrenzung (max-w-sm macht es nicht zu riesig) */}
+            <div className="relative w-full max-w-sm"> 
+              
+              {/* Dekorativer Hintergrund-Rahmen */}
+              <div className="absolute inset-0 bg-midnight/5 rounded-2xl transform translate-x-4 translate-y-4 -z-10" />
+              
+              {/* Das Bild im Hochformat (aspect-[3/4]) damit Logos sichtbar bleiben */}
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white group">
+                <img 
+                  src="/serviceplus-team-entruempelung.jpg" 
+                  alt="Cemil und Jermaine von Serviceplus" 
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                />
+                
+                {/* Optional: Kleines Badge unten */}
+                <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-xl border border-white/20 shadow-sm">
+                  <p className="text-xs text-center font-medium text-midnight">Ihr Team vor Ort in Stuttgart</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
