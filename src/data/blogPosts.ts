@@ -1908,7 +1908,7 @@ Ordentliche Rückgabe der Immobilie.</p>
 <p>Kontaktieren Sie uns für ein unverbindliches Gespräch oder eine kostenlose Besichtigung in Stuttgart und Umgebung.</p>
 `,
     author: 'ServicePlus Stuttgart Team',
-    category: 'Tipps & Ratgeber',
+    category: 'Entrümpelung',
     tags: [
       'Neujahrsvorsatz',
       'Entrümpelung 2026',
