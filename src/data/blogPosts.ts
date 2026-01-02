@@ -1700,7 +1700,7 @@ Ordentliche Rückgabe der Immobilie.</p>
     title: 'Neujahrsvorsatz Entrümpelung: 5 Dinge, die Sie 2026 anders machen sollten',
     slug: 'neujahrsvorsatz-entruempelung-2026-tipps',
     excerpt: 'Neues Jahr, neue Ordnung: Warum Entrümpelung 2026 Ihr wichtigster Vorsatz sein sollte und wie Sie ihn diesmal wirklich durchziehen.',
-    featured_image: '/Entruempelung-sauberkeit-hygiene.jpg',
+    featured_image: '/Entruempelung-sauberkeit-hygiene.png',
     content: `
 <p>Jedes Jahr derselbe Vorsatz: "Dieses Jahr wird aufgeräumt!" Doch nach ein paar Wochen stapeln sich die Dinge wieder, der Keller bleibt voll und das Chaos kehrt zurück. 2026 kann das anders werden – wenn Sie diese 5 Strategien beherzigen.</p>
 
