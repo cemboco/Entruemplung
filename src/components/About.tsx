@@ -1,5 +1,6 @@
 import { Heart, Shield, Users, Clock, MapPin, Handshake } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
+import ChecklistDownload from './components/ChecklistDownload';
 
 // Hinweis: Stellen Sie sicher, dass das Bild '/serviceplus-team-entruempelung.jpg'
 // in Ihrem 'public'-Ordner liegt.
