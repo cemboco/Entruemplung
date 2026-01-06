@@ -3,12 +3,7 @@ export default function ChecklistDownload() {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-3xl mx-auto px-6">
         <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 md:p-10 text-center">
-
-          {/* sanfter Akzent */}
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-4 text-sm text-gray-500">
-            Kostenlos
-          </div>
-
+        
           <h2 className="text-2xl md:text-3xl font-semibold text-midnight mb-4">
             Kostenlose Entrümpelungs-Checkliste
           </h2>
