@@ -1998,7 +1998,7 @@ Ordentliche Rückgabe der Immobilie.</p>
     title: 'Geld vom Staat zurück: So setzen Sie die Entrümpelung steuerlich ab',
     slug: 'entruempelung-steuerlich-absetzbar-tipps',
     excerpt: 'Wussten Sie, dass der Staat sich an Ihrer Entrümpelung beteiligt? Holen Sie sich bis zu 4.000 € zurück – wir erklären, wie es funktioniert und worauf Sie bei der Rechnung achten müssen.',
-    featured_image: '/steuer-entruempelung-absetzen.jpg',
+    featured_image: '/steuer-entruempelung-absetzen.png',
     content: `
 <p>Eine professionelle Entrümpelung schafft nicht nur Platz, sondern kostet natürlich auch Geld. Doch es gibt eine gute Nachricht, die viele unserer Kunden in Stuttgart nicht kennen: <strong>Das Finanzamt zahlt mit.</strong></p>
 
