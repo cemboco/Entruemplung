@@ -7,6 +7,8 @@ import WhatsAppButton from './components/WhatsAppButton';
 import Footer from './components/Footer';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { trackPageView } from './utils/analytics';
+import ChecklistDownload from './components/ChecklistDownload';
+
 
 const Services = lazy(() => import('./components/Services'));
 const About = lazy(() => import('./components/About'));
@@ -207,6 +209,7 @@ function App() {
       <StructuredData />
       <Header onNavigateToImpressum={navigateToImpressum} onNavigateToDatenschutz={navigateToDatenschutz} onNavigateToBlog={navigateToBlog} onNavigateToHome={navigateToHome} />
       <Hero />
+      <ChecklistDownload />
       <LocationTicker />
       <Suspense fallback={<div className="py-20 text-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-midnight mx-auto"></div></div>}>
         <Services />
