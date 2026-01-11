@@ -2267,4 +2267,78 @@ Ordentliche Rückgabe der Immobilie.</p>
     created_at: '2026-01-09T09:00:00.000Z',
     updated_at: '2026-01-09T09:00:00.000Z'
   },
+    {
+    id: '14',
+    title: 'Vorsicht Abzocke: 5 Warnsignale für unseriöse Entrümpler',
+    slug: 'unserioese-entruempler-erkennen-stuttgart-warnsignale',
+    excerpt: 'Lockvogel-Preise, illegale Müllentsorgung und Bargeld-Forderungen: So schützen Sie sich vor schwarzen Schafen in der Entrümpelungsbranche.',
+    featured_image: '/unserioese-entruempler-warnung.png',
+    content: `
+<p>Die Entrümpelungsbranche hat leider einen Ruf, der nicht immer der beste ist. Zu Recht: Wer im Internet nach "Entrümpelung Stuttgart günstig" sucht, landet oft bei Anbietern, die das schnelle Geld wittern – auf Kosten Ihrer Nerven und Ihres Geldbeutels. </p>
+
+<p>Die Masche ist oft gleich: Ein unglaublich niedriger Preis am Telefon, aber am Tag der Räumung explodieren die Kosten plötzlich. Oder noch schlimmer: Ihr Sperrmüll landet nicht auf der Deponie, sondern im nächsten Waldstück – und Sie haften dafür. Damit Ihnen das nicht passiert, haben wir die 5 wichtigsten Warnsignale zusammengefasst, bei denen Sie sofort hellhörig werden sollten.</p>
+
+<h2>Inhaltsverzeichnis</h2>
+<ol>
+  <li><a href="#kapitel1">Signal 1: Der Preis am Telefon (ohne Besichtigung)</a></li>
+  <li><a href="#kapitel2">Signal 2: Die Vorkasse-Falle</a></li>
+  <li><a href="#kapitel3">Signal 3: "Nur Bares ist Wahres"</a></li>
+  <li><a href="#kapitel4">Signal 4: Fehlendes Impressum & Handy-Nummern</a></li>
+  <li><a href="#kapitel5">Signal 5: Die illegale Entsorgung (Ihr Risiko!)</a></li>
+  <li><a href="#kapitel6">Checkliste: So arbeiten seriöse Profis</a></li>
+</ol>
+
+<h2 id="kapitel1">Signal 1: Der Preis am Telefon (ohne Besichtigung)</h2>
+<p>Wenn Ihnen jemand am Telefon einen Pauschalpreis nennt, ohne die Wohnung gesehen zu haben: <strong>Legen Sie auf.</strong></p>
+<p>Kein seriöser Entrümpler kann wissen, wie viel Arbeit wirklich ansteht, ohne den Keller, die Laufwege oder den Inhalt der Schränke gesehen zu haben. Unseriöse Anbieter nennen oft extrem niedrige "Lockvogel-Preise" (z.B. "Alles für 150€"), nur um vor Ort dann Druck aufzubauen und das Drei- bis Vierfache zu verlangen.</p>
+
+<h2 id="kapitel2">Signal 2: Die Vorkasse-Falle</h2>
+<p>Ein absolutes No-Go: Der Anbieter verlangt Geld, bevor er überhaupt einen Finger krumm gemacht hat. Oft wird dies mit "Container-Bestellung" oder "Personalplanung" begründet.</p>
+<p><strong>Die Realität:</strong> Oft sehen Sie diese Anbieter nach der Überweisung nie wieder. Zahlen Sie niemals im Voraus. Eine seriöse Firma stellt eine Rechnung <em>nach</em> getaner Arbeit oder vereinbart eine faire Anzahlung erst bei Vertragsunterzeichnung vor Ort.</p>
+
+<h2 id="kapitel3">Signal 3: "Nur Bares ist Wahres"</h2>
+<p>Der Anbieter besteht auf Barzahlung und druckst herum, wenn Sie nach einer Rechnung fragen? Vorsicht!</p>
+<ul>
+  <li>Erstens: Ohne Rechnung können Sie die Kosten nicht <a href="/blog/entruempelung-steuerlich-absetzbar-tipps">steuerlich absetzen</a> (Sie verschenken 20% Erstattung!).</li>
+  <li>Zweitens: Sie haben keinen Beweis, falls später Mängel auffallen oder Müll illegal entsorgt wird.</li>
+  <li>Drittens: Es riecht stark nach Schwarzarbeit.</li>
+</ul>
+
+<h2 id="kapitel4">Signal 4: Fehlendes Impressum & nur Handy-Nummern</h2>
+<p>Schauen Sie auf die Website (falls es eine gibt). Fehlt ein Impressum? Gibt es keine feste Adresse in Stuttgart oder Umgebung? Ist nur eine Handy-Nummer angegeben?</p>
+<p>Wer sich versteckt, hat meist etwas zu verbergen. Ein seriöser Stuttgarter Dienstleister hat ein ordentliches Impressum mit Steuernummer und fester Anschrift. Prüfen Sie das unbedingt <em>vor</em> der Beauftragung.</p>
+
+<h2 id="kapitel5">Signal 5: Die illegale Entsorgung (Ihr Risiko!)</h2>
+<p>Das ist der gefährlichste Punkt. Unseriöse Anbieter sparen sich die teuren Deponiegebühren und kippen Ihren Müll einfach in den Wald oder auf fremde Grundstücke. </p>
+<p><strong>Das Problem:</strong> Wenn im Müll Hinweise auf Sie gefunden werden (alte Briefe, Rechnungen), stehen <strong>Sie</strong> als Auftraggeber in der Haftung. Die Bußgelder für illegale Müllentsorgung sind enorm hoch. Fragen Sie immer nach einem Entsorgungsnachweis!</p>
+
+<h2 id="kapitel6">Checkliste: So arbeiten seriöse Profis</h2>
+<p>Woran erkennen Sie nun die "Guten"? Achten Sie auf diese Punkte, die bei ServicePlus Stuttgart Standard sind:</p>
+<ul>
+  <li>✅ <strong>Kostenlose Besichtigung</strong> vor Ort.</li>
+  <li>✅ <strong>Schriftliches Festpreis-Angebot</strong> (keine Nachverhandlungen!).</li>
+  <li>✅ <strong>Offizielle Rechnung</strong> mit ausgewiesener Mehrwertsteuer.</li>
+  <li>✅ <strong>Betriebshaftpflichtversicherung</strong> (falls doch mal ein Kratzer im Treppenhaus passiert).</li>
+  <li>✅ <strong>Entsorgungsnachweis</strong> auf Anfrage.</li>
+</ul>
+<p>Sparen Sie nicht am falschen Ende. Eine "billige" Entrümpelung kann Sie am Ende teuer zu stehen kommen.</p>
+`,
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Tipps & Ratgeber',
+    tags: [
+      'Unseriöse Entrümpler',
+      'Warnsignale',
+      'Abzocke vermeiden',
+      'Entrümpelung Stuttgart',
+      'Illegale Entsorgung',
+      'Verbraucherschutz'
+    ],
+    meta_description: 'Vorsicht vor Abzocke bei der Entrümpelung! 5 Warnsignale, woran Sie unseriöse Anbieter erkennen und wie Sie sich vor Betrug schützen.',
+    meta_keywords: 'Unseriöse Entrümpler erkennen, Entrümpelung Betrug, Warnsignale Haushaltsauflösung, Entsorgungsnachweis Stuttgart',
+    published: true,
+    published_at: '2026-03-05T09:00:00.000Z',
+    views: 0,
+    created_at: '2026-03-05T09:00:00.000Z',
+    updated_at: '2026-03-05T09:00:00.000Z'
+  },
     ];
