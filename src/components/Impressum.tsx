@@ -1,20 +1,17 @@
 import { ArrowLeft, MapPin, Phone, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-interface ImpressumProps {
-  onBack: () => void;
-}
-
-export default function Impressum({ onBack }: ImpressumProps) {
+export default function Impressum() {
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <button
-          onClick={onBack}
+        <Link
+          to="/"
           className="flex items-center gap-2 text-midnight hover:text-midnight-dark transition-colors mb-8"
         >
           <ArrowLeft size={20} />
           <span className="text-sm font-light">Zurück zur Startseite</span>
-        </button>
+        </Link>
 
         <h1 className="text-4xl font-light text-midnight mb-8">Impressum</h1>
 

@@ -1,11 +1,7 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-interface FooterProps {
-  onNavigateToImpressum?: () => void;
-  onNavigateToDatenschutz?: () => void;
-}
-
-export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz }: FooterProps = {}) {
+export default function Footer() {
   return (
     <footer className="bg-midnight text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -104,18 +100,18 @@ export default function Footer({ onNavigateToImpressum, onNavigateToDatenschutz 
               © 2025 Serviceplus Entrümpelung GbR
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-              <button
-                onClick={onNavigateToImpressum}
+              <Link
+                to="/impressum"
                 className="hover:text-gray-300 transition-colors"
               >
                 Impressum
-              </button>
-              <button
-                onClick={onNavigateToDatenschutz}
+              </Link>
+              <Link
+                to="/datenschutz"
                 className="hover:text-gray-300 transition-colors"
               >
                 Datenschutz
-              </button>
+              </Link>
               <a href="#" className="hover:text-gray-300 transition-colors">
                 AGB
               </a>

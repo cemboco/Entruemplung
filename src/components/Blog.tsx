@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react';
 import { supabase, isSupabaseConfigured, BlogPost } from '../lib/supabase';
 import { fallbackPosts } from '../data/blogPosts';
 
-interface BlogProps {
-  onNavigateToPost: (slug: string) => void;
-}
-
-export default function Blog({ onNavigateToPost }: BlogProps) {
+export default function Blog() {
   const [posts, setPosts] = useState<BlogPost[]>(fallbackPosts);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -138,10 +135,10 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post) => (
-              <article
+              <Link
                 key={post.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
-                onClick={() => onNavigateToPost(post.slug)}
+                to={`/blog/${post.slug}`}
+                className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
               >
                 {post.featured_image && (
                   <div className="relative h-56 overflow-hidden">
@@ -196,7 +193,7 @@ export default function Blog({ onNavigateToPost }: BlogProps) {
                     <ArrowRight className="w-5 h-5" />
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         )}

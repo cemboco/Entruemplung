@@ -1,14 +1,15 @@
 import { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Calendar, Clock, ArrowLeft, Tag, Share2, Phone, ChevronUp } from 'lucide-react';
 import { supabase, isSupabaseConfigured, BlogPost as BlogPostType } from '../lib/supabase';
 import { fallbackPosts } from '../data/blogPosts';
 
 interface BlogPostProps {
   slug: string;
-  onBack: () => void;
 }
 
-export default function BlogPost({ slug, onBack }: BlogPostProps) {
+export default function BlogPost({ slug }: BlogPostProps) {
+  const navigate = useNavigate();
   const [post, setPost] = useState<BlogPostType | null>(null);
   const [loading, setLoading] = useState(true);
   const [readingProgress, setReadingProgress] = useState(0);
@@ -168,7 +169,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
           <h2 className="text-2xl font-bold text-midnight mb-4">Artikel nicht gefunden</h2>
           <p className="text-gray-600 mb-6">Der gesuchte Artikel existiert nicht oder wurde entfernt.</p>
           <button
-            onClick={onBack}
+            onClick={() => navigate('/blog')}
             className="inline-flex items-center gap-2 bg-midnight text-white px-6 py-3 rounded-full hover:bg-midnight/90 transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -224,7 +225,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
-            onClick={onBack}
+            onClick={() => navigate('/blog')}
             className="inline-flex items-center gap-2 text-gray-600 hover:text-midnight px-4 py-2 rounded-full transition-all mb-8 group hover:bg-white hover:shadow-md"
           >
             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
@@ -332,7 +333,7 @@ export default function BlogPost({ slug, onBack }: BlogPostProps) {
 
           <div className="mt-10 text-center">
             <button
-              onClick={onBack}
+              onClick={() => navigate('/blog')}
               className="inline-flex items-center gap-2 text-gray-600 hover:text-midnight font-medium transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />

@@ -1,17 +1,13 @@
 import { Phone, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { trackPhoneClick } from '../utils/analytics';
 
-interface HeaderProps {
-  onNavigateToImpressum?: () => void;
-  onNavigateToDatenschutz?: () => void;
-  onNavigateToBlog?: () => void;
-  onNavigateToHome?: () => void;
-}
-
-export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz, onNavigateToBlog, onNavigateToHome }: HeaderProps = {}) {
+export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,35 +26,18 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz,
     { href: '#kontakt', label: 'Kontakt' },
   ];
 
-  const handleLogoClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (onNavigateToHome) {
-      onNavigateToHome();
-    } else {
-      window.location.hash = '';
-      window.scrollTo(0, 0);
-    }
-  };
-
   const handleNavClick = (e: React.MouseEvent, href: string) => {
-    if (href.startsWith('#') && onNavigateToHome) {
-      const currentHash = window.location.hash;
-      const isOnHomePage = currentHash === '' ||
-        currentHash === '#' ||
-        (currentHash.startsWith('#') &&
-         !currentHash.startsWith('#blog') &&
-         !['#impressum', '#datenschutz', '#danke'].includes(currentHash));
+    const isOnHomePage = location.pathname === '/';
 
-      if (!isOnHomePage) {
-        e.preventDefault();
-        window.location.hash = '';
-        setTimeout(() => {
-          const element = document.querySelector(href);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 150);
-      }
+    if (!isOnHomePage) {
+      e.preventDefault();
+      navigate('/');
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
     }
   };
 
@@ -72,9 +51,8 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz,
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <a
-            href="#"
-            onClick={handleLogoClick}
+          <Link
+            to="/"
             className="flex items-center gap-2"
           >
             <img
@@ -85,7 +63,7 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz,
             <span className="text-xl font-light text-midnight transition-colors duration-300 tracking-tight">
               S+
             </span>
-          </a>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
@@ -98,12 +76,12 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz,
                 {link.label}
               </a>
             ))}
-            <button
-              onClick={onNavigateToBlog}
+            <Link
+              to="/blog"
               className="text-sm font-light text-gray-600 hover:text-midnight transition-colors duration-300"
             >
               Blog
-            </button>
+            </Link>
             <a
               href="tel:+4915732649483"
               className="flex items-center gap-2 px-6 py-2 rounded-full bg-midnight text-white text-sm font-medium hover:bg-midnight-dark transition-all duration-300"
@@ -138,15 +116,13 @@ export default function Header({ onNavigateToImpressum, onNavigateToDatenschutz,
                   {link.label}
                 </a>
               ))}
-              <button
-                onClick={() => {
-                  onNavigateToBlog?.();
-                  setIsMobileMenuOpen(false);
-                }}
-                className="px-0 py-2 text-sm font-light text-gray-600 hover:text-midnight transition-colors text-left"
+              <Link
+                to="/blog"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-0 py-2 text-sm font-light text-gray-600 hover:text-midnight transition-colors"
               >
                 Blog
-              </button>
+              </Link>
               <a
                 href="tel:+4915732649483"
                 className="mt-2 flex items-center justify-center gap-2 bg-midnight text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-midnight-dark transition-colors"

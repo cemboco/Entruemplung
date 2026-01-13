@@ -1,12 +1,10 @@
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { trackContactFormSubmit, trackPhoneClick } from '../utils/analytics';
 
-interface ContactProps {
-  onNavigateToDanke: () => void;
-}
-
-export default function Contact({ onNavigateToDanke }: ContactProps) {
+export default function Contact() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -31,7 +29,7 @@ export default function Contact({ onNavigateToDanke }: ContactProps) {
 
       if (response.ok) {
         trackContactFormSubmit();
-        onNavigateToDanke();
+        navigate('/danke');
       }
     } catch (error) {
       console.error('Error submitting form:', error);

@@ -1,12 +1,9 @@
 import { CheckCircle, Phone, Mail, ArrowLeft } from 'lucide-react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { trackConversion } from '../utils/analytics';
 
-interface ThankYouProps {
-  onBack: () => void;
-}
-
-export default function ThankYou({ onBack }: ThankYouProps) {
+export default function ThankYou() {
   useEffect(() => {
     trackConversion();
   }, []);
@@ -122,13 +119,13 @@ export default function ThankYou({ onBack }: ThankYouProps) {
         </div>
 
         <div className="text-center">
-          <button
-            onClick={onBack}
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 bg-white text-midnight px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition-all duration-300 shadow-sm border border-gray-200"
           >
             <ArrowLeft className="w-5 h-5" />
             Zurück zur Startseite
-          </button>
+          </Link>
         </div>
       </div>
     </div>
