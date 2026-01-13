@@ -12,9 +12,7 @@ export default defineConfig({
         format: 'es',
         entryFileNames: '[name].js',
       },
+      external: ['react', 'react-dom', 'react-router-dom', 'react-router', 'react/jsx-runtime'],
     },
-  },
-  ssr: {
-    noExternal: ['react', 'react-dom', 'react-router-dom'],
   },
 });
