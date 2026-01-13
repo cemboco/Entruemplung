@@ -2336,9 +2336,9 @@ Ordentliche Rückgabe der Immobilie.</p>
     meta_description: 'Vorsicht vor Abzocke bei der Entrümpelung! 5 Warnsignale, woran Sie unseriöse Anbieter erkennen und wie Sie sich vor Betrug schützen.',
     meta_keywords: 'Unseriöse Entrümpler erkennen, Entrümpelung Betrug, Warnsignale Haushaltsauflösung, Entsorgungsnachweis Stuttgart',
     published: true,
-    published_at: '2026-03-05T09:00:00.000Z',
+    published_at: '2026-01-11T09:00:00.000Z',
     views: 0,
-    created_at: '2026-03-05T09:00:00.000Z',
-    updated_at: '2026-03-05T09:00:00.000Z'
+    created_at: '2026-01-11T09:00:00.000Z',
+    updated_at: '2026-01-11T09:00:00.000Z'
   },
     ];
