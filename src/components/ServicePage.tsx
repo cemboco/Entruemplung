@@ -182,21 +182,46 @@ export default function ServicePage() {
           </div>
         </div>
 
+        {service.additionalContent && (
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-midnight mb-8">{service.additionalContent.title}</h2>
+            <div className="space-y-8">
+              {service.additionalContent.sections.map((section, index) => (
+                <div key={index} className="bg-gray-50 rounded-2xl p-8">
+                  <h3 className="text-xl font-semibold text-midnight mb-4">{section.heading}</h3>
+                  <p className="text-gray-700 leading-relaxed">{section.content}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="mt-16 p-8 bg-gray-50 rounded-2xl">
-          <h3 className="text-xl font-bold text-midnight mb-4">Häufig gestellte Fragen</h3>
-          <div className="space-y-4 text-gray-700">
-            <div>
-              <p className="font-semibold mb-2">Wie schnell können Sie bei mir sein?</p>
-              <p className="text-sm">In dringenden Fällen können wir oft noch am selben oder nächsten Tag bei Ihnen sein. Kontaktieren Sie uns für eine schnelle Terminabsprache.</p>
-            </div>
-            <div>
-              <p className="font-semibold mb-2">Wie erfolgt die Preisgestaltung?</p>
-              <p className="text-sm">Nach einer kostenlosen Besichtigung vor Ort erstellen wir Ihnen ein transparentes Festpreis-Angebot. Es gibt keine versteckten Kosten.</p>
-            </div>
-            <div>
-              <p className="font-semibold mb-2">Entsorgen Sie auch fachgerecht?</p>
-              <p className="text-sm">Ja, wir entsorgen alle Materialien nach gesetzlichen Vorgaben. Verwertbare Gegenstände werden recycelt oder weiterverwertet.</p>
-            </div>
+          <h3 className="text-2xl font-bold text-midnight mb-6">Häufig gestellte Fragen</h3>
+          <div className="space-y-6 text-gray-700">
+            {service.faq && service.faq.length > 0 ? (
+              service.faq.map((item, index) => (
+                <div key={index} className="pb-6 border-b border-gray-200 last:border-b-0 last:pb-0">
+                  <p className="font-semibold text-lg text-midnight mb-3">{item.question}</p>
+                  <p className="leading-relaxed">{item.answer}</p>
+                </div>
+              ))
+            ) : (
+              <>
+                <div>
+                  <p className="font-semibold mb-2">Wie schnell können Sie bei mir sein?</p>
+                  <p className="text-sm">In dringenden Fällen können wir oft noch am selben oder nächsten Tag bei Ihnen sein. Kontaktieren Sie uns für eine schnelle Terminabsprache.</p>
+                </div>
+                <div>
+                  <p className="font-semibold mb-2">Wie erfolgt die Preisgestaltung?</p>
+                  <p className="text-sm">Nach einer kostenlosen Besichtigung vor Ort erstellen wir Ihnen ein transparentes Festpreis-Angebot. Es gibt keine versteckten Kosten.</p>
+                </div>
+                <div>
+                  <p className="font-semibold mb-2">Entsorgen Sie auch fachgerecht?</p>
+                  <p className="text-sm">Ja, wir entsorgen alle Materialien nach gesetzlichen Vorgaben. Verwertbare Gegenstände werden recycelt oder weiterverwertet.</p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
