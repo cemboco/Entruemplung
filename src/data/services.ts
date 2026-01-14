@@ -677,7 +677,7 @@ export const services: Service[] = [
   {
   slug: 'sperrmuell-entsorgung',
   icon: Truck,
-  title: 'Sperrmüll Abholung in Stuttgart – schnell, flexibel & fachgerecht',
+  title: 'Sperrmüll Abholung Stuttgart',
   shortDescription: 'Private Sperrmüll Abholung in Stuttgart. Wir holen Möbel, Elektrogeräte und sperrige Gegenstände direkt bei Ihnen ab – oft kurzfristig, inklusive Trageservice und fachgerechter Entsorgung.',
   fullDescription: 'Wenn alte Möbel, defekte Elektrogeräte oder sperrige Gegenstände entsorgt werden müssen, fehlt oft die Zeit, auf einen kommunalen Sperrmülltermin zu warten. Serviceplus bietet Ihnen eine schnelle, private Sperrmüll Abholung in Stuttgart und Umgebung. Wir holen Ihren Sperrmüll direkt bei Ihnen ab – aus der Wohnung, dem Keller oder dem Dachboden – und kümmern uns um den fachgerechten Abtransport, die Sortierung und die gesetzeskonforme Entsorgung. Ob einzelne Möbelstücke oder größere Mengen: Wir schaffen Platz, zuverlässig, transparent und ohne unnötigen Aufwand für Sie.',
 
