@@ -178,7 +178,7 @@ export const services: Service[] = [
   {
   slug: 'entruempelung',
   icon: Trash2,
-  title: 'Entrümpelung in Stuttgart – professionelle Räumungsfirma für Wohnungen, Keller & Dachböden',
+  title: 'Entrümpelung in Stuttgart',
   shortDescription: 'Entrümpelung in Stuttgart vom Fachbetrieb. Wir räumen Wohnungen, Keller, Dachböden, Garagen und Gewerbeflächen. Festpreis, Wertanrechnung und fachgerechte Entsorgung inklusive.',
   fullDescription: 'Eine Entrümpelung in Stuttgart ist oft körperlich, organisatorisch und emotional belastend. Vollgestellte Keller, überladene Dachböden oder verwahrloste Wohnungen lassen sich selten allein bewältigen. Serviceplus ist Ihre professionelle Räumungsfirma für Entrümpelungen in Stuttgart und Umgebung. Wir übernehmen Wohnungsentrümpelungen, Kellerentrümpelungen, Dachbodenräumungen, Garagenräumungen und gewerbliche Entrümpelungen – strukturiert, diskret und zu transparenten Festpreisen. Unser Team kennt die Stuttgarter Gegebenheiten: enge Treppenhäuser in Altbauten, Hanglagen, schwierige Parksituationen und sensible Wohnumfelder. Wir sortieren professionell, trennen verwertbare Gegenstände, führen Wertanrechnung durch und entsorgen fachgerecht nach gesetzlichen Vorgaben. Das Ergebnis: freier Raum, klare Verhältnisse und spürbare Entlastung.',
 
