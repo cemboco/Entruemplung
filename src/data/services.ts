@@ -428,132 +428,129 @@ export const services: Service[] = [
   relatedServices: ['entruempelung', 'haushaltsaufloesung', 'immobilienraemung']
 },
   {
-    slug: 'keller-dachboden',
-    icon: Warehouse,
-    title: 'Keller & Dachboden Entrümpelung Stuttgart',
-    shortDescription: 'Professionelle Entrümpelung von vollgestellten Kellern und Dachböden. Inklusive Entsorgung von Sondermüll und Schadstoffen.',
-    fullDescription: 'Keller und Dachböden entwickeln sich oft über Jahre zu Lagerstätten für alles, was im Haushalt keinen Platz mehr findet. Die Entrümpelung dieser Bereiche erfordert nicht nur körperliche Arbeit, sondern auch Fachkenntnis im Umgang mit Sondermüll, Schadstoffen und wertvollen Fundstücken. Unser Team ist spezialisiert auf die professionelle Entrümpelung auch schwer zugänglicher Bereiche in Stuttgart und Umgebung.',
-    intro: {
-      forWhom: 'Ideal für Hausbesitzer vor Renovierung oder Verkauf, Mieter bei Wohnungswechsel, Erbengemeinschaften mit vollgestellten Räumen und Vermieter, die Kellerabteile oder Dachböden wieder nutzbar machen möchten.',
-      situations: [
-        'Vollgestellter Keller: Jahrzehnte alte Ansammlungen professionell räumen',
-        'Dachboden entrümpeln: Von Gerümpel bis zu wertvollen Fundstücken',
-        'Vor Immobilienverkauf: Keller und Dachboden besenrein übergeben',
-        'Sondermüll-Problematik: Alte Farben, Lacke, Chemikalien fachgerecht entsorgen',
-        'Feuchte Keller: Schimmelbelastete Gegenstände sicher entfernen',
-        'Enge Zugänge: Spezial-Transport bei schwierigen Bedingungen'
-      ],
-      emotional: 'Keller und Dachböden sind oft die letzten Ecken, die man aufräumen möchte. Zu viel ist da, zu unübersichtlich, zu anstrengend. Wir verstehen das und nehmen Ihnen diese Last komplett ab. Von der Sortierung über den Transport bis zur fachgerechten Entsorgung - wir kümmern uns um alles. Und manchmal finden wir dabei auch vergessene Schätze.'
-    },
-    whatWeOffer: {
-      title: 'Spezialisierte Keller- und Dachboden-Entrümpelung',
-      description: 'Schwer zugängliche Räume sind unsere Spezialität. Mit dem richtigen Equipment und viel Erfahrung schaffen wir auch die schwierigsten Entrümpelungen.',
-      included: [
-        'Kostenlose Besichtigung mit Prüfung der Zugänglichkeit',
-        'Identifikation von Wertsachen, Sondermüll und Schadstoffen',
-        'Planung optimaler Transportwege und Logistik',
-        'Professionelle Schutzvorkehrungen (Staubschutz, Bodenabdeckung)',
-        'Entrümpelung auch bei engen Treppen, niedrigen Decken, kleinen Luken',
-        'Fachgerechte Entsorgung von Sondermüll (Farben, Lacke, Chemikalien)',
-        'Umweltgerechte Trennung aller Materialien',
-        'Identifikation und Aussortierung von Wertsachen',
-        'Abschließende Reinigung der entrümpelten Räume',
-        'Optional: Grobreinigung oder besenreine Übergabe'
-      ]
-    },
-    benefits: [
-      'Entrümpelung auch schwer zugänglicher Bereiche mit Spezial-Equipment',
-      'Fachgerechte Sondermüll-Entsorgung nach gesetzlichen Vorgaben',
-      'Staubfreie und saubere Arbeitsweise mit Schutzmaßnahmen',
-      'Identifikation von Wertsachen und Erinnerungsstücken',
-      'Berücksichtigung von Schadstoffen und Gefahrstoffen',
-      'Schnelle und effiziente Abwicklung',
-      'Faire Preise auch bei schwierigen Bedingungen',
-      'Erfahrung mit Stuttgarter Altbauten und engen Verhältnissen'
+  slug: 'keller-dachboden',
+  icon: Warehouse,
+  title: 'Keller & Dachboden Stuttgart',
+  shortDescription: 'Keller- und Dachbodenentrümpelung in Stuttgart. Wir räumen vollgestellte, schwer zugängliche Bereiche inklusive Sondermüll, Wertanrechnung und fachgerechter Entsorgung.',
+  fullDescription: 'Keller und Dachböden werden oft über Jahre zu Abstellflächen für alles, was im Alltag keinen Platz mehr findet. Irgendwann wird aus Lagern eine Belastung. Eine professionelle Keller- oder Dachbodenentrümpelung in Stuttgart erfordert nicht nur Kraft, sondern auch Struktur, Umsicht und Fachkenntnis im Umgang mit Sondermüll, Schadstoffen und verwertbaren Gegenständen. Serviceplus unterstützt Sie dabei, Keller und Dachböden wieder nutzbar zu machen – professionell, sauber und diskret. Wir übernehmen die komplette Entrümpelung schwer zugänglicher Bereiche, sortieren systematisch, sichern Wertgegenstände und entsorgen fachgerecht nach gesetzlichen Vorgaben. So entsteht wieder Raum, Ordnung und Übersicht.',
+
+  intro: {
+    forWhom: 'Unsere Keller- und Dachbodenentrümpelungen in Stuttgart richten sich an Hausbesitzer vor Renovierung oder Verkauf, an Mieter bei Wohnungswechsel, an Erbengemeinschaften mit vollgestellten Räumen sowie an Vermieter und Hausverwaltungen, die Kellerabteile oder Dachböden wieder nutzbar machen möchten.',
+    situations: [
+      'Vollgestellter Keller – jahrelange Ansammlungen fachgerecht räumen',
+      'Dachboden entrümpeln – Platz für Ausbau oder Nutzung schaffen',
+      'Immobilienverkauf vorbereiten – Nebenräume besenrein übergeben',
+      'Sondermüll im Keller – Farben, Lacke, Chemikalien sicher entsorgen',
+      'Feuchte oder schimmelbelastete Räume – belastete Gegenstände entfernen',
+      'Enge Zugänge – sichere Räumung trotz schwieriger Bedingungen'
     ],
-    process: [
-      'Vor-Ort-Besichtigung und Prüfung der Zugänglichkeit',
-      'Identifikation von Sondermüll, Wertsachen und besonderen Gegenständen',
-      'Planung von Transportwegen und notwendiger Logistik',
-      'Systematische Räumung nach durchdachtem Plan',
-      'Getrennte Entsorgung nach Materialarten und Vorschriften',
-      'Abschließende Reinigung und besenreine Übergabe'
-    ],
-    features: ['Auch schwer zugänglich', 'Sondermüll-Entsorgung', 'Staubfreie Arbeit'],
-    localRelevance: {
-      areas: [
-        'Stuttgart-Mitte',
-        'Stuttgart-West',
-        'Stuttgart-Ost',
-        'Bad Cannstatt',
-        'Degerloch',
-        'Vaihingen',
-        'Möhringen',
-        'Feuerbach',
-        'Esslingen',
-        'Ludwigsburg',
-        'Böblingen',
-        'Sindelfingen'
-      ],
-      description: 'Stuttgarter Altbauten haben oft besonders enge und verwinkelte Keller und Dachböden. Niedrige Deckenhöhen, steile Treppen, kleine Luken - wir kennen diese Herausforderungen aus hunderten Einsätzen. Unser Team weiß, wie man in Stuttgarter Gebäuden arbeitet, welche Schutzvorkehrungen nötig sind und wo die nächsten Entsorgungsstellen sind. Wir haben das richtige Equipment und die Erfahrung für jede Situation.'
-    },
-    cta: {
-      title: 'Keller oder Dachboden entrümpeln lassen',
-      description: 'Fordern Sie jetzt ein kostenloses Angebot an. Wir besichtigen Ihren Keller oder Dachboden und erstellen einen individuellen Räumungsplan.'
-    },
-    additionalContent: {
-      title: 'Wichtiges zu Keller- und Dachboden-Entrümpelungen',
-      sections: [
-        {
-          heading: 'Was kostet eine Keller- oder Dachbodenentrümpelung in Stuttgart?',
-          content: 'Die Kosten hängen von mehreren Faktoren ab: Volumen, Stockwerk, Zugänglichkeit und Art der Gegenstände. Ein durchschnittlicher Keller (15-20qm) kostet 400-800 Euro, ein Dachboden ähnlicher Größe 300-600 Euro. Entscheidend ist die Zugänglichkeit - enge Wendeltreppen, niedrige Deckenhöhen oder fehlende Beleuchtung erhöhen den Aufwand. Positiv wirkt sich aus, wenn verwertbare Gegenstände vorhanden sind - Werkzeuge, Möbel, Metalle werden bewertet und angerechnet. Bei Sondermüll (alte Farben, Chemikalien) entstehen zusätzliche Entsorgungskosten. Wir erstellen nach kostenloser Besichtigung ein transparentes Festpreis-Angebot.'
-        },
-        {
-          heading: 'Wie lange dauert eine Keller- oder Dachbodenentrümpelung?',
-          content: 'Die Dauer variiert je nach Füllgrad und Zugänglichkeit. Ein leicht bis mittelmäßig gefüllter Keller ist in 2-4 Stunden entrümpelt. Ein vollgestellter Keller mit engen Treppenhäusern kann einen ganzen Arbeitstag in Anspruch nehmen. Dachböden sind oft schneller erledigt (2-3 Stunden), da sie meist weniger vollgestellt sind. Bei extremen Fällen - etwa wenn sich über Jahrzehnte Gerümpel angesammelt hat - können auch 1-2 Tage nötig sein. Wir schätzen die Dauer bei der Besichtigung realistisch ein, damit Sie planen können.'
-        },
-        {
-          heading: 'Was passiert mit Sondermüll im Keller oder auf dem Dachboden?',
-          content: 'Keller und Dachböden enthalten oft Sondermüll: alte Farb- und Lackdosen, Lösungsmittel, Pflanzenschutzmittel, Altöl, asbesthaltige Materialien. Diese dürfen nicht in den Hausmüll und erfordern Fachkenntnis bei der Entsorgung. Wir identifizieren Sondermüll, trennen ihn konsequent ab und führen ihn den zuständigen Entsorgungsstellen zu. Dabei dokumentieren wir die ordnungsgemäße Entsorgung. Sie als Eigentümer erhalten Sicherheit, dass alles gesetzeskonform entsorgt wurde - das ist besonders bei Immobilienverkäufen wichtig.'
-        },
-        {
-          heading: 'Finden Sie bei der Entrümpelung auch Wertsachen?',
-          content: 'Ja, erstaunlich oft finden wir auf Dachböden und in Kellern vergessene Schätze: alte Werkzeuge, Antiquitäten, Sammlerstücke, vergessene Erbstücke oder einfach gut erhaltene Möbel. Unser Team ist geschult, solche Dinge zu erkennen. Wir sortieren systematisch und legen alles Wertvolle beiseite. Verwertbare Gegenstände werden fair bewertet und vom Entrümpelungspreis abgezogen. Wertvolle Einzelstücke besprechen wir mit Ihnen, bevor wir etwas entsorgen. So haben Sie Kontrolle und profitieren finanziell von Funden.'
-        }
-      ]
-    },
-    faq: [
-      {
-        question: 'Entrümpeln Sie auch niedrige Keller mit nur 1,60m Deckenhöhe?',
-        answer: 'Ja, selbstverständlich. Niedrige Decken und verwinkelte Kellergänge sind in Stuttgarter Altbauten häufig. Unser Team ist darauf eingestellt und arbeitet auch unter erschwerten Bedingungen. Die geringere Deckenhöhe verlangsamt zwar die Arbeit etwas, ist aber kein Hindernis. Wir passen die Arbeitsweise an die Gegebenheiten an.'
-      },
-      {
-        question: 'Was ist mit Gegenständen, die ich noch nicht behalten will?',
-        answer: 'Vor der Entrümpelung besprechen wir mit Ihnen, was entsorgt werden soll und was bleibt. Sie können uns auch eine Liste oder Markierungen vorgeben. Wenn Sie unsicher sind, sortieren wir zunächst aus und Sie entscheiden dann, was endgültig weg kann. Wir drängen nie - es ist Ihr Eigentum und Sie bestimmen das Tempo.'
-      },
-      {
-        question: 'Können Sie auch enge Wendeltreppen zum Dachboden bewältigen?',
-        answer: 'Ja, enge Wendeltreppen sind eine Herausforderung, die wir gewohnt sind. Wir nutzen spezielle Tragetechniken und Hilfsmittel für solche Situationen. Sperrige Gegenstände zerlegen wir wenn nötig. Was physisch durchpasst, bekommen wir auch transportiert. Bei der Besichtigung prüfen wir die Zugänglichkeit und planen die Logistik entsprechend.'
-      },
-      {
-        question: 'Was machen Sie mit alten Werkzeugen und Maschinen?',
-        answer: 'Funktionsfähige Werkzeuge und Maschinen haben oft noch Wert. Wir bewerten sie nach Zustand und Marktwert und rechnen diesen vom Entrümpelungspreis ab. Gut erhaltenes Werkzeug verkaufen wir an Gebrauchtwarenhändler, defekte Geräte führen wir der fachgerechten Entsorgung zu. Metalle werden separat gesammelt und dem Recycling zugeführt.'
-      },
-      {
-        question: 'Übernehmen Sie auch die Endreinigung nach der Entrümpelung?',
-        answer: 'Ja, Standar dmäßig führen wir eine Grobreinigung durch - also Entfernung von grobem Schmutz und Staub. Gegen Aufpreis bieten wir auch eine gründliche Endreinigung an, bei der Keller oder Dachboden besenrein oder sogar wischfertig übergeben werden. Das ist besonders sinnvoll vor Vermietung, Verkauf oder wenn die Räume anschließend renoviert werden sollen.'
-      },
-      {
-        question: 'Wie gehen Sie mit Feuchtigkeit und Schimmel im Keller um?',
-        answer: 'Schimmel und Feuchtigkeit kommen in Kellern häufig vor. Unsere Mitarbeiter tragen bei Bedarf Atemschutz und behandeln schimmelbelastete Gegenstände als Sondermüll. Wir entsorgen sie gesondert und können nach der Entrümpelung auch eine Grund-Desinfektion durchführen. Für Schimmelsanierung selbst empfehlen wir Fachfirmen, mit denen wir zusammenarbeiten.'
-      },
-      {
-        question: 'Können wir während der Entrümpelung noch einzelne Sachen rausholen?',
-        answer: 'Ja, das ist kein Problem. Viele Kunden möchten während der Entrümpelung noch mal durchschauen und einzelne Dinge doch behalten. Das ist völlig in Ordnung. Wir arbeiten transparent, zeigen Ihnen Fundstücke und lassen Ihnen Zeit für Entscheidungen. Ihr Eigentum, Ihr Tempo.'
-      }
-    ],
-    relatedServices: ['entruempelung', 'haushaltsaufloesung', 'wertanrechnung']
+    emotional: 'Keller und Dachböden schiebt man oft vor sich her. Zu voll, zu unübersichtlich, zu anstrengend. Wir nehmen Ihnen diese Aufgabe vollständig ab. Von der ersten Sortierung bis zum letzten Abtransport kümmern wir uns um alles. Und nicht selten tauchen dabei Dinge auf, die man längst vergessen hatte – Erinnerungsstücke, Werkzeuge oder kleine Schätze.'
   },
+
+  whatWeOffer: {
+    title: 'Spezialisierte Keller- und Dachbodenentrümpelung in Stuttgart',
+    description: 'Schwer zugängliche Räume sind unsere Stärke. Wir arbeiten strukturiert, geschützt und mit durchdachter Logistik.',
+    included: [
+      'Kostenlose Vor-Ort-Besichtigung mit Prüfung der Zugänglichkeit',
+      'Einschätzung von Sondermüll, Schadstoffen und verwertbaren Gegenständen',
+      'Planung sicherer Transportwege und Arbeitsabläufe',
+      'Schutzmaßnahmen für Böden, Wände und Treppenhäuser',
+      'Entrümpelung auch bei engen Treppen, niedrigen Decken und kleinen Luken',
+      'Fachgerechte Entsorgung von Farben, Lacken, Chemikalien und Sondermüll',
+      'Saubere Trennung aller Materialien',
+      'Aussortierung und Sicherung von Wert- und Erinnerungsstücken',
+      'Abschließende Grobreinigung der geräumten Flächen',
+      'Besenreine Übergabe auf Wunsch'
+    ]
+  },
+
+  benefits: [
+    'Entrümpelung auch schwer zugänglicher Keller und Dachböden',
+    'Fachgerechte Sondermüllentsorgung',
+    'Staubarme, geschützte Arbeitsweise',
+    'Sorgfältige Wert- und Fundstückprüfung',
+    'Sicherer Umgang mit Schadstoffen',
+    'Zügige und planbare Abwicklung',
+    'Faire Festpreise',
+    'Lokale Kenntnisse der Stuttgarter Altbausubstanz'
+  ],
+
+  process: [
+    'Kostenlose Besichtigung vor Ort',
+    'Einschätzung von Aufwand, Sondermüll und Logistik',
+    'Individueller Räumungsplan',
+    'Systematische Keller- oder Dachbodenentrümpelung',
+    'Getrennte, fachgerechte Entsorgung',
+    'Grobreinigung und Übergabe'
+  ],
+
+  features: ['Auch schwer zugänglich', 'Sondermüll-Entsorgung', 'Saubere Arbeitsweise'],
+
+  localRelevance: {
+    areas: [
+      'Stuttgart-Mitte','Stuttgart-West','Stuttgart-Ost','Bad Cannstatt',
+      'Degerloch','Vaihingen','Möhringen','Feuerbach',
+      'Esslingen','Ludwigsburg','Böblingen','Sindelfingen'
+    ],
+    description: 'Stuttgarter Keller und Dachböden sind oft eng, verwinkelt und schwer zugänglich. Unser Team kennt diese Gegebenheiten aus dem Alltag: niedrige Decken, steile Treppen, kleine Zugänge. Wir arbeiten mit angepasstem Equipment, Schutzsystemen und klarer Logistik, um auch schwierige Räume sicher und sauber zu entrümpeln.'
+  },
+
+  cta: {
+    title: 'Keller oder Dachboden in Stuttgart entrümpeln lassen',
+    description: 'Kontaktieren Sie uns für eine kostenlose Besichtigung. Wir erstellen einen individuellen Räumungsplan und ein transparentes Angebot.'
+  },
+
+  additionalContent: {
+    title: 'Wissenswertes zur Keller- und Dachbodenentrümpelung',
+    sections: [
+      {
+        heading: 'Was kostet eine Keller- oder Dachbodenentrümpelung in Stuttgart?',
+        content: 'Die Kosten hängen von Größe, Füllgrad, Zugänglichkeit und Art der Gegenstände ab. Nach einer kostenlosen Besichtigung erhalten Sie ein transparentes Festpreis-Angebot. Verwertbare Gegenstände können angerechnet werden.'
+      },
+      {
+        heading: 'Wie lange dauert eine Entrümpelung?',
+        content: 'Je nach Umfang dauert eine Keller- oder Dachbodenentrümpelung zwischen wenigen Stunden und ein bis zwei Tagen. Die Dauer schätzen wir vorab realistisch ein.'
+      },
+      {
+        heading: 'Was passiert mit Sondermüll?',
+        content: 'Sondermüll wird separat erfasst und gesetzeskonform entsorgt. Sie erhalten die Sicherheit einer ordnungsgemäßen Entsorgung.'
+      },
+      {
+        heading: 'Werden Wertsachen berücksichtigt?',
+        content: 'Ja. Wir sortieren sorgfältig und legen alles Wertvolle beiseite. Verwertbare Funde können kostenmindernd angerechnet werden.'
+      }
+    ]
+  },
+
+  faq: [
+    {
+      question: 'Entrümpeln Sie auch sehr niedrige oder enge Keller?',
+      answer: 'Ja. Enge, niedrige Keller sind in Stuttgart häufig. Wir passen Arbeitsweise und Ausrüstung an.'
+    },
+    {
+      question: 'Kann ich während der Räumung noch Dinge behalten?',
+      answer: 'Natürlich. Wir sortieren transparent und lassen Ihnen Zeit für Entscheidungen.'
+    },
+    {
+      question: 'Übernehmen Sie auch enge Dachböden mit Wendeltreppen?',
+      answer: 'Ja. Wir prüfen die Zugänge vorab und planen Transport und Zerlegung entsprechend.'
+    },
+    {
+      question: 'Was passiert mit alten Werkzeugen und Metallen?',
+      answer: 'Verwertbares wird angerechnet, der Rest fachgerecht entsorgt oder recycelt.'
+    },
+    {
+      question: 'Gibt es eine Endreinigung?',
+      answer: 'Standard ist eine Grobreinigung. Auf Wunsch bieten wir auch eine gründlichere Übergabe an.'
+    },
+    {
+      question: 'Wie gehen Sie mit Schimmel und Feuchtigkeit um?',
+      answer: 'Belastete Gegenstände werden gesondert behandelt und entsorgt. Auf Wunsch führen wir eine Grunddesinfektion durch.'
+    }
+  ],
+
+  relatedServices: ['entruempelung', 'haushaltsaufloesung', 'wertanrechnung']
+},
   {
     slug: 'sperrmuell-entsorgung',
     icon: Truck,
@@ -678,505 +675,488 @@ export const services: Service[] = [
     relatedServices: ['moebel-entsorgung', 'entruempelung', 'haushaltsaufloesung']
   },
   {
-    slug: 'gewerbe-entruempelung',
-    icon: Briefcase,
-    title: 'Gewerbe-Entrümpelung Stuttgart',
-    shortDescription: 'Effiziente Räumung von Büros, Praxen, Geschäftsräumen und Lagerhallen. Auch außerhalb der Geschäftszeiten möglich.',
-    fullDescription: 'Bei der Räumung von Gewerbeobjekten sind Schnelligkeit, Diskretion und Zuverlässigkeit entscheidend. Ob Büroauflösung, Praxisräumung, Geschäftsliquidation oder Lagerhallen-Entrümpelung - wir arbeiten termingenau und minimieren Ihre Betriebsunterbrechung. Auf Wunsch führen wir die Arbeiten außerhalb Ihrer Geschäftszeiten oder am Wochenende durch. Für Unternehmen in Stuttgart bieten wir maßgeschneiderte Lösungen.',
-    intro: {
-      forWhom: 'Unsere Gewerbe-Entrümpelung richtet sich an Unternehmen bei Liquidation oder Umzug, Vermieter gewerblicher Immobilien, Insolvenzverwalter, Facility Manager und alle Gewerbetreibenden, die schnelle und professionelle Räumungen benötigen.',
-      situations: [
-        'Büroauflösung: Komplette Räumung von Büroräumen und Verwaltungsgebäuden',
-        'Praxisräumung: Arztpraxen, Anwaltskanzleien, Steuerberater',
-        'Geschäftsliquidation: Einzelhandel, Gastronomie, Dienstleister',
-        'Lagerhallen-Entrümpelung: Große Flächen schnell und effizient räumen',
-        'Filialschließung: Professionelle Abwicklung im ganzen Stadtgebiet',
-        'Insolvenzräumung: Termingerecht und nach rechtlichen Vorgaben'
-      ],
-      emotional: 'Eine Geschäftsaufgabe ist oft emotional belastend und zeitkritisch. Wir verstehen die Dringlichkeit und arbeiten professionell, diskret und ohne unnötige Fragen. Ihr Fokus soll auf Ihrem Business bleiben - die Räumung übernehmen wir zuverlässig und termingerecht. Auf Wunsch arbeiten wir außerhalb der Geschäftszeiten, damit Ihr Betrieb bis zum Schluss weiterlaufen kann.'
-    },
-    whatWeOffer: {
-      title: 'Professionelle Gewerbe-Entrümpelung für Unternehmen',
-      description: 'Maßgeschneiderte Lösungen für gewerbliche Räumungen - termingenau, diskret und mit minimalem Betriebsausfall.',
-      included: [
-        'Kostenlose Objektbesichtigung und Bedarfsanalyse',
-        'Detailliertes Festpreis-Angebot für Ihre Buchhaltung',
-        'Flexible Terminplanung - auch außerhalb der Geschäftszeiten',
-        'Wochenend-Service und Nacht-Einsätze möglich',
-        'Räumung von Büromöbeln, IT-Equipment, Akten, Lagerbeständen',
-        'Fachgerechte Entsorgung von Betriebsmitteln',
-        'Optional: Aktenvernichtung nach DIN 66399',
-        'Optional: Datenlöschung von IT-Geräten',
-        'Direkte Rechnungsstellung an Unternehmen',
-        'Übergabeprotokoll und Dokumentation'
-      ]
-    },
-    benefits: [
-      'Termingerechte Abwicklung ohne Verzögerungen',
-      'Wochenend-Service und Arbeit außerhalb der Geschäftszeiten verfügbar',
-      'Minimale Betriebsunterbrechung durch flexible Planung',
-      'Direkte Abrechnung mit Unternehmen und ordentliche Buchhaltung',
-      'Fachgerechte Entsorgung von Büromöbeln und IT-Equipment',
-      'Aktenvernichtung nach Bedarf und nach DIN-Norm',
-      'Erfahrung mit großen Gewerbeobjekten und Lagerhallen',
-      'Versichert und zuverlässig'
+  slug: 'sperrmuell-entsorgung',
+  icon: Truck,
+  title: 'Sperrmüll Abholung in Stuttgart – schnell, flexibel & fachgerecht',
+  shortDescription: 'Private Sperrmüll Abholung in Stuttgart. Wir holen Möbel, Elektrogeräte und sperrige Gegenstände direkt bei Ihnen ab – oft kurzfristig, inklusive Trageservice und fachgerechter Entsorgung.',
+  fullDescription: 'Wenn alte Möbel, defekte Elektrogeräte oder sperrige Gegenstände entsorgt werden müssen, fehlt oft die Zeit, auf einen kommunalen Sperrmülltermin zu warten. Serviceplus bietet Ihnen eine schnelle, private Sperrmüll Abholung in Stuttgart und Umgebung. Wir holen Ihren Sperrmüll direkt bei Ihnen ab – aus der Wohnung, dem Keller oder dem Dachboden – und kümmern uns um den fachgerechten Abtransport, die Sortierung und die gesetzeskonforme Entsorgung. Ob einzelne Möbelstücke oder größere Mengen: Wir schaffen Platz, zuverlässig, transparent und ohne unnötigen Aufwand für Sie.',
+
+  intro: {
+    forWhom: 'Unsere Sperrmüll Abholung in Stuttgart richtet sich an Mieter vor einem Umzug, Haushalte bei Neuanschaffungen, Vermieter nach Auszug, Senioren, Angehörige sowie alle, die sperrige Gegenstände unkompliziert und zeitnah entsorgen möchten.',
+    situations: [
+      'Alte Möbel entsorgen – Sofa, Schrank, Bett, Regale',
+      'Elektrogeräte abholen lassen – Kühlschrank, Waschmaschine, Herd',
+      'Umzugsentsorgung – was nicht mitkommt, holen wir ab',
+      'Sperrige Gegenstände – Matratzen, Teppiche, große Kartons',
+      'Gartenmöbel und Kellerräume leeren',
+      'Kurzfristige Abholung bei Zeitdruck'
     ],
-    process: [
-      'Bedarfsanalyse und professionelle Objektbesichtigung',
-      'Angebotserstellung mit Festpreis und detaillierter Aufstellung',
-      'Terminkoordination nach Ihren geschäftlichen Anforderungen',
-      'Professionelle Räumung im vereinbarten Zeitfenster',
-      'Getrennte Verwertung und fachgerechte Entsorgung',
-      'Dokumentation und Übergabeprotokoll für Ihre Unterlagen'
-    ],
-    features: ['Termingerechte Abwicklung', 'Wochenend-Service', 'Minimale Betriebsunterbrechung'],
-    localRelevance: {
-      areas: [
-        'Stuttgart-Mitte',
-        'Stuttgart-West',
-        'Feuerbach',
-        'Vaihingen',
-        'Möhringen',
-        'Zuffenhausen',
-        'Ludwigsburg',
-        'Esslingen',
-        'Böblingen',
-        'Sindelfingen',
-        'Kornwestheim',
-        'Leinfelden-Echterdingen'
-      ],
-      description: 'Stuttgart ist ein starker Wirtschaftsstandort mit vielen Gewerbegebieten. Wir kennen die örtlichen Gegebenheiten, Parkmöglichkeiten und Zufahrtswege in allen Stuttgarter Gewerbegebieten. Von kleinen Büros in der Innenstadt bis zu großen Lagerhallen in Vaihingen oder Feuerbach - wir haben Erfahrung mit allen Objekttypen. Unser Team arbeitet diskret, professionell und versteht die Anforderungen von Unternehmen.'
-    },
-    cta: {
-      title: 'Gewerbeobjekt entrümpeln lassen',
-      description: 'Fordern Sie ein individuelles Angebot für Ihre Gewerbeentrümpelung an. Wir beraten Sie zu optimalen Zeitfenstern und Ablauf.'
-    },
-    additionalContent: {
-      title: 'Wichtiges zur Gewerbe-Entrümpelung',
-      sections: [
-        {
-          heading: 'Was kostet eine Gewerbe-Entrümpelung in Stuttgart?',
-          content: 'Die Kosten für gewerbliche Räumungen variieren stark nach Objektgröße und Ausstattung. Ein kleines Büro (50-80qm) kostet etwa 800-1.500 Euro, mittelgroße Praxen oder Büros (100-200qm) 1.500-3.500 Euro, große Objekte und Lagerhallen ab 3.500 Euro aufwärts. Entscheidend sind: Menge der Einrichtung, Art der Gegenstände (Möbel, IT, Akten), Stockwerk und Zugänglichkeit, Zeitdruck und gewünschte Zusatzleistungen wie Aktenvernichtung. Wir erstellen nach Objektbesichtigung ein detailliertes Festpreis-Angebot, das Sie für Ihre Buchhaltung nutzen können. Verwertbare Gegenstände (Büromöbel, IT) werden angerechnet und senken die Kosten.'
-        },
-        {
-          heading: 'Können Sie auch außerhalb der Geschäftszeiten räumen?',
-          content: 'Ja, das ist sogar einer unserer wichtigsten Services für Unternehmen. Wir verstehen, dass Ihr Geschäftsbetrieb nicht unterbrochen werden soll. Deshalb bieten wir Räumungen nach Feierabend (ab 18 Uhr), am Wochenende, sogar nachts bei Bedarf. So können Sie tagsüber normal weiterarbeiten und wir räumen, wenn das Objekt leer ist. Das ist besonders wichtig bei Filialschließungen, wo der Laden bis zum letzten Tag geöffnet bleiben soll, oder bei Umzügen, wo der Betrieb nicht stillstehen darf. Sprechen Sie uns auf Ihre Zeitfenster an - wir finden eine Lösung.'
-        },
-        {
-          heading: 'Was passiert mit Akten und sensiblen Dokumenten?',
-          content: 'Akten und Dokumente behandeln wir besonders sorgfältig. Sie haben mehrere Optionen: Aktenvernichtung nach DIN 66399 (verschiedene Sicherheitsstufen je nach Vertraulichkeit), sichere Zwischenlagerung, wenn Sie noch nicht sicher sind, was entsorgt werden kann, oder getrennte Aussortierung und Übergabe an Sie zur eigenen Prüfung. Wir arbeiten diskret und verstehen die Bedeutung von Datenschutz. Gerade bei Arztpraxen, Anwaltskanzleien oder Steuerberatern ist absolute Vertraulichkeit selbstverständlich. Auf Wunsch arbeiten Mitarbeiter mit erweitertem Führungszeugnis.'
-        },
-        {
-          heading: 'Wie entsorgen Sie IT-Equipment und Elektronik?',
-          content: 'IT-Entsorgung erfolgt nach gesetzlichen Vorgaben: Datenlöschung nach DIN-Standard auf Wunsch, fachgerechtes Recycling von Computer, Servern, Druckern, Monitoren, Telefonen, Verwertung von Metallen und Edelmetallen, umweltgerechte Entsorgung von Schadstoffen. Funktionsfähige IT-Geräte können wir bewerten und anrechnen - das senkt Ihre Kosten. Defekte Geräte werden dem zertifizierten Elektroschrott-Recycling zugeführt. Sie erhalten auf Wunsch Entsorgungsnachweise für Ihre Dokumentation.'
-        }
-      ]
-    },
-    faq: [
-      {
-        question: 'Wie schnell können Sie ein Gewerbeobjekt räumen?',
-        answer: 'Das hängt von der Größe ab. Ein kleines Büro schaffen wir an einem Tag, mittelgroße Objekte in 1-2 Tagen, große Lagerhallen können 3-5 Tage dauern. Wir planen realistisch und halten Termine verbindlich ein. Bei Zeitdruck können wir mit größerem Team arbeiten, um schneller fertig zu werden. Sprechen Sie uns auf Ihre Deadline an.'
-      },
-      {
-        question: 'Stellen Sie Rechnungen für Unternehmen aus?',
-        answer: 'Ja, selbstverständlich. Sie erhalten eine ordentliche Rechnung mit allen Details, Steuernummer und allen Angaben, die Sie für Ihre Buchhaltung benötigen. Auf Wunsch auch mit Zahlungsziel. Wir arbeiten regelmäßig mit Unternehmen, Hausverwaltungen und Insolvenzverwaltern zusammen und kennen die Anforderungen.'
-      },
-      {
-        question: 'Was passiert mit Lagerbeständen und Inventar?',
-        answer: 'Lagerbestände behandeln wir je nach Wert: Verwertbare Waren können wir ankaufen oder vermitteln, wertlose Bestände entsorgen wir fachgerecht, B-Ware und beschädigte Waren trennen wir separat, Gefahrstoffe entsorgen wir nach Vorgaben. Wir erstellen auf Wunsch ein Inventar, damit Sie nachvollziehen können, was entsorgt wurde.'
-      },
-      {
-        question: 'Arbeiten Sie auch mit Insolvenzverwaltern zusammen?',
-        answer: 'Ja, wir haben Erfahrung mit Insolvenzräumungen und kennen die rechtlichen Anforderungen. Wir arbeiten termingerecht, dokumentieren alles und halten Fristen ein. Die Zusammenarbeit mit Insolvenzverwaltern, Gerichten und Gläubigern ist für uns Routine.'
-      },
-      {
-        question: 'Können Sie auch nur Teilbereiche räumen?',
-        answer: 'Selbstverständlich. Sie müssen nicht alles räumen lassen. Wir können auch nur das Lager entrümpeln, nur bestimmte Büros räumen oder nur Altakten entsorgen. Flexibilität ist unser Vorteil - sprechen Sie uns an, was Sie benötigen.'
-      },
-      {
-        question: 'Übernehmen Sie auch die Endreinigung des Objekts?',
-        answer: 'Ja, auf Wunsch bieten wir Grundreinigung oder besenreine Übergabe an. So können Sie das Objekt direkt weitervermieten oder verkaufen. Wir koordinieren auf Wunsch auch Malerarbeiten oder kleinere Reparaturen mit Partnerfirmen.'
-      }
-    ],
-    relatedServices: ['entruempelung', 'immobilienraemung', 'haushaltsaufloesung']
+    emotional: 'Manchmal muss es einfach zügig gehen. Etwas Neues kommt – und das Alte muss weg. Wir wissen, wie belastend volle Räume sein können. Darum halten wir die Sperrmüll Abholung bewusst unkompliziert: kurze Abstimmung, klarer Termin, saubere Arbeit. Unser Team kommt, trägt, lädt ein und kümmert sich um den Rest. Sie müssen nichts vorbereiten und nichts schleppen.'
   },
-  {
-    slug: 'immobilienraemung',
-    icon: Building2,
-    title: 'Immobilienräumung Stuttgart',
-    shortDescription: 'Spezialservice für Hausverwaltungen und Immobilienmakler. Schnelle Objektfreimachung für Neuvermietung oder Verkauf.',
-    fullDescription: 'Als Immobilienmakler oder Hausverwaltung kennen Sie die Herausforderung: Ein Objekt muss schnell geräumt werden, damit es wieder vermietet oder verkauft werden kann. Jeder Tag Leerstand kostet Geld. Wir sind spezialisiert auf die zügige und professionelle Räumung von Immobilien in Stuttgart und bieten Ihnen einen Komplettservice - von der Entrümpelung über Endreinigung bis zur schlüsselfertigen Übergabe.',
-    intro: {
-      forWhom: 'Unser Service richtet sich an Immobilienmakler, Hausverwaltungen, Wohnungsbaugesellschaften, Erbengemeinschaften bei Immobilienverkauf und alle, die schnell ein vermietbares oder verkaufsfähiges Objekt benötigen.',
-      situations: [
-        'Nach Räumungsurteil: Schnelle und rechtskonforme Objektfreimachung',
-        'Messie-Nachlass: Professionelle Räumung schwieriger Objekte',
-        'Mieterwechsel: Schnell wieder vermietbar machen',
-        'Immobilienverkauf: Besenreine oder schlüsselfertige Übergabe',
-        'Erbe: Schnelle Abwicklung für Verkauf oder Vermietung',
-        'Zwangsvollstreckung: Erfahrung mit rechtlichen Rahmenbedingungen'
-      ],
-      emotional: 'Jeder Tag Leerstand ist für Sie ein Verlust. Wir verstehen, dass Tempo und Zuverlässigkeit für Sie entscheidend sind. Unser Team arbeitet schnell, professionell und bringt Ihr Objekt zügig wieder in einen vermietbaren oder verkaufsfähigen Zustand. Sie können sich auf uns verlassen - mit klaren Terminen, transparenten Preisen und sauberer Arbeit.'
-    },
-    whatWeOffer: {
-      title: 'Immobilien-Räumung für Profis',
-      description: 'Komplettservice von der Entrümpelung bis zur schlüsselfertigen Übergabe - speziell für Immobilienprofis entwickelt.',
-      included: [
-        'Express-Besichtigung innerhalb von 24 Stunden',
-        'Verbindliches Festpreis-Angebot für Ihre Kalkulation',
-        'Komplette Entrümpelung aller Räume und Nebenräume',
-        'Wertanrechnung für verwertbare Gegenstände',
-        'Fachgerechte Entsorgung aller Materialien',
-        'Optional: Besenreine Endreinigung',
-        'Optional: Schlüsselfertige Übergabe mit kleinen Reparaturen',
-        'Optional: Malerarbeiten, Bodenreinigung, Schönheitsreparaturen',
-        'Direkte Abrechnung mit Hausverwaltungen',
-        'Übergabeprotokoll mit Fotodokumentation'
-      ]
-    },
-    benefits: [
-      'Express-Service für eilige Fälle - oft innerhalb weniger Tage',
-      'Besenreine oder schlüsselfertige Übergabe nach Wunsch',
-      'Direkte Abrechnung mit Hausverwaltungen und ordentliche Rechnungsstellung',
-      'Erfahrung mit Räumungsklagen und rechtlichen Vorgaben',
-      'Kurze Reaktionszeiten - wir verstehen Ihre Dringlichkeit',
-      'Transparente Festpreise für Ihre sichere Kalkulation',
-      'Ein Ansprechpartner für alle Gewerke',
-      'Fotodokumentation vorher/nachher'
-    ],
-    process: [
-      'Schnelle Objektbesichtigung innerhalb von 24 Stunden nach Anfrage',
-      'Verbindliches Festpreis-Angebot mit allen Leistungen',
-      'Flexible und kurzfristige Terminplanung',
-      'Zügige und professionelle Räumung',
-      'Optional: Endreinigung und kleine Reparaturen für Vermietbarkeit',
-      'Übergabe mit Protokoll und Fotodokumentation'
-    ],
-    features: ['Express-Service', 'Besenreine Übergabe', 'Direkte Abrechnung'],
-    localRelevance: {
-      areas: [
-        'Stuttgart-Mitte',
-        'Stuttgart-West',
-        'Stuttgart-Ost',
-        'Stuttgart-Süd',
-        'Bad Cannstatt',
-        'Vaihingen',
-        'Feuerbach',
-        'Degerloch',
-        'Möhringen',
-        'Esslingen',
-        'Ludwigsburg',
-        'Böblingen'
-      ],
-      description: 'Der Stuttgarter Immobilienmarkt ist dynamisch und jeder Tag Leerstand ist teuer. Wir verstehen die lokalen Anforderungen und arbeiten mit vielen Hausverwaltungen und Maklern in der Region zusammen. Wir kennen die Besonderheiten des Stuttgarter Wohnungsmarktes, die Anforderungen an vermietbare Objekte und die rechtlichen Rahmenbedingungen. Unser Netzwerk ermöglicht uns auch kurzfristige Einsätze.'
-    },
-    cta: {
-      title: 'Express-Räumung anfragen',
-      description: 'Kontaktieren Sie uns für eine schnelle Immobilienräumung. Wir machen Ihr Objekt wieder vermietbar oder verkaufsbereit.'
-    },
-    additionalContent: {
-      title: 'Wichtiges zur Immobilienräumung',
-      sections: [
-        {
-          heading: 'Was kostet eine Immobilienräumung in Stuttgart?',
-          content: 'Die Kosten hängen von Objektgröße, Füllgrad und gewünschten Zusatzleistungen ab. Eine 2-Zimmer-Wohnung kostet etwa 800-1.500 Euro, eine 3-Zimmer-Wohnung 1.200-2.200 Euro, eine 4-Zimmer-Wohnung 1.800-3.000 Euro. Mit Wertanrechnung für verwertbare Gegenstände sinken die Kosten oft deutlich. Zusatzleistungen wie besenreine Übergabe (+150-300 Euro), kleine Reparaturen (nach Aufwand) oder Malerarbeiten (nach qm) können optional gebucht werden. Für Hausverwaltungen erstellen wir detaillierte Angebote mit Festpreisen, damit Sie sicher kalkulieren können.'
-        },
-        {
-          heading: 'Wie schnell können Sie eine Immobilie räumen?',
-          content: 'Geschwindigkeit ist unser Vorteil. Express-Besichtigung erfolgt innerhalb von 24 Stunden nach Ihrer Anfrage. Angebot erhalten Sie oft noch am selben Tag. Räumung selbst können wir meist innerhalb von 2-4 Werktagen durchführen, bei extremer Dringlichkeit manchmal sogar schneller. Eine durchschnittliche Wohnung räumen wir an einem Tag. Sie teilen uns Ihre Deadline mit - wir halten sie ein. Das ist besonders wichtig bei Räumungsurteilen, Verkaufsterminen oder wenn Neuvermietung ansteht.'
-        },
-        {
-          heading: 'Was bedeutet besenreine vs. schlüsselfertige Übergabe?',
-          content: 'Besenrein bedeutet: Alle Gegenstände sind entfernt, Räume sind grob gereinigt, gefegt, Spinnweben entfernt, Oberflächen abgewischt. Die Wohnung ist leer und sauber, aber nicht perfekt. Schlüsselfertig bedeutet: Zusätzlich zur Entrümpelung erfolgen gründliche Endreinigung, kleine Reparaturen (Bohrlöcher spachteln, kaputte Steckdosen etc.), optional Malerarbeiten, Bodenreinigung/-aufbereitung. Das Objekt ist bezugsfertig. Als Hausverwaltung können Sie wählen, was Sie benötigen. Viele nehmen besenreine Übergabe und beauftragen eigene Handwerker, andere wollen Komplettservice. Beides bieten wir.'
-        },
-        {
-          heading: 'Arbeiten Sie auch nach Räumungsklagen?',
-          content: 'Ja, wir haben umfangreiche Erfahrung mit Räumungen nach gerichtlichen Urteilen. Wir kennen die rechtlichen Rahmenbedingungen, arbeiten nach gesetzlichen Vorgaben, dokumentieren alles sorgfältig mit Fotos, verwahren Wertgegenstände vorschriftsmäßig und erstellen ordentliche Übergabeprotokolle. Auf Wunsch arbeiten wir mit Gerichtsvollziehern zusammen. Diskretion ist selbstverständlich - wir arbeiten unaufdringlich und professionell.'
-        }
-      ]
-    },
-    faq: [
-      {
-        question: 'Bieten Sie Staffelpreise für Hausverwaltungen mit mehreren Objekten?',
-        answer: 'Ja, für Stammkunden und Hausverwaltungen, die regelmäßig Objekte räumen lassen, bieten wir Rahmenverträge mit attraktiven Konditionen. Bei mehreren Objekten im Jahr können wir über Mengenrabatte sprechen. Kontaktieren Sie uns für ein individuelles Angebot.'
-      },
-      {
-        question: 'Wie läuft die Abrechnung mit Hausverwaltungen?',
-        answer: 'Wir stellen ordentliche Rechnungen mit allen Details für Ihre Buchhaltung aus. Auf Wunsch mit Zahlungsziel (z.B. 14 oder 30 Tage). Die Rechnung enthält Steuernummer, detaillierte Leistungsbeschreibung und alle Angaben, die Sie benötigen. Wir arbeiten mit vielen Hausverwaltungen zusammen und kennen die Anforderungen.'
-      },
-      {
-        question: 'Was passiert mit zurückgelassenen Wertgegenständen?',
-        answer: 'Wertgegenstände und persönliche Dokumente behandeln wir besonders sorgfältig. Sie werden separat verwahrt, fotografisch dokumentiert und Ihnen zur Verfügung gestellt oder dem ehemaligen Mieter nachweislich angeboten. Wir halten uns an alle rechtlichen Vorgaben bei Räumungen. Ihre Absicherung als Vermieter ist uns wichtig.'
-      },
-      {
-        question: 'Können Sie auch nur Teilräumungen durchführen?',
-        answer: 'Selbstverständlich. Manchmal soll nur der Keller geräumt werden, manchmal nur einzelne Zimmer. Wir sind flexibel und passen uns Ihren Anforderungen an. Auch Nachräumungen, wenn Mieter nur teilweise geräumt haben, übernehmen wir gern.'
-      },
-      {
-        question: 'Koordinieren Sie auch Handwerker für Reparaturen?',
-        answer: 'Ja, auf Wunsch koordinieren wir alle nötigen Gewerke: Maler, Bodenleger, Elektriker, Sanitär. So haben Sie einen Ansprechpartner für alles und bekommen das Objekt wirklich vermietfertig zurück. Das spart Ihnen Zeit und Aufwand.'
-      },
-      {
-        question: 'Erstellen Sie Fotodokumentationen?',
-        answer: 'Ja, standardmäßig fotografieren wir den Zustand vorher und nachher. Das ist für Sie als Hausverwaltung wichtig für die Dokumentation und ggf. für rechtliche Auseinandersetzungen. Die Fotos erhalten Sie digital zusammen mit dem Übergabeprotokoll.'
-      }
-    ],
-    relatedServices: ['haushaltsaufloesung', 'entruempelung', 'gewerbe-entruempelung']
+
+  whatWeOffer: {
+    title: 'Private Sperrmüll Abholung in Stuttgart',
+    description: 'Wir holen Ihren Sperrmüll dort ab, wo er steht – flexibel, zuverlässig und fachgerecht.',
+    included: [
+      'Kurzfristige Terminvereinbarung nach Verfügbarkeit',
+      'Abholung direkt aus Wohnung, Keller oder Dachboden',
+      'Trageservice auch aus oberen Etagen',
+      'Abholung einzelner Möbelstücke oder größerer Mengen',
+      'Fachgerechte Entsorgung nach gesetzlichen Vorgaben',
+      'Sortierung nach Wertstoffen, Elektroschrott und Restmüll',
+      'Umweltgerechtes Recycling',
+      'Transparente Preise ohne versteckte Kosten',
+      'Freundliches, umsichtiges Team'
+    ]
   },
-  {
-    slug: 'moebel-entsorgung',
-    icon: Sofa,
-    title: 'Möbel-Entsorgung Stuttgart',
-    shortDescription: 'Fachgerechte Entsorgung von Altmöbeln, Küchen, Sofas und kompletten Einrichtungen. Mit Wertanrechnung für gut erhaltene Stücke.',
-    fullDescription: 'Alte Möbel entsorgen ist oft mühsam: Sie müssen demontiert, aus der Wohnung getragen und fachgerecht entsorgt werden. Wir übernehmen das alles für Sie. Von einzelnen Möbelstücken bis zu kompletten Einrichtungen - unser Team holt Ihre Altmöbel in Stuttgart ab und sorgt für eine umweltgerechte Entsorgung. Gut erhaltene Möbel werden fair bewertet und vom Preis abgezogen.',
-    intro: {
-      forWhom: 'Für alle, die alte Möbel loswerden möchten: Haushalte bei Neuanschaffung, Mieter vor Umzug, Vermieter nach Auszug, Entrümpler, die Unterstützung brauchen, und alle, die keine Lust auf Schleppen haben.',
-      situations: [
-        'Einzelmöbel entsorgen: Sofa, Schrank, Bett, Tisch, Stühle',
-        'Komplette Küche: Einbauküche inklusive Elektrogeräte',
-        'Ganze Einrichtung: Bei Wohnungsauflösung oder Neueinrichtung',
-        'Sperrige Möbel: Schrankwände, Eckbänke, schwere Kommoden',
-        'Outdoor-Möbel: Gartenmöbel, Sonnenschirme, Lounges',
-        'Büromöbel: Schreibtische, Bürostühle, Regale'
-      ],
-      emotional: 'Das alte Sofa hat ausgedient, der Schrank passt nicht mehr zum neuen Stil. Aber wohin damit? Wir nehmen Ihnen die Last ab - wortwörtlich. Keine Sorgen um Transport, Entsorgung oder Anmeldung beim Wertstoffhof. Wir kommen, laden auf und kümmern uns um die fachgerechte Entsorgung. Und wenn Ihre Möbel noch gut sind, rechnen wir den Wert sogar an.'
-    },
-    whatWeOffer: {
-      title: 'Möbel-Entsorgung leicht gemacht',
-      description: 'Von einzelnen Stücken bis zur kompletten Einrichtung - wir holen ab, entsorgen fachgerecht und rechnen Werte an.',
-      included: [
-        'Abholung von Einzelmöbeln oder kompletten Einrichtungen',
-        'Auch aus höheren Etagen - wir tragen für Sie',
-        'Demontage bei Bedarf (Schränke, Betten, Einbauküchen)',
-        'Bewertung gut erhaltener Möbel vor Ort',
-        'Wertanrechnung - reduziert Ihre Kosten',
-        'Fachgerechte Entsorgung nach gesetzlichen Vorgaben',
-        'Umweltbewusstes Recycling und Materialverwertung',
-        'Weitergabe brauchbarer Möbel an soziale Einrichtungen',
-        'Flexible Terminvereinbarung',
-        'Faire und transparente Preisgestaltung'
-      ]
-    },
-    benefits: [
-      'Wertanrechnung für gut erhaltene Möbel möglich - spart Kosten',
-      'Umweltgerechte Entsorgung und professionelles Recycling',
-      'Auch Einzelstücke werden abgeholt - keine Mindestmenge',
-      'Demontage und Transport inklusive - kein Schleppen für Sie',
-      'Flexible Terminvereinbarung auch kurzfristig',
-      'Faire Preisgestaltung ohne versteckte Kosten',
-      'Erfahrenes Team kennt alle Möbeltypen',
-      'Nachhaltig: Weitergabe brauchbarer Möbel an gemeinnützige Organisationen'
+
+  benefits: [
+    'Schnelle und flexible Terminvergabe',
+    'Abholung direkt vor Ort – kein Tragen für Sie',
+    'Auch Einzelstücke möglich',
+    'Transparente Preise',
+    'Fachgerechte Entsorgung und Recycling',
+    'Entlastung bei Umzug, Haushaltsauflösung oder Neuanschaffung',
+    'Zuverlässige und saubere Durchführung',
+    'Lokaler Service in Stuttgart'
+  ],
+
+  process: [
+    'Kontaktaufnahme per Telefon oder Online-Anfrage',
+    'Kurze Beschreibung von Art und Menge des Sperrmülls',
+    'Terminvereinbarung',
+    'Pünktliche Abholung vor Ort',
+    'Professionelles Verladen',
+    'Fachgerechte Entsorgung und Verwertung'
+  ],
+
+  features: ['Flexible Termine', 'Abholung aus der Wohnung', 'Fachgerechte Entsorgung'],
+
+  localRelevance: {
+    areas: [
+      'Stuttgart-Mitte','Stuttgart-West','Stuttgart-Ost','Stuttgart-Süd','Stuttgart-Nord',
+      'Bad Cannstatt','Vaihingen','Feuerbach','Degerloch','Möhringen',
+      'Esslingen','Ludwigsburg'
     ],
-    process: [
-      'Beschreibung der zu entsorgenden Möbel (Art, Zustand, Standort)',
-      'Preisauskunft und flexible Terminvereinbarung',
-      'Demontage bei Bedarf (Schränke, Betten, etc.)',
-      'Transport aus der Wohnung - auch aus höheren Etagen',
-      'Vor-Ort-Bewertung verwertbarer Stücke',
-      'Fachgerechte Entsorgung oder nachhaltige Weiterverwertung'
-    ],
-    features: ['Wertanrechnung möglich', 'Umweltgerechte Entsorgung', 'Auch Einzelstücke'],
-    localRelevance: {
-      areas: [
-        'Stuttgart-Mitte',
-        'Stuttgart-West',
-        'Stuttgart-Ost',
-        'Stuttgart-Süd',
-        'Bad Cannstatt',
-        'Vaihingen',
-        'Degerloch',
-        'Feuerbach',
-        'Möhringen',
-        'Esslingen',
-        'Ludwigsburg',
-        'Waiblingen'
-      ],
-      description: 'In Stuttgart ist Transport oft eine Herausforderung - Hanglage, enge Straßen, Parksituation. Wir kennen die Gegend und haben Erfahrung mit allen Stuttgarter Stadtteilen. Auch aus höheren Etagen in Altbauten ohne Aufzug - für uns kein Problem. Wir arbeiten mit lokalen Verwertungsstellen und sozialen Einrichtungen zusammen, um brauchbare Möbel sinnvoll weiterzugeben.'
-    },
-    cta: {
-      title: 'Möbel entsorgen lassen',
-      description: 'Kontaktieren Sie uns für die Entsorgung Ihrer Altmöbel. Wir erstellen Ihnen ein faires Angebot und holen zeitnah ab.'
-    },
-    additionalContent: {
-      title: 'Alles zur Möbel-Entsorgung in Stuttgart',
-      sections: [
-        {
-          heading: 'Was kostet die Entsorgung von Möbeln in Stuttgart?',
-          content: 'Die Kosten hängen von Art, Menge und Stockwerk ab. Einzelmöbel wie ein Sofa kosten 50-100 Euro, ein Kleiderschrank 60-120 Euro, ein Bett 50-90 Euro. Eine komplette Küchenzeile kostet 200-400 Euro. Bei ganzen Einrichtungen (Wohnzimmer, Schlafzimmer etc.) kalkulieren wir nach Gesamtaufwand, oft 300-800 Euro. Gut erhaltene Möbel werden bewertet und angerechnet - das kann die Kosten erheblich senken, manchmal sogar auf null reduzieren. Wir nennen Ihnen vorab einen transparenten Preis, damit Sie wissen, was auf Sie zukommt. Keine versteckten Kosten, keine Nachforderungen.'
-        },
-        {
-          heading: 'Welche Möbel können entsorgt werden?',
-          content: 'Wir entsorgen grundsätzlich alle Arten von Möbeln: Sitzmöbel wie Sofas, Sessel, Stühle, Eckbänke, Schränke aller Art (Kleiderschränke, Küchenschränke, Vitrinen), Betten, Matratzen, Lattenroste, Tische (Ess-, Couchtische, Schreibtische), Regale und Kommoden, komplette Einbauküchen mit Elektrogeräten, Gartenmöbel und Outdoor-Lounges, Büromöbel. Auch sperrige Schrankwände, die zerlegt werden müssen, sind kein Problem. Wichtig: Asbest-haltige Möbel (sehr alt) müssen speziell entsorgt werden - sprechen Sie uns an, wenn Sie unsicher sind.'
-        },
-        {
-          heading: 'Müssen Möbel vorher auseinandergebaut werden?',
-          content: 'Nein, das müssen Sie nicht. Unser Team bringt Werkzeug mit und demontiert bei Bedarf vor Ort. Große Schränke, Bettgestelle, Einbauküchen - wir zerlegen alles fachgerecht, tragen die Teile raus und laden sie auf. Sie müssen nichts vorbereiten, nichts schrauben. Lehnen Sie sich zurück, wir machen die Arbeit. Das ist besonders praktisch, wenn Sie keine Zeit, kein Werkzeug oder körperliche Einschränkungen haben.'
-        },
-        {
-          heading: 'Was passiert mit gut erhaltenen Möbeln?',
-          content: 'Gut erhaltene Möbel sind zu schade zum Wegwerfen. Wir prüfen den Zustand und haben mehrere Optionen: Verkauf an Gebrauchtmöbel-Händler mit Wertanrechnung für Sie, Weitergabe an Second-Hand-Shops, Spende an soziale Einrichtungen (Caritas, Diakonie etc.), Verkauf an Privatpersonen über unsere Kanäle. So bekommen brauchbare Möbel ein zweites Leben und Sie profitieren finanziell. In manchen Fällen übersteigt der Wert der Möbel sogar die Entsorgungskosten - dann zahlen wir Ihnen die Differenz aus. Nachhaltigkeit und faire Preise gehen bei uns Hand in Hand.'
-        }
-      ]
-    },
-    faq: [
-      {
-        question: 'Holen Sie auch nur ein einzelnes Möbelstück ab?',
-        answer: 'Ja, selbstverständlich. Sie brauchen keine Mindestmenge. Ob ein einzelnes Sofa, ein Schrank oder eine Kommode - wir holen auch Einzelstücke ab. Der Preis richtet sich nach dem konkreten Stück und dem Aufwand. Oft ist das günstiger, als Sie denken.'
-      },
-      {
-        question: 'Transportieren Sie auch aus höheren Etagen?',
-        answer: 'Ja, auch aus dem 5. Stock ohne Aufzug. Unser Team ist trainiert und kennt die Stuttgarter Altbauten mit ihren engen Treppenhäusern. Die Stockwerkshöhe fließt in die Preiskalkulation ein, aber grundsätzlich holen wir aus jeder Etage ab. Sie müssen nichts schleppen.'
-      },
-      {
-        question: 'Wie schnell können Sie Möbel abholen?',
-        answer: 'In den meisten Fällen innerhalb von 2-4 Werktagen. Bei dringenden Fällen manchmal auch schneller. Kontaktieren Sie uns mit Ihrem Wunschtermin und wir schauen, was möglich ist. Flexibilität ist einer unserer Vorteile.'
-      },
-      {
-        question: 'Was passiert mit Polstermöbeln und Matratzen?',
-        answer: 'Polstermöbel und Matratzen werden fachgerecht entsorgt. Gut erhaltene Stücke können ggf. wiederverwertet werden. Stark beschädigte oder unhygienische Polster werden der professionellen Entsorgung zugeführt. Wir arbeiten nach gesetzlichen Vorgaben und mit zertifizierten Entsorgungsbetrieben.'
-      },
-      {
-        question: 'Entsorgen Sie auch Einbauküchen?',
-        answer: 'Ja, komplette Einbauküchen inklusive Elektrogeräte. Wir demontieren die Küche vor Ort, entfernen alle Schränke, Arbeitsplatten, Geräte und entsorgen alles fachgerecht. Verwertbare Elemente (z.B. neuere Elektrogeräte) werden bewertet und angerechnet. Das senkt Ihre Kosten.'
-      },
-      {
-        question: 'Kann ich zusehen oder muss ich da sein?',
-        answer: 'Bei der ersten Besichtigung zur Preisfindung sollten Sie da sein. Bei der eigentlichen Abholung ist Ihre Anwesenheit nicht zwingend nötig, wenn Sie uns vertrauen. Viele Kunden überlassen uns einen Schlüssel und wir erledigen alles in ihrer Abwesenheit. Sie entscheiden, was Ihnen lieber ist.'
-      },
-      {
-        question: 'Wie umweltfreundlich ist Ihre Entsorgung?',
-        answer: 'Nachhaltigkeit ist uns wichtig. Wir trennen konsequent nach Material: Holz wird recycelt, Metalle werden dem Recycling zugeführt, brauchbare Möbel werden wiederverwertet, Polster werden fachgerecht entsorgt. Nur was wirklich nicht mehr verwertbar ist, wird entsorgt. So minimieren wir Müll und schonen Ressourcen.'
-      }
-    ],
-    relatedServices: ['sperrmuell-entsorgung', 'wertanrechnung', 'haushaltsaufloesung']
+    description: 'Wir sind regelmäßig in allen Stadtteilen Stuttgarts im Einsatz und kennen die örtlichen Gegebenheiten: enge Straßen, Altbauten, begrenzte Parkmöglichkeiten. Dadurch können wir Abholungen realistisch planen und zügig durchführen.'
   },
-  {
-    slug: 'wertanrechnung',
-    icon: Recycle,
-    title: 'Wertanrechnung Stuttgart',
-    shortDescription: 'Verwertbare Möbel, Antiquitäten und Gegenstände werden von unseren Experten fair bewertet und vom Gesamtpreis abgezogen.',
-    fullDescription: 'Was für Sie nicht mehr gebraucht wird, kann für andere noch wertvoll sein. Bei jeder Entrümpelung prüfen unsere geschulten Mitarbeiter, welche Gegenstände noch verwertbar sind. Möbel, Antiquitäten, Elektrogeräte und andere Wertgegenstände werden fair bewertet und vom Gesamtpreis Ihrer Entrümpelung abgezogen. So sparen Sie Kosten und handeln nachhaltig. In vielen Fällen kann die Wertanrechnung die Entrümpelungskosten erheblich reduzieren.',
-    intro: {
-      forWhom: 'Ideal für alle, die bei der Entrümpelung Kosten sparen möchten: Angehörige bei Nachlässen, Erbengemeinschaften, Haushaltsauflöser, Umziehende und alle, die vermuten, dass noch brauchbare oder wertvolle Gegenstände vorhanden sind.',
-      situations: [
-        'Nachlass mit Antiquitäten: Faire Bewertung von Möbeln, Bildern, Porzellan',
-        'Gut erhaltene Möbel: Wertanrechnung für neuwertige oder Designer-Möbel',
-        'Sammlerartikel: Münzen, Briefmarken, Bücher, Schallplatten',
-        'Elektrogeräte: Funktionsfähige Geräte haben Wert',
-        'Schmuck und Wertgegenstände: Diskrete und faire Bewertung',
-        'Hausrat mit Substanz: Qualitätsgeschirr, Besteck, Textilien'
-      ],
-      emotional: 'Es fühlt sich oft falsch an, Dinge wegzuwerfen, die noch brauchbar sind. Das müssen Sie auch nicht. Wir schauen genau hin, was noch Wert hat - nicht nur finanziell, sondern auch für Menschen, die diese Dinge gebrauchen können. So wird aus Ihrer Entrümpelung nicht nur Kosteneinsparung, sondern auch eine gute Tat. Nachhaltig und fair.'
-    },
-    whatWeOffer: {
-      title: 'Faire Wertermittlung und Anrechnung',
-      description: 'Unsere Experten bewerten Ihre Gegenstände professionell und ehrlich. Was Wert hat, wird vom Preis abgezogen.',
-      included: [
-        'Kostenlose Wertermittlung bei der Besichtigung vor Ort',
-        'Professionelle Begutachtung durch geschulte Experten',
-        'Bewertung von Möbeln, Antiquitäten, Sammlerstücken',
-        'Faire Marktpreise - keine Dumpingpreise',
-        'Transparente Aufstellung im Angebot',
-        'Sofortige Verrechnung mit dem Auftragspreis',
-        'Separate Auflistung jedes bewerteten Gegenstands',
-        'Bei hohen Werten: Zweitmeinung möglich',
-        'Diskrete Behandlung wertvoller Gegenstände',
-        'Weiterverwertung über seriöse Kanäle'
-      ]
-    },
-    benefits: [
-      'Faire Bewertung durch erfahrene Experten',
-      'Sofortige Verrechnung mit dem Auftragspreis - Sie sparen direkt',
-      'Maximale Ersparnis für Sie durch realistische Marktpreise',
-      'Nachhaltige Wiederverwertung - gut für die Umwelt',
-      'Transparente Wertermittlung mit detaillierter Aufstellung',
-      'Keine versteckten Kosten oder nachträgliche Änderungen',
-      'Auch kleinere Werte werden berücksichtigt',
-      'In vielen Fällen: Entrümpelung zum Nulltarif oder sogar mit Auszahlung möglich'
-    ],
-    process: [
-      'Begutachtung vor Ort bei der ersten Besichtigung',
-      'Professionelle Bewertung verwertbarer Gegenstände',
-      'Transparente Aufstellung im schriftlichen Angebot',
-      'Sofortiger Abzug vom Gesamtpreis der Entrümpelung',
-      'Abtransport und seriöse Weiterverwertung',
-      'Finale Abrechnung nach tatsächlichem Wert'
-    ],
-    features: ['Faire Bewertung', 'Sofortige Verrechnung', 'Maximale Ersparnis'],
-    localRelevance: {
-      areas: [
-        'Stuttgart-Mitte',
-        'Stuttgart-West',
-        'Bad Cannstatt',
-        'Vaihingen',
-        'Degerloch',
-        'Feuerbach',
-        'Möhringen',
-        'Esslingen',
-        'Ludwigsburg',
-        'Böblingen',
-        'Sindelfingen',
-        'Waiblingen'
-      ],
-      description: 'Stuttgart und Umgebung hat eine lebendige Antiquitäten- und Gebrauchtwarenszene. Wir kennen den lokalen Markt, arbeiten mit seriösen Händlern zusammen und wissen, was Stuttgarter Kunden schätzen. Durch unser Netzwerk können wir faire Preise bieten und gleichzeitig sicherstellen, dass brauchbare Gegenstände eine zweite Chance bekommen - bei Sammlern, in Vintage-Shops oder bei gemeinnützigen Organisationen.'
-    },
-    cta: {
-      title: 'Wertermittlung anfragen',
-      description: 'Lassen Sie den Wert Ihrer Gegenstände kostenlos ermitteln. Oft können wir die Entrümpelungskosten durch Wertanrechnung deutlich senken.'
-    },
-    additionalContent: {
-      title: 'Alles zur Wertanrechnung bei Entrümpelungen',
-      sections: [
-        {
-          heading: 'Wie funktioniert die Wertanrechnung bei Entrümpelungen?',
-          content: 'Bei der Wertanrechnung bewerten unsere Experten alle verwertbaren Gegenstände fair nach aktuellen Marktpreisen. Gut erhaltene Möbel, funktionsfähige Elektrogeräte, Werkzeuge, Antiquitäten, Sammlerstücke - alles was einen Wiederverkaufswert hat, wird erfasst. Diese Werte werden dann vom Entrümpelungspreis abgezogen. Beispiel: Ihre Entrümpelung würde 1.500 Euro kosten. Wir finden verwertbare Möbel und Gegenstände im Wert von 800 Euro. Sie zahlen nur noch 700 Euro. In manchen Fällen übersteigt der Wert der Gegenstände sogar die Entrümpelungskosten - dann zahlen wir Ihnen die Differenz aus. Die Wertanrechnung macht Entrümpelungen oft deutlich günstiger und fördert nachhaltiges Handeln.'
-        },
-        {
-          heading: 'Welche Gegenstände haben Wiederverkaufswert?',
-          content: 'Viele Dinge haben noch Wert, auch wenn Sie sie nicht mehr brauchen. Gut erhaltene Möbel aus Massivholz, Designermöbel, Antiquitäten, funktionsfähige Elektrogeräte, Werkzeuge und Maschinen, Porzellan und Geschirr von Qualitätsmarken, Silberbesteck, Teppiche, Bücher und Schallplatten, Schmuck, Münzsammlungen, alte Uhren, Bilder und Kunstgegenstände. Selbst scheinbar wertlose Dinge können überraschen - alte Werkzeugkisten, Vintage-Lampen oder Retro-Elektronik sind bei Sammlern begehrt. Unser Team erkennt Wertsachen und schätzt sie realistisch ein. Sie profitieren von unserer Erfahrung und unserem Marktwissen.'
-        },
-        {
-          heading: 'Wie transparent ist die Wertermittlung?',
-          content: 'Absolute Transparenz ist uns wichtig. Bei der Besichtigung erfassen wir verwertbare Gegenstände und bewerten sie vor Ort. Im schriftlichen Angebot erhalten Sie eine detaillierte Aufstellung: Jeder bewertete Gegenstand ist einzeln aufgeführt mit Beschreibung und angerechneetem Wert. Sie sehen genau, was wir mit welchem Betrag ansetzen. Wenn Sie Zweifel an einer Bewertung haben, besprechen wir das. Bei besonders wertvollen Stücken bieten wir eine Zweitmeinung an. Keine versteckten Abzüge, keine unklaren Kalkulationen. Sie wissen immer, woran Sie sind und können die Fairness unserer Bewertung nachvollziehen.'
-        },
-        {
-          heading: 'Kann ich mich auf die Wertanrechnung verlassen?',
-          content: 'Ja, absolut. Die Wertanrechnung ist vertraglich fixiert und wird im Angebot schriftlich festgehalten. Was wir zusagen, gilt. Wir arbeiten seit über 10 Jahren in Stuttgart mit diesem System und haben hunderte zufriedene Kunden. Unsere Bewertungen sind fair und realistisch - weder schätzen wir zu hoch (um Sie anzulocken), noch zu niedrig (um zu profitieren). Wir leben von Empfehlungen und gutem Ruf, daher ist Ehrlichkeit für uns selbstverständlich. Die meisten Kunden sind überrascht, wie viel Wert in ihren scheinbar wertlosen Sachen steckt. Vertrauen Sie auf unsere Expertise und lokale Marktkenntnis.'
-        }
-      ]
-    },
-    faq: [
+
+  cta: {
+    title: 'Sperrmüll Abholung in Stuttgart anfragen',
+    description: 'Kontaktieren Sie uns für eine unverbindliche Anfrage. Wir nennen Ihnen zeitnah einen Termin und ein transparentes Angebot.'
+  },
+
+  additionalContent: {
+    title: 'Wissenswertes zur Sperrmüll Abholung in Stuttgart',
+    sections: [
       {
-        question: 'Bewerten Sie auch Antiquitäten und Kunstgegenstände?',
-        answer: 'Ja, unser Team hat Erfahrung in der Bewertung von Antiquitäten, alten Möbeln, Porzellan, Bildern und Kunstgegenständen. Bei besonders wertvollen oder seltenen Stücken arbeiten wir mit Experten zusammen, um eine faire Bewertung sicherzustellen. Wir wollen nicht, dass Sie unter Wert verkaufen - Ihre Zufriedenheit ist uns wichtig.'
+        heading: 'Was kostet eine private Sperrmüll Abholung in Stuttgart?',
+        content: 'Die Kosten hängen von Art, Menge, Stockwerk und Aufwand ab. Nach kurzer Abstimmung nennen wir Ihnen vorab einen klaren Preis. Sie zahlen für Flexibilität, Wunschtermin und Abholung direkt aus der Wohnung.'
       },
       {
-        question: 'Was passiert mit den verwertbaren Gegenständen nach der Entrümpelung?',
-        answer: 'Verwertbare Gegenstände werden je nach Art und Wert über verschiedene Kanäle weiterverkauft: an Gebrauchtwaren händler, Second-Hand-Shops, Antiquitätenhändler, über Online-Plattformen oder an Privatpersonen. Sozial wertvolle Dinge ohne großen Marktwert geben wir an gemeinnützige Organisationen weiter. So bekommen brauchbare Gegenstände ein zweites Leben und werden nicht unnötig zu Müll.'
-        },
-      {
-        question: 'Wird der Wert vor oder nach der Entrümpelung ermittelt?',
-        answer: 'Die Wertermittlung erfolgt bei der kostenlosen Besichtigung vor der Entrümpelung. So können Sie das Angebot mit Wertanrechnung sehen und in Ruhe entscheiden. Der ermittelte Wert wird im Angebot festgeschrieben. Bei der Entrümpelung überprüfen wir den Zustand noch einmal, aber in der Regel bleibt die Bewertung unverändert.'
+        heading: 'Was zählt alles zum Sperrmüll?',
+        content: 'Zum Sperrmüll gehören unter anderem Möbel, Matratzen, Teppiche, große Elektrogeräte, Kinderwagen, Fahrräder und sperrige Haushaltsgegenstände. Bei Unsicherheit beraten wir Sie gern.'
       },
       {
-        question: 'Können wir auch Gegenstände zurückbehalten und selbst verkaufen?',
-        answer: 'Selbstverständlich! Es ist Ihr Eigentum. Wenn Sie bestimmte Wertgegenstände lieber selbst verkaufen möchten, ist das kein Problem. Wir zeigen Ihnen, was verwertbar ist und Sie entscheiden. Was Sie behalten, rechnen wir nicht an. Was wir mitnehmen sollen, wird bewertet und angerechnet. Völlig flexible Handhabung nach Ihren Wünschen.'
+        heading: 'Wie schnell ist eine Abholung möglich?',
+        content: 'Je nach Auslastung sind kurzfristige Termine möglich. Rufen Sie uns an, und wir prüfen, wann wir Sie einplanen können.'
       },
       {
-        question: 'Wie hoch ist die durchschnittliche Wertanrechnung bei Entrümpelungen?',
-        answer: 'Das variiert stark je nach Objektart und Gegenständen. Bei Haushaltsauflösungen liegt die Wertanrechnung oft zwischen 300 und 1.500 Euro. Bei gut erhaltenen Wohnungen mit Qualitätsmöbeln auch deutlich mehr. Keller und Dachböden bringen oft 100-500 Euro. Entscheidend ist der Zustand und die Marktgängigkeit. Manche Entrümpelungen kosten Sie nach Wertanrechnung gar nichts mehr - die verwertbaren Gegenstände decken die Kosten komplett.'
-      },
-      {
-        question: 'Muss ich die Wertanrechnung versteuern?',
-        answer: 'Als Privatperson in der Regel nein. Die Wertanrechnung ist eine Reduzierung Ihrer Entrümpelungskosten, kein Einkommen. Anders kann es sein, wenn Sie gewerblich handeln oder Erbschaften verkaufen - dann fragen Sie Ihren Steuerberater. Wir stellen ordentliche Rechnungen aus, die Sie für steuerliche Zwecke nutzen können.'
-      },
-      {
-        question: 'Kaufen Sie die Gegenstände an oder rechnen Sie sie nur an?',
-        answer: 'Wir rechnen die Gegenstände an - das heißt, wir verrechnen ihren Wert mit den Entrümpelungskosten. Rechtlich bleibt das Eigentum zunächst bei Ihnen, geht aber mit Abtransport auf uns über. Das ist unkomplizierter als ein formeller Ankauf und für beide Seiten vorteilhaft. Sie sparen Kosten, wir können die Gegenstände weiterverwerten. Bei sehr hochwertigen Einzelstücken können wir auch einen direkten Ankauf besprechen.'
+        heading: 'Muss ich den Sperrmüll an die Straße stellen?',
+        content: 'Nein. Wir holen direkt dort ab, wo die Gegenstände stehen. Unser Team übernimmt Tragen, Transport und Entsorgung.'
       }
+    ]
+  },
+
+  faq: [
+    {
+      question: 'Holen Sie auch Elektrogeräte ab?',
+      answer: 'Ja. Wir entsorgen Elektrogeräte fachgerecht nach den gesetzlichen Vorgaben.'
+    },
+    {
+      question: 'Kann ich auch nur ein einzelnes Möbelstück abholen lassen?',
+      answer: 'Ja. Auch einzelne Sofas, Schränke oder Geräte holen wir ab.'
+    },
+    {
+      question: 'Arbeiten Sie auch samstags?',
+      answer: 'Nach Absprache sind Samstags-Termine möglich.'
+    },
+    {
+      question: 'Was passiert mit meinem Sperrmüll?',
+      answer: 'Wir sortieren nach verwertbaren Materialien, Elektroschrott und Restmüll und führen alles der fachgerechten Entsorgung zu.'
+    },
+    {
+      question: 'Muss ich anwesend sein?',
+      answer: 'Für die Übergabe ist es sinnvoll, dass jemand vor Ort ist. Nach Absprache können wir auch mit Schlüsselübergabe arbeiten.'
+    }
+  ],
+
+  relatedServices: ['entruempelung', 'haushaltsaufloesung', 'keller-dachboden']
+},
+  {
+  slug: 'immobilienraemung',
+  icon: Building2,
+  title: 'Immobilienräumung Stuttgart',
+  shortDescription: 'Professionelle Immobilienräumung in Stuttgart für Hausverwaltungen, Makler und Eigentümer. Schnelle Objektfreimachung, transparente Festpreise und zuverlässige Übergabe.',
+  fullDescription: 'Eine Immobilie kann erst dann wieder vermietet oder verkauft werden, wenn sie vollständig geräumt und in einem ordentlichen Zustand ist. Genau hier setzt unsere Immobilienräumung in Stuttgart an. Serviceplus unterstützt Hausverwaltungen, Immobilienmakler und Eigentümer bei der zügigen und professionellen Freimachung von Wohnungen, Häusern und Gewerbeeinheiten. Wir übernehmen die komplette Räumung, kümmern uns um fachgerechte Entsorgung und bereiten Objekte auf Wunsch so vor, dass sie direkt weiterverwertet werden können. Unser Fokus liegt auf Verlässlichkeit, klarer Kommunikation und einer sauberen, dokumentierten Übergabe.',
+
+  intro: {
+    forWhom: 'Unsere Immobilienräumungen in Stuttgart richten sich an Hausverwaltungen, Immobilienmakler, Wohnungsbaugesellschaften, Eigentümer, Erbengemeinschaften sowie Investoren, die Objekte schnell wieder vermietbar oder verkaufsfähig machen müssen.',
+    situations: [
+      'Objektfreimachung nach Auszug oder Kündigung',
+      'Räumung nach gerichtlichen Entscheidungen',
+      'Nachlassimmobilien vor Verkauf',
+      'Wohnungen nach Messie- oder Verwahrlosungssituationen',
+      'Vorbereitung für Neuvermietung',
+      'Räumung vor Sanierung oder Modernisierung'
     ],
-    relatedServices: ['haushaltsaufloesung', 'entruempelung', 'moebel-entsorgung']
-  }
+    emotional: 'Jeder Tag Leerstand kostet Zeit, Geld und Energie. Wir wissen, dass Sie sich auf Dienstleister verlassen müssen, wenn Fristen, Übergaben oder Verkaufstermine anstehen. Unser Team arbeitet strukturiert, lösungsorientiert und zuverlässig. Sie bekommen klare Termine, realistische Einschätzungen und ein Objekt, das wieder nutzbar ist.'
+  },
+
+  whatWeOffer: {
+    title: 'Immobilienräumung für Hausverwaltungen & Makler',
+    description: 'Ein klar strukturierter Service für professionelle Anforderungen – von der Räumung bis zur dokumentierten Übergabe.',
+    included: [
+      'Zeitnahe Objektbesichtigung nach Anfrage',
+      'Verbindliches Festpreis-Angebot',
+      'Komplette Räumung aller Wohn- und Nebenräume',
+      'Räumung von Kellern, Dachböden und Garagen',
+      'Sortierung und fachgerechte Entsorgung',
+      'Wertanrechnung bei verwertbaren Gegenständen',
+      'Besenreine Übergabe als Standard',
+      'Optional: Endreinigung und einfache Instandsetzungen',
+      'Fotodokumentation vor und nach der Räumung',
+      'Übergabeprotokoll für Ihre Unterlagen'
+    ]
+  },
+
+  benefits: [
+    'Zuverlässige und planbare Abwicklung',
+    'Transparente Festpreise für sichere Kalkulation',
+    'Besenreine oder erweiterte Übergabe möglich',
+    'Dokumentation für Verwaltung und Eigentümer',
+    'Kurze Reaktionszeiten',
+    'Ein fester Ansprechpartner',
+    'Erfahrung mit sensiblen und komplexen Objekten',
+    'Entlastung Ihrer internen Abläufe'
+  ],
+
+  process: [
+    'Anfrage und erste Abstimmung',
+    'Zeitnahe Objektbesichtigung',
+    'Festpreis-Angebot mit Leistungsübersicht',
+    'Terminierung nach Ihren Fristen',
+    'Professionelle Räumung',
+    'Übergabe mit Dokumentation'
+  ],
+
+  features: ['Objektfreimachung', 'Besenreine Übergabe', 'Fotodokumentation'],
+
+  localRelevance: {
+    areas: [
+      'Stuttgart-Mitte','Stuttgart-West','Stuttgart-Ost','Stuttgart-Süd',
+      'Bad Cannstatt','Vaihingen','Feuerbach','Degerloch','Möhringen',
+      'Esslingen','Ludwigsburg','Böblingen'
+    ],
+    description: 'Wir arbeiten regelmäßig in Stuttgart und der Region und kennen die lokalen Gegebenheiten – von Altbauten über große Wohnanlagen bis zu Gewerbeobjekten. Diese Erfahrung ermöglicht eine realistische Planung und zuverlässige Umsetzung.'
+  },
+
+  cta: {
+    title: 'Immobilienräumung anfragen',
+    description: 'Kontaktieren Sie uns für eine unverbindliche Anfrage. Wir melden uns zeitnah zur Besichtigung und Angebotserstellung.'
+  },
+
+  additionalContent: {
+    title: 'Wissenswertes zur Immobilienräumung in Stuttgart',
+    sections: [
+      {
+        heading: 'Was kostet eine Immobilienräumung in Stuttgart?',
+        content: 'Die Kosten hängen von Objektgröße, Füllgrad, Zugänglichkeit und gewünschten Zusatzleistungen ab. Nach der Besichtigung erhalten Sie ein verbindliches Festpreis-Angebot. Verwertbare Gegenstände können angerechnet und kostenmindernd berücksichtigt werden.'
+      },
+      {
+        heading: 'Wie schnell ist eine Immobilienräumung möglich?',
+        content: 'Je nach Auslastung und Objektgröße sind kurzfristige Termine möglich. Ziel ist immer eine schnelle und planbare Umsetzung im Rahmen Ihrer Fristen.'
+      },
+      {
+        heading: 'Was bedeutet besenreine Übergabe?',
+        content: 'Besenrein bedeutet: vollständig geräumt, grob gereinigt, leer und ordentlich. Auf Wunsch bieten wir auch erweiterte Leistungen wie Endreinigung oder Koordination kleiner Instandsetzungen.'
+      },
+      {
+        heading: 'Arbeiten Sie auch in sensiblen oder rechtlichen Situationen?',
+        content: 'Ja. Wir arbeiten strukturiert, diskret und dokumentieren unsere Arbeit sauber. Übergabeprotokolle und Fotodokumentationen gehören bei uns zum Standard.'
+      }
+    ]
+  },
+
+  faq: [
+    {
+      question: 'Arbeiten Sie regelmäßig mit Hausverwaltungen zusammen?',
+      answer: 'Ja. Wir betreuen laufend Hausverwaltungen und Eigentümer und passen unsere Abläufe an professionelle Anforderungen an.'
+    },
+    {
+      question: 'Erstellen Sie Fotodokumentationen?',
+      answer: 'Ja. Vorher-/Nachher-Dokumentationen gehören bei Immobilienräumungen standardmäßig dazu.'
+    },
+    {
+      question: 'Übernehmen Sie auch Teilräumungen?',
+      answer: 'Ja. Auch einzelne Wohnungen, Kellerräume oder Nachräumungen sind möglich.'
+    },
+    {
+      question: 'Können Zusatzleistungen koordiniert werden?',
+      answer: 'Auf Wunsch unterstützen wir auch bei der Koordination weiterer Arbeiten wie Reinigung oder einfachen Instandsetzungen.'
+    },
+    {
+      question: 'Wie erfolgt die Abrechnung?',
+      answer: 'Sie erhalten eine ordentliche Rechnung mit klarer Leistungsbeschreibung für Ihre Unterlagen.'
+    }
+  ],
+
+  relatedServices: ['haushaltsaufloesung', 'entruempelung', 'keller-dachboden']
+},
+  {
+  slug: 'moebel-entsorgung',
+  icon: Sofa,
+  title: 'Möbel entsorgen Stuttgart',
+  shortDescription: 'Möbel entsorgen in Stuttgart: Wir holen Altmöbel, Sofas, Schränke, Küchen und komplette Einrichtungen ab. Inklusive Tragen, Demontage, Recycling und optionaler Wertanrechnung.',
+  fullDescription: 'Möbel zu entsorgen ist oft aufwendiger, als man denkt. Große Schränke müssen zerlegt werden, Sofas durch enge Treppenhäuser getragen, Einbauküchen sauber demontiert. Genau das übernehmen wir für Sie. Mit unserer Möbel-Entsorgung in Stuttgart holen wir einzelne Möbelstücke ebenso ab wie komplette Einrichtungen. Wir tragen aus der Wohnung, verladen professionell und kümmern uns um eine fachgerechte, umweltbewusste Entsorgung. Gut erhaltene Möbel prüfen wir auf Weiterverwertung und rechnen deren Wert fair an.',
+
+  intro: {
+    forWhom: 'Unsere Möbel-Entsorgung in Stuttgart richtet sich an Haushalte bei Neuanschaffung, Mieter vor dem Umzug, Vermieter nach Auszug, Erbengemeinschaften, Senioren bei Wohnungswechsel und alle, die Möbel loswerden möchten, ohne selbst zu schleppen oder zu organisieren.',
+    situations: [
+      'Sofa entsorgen, Sessel, Stühle, Betten, Matratzen',
+      'Schränke, Regale und Kommoden abholen lassen',
+      'Einbauküchen fachgerecht demontieren und entsorgen',
+      'Komplette Einrichtungen bei Umzug oder Renovierung',
+      'Schwere und sperrige Möbel aus Altbauten',
+      'Büromöbel und Praxiseinrichtungen'
+    ],
+    emotional: 'Alte Möbel loszuwerden ist oft mit Aufwand, Stress und körperlicher Belastung verbunden. Wir nehmen Ihnen das ab. Kein Schleppen, kein Zerlegen, kein Wertstoffhof. Unser Team kommt, arbeitet ruhig und organisiert – und hinterlässt Platz, Ordnung und Klarheit. Wenn Möbel noch gut sind, sorgen wir dafür, dass sie sinnvoll weiterverwendet werden.'
+  },
+
+  whatWeOffer: {
+    title: 'Professionelle Möbel-Entsorgung in Stuttgart',
+    description: 'Abholung, Demontage, Transport und fachgerechte Entsorgung – zuverlässig aus einer Hand.',
+    included: [
+      'Abholung einzelner Möbel oder kompletter Einrichtungen',
+      'Tragen aus der Wohnung – auch aus oberen Etagen',
+      'Demontage von Schränken, Betten und Einbauküchen',
+      'Vor-Ort-Einschätzung verwertbarer Möbel',
+      'Wertanrechnung bei gut erhaltenen Stücken',
+      'Fachgerechte Entsorgung nach gesetzlichen Vorgaben',
+      'Umweltbewusste Materialtrennung und Recycling',
+      'Weitergabe brauchbarer Möbel an soziale Einrichtungen',
+      'Flexible Terminvereinbarung',
+      'Transparente Preisstruktur'
+    ]
+  },
+
+  benefits: [
+    'Kein Schleppen, kein Zerlegen, kein Organisationsaufwand',
+    'Abholung auch einzelner Möbelstücke',
+    'Wertanrechnung kann Kosten deutlich senken',
+    'Fachgerechte und umweltbewusste Entsorgung',
+    'Erfahrung mit schweren und sperrigen Möbeln',
+    'Flexible Terminvergabe',
+    'Klare, faire Preise',
+    'Nachhaltige Weiterverwertung wo möglich'
+  ],
+
+  process: [
+    'Kontaktaufnahme mit kurzer Beschreibung',
+    'Preisabschätzung und Terminvereinbarung',
+    'Abholung vor Ort inkl. Demontage',
+    'Tragen und professionelle Verladung',
+    'Bewertung verwertbarer Möbel',
+    'Entsorgung, Recycling oder Weitergabe'
+  ],
+
+  features: ['Abholung aus der Wohnung', 'Wertanrechnung möglich', 'Umweltgerechte Entsorgung'],
+
+  localRelevance: {
+    areas: [
+      'Stuttgart-Mitte','Stuttgart-West','Stuttgart-Ost','Stuttgart-Süd',
+      'Bad Cannstatt','Vaihingen','Degerloch','Feuerbach',
+      'Möhringen','Esslingen','Ludwigsburg','Waiblingen'
+    ],
+    description: 'Stuttgart bringt besondere Herausforderungen mit sich – enge Altbauten, Hanglagen, schwierige Parksituationen. Wir kennen die Stadt, die Stadtteile und die typischen Gegebenheiten. Auch schwere Möbel aus oberen Etagen ohne Aufzug sind für uns Alltag.'
+  },
+
+  cta: {
+    title: 'Möbel entsorgen lassen',
+    description: 'Kontaktieren Sie uns für ein unverbindliches Angebot. Wir holen Ihre Möbel in Stuttgart zeitnah ab.'
+  },
+
+  additionalContent: {
+    title: 'Wissenswertes zur Möbel-Entsorgung in Stuttgart',
+    sections: [
+      {
+        heading: 'Was kostet es, Möbel in Stuttgart zu entsorgen?',
+        content: 'Die Kosten richten sich nach Art der Möbel, Menge, Stockwerk und Aufwand. Einzelstücke wie Sofas oder Schränke liegen meist im Bereich von 60–120 Euro. Komplette Einrichtungen werden nach Gesamtaufwand kalkuliert. Gut erhaltene Möbel können angerechnet werden und senken den Preis. Nach kurzer Abstimmung nennen wir Ihnen einen transparenten Festpreis.'
+      },
+      {
+        heading: 'Welche Möbel holen Sie ab?',
+        content: 'Wir entsorgen Sofas, Sessel, Betten, Matratzen, Schränke, Regale, Kommoden, Tische, Stühle, komplette Einbauküchen mit Elektrogeräten, Gartenmöbel und Büromöbel. Auch sperrige oder schwere Möbelstücke sind kein Problem.'
+      },
+      {
+        heading: 'Muss ich Möbel vorher zerlegen?',
+        content: 'Nein. Unser Team übernimmt die Demontage vor Ort. Sie müssen nichts vorbereiten und kein Werkzeug bereitstellen.'
+      },
+      {
+        heading: 'Was passiert mit gut erhaltenen Möbeln?',
+        content: 'Gut erhaltene Möbel prüfen wir auf Wiederverwertung. Sie können verkauft, gespendet oder weitergegeben werden. Der erzielte Wert wird Ihnen angerechnet. So entstehen weniger Abfall und oft geringere Kosten.'
+      }
+    ]
+  },
+
+  faq: [
+    {
+      question: 'Holen Sie auch nur ein einzelnes Möbelstück ab?',
+      answer: 'Ja. Auch einzelne Sofas, Schränke oder Betten holen wir ab.'
+    },
+    {
+      question: 'Transportieren Sie auch aus oberen Etagen ohne Aufzug?',
+      answer: 'Ja. Wir sind auf Altbauten und schwierige Zugänge eingestellt.'
+    },
+    {
+      question: 'Wie schnell ist eine Abholung möglich?',
+      answer: 'Je nach Auslastung oft innerhalb weniger Tage, manchmal auch kurzfristiger.'
+    },
+    {
+      question: 'Entsorgen Sie auch Einbauküchen?',
+      answer: 'Ja. Inklusive Demontage und fachgerechter Entsorgung aller Bestandteile.'
+    },
+    {
+      question: 'Wie umweltgerecht arbeiten Sie?',
+      answer: 'Wir trennen Materialien konsequent, führen Holz und Metalle dem Recycling zu und geben brauchbare Möbel weiter.'
+    }
+  ],
+
+  relatedServices: ['sperrmuell-entsorgung', 'entruempelung', 'haushaltsaufloesung']
+},
+  {
+  slug: 'wertanrechnung',
+  icon: Recycle,
+  title: 'Wertanrechnung in Stuttgart – Entrümpelung mit fairer Bewertung',
+  shortDescription: 'Wertanrechnung bei Entrümpelungen in Stuttgart. Verwertbare Möbel, Antiquitäten und Gegenstände werden fair bewertet und direkt vom Gesamtpreis abgezogen.',
+  fullDescription: 'Bei vielen Entrümpelungen steckt mehr Wert, als man auf den ersten Blick vermutet. Gut erhaltene Möbel, Antiquitäten, Sammlerstücke oder funktionsfähige Geräte müssen nicht entsorgt werden. Wir prüfen bei jeder Besichtigung, welche Gegenstände verwertbar sind. Diese werden realistisch bewertet und direkt vom Gesamtpreis Ihrer Entrümpelung abgezogen. Das senkt Ihre Kosten spürbar und sorgt gleichzeitig dafür, dass brauchbare Dinge weiterverwendet werden, statt im Müll zu landen.',
+
+  intro: {
+    forWhom: 'Unsere Wertanrechnung in Stuttgart ist ideal für Angehörige bei Nachlässen, Erbengemeinschaften, Haushaltsauflösungen, Umzüge, Wohnungsauflösungen und alle, die vermuten, dass sich noch verwertbare Gegenstände im Objekt befinden.',
+    situations: [
+      'Nachlass mit Möbeln, Porzellan, Bildern oder Hausrat',
+      'Gut erhaltene Einrichtungen und Designermöbel',
+      'Antiquitäten, Sammlungen, alte Uhren oder Schmuck',
+      'Funktionsfähige Elektrogeräte und Werkzeuge',
+      'Keller- und Dachbodenfunde mit Substanz',
+      'Haushalte, die Entsorgungskosten reduzieren möchten'
+    ],
+    emotional: 'Es fühlt sich für viele falsch an, brauchbare Dinge einfach wegzuwerfen. Genau deshalb schauen wir genau hin. Wertanrechnung bedeutet nicht nur Kostenersparnis, sondern auch Respekt vor dem, was noch nutzbar ist. Manche Gegenstände finden neue Besitzer, andere helfen sozialen Einrichtungen. So wird aus einer Entrümpelung nicht nur ein Abschluss, sondern auch etwas Sinnvolles.'
+  },
+
+  whatWeOffer: {
+    title: 'Faire Wertermittlung und transparente Anrechnung',
+    description: 'Wir bewerten verwertbare Gegenstände realistisch und rechnen sie nachvollziehbar an.',
+    included: [
+      'Kostenlose Wertermittlung bei der Besichtigung',
+      'Einschätzung verwertbarer Möbel und Gegenstände',
+      'Bewertung nach realistischen Marktpreisen',
+      'Transparente Auflistung im Angebot',
+      'Direkter Abzug vom Entrümpelungspreis',
+      'Einzelne Aufstellung der angerechneten Posten',
+      'Diskreter Umgang mit Wertgegenständen',
+      'Weiterverwertung über seriöse Kanäle',
+      'Nachhaltige Nutzung statt Entsorgung',
+      'Klare Vereinbarung vor Auftragsbeginn'
+    ]
+  },
+
+  benefits: [
+    'Senkung der Entrümpelungskosten durch Wertanrechnung',
+    'Transparente und nachvollziehbare Bewertung',
+    'Keine versteckten Abzüge',
+    'Nachhaltige Weiterverwertung brauchbarer Dinge',
+    'Faire Behandlung von Erinnerungsstücken',
+    'Kostensicherheit durch Festpreis nach Anrechnung',
+    'Oft deutliche Reduzierung der Gesamtkosten',
+    'Seriöser und respektvoller Umgang'
+  ],
+
+  process: [
+    'Besichtigung und gemeinsame Durchsicht',
+    'Identifikation verwertbarer Gegenstände',
+    'Realistische Einschätzung des Marktwerts',
+    'Auflistung im schriftlichen Angebot',
+    'Verrechnung mit dem Gesamtpreis',
+    'Abtransport und Weiterverwertung'
+  ],
+
+  features: ['Faire Bewertung', 'Transparente Anrechnung', 'Nachhaltige Weiterverwertung'],
+
+  localRelevance: {
+    areas: [
+      'Stuttgart-Mitte','Stuttgart-West','Bad Cannstatt','Vaihingen',
+      'Degerloch','Feuerbach','Möhringen','Esslingen',
+      'Ludwigsburg','Böblingen','Sindelfingen','Waiblingen'
+    ],
+    description: 'Wir arbeiten regelmäßig in Stuttgart und Umgebung und kennen den regionalen Markt für Gebrauchtmöbel, Antiquitäten und Hausrat. Durch lokale Kontakte können wir realistisch einschätzen, was verwertbar ist und was nicht.'
+  },
+
+  cta: {
+    title: 'Kostenlose Wertermittlung anfragen',
+    description: 'Lassen Sie prüfen, was in Ihrem Objekt noch Wert hat. Oft lassen sich die Entrümpelungskosten deutlich senken.'
+  },
+
+  additionalContent: {
+    title: 'Wissenswertes zur Wertanrechnung',
+    sections: [
+      {
+        heading: 'Wie funktioniert Wertanrechnung bei einer Entrümpelung?',
+        content: 'Bei der Besichtigung prüfen wir, welche Gegenstände verwertbar sind. Diese werden realistisch bewertet und im Angebot einzeln aufgeführt. Der Gesamtwert wird anschließend direkt vom Entrümpelungspreis abgezogen. So entsteht ein klarer, transparenter Endpreis.'
+      },
+      {
+        heading: 'Welche Gegenstände haben typischerweise Wert?',
+        content: 'Oft verwertbar sind gut erhaltene Möbel, Massivholz, Designermöbel, Antiquitäten, Porzellan, Silberbesteck, Teppiche, Werkzeuge, Maschinen, funktionsfähige Elektrogeräte, Bücher, Schallplatten, Sammlungen, Schmuck oder alte Uhren. Auch Keller- und Dachbodenfunde überraschen häufig.'
+      },
+      {
+        heading: 'Wie transparent ist die Bewertung?',
+        content: 'Jeder angerechnete Gegenstand wird im Angebot benannt. Sie sehen genau, was wir mit welchem Wert berücksichtigen. Wenn Sie unsicher sind, besprechen wir das offen. Sie entscheiden immer, was wir mitnehmen und was Sie behalten.'
+      },
+      {
+        heading: 'Kann Wertanrechnung die Kosten komplett decken?',
+        content: 'In manchen Fällen ja. Wenn viele gut erhaltene oder gefragte Gegenstände vorhanden sind, kann der angerechnete Wert die Entrümpelungskosten deutlich senken oder vollständig ausgleichen. Das lässt sich seriös aber erst nach Besichtigung beurteilen.'
+      }
+    ]
+  },
+
+  faq: [
+    {
+      question: 'Bewerten Sie auch Antiquitäten und Sammlerstücke?',
+      answer: 'Ja. Wir prüfen Möbel, Antiquitäten, Hausrat und Sammlungen. Bei besonderen Stücken besprechen wir das transparent und vorsichtig.'
+    },
+    {
+      question: 'Wird der Wert vor der Entrümpelung festgelegt?',
+      answer: 'Ja. Die Wertanrechnung erfolgt vor Auftragsbeginn und wird im Angebot festgehalten.'
+    },
+    {
+      question: 'Kann ich Gegenstände selbst behalten oder verkaufen?',
+      answer: 'Natürlich. Sie entscheiden jederzeit, was bei Ihnen bleibt und was angerechnet wird.'
+    },
+    {
+      question: 'Was passiert mit verwertbaren Gegenständen?',
+      answer: 'Je nach Art werden sie weiterverkauft, weitergegeben oder über soziale Stellen sinnvoll genutzt.'
+    },
+    {
+      question: 'Ist Wertanrechnung garantiert?',
+      answer: 'Nein. Ob und in welcher Höhe Wert angerechnet werden kann, hängt vom tatsächlichen Zustand und der Marktgängigkeit ab.'
+    },
+    {
+      question: 'Ist die Wertanrechnung steuerlich relevant?',
+      answer: 'In der Regel handelt es sich um eine Kostenreduzierung, nicht um Einkommen. Bei besonderen Fällen empfehlen wir, steuerlichen Rat einzuholen.'
+    }
+  ],
+
+  relatedServices: ['haushaltsaufloesung', 'entruempelung', 'moebel-entsorgung']
+}
 ];
 
 export const getServiceBySlug = (slug: string): Service | undefined => {
