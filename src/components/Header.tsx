@@ -1,5 +1,5 @@
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { trackPhoneClick } from '../utils/analytics';
 import { services } from '../data/services';
@@ -9,6 +9,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -43,6 +44,28 @@ export default function Header() {
     }
   };
 
+  const handleDropdownEnter = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setIsServicesDropdownOpen(true);
+  };
+
+  const handleDropdownLeave = () => {
+    closeTimeoutRef.current = setTimeout(() => {
+      setIsServicesDropdownOpen(false);
+    }, 150);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -70,28 +93,35 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <div
               className="relative"
-              onMouseEnter={() => setIsServicesDropdownOpen(true)}
-              onMouseLeave={() => setIsServicesDropdownOpen(false)}
+              onMouseEnter={handleDropdownEnter}
+              onMouseLeave={handleDropdownLeave}
             >
               <button
-                className="flex items-center gap-1 text-sm font-light text-gray-600 hover:text-midnight transition-colors duration-300"
+                className="flex items-center gap-1 text-sm font-light text-gray-600 hover:text-midnight transition-colors duration-300 py-2"
               >
                 Leistungen
                 <ChevronDown size={16} className={`transition-transform duration-200 ${isServicesDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
 
               {isServicesDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-2 z-50">
-                  {services.map((service) => (
-                    <Link
-                      key={service.slug}
-                      to={`/${service.slug}`}
-                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-midnight transition-colors"
-                      onClick={() => setIsServicesDropdownOpen(false)}
-                    >
-                      {service.title.replace(' Stuttgart', '')}
-                    </Link>
-                  ))}
+                <div className="absolute top-full left-0 pt-2 -mt-2">
+                  <div className="w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-2">
+                    {services.map((service) => (
+                      <Link
+                        key={service.slug}
+                        to={`/${service.slug}`}
+                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-midnight transition-colors"
+                        onClick={() => {
+                          setIsServicesDropdownOpen(false);
+                          if (closeTimeoutRef.current) {
+                            clearTimeout(closeTimeoutRef.current);
+                          }
+                        }}
+                      >
+                        {service.title.replace(' Stuttgart', '')}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
