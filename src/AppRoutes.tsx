@@ -81,6 +81,7 @@ export default function AppRoutes() {
         <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/datenschutz" element={<DatenschutzPage />} />
         <Route path="/danke" element={<ThankYouPage />} />
+        <Route path="/:slug" element={<ServicePage />} />
       </Routes>
       <Footer />
       <WhatsAppButton />
