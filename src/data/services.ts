@@ -656,7 +656,55 @@ export const services: Service[] = [
     cta: {
       title: 'Sperrmüll-Abholung beauftragen',
       description: 'Kontaktieren Sie uns für eine schnelle Sperrmüll-Abholung in Stuttgart. Oft können wir noch am selben oder nächsten Tag bei Ihnen sein.'
-    }
+    },
+    additionalContent: {
+      title: 'Wissenwertes zur Sperrmüll-Abholung in Stuttgart',
+      sections: [
+        {
+          heading: 'Was kostet eine private Sperrmüll-Abholung in Stuttgart?',
+          content: 'Die Kosten für eine private Sperrmüll-Abholung hängen von Menge, Art und Stockwerk ab. Einzelstücke wie ein Sofa oder Schrank kosten ab 50-80 Euro, mehrere Möbelstücke 100-200 Euro, eine Komplettentsorgung bei Umzug 200-400 Euro. Die Preise sind transparent und werden vorab verbindlich genannt. Im Vergleich zur kostenlosen kommunalen Sperrmüllabholung zahlen Sie für Schnelligkeit und Flexibilität - dafür müssen Sie nicht wochenlang warten und bekommen einen Wunschtermin. Gerade bei Zeitdruck vor Umzügen oder Wohnungsübergaben ist der private Service Gold wert.'
+        },
+        {
+          heading: 'Was zählt alles zum Sperrmüll?',
+          content: 'Als Sperrmüll gelten grundsätzlich alle Gegenstände aus Haushalten, die zu groß für die normale Mülltonne sind: Möbel wie Sofas, Schränke, Betten, Tische und Stühle, Matratzen und Lattenroste, Teppiche und Läufer, große Elektrogeräte wie Kühlschränke, Waschmaschinen, Herde, große Kartons und Verpackungsmaterial, Kinderwagen und Fahrräder, Gartenmöbel und Sonnenschirme. Nicht zum Sperrmüll gehören: Bauschutt, Gartenabfälle, Sondermüll, gefährliche Stoffe. Bei Unsicherheit beraten wir Sie gern telefonisch, was wir mitnehmen können und was separat entsorgt werden muss.'
+        },
+        {
+          heading: 'Wie schnell können Sie Sperrmüll in Stuttgart abholen?',
+          content: 'Das ist unser Vorteil gegenüber der städtischen Sperrmüllabholung: Wir sind flexibel und schnell. In vielen Fällen können wir noch am selben oder nächsten Tag bei Ihnen sein. Spätestens innerhalb von 2-3 Werktagen ist ein Termin möglich. Die kommunale Sperrmüllabholung in Stuttgart hat dagegen oft Wartezeiten von 2-4 Wochen. Gerade vor Umzügen, Wohnungsübergaben oder wenn schnell Platz geschaffen werden muss, ist unsere Express-Abholung die ideale Lösung. Rufen Sie uns an und wir finden einen passenden Termin.'
+        },
+        {
+          heading: 'Muss ich den Sperrmüll an die Straße stellen?',
+          content: 'Nein, das müssen Sie nicht. Im Gegensatz zur städtischen Sperrmüllabholung holen wir direkt bei Ihnen ab - ob aus dem Keller, aus der Wohnung im 4. Stock oder vom Dachboden. Sie müssen nichts schleppen, nichts vorbereiten. Unser Team kommt, lädt alles ein und kümmert sich um den Transport. Das ist besonders praktisch bei schweren oder sperrigen Gegenständen, bei körperlichen Einschränkungen oder wenn Sie einfach keine Zeit haben, alles rauszutragen. Lehnen Sie sich zurück - wir machen die Arbeit.'
+        }
+      ]
+    },
+    faq: [
+      {
+        question: 'Ist die private Sperrmüll-Abholung teurer als die städtische?',
+        answer: 'Die städtische Sperrmüllabholung in Stuttgart ist grundsätzlich kostenlos (über Gebühren finanziert), aber mit langen Wartezeiten und Einschränkungen verbunden. Unsere private Abholung kostet Geld, bietet aber Wunschtermin, oft Expressabholung am selben Tag, Abholung aus der Wohnung statt von der Straße und keine Mengenbeschränkungen. Bei Zeitdruck ist die private Abholung oft die einzige praktikable Lösung.'
+      },
+      {
+        question: 'Nehmen Sie auch Elektrogeräte mit?',
+        answer: 'Ja, wir entsorgen alle Arten von Elektrogeräten fachgerecht: Kühlschränke, Waschmaschinen, Trockner, Herde, Geschirrspüler, Fernseher, Computer, Kleingeräte. Die Entsorgung erfolgt nach den gesetzlichen Vorgaben für Elektroschrott. Wertvolle Metalle werden recycelt, Schadstoffe fachgerecht entsorgt.'
+      },
+      {
+        question: 'Kann ich auch nur ein einzelnes Möbelstück abholen lassen?',
+        answer: 'Selbstverständlich! Wir holen auch Einzelstücke ab. Ob ein Sofa, ein Schrank oder eine Waschmaschine - Sie müssen keine Mindestmenge erreichen. Der Preis richtet sich nach dem konkreten Gegenstand und dem Aufwand. Oft ist die Abholung eines Einzelstücks günstiger als gedacht.'
+      },
+      {
+        question: 'Arbeiten Sie auch am Wochenende?',
+        answer: 'Ja, nach Absprache führen wir Sperrmüll-Abholungen auch samstags durch. Das ist besonders praktisch für Berufstätige oder wenn unter der Woche keine Zeit ist. Samstags-Termine sollten Sie möglichst frühzeitig anfragen, da diese stark nachgefragt sind.'
+      },
+      {
+        question: 'Was passiert mit meinem Sperrmüll nach der Abholung?',
+        answer: 'Wir sortieren nach der Abholung: Verwertbare Möbel werden an Second-Hand-Händler oder soziale Einrichtungen weitergegeben, Elektrogeräte werden fachgerecht recycelt, Holz wird der Verwertung zugeführt, Metalle werden dem Recycling zugeführt, nicht verwertbare Reste werden ordnungsgemäß entsorgt. So tragen wir zur Nachhaltigkeit bei und vermeiden unnötigen Müll.'
+      },
+      {
+        question: 'Brauche ich einen festen Termin oder können Sie spontan kommen?',
+        answer: 'Wir arbeiten nach Terminvereinbarung, damit wir pünktlich und planbar arbeiten können. Aber: Termine sind oft kurzfristig möglich. Wenn Sie heute anrufen, können wir morgen oder übermorgen da sein. In dringenden Fällen manchmal sogar noch am selben Tag. Rufen Sie uns einfach an und wir schauen, was möglich ist.'
+      }
+    ],
+    relatedServices: ['moebel-entsorgung', 'entruempelung', 'haushaltsaufloesung']
   },
   {
     slug: 'gewerbe-entruempelung',
@@ -731,7 +779,55 @@ export const services: Service[] = [
     cta: {
       title: 'Gewerbeobjekt entrümpeln lassen',
       description: 'Fordern Sie ein individuelles Angebot für Ihre Gewerbeentrümpelung an. Wir beraten Sie zu optimalen Zeitfenstern und Ablauf.'
-    }
+    },
+    additionalContent: {
+      title: 'Wichtiges zur Gewerbe-Entrümpelung',
+      sections: [
+        {
+          heading: 'Was kostet eine Gewerbe-Entrümpelung in Stuttgart?',
+          content: 'Die Kosten für gewerbliche Räumungen variieren stark nach Objektgröße und Ausstattung. Ein kleines Büro (50-80qm) kostet etwa 800-1.500 Euro, mittelgroße Praxen oder Büros (100-200qm) 1.500-3.500 Euro, große Objekte und Lagerhallen ab 3.500 Euro aufwärts. Entscheidend sind: Menge der Einrichtung, Art der Gegenstände (Möbel, IT, Akten), Stockwerk und Zugänglichkeit, Zeitdruck und gewünschte Zusatzleistungen wie Aktenvernichtung. Wir erstellen nach Objektbesichtigung ein detailliertes Festpreis-Angebot, das Sie für Ihre Buchhaltung nutzen können. Verwertbare Gegenstände (Büromöbel, IT) werden angerechnet und senken die Kosten.'
+        },
+        {
+          heading: 'Können Sie auch außerhalb der Geschäftszeiten räumen?',
+          content: 'Ja, das ist sogar einer unserer wichtigsten Services für Unternehmen. Wir verstehen, dass Ihr Geschäftsbetrieb nicht unterbrochen werden soll. Deshalb bieten wir Räumungen nach Feierabend (ab 18 Uhr), am Wochenende, sogar nachts bei Bedarf. So können Sie tagsüber normal weiterarbeiten und wir räumen, wenn das Objekt leer ist. Das ist besonders wichtig bei Filialschließungen, wo der Laden bis zum letzten Tag geöffnet bleiben soll, oder bei Umzügen, wo der Betrieb nicht stillstehen darf. Sprechen Sie uns auf Ihre Zeitfenster an - wir finden eine Lösung.'
+        },
+        {
+          heading: 'Was passiert mit Akten und sensiblen Dokumenten?',
+          content: 'Akten und Dokumente behandeln wir besonders sorgfältig. Sie haben mehrere Optionen: Aktenvernichtung nach DIN 66399 (verschiedene Sicherheitsstufen je nach Vertraulichkeit), sichere Zwischenlagerung, wenn Sie noch nicht sicher sind, was entsorgt werden kann, oder getrennte Aussortierung und Übergabe an Sie zur eigenen Prüfung. Wir arbeiten diskret und verstehen die Bedeutung von Datenschutz. Gerade bei Arztpraxen, Anwaltskanzleien oder Steuerberatern ist absolute Vertraulichkeit selbstverständlich. Auf Wunsch arbeiten Mitarbeiter mit erweitertem Führungszeugnis.'
+        },
+        {
+          heading: 'Wie entsorgen Sie IT-Equipment und Elektronik?',
+          content: 'IT-Entsorgung erfolgt nach gesetzlichen Vorgaben: Datenlöschung nach DIN-Standard auf Wunsch, fachgerechtes Recycling von Computer, Servern, Druckern, Monitoren, Telefonen, Verwertung von Metallen und Edelmetallen, umweltgerechte Entsorgung von Schadstoffen. Funktionsfähige IT-Geräte können wir bewerten und anrechnen - das senkt Ihre Kosten. Defekte Geräte werden dem zertifizierten Elektroschrott-Recycling zugeführt. Sie erhalten auf Wunsch Entsorgungsnachweise für Ihre Dokumentation.'
+        }
+      ]
+    },
+    faq: [
+      {
+        question: 'Wie schnell können Sie ein Gewerbeobjekt räumen?',
+        answer: 'Das hängt von der Größe ab. Ein kleines Büro schaffen wir an einem Tag, mittelgroße Objekte in 1-2 Tagen, große Lagerhallen können 3-5 Tage dauern. Wir planen realistisch und halten Termine verbindlich ein. Bei Zeitdruck können wir mit größerem Team arbeiten, um schneller fertig zu werden. Sprechen Sie uns auf Ihre Deadline an.'
+      },
+      {
+        question: 'Stellen Sie Rechnungen für Unternehmen aus?',
+        answer: 'Ja, selbstverständlich. Sie erhalten eine ordentliche Rechnung mit allen Details, Steuernummer und allen Angaben, die Sie für Ihre Buchhaltung benötigen. Auf Wunsch auch mit Zahlungsziel. Wir arbeiten regelmäßig mit Unternehmen, Hausverwaltungen und Insolvenzverwaltern zusammen und kennen die Anforderungen.'
+      },
+      {
+        question: 'Was passiert mit Lagerbeständen und Inventar?',
+        answer: 'Lagerbestände behandeln wir je nach Wert: Verwertbare Waren können wir ankaufen oder vermitteln, wertlose Bestände entsorgen wir fachgerecht, B-Ware und beschädigte Waren trennen wir separat, Gefahrstoffe entsorgen wir nach Vorgaben. Wir erstellen auf Wunsch ein Inventar, damit Sie nachvollziehen können, was entsorgt wurde.'
+      },
+      {
+        question: 'Arbeiten Sie auch mit Insolvenzverwaltern zusammen?',
+        answer: 'Ja, wir haben Erfahrung mit Insolvenzräumungen und kennen die rechtlichen Anforderungen. Wir arbeiten termingerecht, dokumentieren alles und halten Fristen ein. Die Zusammenarbeit mit Insolvenzverwaltern, Gerichten und Gläubigern ist für uns Routine.'
+      },
+      {
+        question: 'Können Sie auch nur Teilbereiche räumen?',
+        answer: 'Selbstverständlich. Sie müssen nicht alles räumen lassen. Wir können auch nur das Lager entrümpeln, nur bestimmte Büros räumen oder nur Altakten entsorgen. Flexibilität ist unser Vorteil - sprechen Sie uns an, was Sie benötigen.'
+      },
+      {
+        question: 'Übernehmen Sie auch die Endreinigung des Objekts?',
+        answer: 'Ja, auf Wunsch bieten wir Grundreinigung oder besenreine Übergabe an. So können Sie das Objekt direkt weitervermieten oder verkaufen. Wir koordinieren auf Wunsch auch Malerarbeiten oder kleinere Reparaturen mit Partnerfirmen.'
+      }
+    ],
+    relatedServices: ['entruempelung', 'immobilienraemung', 'haushaltsaufloesung']
   },
   {
     slug: 'immobilienraemung',
@@ -806,7 +902,55 @@ export const services: Service[] = [
     cta: {
       title: 'Express-Räumung anfragen',
       description: 'Kontaktieren Sie uns für eine schnelle Immobilienräumung. Wir machen Ihr Objekt wieder vermietbar oder verkaufsbereit.'
-    }
+    },
+    additionalContent: {
+      title: 'Wichtiges zur Immobilienräumung',
+      sections: [
+        {
+          heading: 'Was kostet eine Immobilienräumung in Stuttgart?',
+          content: 'Die Kosten hängen von Objektgröße, Füllgrad und gewünschten Zusatzleistungen ab. Eine 2-Zimmer-Wohnung kostet etwa 800-1.500 Euro, eine 3-Zimmer-Wohnung 1.200-2.200 Euro, eine 4-Zimmer-Wohnung 1.800-3.000 Euro. Mit Wertanrechnung für verwertbare Gegenstände sinken die Kosten oft deutlich. Zusatzleistungen wie besenreine Übergabe (+150-300 Euro), kleine Reparaturen (nach Aufwand) oder Malerarbeiten (nach qm) können optional gebucht werden. Für Hausverwaltungen erstellen wir detaillierte Angebote mit Festpreisen, damit Sie sicher kalkulieren können.'
+        },
+        {
+          heading: 'Wie schnell können Sie eine Immobilie räumen?',
+          content: 'Geschwindigkeit ist unser Vorteil. Express-Besichtigung erfolgt innerhalb von 24 Stunden nach Ihrer Anfrage. Angebot erhalten Sie oft noch am selben Tag. Räumung selbst können wir meist innerhalb von 2-4 Werktagen durchführen, bei extremer Dringlichkeit manchmal sogar schneller. Eine durchschnittliche Wohnung räumen wir an einem Tag. Sie teilen uns Ihre Deadline mit - wir halten sie ein. Das ist besonders wichtig bei Räumungsurteilen, Verkaufsterminen oder wenn Neuvermietung ansteht.'
+        },
+        {
+          heading: 'Was bedeutet besenreine vs. schlüsselfertige Übergabe?',
+          content: 'Besenrein bedeutet: Alle Gegenstände sind entfernt, Räume sind grob gereinigt, gefegt, Spinnweben entfernt, Oberflächen abgewischt. Die Wohnung ist leer und sauber, aber nicht perfekt. Schlüsselfertig bedeutet: Zusätzlich zur Entrümpelung erfolgen gründliche Endreinigung, kleine Reparaturen (Bohrlöcher spachteln, kaputte Steckdosen etc.), optional Malerarbeiten, Bodenreinigung/-aufbereitung. Das Objekt ist bezugsfertig. Als Hausverwaltung können Sie wählen, was Sie benötigen. Viele nehmen besenreine Übergabe und beauftragen eigene Handwerker, andere wollen Komplettservice. Beides bieten wir.'
+        },
+        {
+          heading: 'Arbeiten Sie auch nach Räumungsklagen?',
+          content: 'Ja, wir haben umfangreiche Erfahrung mit Räumungen nach gerichtlichen Urteilen. Wir kennen die rechtlichen Rahmenbedingungen, arbeiten nach gesetzlichen Vorgaben, dokumentieren alles sorgfältig mit Fotos, verwahren Wertgegenstände vorschriftsmäßig und erstellen ordentliche Übergabeprotokolle. Auf Wunsch arbeiten wir mit Gerichtsvollziehern zusammen. Diskretion ist selbstverständlich - wir arbeiten unaufdringlich und professionell.'
+        }
+      ]
+    },
+    faq: [
+      {
+        question: 'Bieten Sie Staffelpreise für Hausverwaltungen mit mehreren Objekten?',
+        answer: 'Ja, für Stammkunden und Hausverwaltungen, die regelmäßig Objekte räumen lassen, bieten wir Rahmenverträge mit attraktiven Konditionen. Bei mehreren Objekten im Jahr können wir über Mengenrabatte sprechen. Kontaktieren Sie uns für ein individuelles Angebot.'
+      },
+      {
+        question: 'Wie läuft die Abrechnung mit Hausverwaltungen?',
+        answer: 'Wir stellen ordentliche Rechnungen mit allen Details für Ihre Buchhaltung aus. Auf Wunsch mit Zahlungsziel (z.B. 14 oder 30 Tage). Die Rechnung enthält Steuernummer, detaillierte Leistungsbeschreibung und alle Angaben, die Sie benötigen. Wir arbeiten mit vielen Hausverwaltungen zusammen und kennen die Anforderungen.'
+      },
+      {
+        question: 'Was passiert mit zurückgelassenen Wertgegenständen?',
+        answer: 'Wertgegenstände und persönliche Dokumente behandeln wir besonders sorgfältig. Sie werden separat verwahrt, fotografisch dokumentiert und Ihnen zur Verfügung gestellt oder dem ehemaligen Mieter nachweislich angeboten. Wir halten uns an alle rechtlichen Vorgaben bei Räumungen. Ihre Absicherung als Vermieter ist uns wichtig.'
+      },
+      {
+        question: 'Können Sie auch nur Teilräumungen durchführen?',
+        answer: 'Selbstverständlich. Manchmal soll nur der Keller geräumt werden, manchmal nur einzelne Zimmer. Wir sind flexibel und passen uns Ihren Anforderungen an. Auch Nachräumungen, wenn Mieter nur teilweise geräumt haben, übernehmen wir gern.'
+      },
+      {
+        question: 'Koordinieren Sie auch Handwerker für Reparaturen?',
+        answer: 'Ja, auf Wunsch koordinieren wir alle nötigen Gewerke: Maler, Bodenleger, Elektriker, Sanitär. So haben Sie einen Ansprechpartner für alles und bekommen das Objekt wirklich vermietfertig zurück. Das spart Ihnen Zeit und Aufwand.'
+      },
+      {
+        question: 'Erstellen Sie Fotodokumentationen?',
+        answer: 'Ja, standardmäßig fotografieren wir den Zustand vorher und nachher. Das ist für Sie als Hausverwaltung wichtig für die Dokumentation und ggf. für rechtliche Auseinandersetzungen. Die Fotos erhalten Sie digital zusammen mit dem Übergabeprotokoll.'
+      }
+    ],
+    relatedServices: ['haushaltsaufloesung', 'entruempelung', 'gewerbe-entruempelung']
   },
   {
     slug: 'moebel-entsorgung',
@@ -881,7 +1025,59 @@ export const services: Service[] = [
     cta: {
       title: 'Möbel entsorgen lassen',
       description: 'Kontaktieren Sie uns für die Entsorgung Ihrer Altmöbel. Wir erstellen Ihnen ein faires Angebot und holen zeitnah ab.'
-    }
+    },
+    additionalContent: {
+      title: 'Alles zur Möbel-Entsorgung in Stuttgart',
+      sections: [
+        {
+          heading: 'Was kostet die Entsorgung von Möbeln in Stuttgart?',
+          content: 'Die Kosten hängen von Art, Menge und Stockwerk ab. Einzelmöbel wie ein Sofa kosten 50-100 Euro, ein Kleiderschrank 60-120 Euro, ein Bett 50-90 Euro. Eine komplette Küchenzeile kostet 200-400 Euro. Bei ganzen Einrichtungen (Wohnzimmer, Schlafzimmer etc.) kalkulieren wir nach Gesamtaufwand, oft 300-800 Euro. Gut erhaltene Möbel werden bewertet und angerechnet - das kann die Kosten erheblich senken, manchmal sogar auf null reduzieren. Wir nennen Ihnen vorab einen transparenten Preis, damit Sie wissen, was auf Sie zukommt. Keine versteckten Kosten, keine Nachforderungen.'
+        },
+        {
+          heading: 'Welche Möbel können entsorgt werden?',
+          content: 'Wir entsorgen grundsätzlich alle Arten von Möbeln: Sitzmöbel wie Sofas, Sessel, Stühle, Eckbänke, Schränke aller Art (Kleiderschränke, Küchenschränke, Vitrinen), Betten, Matratzen, Lattenroste, Tische (Ess-, Couchtische, Schreibtische), Regale und Kommoden, komplette Einbauküchen mit Elektrogeräten, Gartenmöbel und Outdoor-Lounges, Büromöbel. Auch sperrige Schrankwände, die zerlegt werden müssen, sind kein Problem. Wichtig: Asbest-haltige Möbel (sehr alt) müssen speziell entsorgt werden - sprechen Sie uns an, wenn Sie unsicher sind.'
+        },
+        {
+          heading: 'Müssen Möbel vorher auseinandergebaut werden?',
+          content: 'Nein, das müssen Sie nicht. Unser Team bringt Werkzeug mit und demontiert bei Bedarf vor Ort. Große Schränke, Bettgestelle, Einbauküchen - wir zerlegen alles fachgerecht, tragen die Teile raus und laden sie auf. Sie müssen nichts vorbereiten, nichts schrauben. Lehnen Sie sich zurück, wir machen die Arbeit. Das ist besonders praktisch, wenn Sie keine Zeit, kein Werkzeug oder körperliche Einschränkungen haben.'
+        },
+        {
+          heading: 'Was passiert mit gut erhaltenen Möbeln?',
+          content: 'Gut erhaltene Möbel sind zu schade zum Wegwerfen. Wir prüfen den Zustand und haben mehrere Optionen: Verkauf an Gebrauchtmöbel-Händler mit Wertanrechnung für Sie, Weitergabe an Second-Hand-Shops, Spende an soziale Einrichtungen (Caritas, Diakonie etc.), Verkauf an Privatpersonen über unsere Kanäle. So bekommen brauchbare Möbel ein zweites Leben und Sie profitieren finanziell. In manchen Fällen übersteigt der Wert der Möbel sogar die Entsorgungskosten - dann zahlen wir Ihnen die Differenz aus. Nachhaltigkeit und faire Preise gehen bei uns Hand in Hand.'
+        }
+      ]
+    },
+    faq: [
+      {
+        question: 'Holen Sie auch nur ein einzelnes Möbelstück ab?',
+        answer: 'Ja, selbstverständlich. Sie brauchen keine Mindestmenge. Ob ein einzelnes Sofa, ein Schrank oder eine Kommode - wir holen auch Einzelstücke ab. Der Preis richtet sich nach dem konkreten Stück und dem Aufwand. Oft ist das günstiger, als Sie denken.'
+      },
+      {
+        question: 'Transportieren Sie auch aus höheren Etagen?',
+        answer: 'Ja, auch aus dem 5. Stock ohne Aufzug. Unser Team ist trainiert und kennt die Stuttgarter Altbauten mit ihren engen Treppenhäusern. Die Stockwerkshöhe fließt in die Preiskalkulation ein, aber grundsätzlich holen wir aus jeder Etage ab. Sie müssen nichts schleppen.'
+      },
+      {
+        question: 'Wie schnell können Sie Möbel abholen?',
+        answer: 'In den meisten Fällen innerhalb von 2-4 Werktagen. Bei dringenden Fällen manchmal auch schneller. Kontaktieren Sie uns mit Ihrem Wunschtermin und wir schauen, was möglich ist. Flexibilität ist einer unserer Vorteile.'
+      },
+      {
+        question: 'Was passiert mit Polstermöbeln und Matratzen?',
+        answer: 'Polstermöbel und Matratzen werden fachgerecht entsorgt. Gut erhaltene Stücke können ggf. wiederverwertet werden. Stark beschädigte oder unhygienische Polster werden der professionellen Entsorgung zugeführt. Wir arbeiten nach gesetzlichen Vorgaben und mit zertifizierten Entsorgungsbetrieben.'
+      },
+      {
+        question: 'Entsorgen Sie auch Einbauküchen?',
+        answer: 'Ja, komplette Einbauküchen inklusive Elektrogeräte. Wir demontieren die Küche vor Ort, entfernen alle Schränke, Arbeitsplatten, Geräte und entsorgen alles fachgerecht. Verwertbare Elemente (z.B. neuere Elektrogeräte) werden bewertet und angerechnet. Das senkt Ihre Kosten.'
+      },
+      {
+        question: 'Kann ich zusehen oder muss ich da sein?',
+        answer: 'Bei der ersten Besichtigung zur Preisfindung sollten Sie da sein. Bei der eigentlichen Abholung ist Ihre Anwesenheit nicht zwingend nötig, wenn Sie uns vertrauen. Viele Kunden überlassen uns einen Schlüssel und wir erledigen alles in ihrer Abwesenheit. Sie entscheiden, was Ihnen lieber ist.'
+      },
+      {
+        question: 'Wie umweltfreundlich ist Ihre Entsorgung?',
+        answer: 'Nachhaltigkeit ist uns wichtig. Wir trennen konsequent nach Material: Holz wird recycelt, Metalle werden dem Recycling zugeführt, brauchbare Möbel werden wiederverwertet, Polster werden fachgerecht entsorgt. Nur was wirklich nicht mehr verwertbar ist, wird entsorgt. So minimieren wir Müll und schonen Ressourcen.'
+      }
+    ],
+    relatedServices: ['sperrmuell-entsorgung', 'wertanrechnung', 'haushaltsaufloesung']
   },
   {
     slug: 'wertanrechnung',
