@@ -176,143 +176,132 @@ export const services: Service[] = [
   relatedServices: ['entruempelung', 'wertanrechnung', 'immobilienraemung']
 },
   {
-    slug: 'entruempelung',
-    icon: Trash2,
-    title: 'Entrümpelung in Stuttgart',
-    shortDescription: 'Professionelle Räumungsfirma für Wohnungen, Keller, Dachböden und Garagen in Stuttgart. Schnelle Entrümpelung mit Festpreis, Wertanrechnung und fachgerechter Entsorgung.',
-    fullDescription: 'Eine Entrümpelung in Stuttgart erfordert lokale Expertise und professionelles Equipment. Ob vollgestellter Keller in Bad Cannstatt, zugewachsener Dachboden in Degerloch oder überladene Garage in Vaihingen - Serviceplus ist Ihre erfahrene Räumungsfirma für alle Stadtteile Stuttgarts. Mit über zehn Jahren Erfahrung kennen wir die Herausforderungen Stuttgarter Immobilien: enge Treppenhäuser in Altbauten, steile Hanglage, schwierige Parksituationen. Unser Team räumt auf, wo andere aufgeben - schnell, gründlich und zu fairen Festpreisen. Von der Wohnungsentrümpelung über Kellerräumung bis zur Gewerbeentrümpelung übernehmen wir alle Arten von Räumungen in Stuttgart und Umgebung. Dabei trennen wir professionell nach verwertbaren Materialien, entsorgen fachgerecht und rechnen Wertsachen fair an. Das Ergebnis: Wieder nutzbarer Raum und spürbare Erleichterung für Sie.',
-    intro: {
-      forWhom: 'Unsere Entrümpelungen in Stuttgart richten sich an Eigentümer und Mieter, die wieder Ordnung schaffen möchten, Hausverwalter vor Neuvermietung oder Verkauf, Erbengemeinschaften mit vollgestellten Immobilien, Gewerbetreibende bei Geschäftsaufgabe sowie alle, die professionelle Hilfe bei Räumungsarbeiten benötigen.',
-      situations: [
-        'Kellenentrümpelung - jahrelange Ansammlungen endlich loswerden',
-        'Dachbodenräumung - Platz schaffen für Wohnraumerweiterung',
-        'Garagenentrümpelung - wieder Stellplatz fürs Fahrzeug gewinnen',
-        'Wohnungsentrümpelung - nach Messie-Situation oder Verwahrlosung',
-        'Geerbte Immobilie räumen - unbekannte Gegenstände fachgerecht entsorgen',
-        'Schuppen und Gartenhäuser - alte Materialien und Geräte entfernen',
-        'Betriebsräumung - Lagerbestände und Inventar bei Geschäftsaufgabe'
-      ],
-      emotional: 'Chaos kann erdrückend sein. Was über Jahre gewachsen ist, wird zur mentalen und räumlichen Last. Wir verstehen das - ohne zu urteilen, ohne Vorwürfe. Unser Team packt an, sortiert systematisch und schafft wieder Ordnung. Sie gewinnen nicht nur physischen Raum zurück, sondern vor allem Freiheit und Erleichterung. Viele Kunden berichten uns, wie befreiend der Moment ist, wenn der letzte LKW abfährt und die Räume endlich leer sind.'
-    },
-    whatWeOffer: {
-      title: 'Komplettservice Entrümpelung Stuttgart',
-      description: 'Von schwierigen Kellerräumungen bis zu großflächigen Gewerbeentrümpelungen - wir haben das Equipment, die Erfahrung und das Team für jeden Auftrag in Stuttgart.',
-      included: [
-        'Kostenlose Vor-Ort-Besichtigung mit realistischer Aufwandseinschätzung',
-        'Transparentes Festpreis-Angebot ohne versteckte Zusatzkosten',
-        'Entrümpelung aller Räumlichkeiten - Keller, Dachboden, Garage, Schuppen, Wohnungen',
-        'Auch extreme Fälle und stark vermüllte Objekte',
-        'Schwer zugängliche Bereiche mit Spezialequipment - enge Treppen, niedrige Decken, verwinkelte Zugänge',
-        'Professionelle Schutzausrüstung bei gesundheitsgefährdenden Situationen',
-        'Vor-Ort-Sortierung nach Wertsachen, Recycling-Material, Sondermüll und Restmüll',
-        'Wertanrechnung für verwertbare Gegenstände senkt Ihre Kosten',
-        'Fachgerechte Entsorgung nach gesetzlichen Vorgaben mit Nachweisen',
-        'Umweltbewusstes Recycling - Wiederverwertung wo möglich',
-        'Abschließende Grobreinigung der entrümpelten Räume',
-        'Flexible Arbeitszeiten - auch abends und samstags'
-      ]
-    },
-    benefits: [
-      'Über 10 Jahre Erfahrung mit Entrümpelungen in Stuttgart und Region',
-      'Alle Räumlichkeiten ohne Ausnahme - auch extreme Situationen',
-      'Lokale Expertise für Stuttgarter Altbauten, Hanglagen und enge Verhältnisse',
-      'Schnelle Terminvergabe - oft noch in derselben Woche',
-      'Professionelles Equipment für jeden Schwierigkeitsgrad',
-      'Fachgerechte Entsorgung und umweltbewusstes Recycling',
-      'Faire Festpreise mit Wertanrechnung',
-      'Diskrete Arbeitsweise auf Wunsch',
-      'Vollständig versichertes und geschultes Personal',
-      'Ein Ansprechpartner für alles - von Besichtigung bis Übergabe'
+  slug: 'entruempelung',
+  icon: Trash2,
+  title: 'Entrümpelung in Stuttgart – professionelle Räumungsfirma für Wohnungen, Keller & Dachböden',
+  shortDescription: 'Entrümpelung in Stuttgart vom Fachbetrieb. Wir räumen Wohnungen, Keller, Dachböden, Garagen und Gewerbeflächen. Festpreis, Wertanrechnung und fachgerechte Entsorgung inklusive.',
+  fullDescription: 'Eine Entrümpelung in Stuttgart ist oft körperlich, organisatorisch und emotional belastend. Vollgestellte Keller, überladene Dachböden oder verwahrloste Wohnungen lassen sich selten allein bewältigen. Serviceplus ist Ihre professionelle Räumungsfirma für Entrümpelungen in Stuttgart und Umgebung. Wir übernehmen Wohnungsentrümpelungen, Kellerentrümpelungen, Dachbodenräumungen, Garagenräumungen und gewerbliche Entrümpelungen – strukturiert, diskret und zu transparenten Festpreisen. Unser Team kennt die Stuttgarter Gegebenheiten: enge Treppenhäuser in Altbauten, Hanglagen, schwierige Parksituationen und sensible Wohnumfelder. Wir sortieren professionell, trennen verwertbare Gegenstände, führen Wertanrechnung durch und entsorgen fachgerecht nach gesetzlichen Vorgaben. Das Ergebnis: freier Raum, klare Verhältnisse und spürbare Entlastung.',
+
+  intro: {
+    forWhom: 'Unsere Entrümpelungen in Stuttgart richten sich an Eigentümer, Mieter und Vermieter, die wieder Ordnung und Platz schaffen möchten, an Hausverwaltungen vor Neuvermietung oder Verkauf, an Erbengemeinschaften mit vollgestellten Immobilien, an Gewerbetreibende bei Geschäftsaufgabe sowie an alle, die körperlich, zeitlich oder organisatorisch Unterstützung bei Räumungsarbeiten benötigen.',
+    situations: [
+      'Keller entrümpeln – jahrelange Ansammlungen fachgerecht entfernen',
+      'Dachboden räumen – Platz schaffen für Umbau oder Nutzung',
+      'Garage entrümpeln – Stellfläche wieder nutzbar machen',
+      'Wohnungsentrümpelung – bei Verwahrlosung oder nach Auszug',
+      'Geerbte Immobilie räumen – unbekannte Gegenstände sortieren und entsorgen',
+      'Schuppen und Gartenhäuser entrümpeln – Altlasten beseitigen',
+      'Betriebs- und Lagerentrümpelung – Inventar bei Geschäftsaufgabe räumen'
     ],
-    process: [
-      'Kontaktaufnahme per Telefon, WhatsApp oder Online-Formular',
-      'Kostenlose Besichtigung vor Ort in ganz Stuttgart',
-      'Transparente Angebotserstellung mit Festpreis und Wertanrechnung',
-      'Flexible Terminvereinbarung nach Ihren Bedürfnissen',
-      'Professionelle Entrümpelung durch erfahrenes Team',
-      'Sortierung und fachgerechte Trennung aller Materialien',
-      'Umweltgerechte Entsorgung mit Nachweisen',
-      'Abschließende Grobreinigung und Übergabe'
-    ],
-    features: ['Alle Räumlichkeiten', 'Schwer zugängliche Bereiche', 'Fachgerechte Entsorgung'],
-    localRelevance: {
-      areas: [
-        'Stuttgart-Mitte',
-        'Stuttgart-West',
-        'Stuttgart-Ost',
-        'Stuttgart-Süd',
-        'Stuttgart-Nord',
-        'Bad Cannstatt',
-        'Feuerbach',
-        'Vaihingen',
-        'Degerloch',
-        'Möhringen',
-        'Zuffenhausen',
-        'Esslingen',
-        'Ludwigsburg',
-        'Waiblingen',
-        'Fellbach',
-        'Sindelfingen'
-      ],
-      description: 'Stuttgart stellt besondere Anforderungen an Entrümpelungen. Die Hanglage in Degerloch und am Killesberg, enge Treppenhäuser in Gründerzeit-Altbauten von Stuttgart-West, verwinkelte Keller in Bad Cannstatt - wir kennen diese Herausforderungen aus hunderten Einsätzen. Unser Team weiß, wo man kurzfristig Parkgenehmigungen beantragen muss, welche Zufahrtswege praktikabel sind und wie man in historischen Gebäuden arbeitet, ohne Schaden anzurichten. Täglich sind wir in Stuttgart und den umliegenden Gemeinden unterwegs. Das ermöglicht uns kurze Reaktionszeiten - oft können wir noch in derselben Woche anrücken. Durch unser Netzwerk lokaler Entsorgungsbetriebe und Verwertungsstellen arbeiten wir effizient und können Ihnen faire Konditionen bieten.'
-    },
-    cta: {
-      title: 'Kostenlose Erstberatung für Ihre Entrümpelung',
-      description: 'Kontaktieren Sie uns für ein unverbindliches Gespräch und kostenloses Angebot. Wir besichtigen vor Ort, bewerten den Aufwand und erstellen einen transparenten Festpreis.'
-    },
-    additionalContent: {
-      title: 'Wichtiges zur Entrümpelung in Stuttgart',
-      sections: [
-        {
-          heading: 'Was kostet eine Entrümpelung in Stuttgart?',
-          content: 'Die Kosten einer Entrümpelung hängen von mehreren Faktoren ab: Volumen des Entrümpelungsguts, Zugänglichkeit der Räume, Stockwerk, Entsorgungsaufwand und Verwertbarkeit von Gegenständen. Ein vollgestellter Keller kostet durchschnittlich 400-800 Euro, ein Dachboden 300-600 Euro, eine komplette Wohnungsentrümpelung je nach Größe 800-3000 Euro. Entscheidend ist die Wertanrechnung: Verwertbare Möbel, Werkzeuge, Elektrogeräte oder Metalle werden fair bewertet und vom Preis abgezogen. So reduzieren sich die Entrümpelungskosten oft erheblich. Wir erstellen nach der kostenlosen Besichtigung ein verbindliches Festpreis-Angebot ohne Nachforderungen.'
-        },
-        {
-          heading: 'Wann ist eine professionelle Entrümpelung sinnvoll?',
-          content: 'Eine professionelle Entrümpelung lohnt sich immer dann, wenn der Aufwand in Eigenregie unverhältnismäßig wäre: bei großen Mengen, schwer zu transportierenden Gegenständen, Sondermüll, fehlendem Transportmittel oder körperlichen Einschränkungen. Auch zeitlich macht es oft Sinn - was Sie über Wochen in Eigenarbeit schaffen würden, erledigen wir an einem Tag. Gerade bei Erbschaften, Haushaltsauflösungen oder Immobilienverkauf ist Tempo gefragt. Zudem kennen wir die gesetzlichen Vorgaben für Entsorgung und Recycling, besitzen die nötigen Genehmigungen und arbeiten versichert. Das gibt Ihnen Rechtssicherheit und schützt vor Haftungsrisiken.'
-        },
-        {
-          heading: 'Wie wird bei der Entrümpelung sortiert und entsorgt?',
-          content: 'Professionelle Entrümpelung bedeutet fachgerechte Sortierung. Wir trennen vor Ort nach: verwertbaren Gegenständen (werden bewertet und angerechnet), Recycling-Material (Metall, Papier, Glas, Kunststoff), Sondermüll (Farben, Chemikalien, Elektrogeräte) und Restmüll. Jede Kategorie wird separat transportiert und den entsprechenden Verwertungs- oder Entsorgungsstellen zugeführt. Dabei dokumentieren wir die ordnungsgemäße Entsorgung. Brauchbare Gegenstände ohne Marktwert geben wir an soziale Einrichtungen weiter. Diese systematische Arbeitsweise ist nicht nur gesetzlich vorgeschrieben, sondern auch ökologisch sinnvoll und spart Entsorgungskosten.'
-        },
-        {
-          heading: 'Entrümpelung in Stuttgarter Altbauten - was ist zu beachten?',
-          content: 'Altbauten in Stuttgart stellen besondere Anforderungen an Entrümplungen: Enge, steile Treppenhäuser ohne Aufzug erfordern körperliche Fitness und Geschick. Historische Bausubstanz muss geschont werden - Treppengeländer, Wände, Böden dürfen nicht beschädigt werden. Die Statik alter Holzböden setzt Grenzen für schwere Lasten. Parkplätze sind oft rar und Halteverbot muss beantragt werden. Wir haben Erfahrung mit diesen Herausforderungen: Wir arbeiten mit Schutzmaßnahmen für Wände und Böden, nutzen Tragehilfen für enge Wendeltreppen, kalkulieren realistisch Zeitaufwand und Personalbedarf und kümmern uns um Parkgenehmigungen. So verläuft die Entrümpelung auch in denkmalgeschützten Stuttgarter Gebäuden reibungslos.'
-        }
-      ]
-    },
-    faq: [
-      {
-        question: 'Wie schnell können Sie eine Entrümpelung in Stuttgart durchführen?',
-        answer: 'In den meisten Fällen können wir innerhalb von 3-5 Werktagen nach Ihrer Anfrage mit der Entrümpelung beginnen. Bei dringenden Fällen sind auch kurzfristigere Termine möglich. Die eigentliche Entrümpelung dauert je nach Umfang zwischen wenigen Stunden und zwei Tagen. Kontaktieren Sie uns für eine realistische Einschätzung Ihres konkreten Falls.'
-      },
-      {
-        question: 'Übernehmen Sie auch Entrümpelungen in höheren Stockwerken ohne Aufzug?',
-        answer: 'Ja, selbstverständlich. Wir sind auf Altbauten ohne Aufzug spezialisiert. Unser Team ist trainiert für körperlich anspruchsvolle Arbeiten und nutzt Tragehilfen für enge Treppenhäuser. Die Stockwerkshöhe fließt natürlich in die Preiskalkulation ein, aber grundsätzlich übernehmen wir Entrümpelungen in jedem Stockwerk.'
-      },
-      {
-        question: 'Was passiert mit brauchbaren Gegenständen bei der Entrümpelung?',
-        answer: 'Brauchbare Gegenstände werden von uns bewertet und vom Entrümpelungspreis abgezogen. Je nach Zustand und Marktwert verkaufen wir sie an Aufkäufer, vermitteln sie an Sozialkaufhäuser oder geben sie an gemeinnützige Organisationen weiter. Diese Wertanrechnung senkt Ihre Kosten erheblich. In manchen Fällen übersteigt der Wert sogar die Entrümpelungskosten - dann zahlen wir Ihnen die Differenz aus.'
-      },
-      {
-        question: 'Können Sie auch Sondermüll und Schadstoffe entsorgen?',
-        answer: 'Ja, wir haben die erforderlichen Genehmigungen und Kontakte zu allen relevanten Entsorgungsfachmäßen in Stuttgart. Ob alte Farben, Lacke, Chemikalien, Asbest, Elektroschrott oder andere Schadstoffe - wir kümmern uns um die fachgerechte und gesetzeskonforme Entsorgung. Das gibt Ihnen Rechtssicherheit und schützt die Umwelt.'
-      },
-      {
-        question: 'Wie läuft die Preisfindung bei einer Entrümpelung ab?',
-        answer: 'Nach Ihrer Kontaktaufnahme besichtigen wir das Objekt kostenlos vor Ort. Dabei erfassen wir Volumen, Zugänglichkeit, besondere Herausforderungen und bewerten verwertbare Gegenstände. Auf dieser Basis erstellen wir ein transparentes Festpreis-Angebot. Dieses beinhaltet alle Leistungen - Arbeitskräfte, Transport, Entsorgung, abzüglich der Wertanrechnung. Sie wissen also genau, was auf Sie zukommt. Nachforderungen gibt es bei uns nicht.'
-      },
-      {
-        question: 'Muss ich bei der Entrümpelung anwesend sein?',
-        answer: 'Bei der Besichtigung sollte jemand anwesend sein, um uns Zugang zu gewähren und wichtige Fragen zu klären. Bei der eigentlichen Entrümpelung ist Ihre Anwesenheit nicht zwingend erforderlich, wenn Sie uns vertrauen und vorab geklärt ist, was entsorgt werden soll. Viele Kunden ziehen es vor, nicht dabei zu sein. Andere möchten persönlich sicherstellen, dass nichts Wichtiges versehentlich entsorgt wird. Beides ist möglich.'
-      },
-      {
-        question: 'Bieten Sie auch Entrümpelungen am Wochenende an?',
-        answer: 'Ja, nach Absprache führen wir Entrümpelungen auch samstags durch. Dies ist besonders praktisch für Berufstätige oder wenn die Entrümpelung möglichst unauffällig erfolgen soll. Samstags-Termine sollten Sie rechtzeitig anfragen, da die Nachfrage hoch ist.'
-      }
-    ],
-    relatedServices: ['keller-dachboden', 'haushaltsaufloesung', 'wertanrechnung']
+    emotional: 'Unordnung wächst oft schleichend – und wird irgendwann zur Belastung. Was sich über Jahre ansammelt, wirkt nicht nur auf Räume, sondern auch auf den Kopf. Wir begegnen dieser Situation ohne Bewertung und ohne Druck. Unser Team arbeitet ruhig, strukturiert und respektvoll. Schritt für Schritt entsteht wieder Übersicht. Viele unserer Kundinnen und Kunden beschreiben den Moment nach der Entrümpelung als echte Erleichterung – wenn Räume wieder atmen können und ein neues Gefühl von Kontrolle entsteht.'
   },
+
+  whatWeOffer: {
+    title: 'Komplettservice für Entrümpelungen in Stuttgart',
+    description: 'Von der einzelnen Kellerräumung bis zur kompletten Wohnungs- oder Gewerbeentrümpelung übernehmen wir alle Schritte Ihrer Entrümpelung in Stuttgart.',
+    included: [
+      'Kostenlose Vor-Ort-Besichtigung mit realistischer Aufwandseinschätzung',
+      'Transparentes Festpreis-Angebot ohne versteckte Zusatzkosten',
+      'Entrümpelung von Wohnungen, Kellern, Dachböden, Garagen und Nebenräumen',
+      'Räumung stark belasteter oder verwahrloster Objekte',
+      'Arbeiten in schwer zugänglichen Bereichen und Altbauten',
+      'Professionelle Schutzausrüstung bei gesundheitsbelastenden Situationen',
+      'Systematische Sortierung nach Wertstoffen, Recycling, Sondermüll und Restmüll',
+      'Wertanrechnung für verwertbare Gegenstände',
+      'Fachgerechte Entsorgung nach gesetzlichen Vorgaben',
+      'Umweltbewusstes Recycling und Weiterverwertung',
+      'Abschließende Grobreinigung der entrümpelten Flächen',
+      'Flexible Terminplanung – auch samstags möglich'
+    ]
+  },
+
+  benefits: [
+    'Strukturierte, professionelle Entrümpelung aus einer Hand',
+    'Fester Ansprechpartner vom Erstkontakt bis zur Übergabe',
+    'Diskrete Durchführung auf Wunsch',
+    'Transparente Festpreise mit Wertanrechnung',
+    'Kurze Reaktionszeiten in Stuttgart und Umgebung',
+    'Ausrüstung für enge Treppenhäuser und schwierige Objekte',
+    'Haftpflichtversichertes Team',
+    'Fachgerechte Entsorgung nach Umweltvorgaben',
+    'Lokale Kenntnisse der Stuttgarter Stadtstruktur',
+    'Spürbare Entlastung für Eigentümer und Angehörige'
+  ],
+
+  process: [
+    'Kontaktaufnahme und Terminvereinbarung',
+    'Kostenlose Besichtigung vor Ort in Stuttgart',
+    'Festpreis-Angebot mit klarer Leistungsübersicht',
+    'Termin nach Ihren zeitlichen Möglichkeiten',
+    'Professionelle Entrümpelung durch unser Team',
+    'Sortierung und fachgerechte Trennung aller Materialien',
+    'Umweltgerechte Entsorgung und Recycling',
+    'Abschließende Grobreinigung und Übergabe'
+  ],
+
+  features: ['Alle Räumlichkeiten', 'Schwer zugängliche Bereiche', 'Fachgerechte Entsorgung'],
+
+  localRelevance: {
+    areas: [
+      'Stuttgart-Mitte','Stuttgart-West','Stuttgart-Ost','Stuttgart-Süd','Stuttgart-Nord',
+      'Bad Cannstatt','Feuerbach','Vaihingen','Degerloch','Möhringen','Zuffenhausen',
+      'Esslingen','Ludwigsburg','Waiblingen','Fellbach','Sindelfingen'
+    ],
+    description: 'Entrümpelungen in Stuttgart bringen besondere Herausforderungen mit sich: Hanglagen, enge Altbauten, begrenzte Parkflächen und sensible Wohnumfelder. Unser Team ist regelmäßig in allen Stadtteilen im Einsatz und kennt diese Bedingungen. Wir planen Zugänge, Transportwege und Entsorgung realistisch und können dadurch effizient und sauber arbeiten.'
+  },
+
+  cta: {
+    title: 'Kostenlose Erstberatung für Ihre Entrümpelung in Stuttgart',
+    description: 'Kontaktieren Sie uns für ein unverbindliches Gespräch. Wir besichtigen vor Ort und erstellen ein transparentes Festpreis-Angebot.'
+  },
+
+  additionalContent: {
+    title: 'Wissenswertes zur Entrümpelung in Stuttgart',
+    sections: [
+      {
+        heading: 'Was kostet eine Entrümpelung in Stuttgart?',
+        content: 'Die Kosten hängen von Volumen, Zugänglichkeit, Entsorgungsaufwand und Verwertbarkeit ab. Nach der kostenlosen Besichtigung erhalten Sie ein verbindliches Festpreis-Angebot. Wertanrechnung kann die Kosten deutlich senken.'
+      },
+      {
+        heading: 'Wann ist eine professionelle Entrümpelung sinnvoll?',
+        content: 'Bei großen Mengen, körperlicher Belastung, Sondermüll, Zeitdruck oder rechtlichen Anforderungen ist eine Fachfirma sinnvoll. Sie sparen Zeit, vermeiden Risiken und erhalten eine rechtssichere Entsorgung.'
+      },
+      {
+        heading: 'Wie wird sortiert und entsorgt?',
+        content: 'Wir trennen vor Ort nach verwertbaren Gegenständen, Recyclingmaterial, Sondermüll und Restmüll. Jede Kategorie wird separat und gesetzeskonform entsorgt.'
+      },
+      {
+        heading: 'Entrümpelung in Stuttgarter Altbauten',
+        content: 'Enge Treppenhäuser, empfindliche Bausubstanz und Parksituationen erfordern Erfahrung und Schutzmaßnahmen. Wir arbeiten mit Wand- und Bodenschutz, Tragehilfen und abgestimmter Logistik.'
+      }
+    ]
+  },
+
+  faq: [
+    {
+      question: 'Wie schnell können Sie eine Entrümpelung in Stuttgart durchführen?',
+      answer: 'Je nach Umfang oft innerhalb weniger Tage. Dringende Termine sind nach Absprache möglich.'
+    },
+    {
+      question: 'Entrümpeln Sie auch Wohnungen ohne Aufzug?',
+      answer: 'Ja. Wir sind auf Altbauten und höhere Stockwerke ohne Aufzug eingestellt.'
+    },
+    {
+      question: 'Was passiert mit brauchbaren Gegenständen?',
+      answer: 'Verwertbare Gegenstände werden angerechnet oder weitergegeben, der Rest fachgerecht entsorgt.'
+    },
+    {
+      question: 'Übernehmen Sie auch Sondermüll?',
+      answer: 'Ja. Wir entsorgen auch Elektrogeräte, Farben, Chemikalien und Problemstoffe gesetzeskonform.'
+    },
+    {
+      question: 'Muss ich anwesend sein?',
+      answer: 'Nein. Nach Absprache übernehmen wir die Entrümpelung vollständig eigenständig.'
+    }
+  ],
+
+  relatedServices: ['keller-dachboden', 'haushaltsaufloesung', 'wertanrechnung']
+},
   {
     slug: 'messie-wohnungen',
     icon: Package,
