@@ -173,7 +173,7 @@ export const services: Service[] = [
     }
   ],
 
-  relatedServices: ['entruempelung', 'wertanrechnung', 'immobilienraemung']
+  relatedServices: ['entruempelung', 'wertanrechnung', 'immobilienraeumung']
 },
   {
   slug: 'entruempelung',
@@ -425,7 +425,7 @@ export const services: Service[] = [
     }
   ],
 
-  relatedServices: ['entruempelung', 'haushaltsaufloesung', 'immobilienraemung']
+  relatedServices: ['entruempelung', 'haushaltsaufloesung', 'immobilienraeumung']
 },
   {
   slug: 'keller-dachboden',
@@ -671,7 +671,7 @@ export const services: Service[] = [
   relatedServices: ['entruempelung', 'haushaltsaufloesung', 'keller-dachboden']
 },
   {
-  slug: 'immobilienraemung',
+  slug: 'immobilienraeumung',
   icon: Building2,
   title: 'Immobilienräumung Stuttgart',
   shortDescription: 'Professionelle Immobilienräumung in Stuttgart für Hausverwaltungen, Makler und Eigentümer. Schnelle Objektfreimachung, transparente Festpreise und zuverlässige Übergabe.',

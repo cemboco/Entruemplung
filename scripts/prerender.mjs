@@ -13,7 +13,7 @@ const routes = [
   '/keller-dachboden',
   '/sperrmuell-entsorgung',
   '/gewerbe-entruempelung',
-  '/immobilienraemung',
+  '/immobilienraeumung',
   '/moebel-entsorgung',
   '/wertanrechnung',
   '/blog',
