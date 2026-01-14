@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
 import { getServiceBySlug } from '../data/services';
 import { ArrowLeft, Check, Phone } from 'lucide-react';
 import { useEffect } from 'react';
@@ -7,11 +7,14 @@ import { trackPhoneClick } from '../utils/analytics';
 export default function ServicePage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const service = slug ? getServiceBySlug(slug) : undefined;
+  const location = useLocation();
+
+  const actualSlug = slug || location.pathname.replace('/', '');
+  const service = actualSlug ? getServiceBySlug(actualSlug) : undefined;
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+  }, [actualSlug]);
 
   if (!service) {
     return (
