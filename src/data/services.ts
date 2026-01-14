@@ -913,7 +913,7 @@ export const services: Service[] = [
   {
   slug: 'wertanrechnung',
   icon: Recycle,
-  title: 'Wertanrechnung in Stuttgart – Entrümpelung mit fairer Bewertung',
+  title: 'Wertanrechnung Stuttgart',
   shortDescription: 'Wertanrechnung bei Entrümpelungen in Stuttgart. Verwertbare Möbel, Antiquitäten und Gegenstände werden fair bewertet und direkt vom Gesamtpreis abgezogen.',
   fullDescription: 'Bei vielen Entrümpelungen steckt mehr Wert, als man auf den ersten Blick vermutet. Gut erhaltene Möbel, Antiquitäten, Sammlerstücke oder funktionsfähige Geräte müssen nicht entsorgt werden. Wir prüfen bei jeder Besichtigung, welche Gegenstände verwertbar sind. Diese werden realistisch bewertet und direkt vom Gesamtpreis Ihrer Entrümpelung abgezogen. Das senkt Ihre Kosten spürbar und sorgt gleichzeitig dafür, dass brauchbare Dinge weiterverwendet werden, statt im Müll zu landen.',
 
