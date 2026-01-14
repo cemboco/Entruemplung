@@ -2,5 +2,15 @@
 https://xn--serviceplus-entrmpelung-rpc.de/*    https://serviceplus-entruempelung.de/:splat   301!
 https://www.xn--serviceplus-entrmpelung-rpc.de/*  https://serviceplus-entruempelung.de/:splat   301!
 
+# Umlaut redirects - normalize German umlauts to ae, oe, ue
+/haushaltsauflösung    /haushaltsaufloesung    301!
+/entrümpelung          /entruempelung          301!
+/messie-wohnungen      /messie-wohnungen       200
+/keller-dachboden      /keller-dachboden       200
+/sperrmüll-entsorgung  /sperrmuell-entsorgung  301!
+/gewerbe-entrümpelung  /gewerbe-entruempelung  301!
+/immobilienräumung     /immobilienraeumung     301!
+/möbel-entsorgung      /moebel-entsorgung      301!
+
 # SPA fallback - all routes serve index.html
 /*    /index.html   200

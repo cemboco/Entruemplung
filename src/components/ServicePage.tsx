@@ -4,13 +4,33 @@ import { ArrowLeft, Check, Phone } from 'lucide-react';
 import { useEffect } from 'react';
 import { trackPhoneClick } from '../utils/analytics';
 
+// Normalize German umlauts to their ASCII equivalents
+function normalizeUmlauts(str: string): string {
+  return str
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/Ä/g, 'Ae')
+    .replace(/Ö/g, 'Oe')
+    .replace(/Ü/g, 'Ue')
+    .replace(/ß/g, 'ss');
+}
+
 export default function ServicePage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const location = useLocation();
 
-  const actualSlug = slug || location.pathname.replace('/', '');
+  const rawSlug = slug || location.pathname.replace('/', '');
+  const actualSlug = normalizeUmlauts(rawSlug);
   const service = actualSlug ? getServiceBySlug(actualSlug) : undefined;
+
+  // Redirect to normalized URL if umlauts are present
+  useEffect(() => {
+    if (rawSlug !== actualSlug && service) {
+      navigate(`/${actualSlug}`, { replace: true });
+    }
+  }, [rawSlug, actualSlug, navigate, service]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
