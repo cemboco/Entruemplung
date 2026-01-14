@@ -1,11 +1,14 @@
-import { Phone, Menu, X } from 'lucide-react';
+import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { trackPhoneClick } from '../utils/analytics';
+import { services } from '../data/services';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -19,7 +22,6 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: '#leistungen', label: 'Leistungen' },
     { href: '#about', label: 'Über uns' },
     { href: '#ablauf', label: 'Ablauf' },
     { href: '#preise', label: 'Preise' },
@@ -66,6 +68,34 @@ export default function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
+            <div
+              className="relative"
+              onMouseEnter={() => setIsServicesDropdownOpen(true)}
+              onMouseLeave={() => setIsServicesDropdownOpen(false)}
+            >
+              <button
+                className="flex items-center gap-1 text-sm font-light text-gray-600 hover:text-midnight transition-colors duration-300"
+              >
+                Leistungen
+                <ChevronDown size={16} className={`transition-transform duration-200 ${isServicesDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {isServicesDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-2 z-50">
+                  {services.map((service) => (
+                    <Link
+                      key={service.slug}
+                      to={`/${service.slug}`}
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-midnight transition-colors"
+                      onClick={() => setIsServicesDropdownOpen(false)}
+                    >
+                      {service.title.replace(' Stuttgart', '')}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -103,6 +133,33 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-6 py-6 border-t border-gray-200">
             <nav className="flex flex-col gap-4">
+              <div>
+                <button
+                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  className="flex items-center justify-between w-full px-0 py-2 text-sm font-light text-gray-600 hover:text-midnight transition-colors"
+                >
+                  Leistungen
+                  <ChevronDown size={16} className={`transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isMobileServicesOpen && (
+                  <div className="pl-4 mt-2 space-y-2">
+                    {services.map((service) => (
+                      <Link
+                        key={service.slug}
+                        to={`/${service.slug}`}
+                        onClick={() => {
+                          setIsMobileMenuOpen(false);
+                          setIsMobileServicesOpen(false);
+                        }}
+                        className="block py-2 text-sm font-light text-gray-500 hover:text-midnight transition-colors"
+                      >
+                        {service.title.replace(' Stuttgart', '')}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               {navLinks.map((link) => (
                 <a
                   key={link.href}

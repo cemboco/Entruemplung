@@ -21,6 +21,7 @@ import QuickQuoteTab from './components/QuickQuoteTab';
 import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import ThankYou from './components/ThankYou';
+import ServicePage from './components/ServicePage';
 
 const BlogPostWrapper = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -66,6 +67,15 @@ export default function AppRoutes() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/haushaltsaufloesung" element={<ServicePage />} />
+        <Route path="/entruempelung" element={<ServicePage />} />
+        <Route path="/messie-wohnungen" element={<ServicePage />} />
+        <Route path="/keller-dachboden" element={<ServicePage />} />
+        <Route path="/sperrmuell-entsorgung" element={<ServicePage />} />
+        <Route path="/gewerbe-entruempelung" element={<ServicePage />} />
+        <Route path="/immobilienraemung" element={<ServicePage />} />
+        <Route path="/moebel-entsorgung" element={<ServicePage />} />
+        <Route path="/wertanrechnung" element={<ServicePage />} />
         <Route path="/blog" element={<BlogListPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/impressum" element={<ImpressumPage />} />

@@ -1,62 +1,7 @@
-import { Home, Trash2, Package, Truck, Briefcase, Recycle, Building2, Warehouse, Sofa, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-
-const services = [
-  {
-    icon: Home,
-    title: 'Haushaltsauflösungen',
-    description: 'Komplette Wohnungsauflösungen nach Todesfall, Umzug oder bei Pflegebedürftigkeit. Wir übernehmen die gesamte Abwicklung inklusive Verwertung, Entsorgung und besenreiner Übergabe.',
-    features: ['Komplette Abwicklung', 'Diskrete Durchführung', 'Termingerechte Übergabe'],
-  },
-  {
-    icon: Trash2,
-    title: 'Entrümpelungen',
-    description: 'Professionelle Entrümpelung von Kellern, Dachböden, Garagen und Scheunen. Auch bei stark vermüllten Objekten sind wir der richtige Partner.',
-    features: ['Alle Räumlichkeiten', 'Schwer zugängliche Bereiche', 'Fachgerechte Entsorgung'],
-  },
-  {
-    icon: Package,
-    title: 'Messie-Wohnungen',
-    description: 'Einfühlsame und diskrete Reinigung von Messie-Wohnungen. Unser geschultes Team arbeitet respektvoll und verständnisvoll.',
-    features: ['Diskretion garantiert', 'Geschultes Personal', 'Geruchsbeseitigung'],
-  },
-  {
-    icon: Truck,
-    title: 'Sperrmüll-Abholung',
-    description: 'Schnelle und unkomplizierte Abholung von Sperrmüll, Altmöbeln und Elektrogeräten. Wir holen direkt bei Ihnen ab - ohne Wartezeit.',
-    features: ['Flexible Termine', 'Sofort-Abholung möglich', 'Faire Preise'],
-  },
-  {
-    icon: Briefcase,
-    title: 'Gewerbe-Entrümpelung',
-    description: 'Effiziente Räumung von Büros, Praxen, Geschäftsräumen und Lagerhallen. Auch außerhalb der Geschäftszeiten möglich.',
-    features: ['Termingerechte Abwicklung', 'Wochenend-Service', 'Minimale Betriebsunterbrechung'],
-  },
-  {
-    icon: Building2,
-    title: 'Immobilienräumung',
-    description: 'Spezialservice für Hausverwaltungen und Immobilienmakler. Schnelle Objektfreimachung für Neuvermietung oder Verkauf.',
-    features: ['Express-Service', 'Besenreine Übergabe', 'Direkte Abrechnung'],
-  },
-  {
-    icon: Warehouse,
-    title: 'Keller & Dachboden',
-    description: 'Professionelle Entrümpelung von vollgestellten Kellern und Dachböden. Inklusive Entsorgung von Sondermüll und Schadstoffen.',
-    features: ['Auch schwer zugänglich', 'Sondermüll-Entsorgung', 'Staubfreie Arbeit'],
-  },
-  {
-    icon: Sofa,
-    title: 'Möbel-Entsorgung',
-    description: 'Fachgerechte Entsorgung von Altmöbeln, Küchen, Sofas und kompletten Einrichtungen. Mit Wertanrechnung für gut erhaltene Stücke.',
-    features: ['Wertanrechnung möglich', 'Umweltgerechte Entsorgung', 'Auch Einzelstücke'],
-  },
-  {
-    icon: Recycle,
-    title: 'Wertanrechnung',
-    description: 'Verwertbare Möbel, Antiquitäten und Gegenstände werden von unseren Experten fair bewertet und vom Gesamtpreis abgezogen.',
-    features: ['Faire Bewertung', 'Sofortige Verrechnung', 'Maximale Ersparnis'],
-  },
-];
+import { useNavigate } from 'react-router-dom';
+import { services } from '../data/services';
 
 export default function Services() {
   const [isVisible, setIsVisible] = useState(false);
@@ -64,6 +9,7 @@ export default function Services() {
   const [isDragging, setIsDragging] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   const handleMove = (clientX: number) => {
     if (!containerRef.current) return;
@@ -223,7 +169,8 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className={`group bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-midnight/20 hover:-translate-y-2 ${
+                onClick={() => navigate(`/${service.slug}`)}
+                className={`group bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-midnight/20 hover:-translate-y-2 cursor-pointer ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{
@@ -237,10 +184,10 @@ export default function Services() {
                     </div>
                   </div>
                   <h3 className="text-xl font-semibold text-midnight mb-4 group-hover:text-midnight/80 transition-colors">
-                    {service.title}
+                    {service.title.replace(' Stuttgart', '')}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm font-light mb-6 flex-grow">
-                    {service.description}
+                    {service.shortDescription}
                   </p>
                   <ul className="space-y-3 pt-4 border-t border-gray-100">
                     {service.features.map((feature, idx) => (

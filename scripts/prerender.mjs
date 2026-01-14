@@ -7,6 +7,15 @@ const distPath = join(__dirname, '..', 'dist');
 
 const routes = [
   '/',
+  '/haushaltsaufloesung',
+  '/entruempelung',
+  '/messie-wohnungen',
+  '/keller-dachboden',
+  '/sperrmuell-entsorgung',
+  '/gewerbe-entruempelung',
+  '/immobilienraemung',
+  '/moebel-entsorgung',
+  '/wertanrechnung',
   '/blog',
   '/blog/entruempelung-stuttgart-leitfaden-2026',
   '/blog/haushaltsaufloesung-stuttgart-beachten',
