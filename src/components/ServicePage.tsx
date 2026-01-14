@@ -1,5 +1,5 @@
 import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
-import { getServiceBySlug } from '../data/services';
+import { getServiceBySlug, services } from '../data/services';
 import { ArrowLeft, Check, Phone } from 'lucide-react';
 import { useEffect } from 'react';
 import { trackPhoneClick } from '../utils/analytics';
@@ -181,6 +181,37 @@ export default function ServicePage() {
             </div>
           </div>
         </div>
+
+        {service.relatedServices && service.relatedServices.length > 0 && (
+          <div className="mt-16 p-8 bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl">
+            <h3 className="text-2xl font-bold text-midnight mb-6">Weitere Leistungen für Sie</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {service.relatedServices.map((relatedSlug) => {
+                const relatedService = services.find(s => s.slug === relatedSlug);
+                if (!relatedService) return null;
+                const ServiceIcon = relatedService.icon;
+                return (
+                  <Link
+                    key={relatedSlug}
+                    to={`/${relatedSlug}`}
+                    className="block p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                  >
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-midnight/5 rounded-lg flex items-center justify-center">
+                        <ServiceIcon className="w-5 h-5 text-midnight" />
+                      </div>
+                      <h4 className="font-semibold text-midnight">{relatedService.title}</h4>
+                    </div>
+                    <p className="text-sm text-gray-600 line-clamp-2">{relatedService.shortDescription}</p>
+                    <div className="mt-4 text-sm font-medium text-midnight flex items-center gap-1">
+                      Mehr erfahren <ArrowLeft size={16} className="rotate-180" />
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {service.additionalContent && (
           <div className="mt-16">
