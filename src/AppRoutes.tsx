@@ -72,7 +72,6 @@ export default function AppRoutes() {
         <Route path="/messie-wohnungen" element={<ServicePage />} />
         <Route path="/keller-dachboden" element={<ServicePage />} />
         <Route path="/sperrmuell-entsorgung" element={<ServicePage />} />
-        <Route path="/gewerbe-entruempelung" element={<ServicePage />} />
         <Route path="/immobilienraeumung" element={<ServicePage />} />
         <Route path="/moebel-entsorgung" element={<ServicePage />} />
         <Route path="/wertanrechnung" element={<ServicePage />} />
