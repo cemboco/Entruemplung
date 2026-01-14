@@ -45,7 +45,7 @@ export const services: Service[] = [
   {
   slug: 'haushaltsaufloesung',
   icon: Home,
-  title: 'Haushaltsauflösung in Stuttgart',
+  title: 'Haushaltsauflösung Stuttgart',
   shortDescription: 'Professionelle Wohnungsauflösung nach Todesfall, bei Umzug ins Pflegeheim oder Immobilienverkauf. Komplettservice mit Wertanrechnung, fachgerechter Entsorgung und besenreiner Übergabe in Stuttgart und Umgebung.',
   fullDescription: 'Eine Haushaltsauflösung in Stuttgart ist oft mehr als nur Entrümpelung. Nach einem Todesfall, beim Umzug ins betreute Wohnen oder bei der Auflösung eines Erbes stehen Angehörige vor einer emotional belastenden Aufgabe. Serviceplus begleitet Sie in dieser Situation strukturiert, respektvoll und mit Einfühlungsvermögen. Als Unternehmen für Wohnungsauflösungen in Stuttgart und der Region übernehmen wir die komplette Abwicklung Ihrer Haushaltsauflösung – von der ersten Beratung über die Bewertung verwertbarer Gegenstände bis zur besenreinen Übergabe der Immobilie. Unser Team kennt die Stuttgarter Besonderheiten, arbeitet diskret und zuverlässig. Mit klaren Abläufen, transparenter Kommunikation und einem hohen Anspruch an Sorgfalt bieten wir Lösungen, die entlasten statt zusätzlich zu belasten. Ob komplette Haushaltsauflösung, Entrümpelung einzelner Räume oder besenreine Übergabe für den Immobilienverkauf – wir sind Ihr verlässlicher Ansprechpartner in Stuttgart.',
 
@@ -178,7 +178,7 @@ export const services: Service[] = [
   {
   slug: 'entruempelung',
   icon: Trash2,
-  title: 'Entrümpelung in Stuttgart',
+  title: 'Entrümpelung Stuttgart',
   shortDescription: 'Entrümpelung in Stuttgart vom Fachbetrieb. Wir räumen Wohnungen, Keller, Dachböden, Garagen und Gewerbeflächen. Festpreis, Wertanrechnung und fachgerechte Entsorgung inklusive.',
   fullDescription: 'Eine Entrümpelung in Stuttgart ist oft körperlich, organisatorisch und emotional belastend. Vollgestellte Keller, überladene Dachböden oder verwahrloste Wohnungen lassen sich selten allein bewältigen. Serviceplus ist Ihre professionelle Räumungsfirma für Entrümpelungen in Stuttgart und Umgebung. Wir übernehmen Wohnungsentrümpelungen, Kellerentrümpelungen, Dachbodenräumungen, Garagenräumungen und gewerbliche Entrümpelungen – strukturiert, diskret und zu transparenten Festpreisen. Unser Team kennt die Stuttgarter Gegebenheiten: enge Treppenhäuser in Altbauten, Hanglagen, schwierige Parksituationen und sensible Wohnumfelder. Wir sortieren professionell, trennen verwertbare Gegenstände, führen Wertanrechnung durch und entsorgen fachgerecht nach gesetzlichen Vorgaben. Das Ergebnis: freier Raum, klare Verhältnisse und spürbare Entlastung.',
 
