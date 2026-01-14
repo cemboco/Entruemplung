@@ -303,128 +303,130 @@ export const services: Service[] = [
   relatedServices: ['keller-dachboden', 'haushaltsaufloesung', 'wertanrechnung']
 },
   {
-    slug: 'messie-wohnungen',
-    icon: Package,
-    title: 'Messie-Wohnungen Stuttgart',
-    shortDescription: 'Einfühlsame und diskrete Reinigung von Messie-Wohnungen. Unser geschultes Team arbeitet respektvoll und verständnisvoll.',
-    fullDescription: 'Die Räumung einer Messie-Wohnung erfordert besonderes Einfühlungsvermögen, Diskretion und Fachkompetenz. Unser speziell geschultes Team ist auf diese sensiblen Aufträge vorbereitet und arbeitet stets respektvoll und verständnisvoll. Wir bringen nicht nur das nötige Equipment mit, sondern vor allem die menschliche Komponente, die in solchen Situationen entscheidend ist. In Stuttgart und Umgebung sind wir Ihr diskreter Partner für Messie-Räumungen.',
-    intro: {
-      forWhom: 'Unsere Messie-Räumungen sind für Betroffene selbst, Angehörige, die helfen möchten, Vermieter vor drohenden Problemen, Sozialdienste und Betreuungsstellen sowie Nachbarn, die diskret unterstützen wollen.',
-      situations: [
-        'Messie-Syndrom: Professionelle Hilfe ohne Vorurteile',
-        'Vermüllte Wohnungen: Schritt für Schritt wieder bewohnbar machen',
-        'Animal Hoarding: Spezielle Reinigung nach Tierhaltung',
-        'Verwahrlosung im Alter: Einfühlsame Begleitung',
-        'Drohende Räumungsklage: Schnelle Intervention',
-        'Nachbarschaftsprobleme: Diskrete Lösung'
-      ],
-      emotional: 'Ein Messie-Syndrom ist keine Schande, sondern eine Herausforderung, die Hilfe verdient. Wir begegnen jedem Auftrag ohne Urteil und mit vollem Respekt. Unser Team ist geschult, versteht die psychologischen Hintergründe und arbeitet auf Wunsch eng mit Ihnen oder Beratungsstellen zusammen. Wir schaffen nicht nur Ordnung, sondern auch einen Neuanfang - diskret, einfühlsam und professionell.'
-    },
-    whatWeOffer: {
-      title: 'Spezialisierte Messie-Räumung mit Einfühlungsvermögen',
-      description: 'Wir bieten mehr als nur Entrümpelung - wir bieten einen sensiblen Neuanfang mit allem, was dazu gehört.',
-      included: [
-        'Vertrauliches Erstgespräch - telefonisch oder persönlich',
-        'Diskrete Besichtigung zu einem Wunschtermin',
-        'Individuelle Planung - Schritt für Schritt oder komplette Räumung',
-        'Geschultes Personal mit Messie-Erfahrung und Einfühlungsvermögen',
-        'Begleitung bei der Sortierung - wenn gewünscht',
-        'Professionelle Geruchsbeseitigung und Desinfektion',
-        'Spezialreinigung aller Oberflächen, Böden und Sanitäranlagen',
-        'Behandlung gegen Ungeziefer, falls notwendig',
-        'Zusammenarbeit mit Sozialdiensten und Therapeuten möglich',
-        'Absolut diskrete Durchführung - keine auffälligen Firmenfahrzeuge'
-      ]
-    },
-    benefits: [
-      'Absolute Diskretion garantiert - Ihr Vertrauen ist uns wichtig',
-      'Geschultes und erfahrenes Personal im Umgang mit Messie-Situationen',
-      'Professionelle Geruchsbeseitigung und Spezialreinigung',
-      'Einfühlsamer und respektvoller Umgang ohne Vorurteile',
-      'Entsorgung nach gesetzlichen Vorgaben und Hygienestandards',
-      'Möglichkeit der Begleitung durch Sozialdienste oder Therapeuten',
-      'Flexible Vorgehensweise - in Ihrem Tempo oder als Kompletträumung',
-      'Nachbetreuung und Empfehlungen für weitere Unterstützung'
+  slug: 'messie-wohnungen',
+  icon: Package,
+  title: 'Messie-Wohnung Stuttgart',
+  shortDescription: 'Diskrete Messie-Räumung in Stuttgart. Wir entrümpeln stark vermüllte Wohnungen einfühlsam, respektvoll und fachgerecht – inklusive Desinfektion, Geruchsbeseitigung und Sonderentsorgung.',
+  fullDescription: 'Die Räumung einer Messie-Wohnung in Stuttgart ist keine gewöhnliche Entrümpelung. Sie erfordert Einfühlungsvermögen, Diskretion und eine strukturierte, professionelle Vorgehensweise. Serviceplus ist auf die sensible Entrümpelung von Messie-Wohnungen spezialisiert. Wir unterstützen Betroffene, Angehörige, Vermieter und soziale Einrichtungen dabei, stark vermüllte Wohnungen Schritt für Schritt wieder bewohnbar zu machen. Unser Team arbeitet ruhig, respektvoll und ohne Vorurteile. Neben der eigentlichen Räumung übernehmen wir die fachgerechte Entsorgung, auf Wunsch die Desinfektion, Geruchsbeseitigung und Schädlingsbehandlung. In Stuttgart und Umgebung sind wir Ihr diskreter Ansprechpartner für Messie-Räumungen und Spezialentrümpelungen.',
+
+  intro: {
+    forWhom: 'Unsere Messie-Räumungen in Stuttgart richten sich an Betroffene selbst, an Angehörige, die unterstützen möchten, an Vermieter und Hausverwaltungen, an gesetzliche Betreuer, Sozialdienste und Pflegeeinrichtungen sowie an alle, die in einer sensiblen Situation professionelle, diskrete Hilfe benötigen.',
+    situations: [
+      'Messie-Syndrom – professionelle Unterstützung ohne Vorurteile',
+      'Stark vermüllte Wohnungen wieder bewohnbar machen',
+      'Animal Hoarding – spezielle Räumung nach extremer Tierhaltung',
+      'Verwahrlosung im Alter – einfühlsame Begleitung',
+      'Drohende Räumung oder Kündigung – schnelle Intervention',
+      'Gesundheitsgefährdende Zustände – hygienische Spezialentrümpelung'
     ],
-    process: [
-      'Vertrauliches Erstgespräch und sensible Beratung',
-      'Diskrete Besichtigung nach Terminabsprache',
-      'Individueller Räumungsplan mit Ihren Wünschen',
-      'Behutsame Durchführung der Räumung Schritt für Schritt',
-      'Spezialreinigung und professionelle Geruchsneutralisation',
-      'Besenreine Übergabe oder weiterführende Sanierung nach Bedarf'
-    ],
-    features: ['Diskretion garantiert', 'Geschultes Personal', 'Geruchsbeseitigung'],
-    localRelevance: {
-      areas: [
-        'Stuttgart-Mitte',
-        'Stuttgart-West',
-        'Bad Cannstatt',
-        'Vaihingen',
-        'Feuerbach',
-        'Zuffenhausen',
-        'Möhringen',
-        'Degerloch',
-        'Esslingen',
-        'Ludwigsburg',
-        'Waiblingen',
-        'Sindelfingen'
-      ],
-      description: 'Diskretion ist besonders in dicht besiedelten Stadtteilen wichtig. Wir kennen Stuttgart und arbeiten unauffällig. Keine auffälligen Firmenfahrzeuge, flexible Arbeitszeiten nach Ihren Bedürfnissen, Rücksicht auf Nachbarn. Unser Team kommt in ziviler Kleidung und behandelt jeden Auftrag streng vertraulich. Wir kooperieren auch mit lokalen Beratungsstellen und Sozialdiensten in Stuttgart.'
-    },
-    cta: {
-      title: 'Vertrauliche Beratung anfragen',
-      description: 'Kontaktieren Sie uns diskret und unverbindlich. Wir beraten Sie einfühlsam und erstellen ein individuelles Konzept für Ihre Situation.'
-    },
-    additionalContent: {
-      title: 'Wissenswertes zur Messie-Wohnungsräumung',
-      sections: [
-        {
-          heading: 'Was ist das Messie-Syndrom?',
-          content: 'Das Messie-Syndrom (von englisch "mess" = Unordnung) bezeichnet ein komplexes Verhaltensmuster, bei dem Betroffene Schwierigkeiten haben, Ordnung zu halten und sich von Gegenständen zu trennen. Die Wohnung füllt sich zunehmend mit Dingen, Müll wird nicht entsorgt, Hygiene vernachlässigt. Oft ist das Syndrom Folge oder Begleiter psychischer Belastungen wie Depressionen, Traumata oder Zwangsstörungen. Wichtig zu wissen: Es ist keine Faulheit oder Charakterschwäche, sondern eine Erkrankung, die professionelle Hilfe benötigt. Die Räumung einer Messie-Wohnung ist daher nur ein erster Schritt - psychologische Begleitung ist essentiell für nachhaltigen Erfolg.'
-        },
-        {
-          heading: 'Wie läuft eine diskrete Messie-Räumung ab?',
-          content: 'Diskretion hat bei uns oberste Priorität. Wir kommen in neutralen Fahrzeugen ohne Firmenbeschriftung und in Zivilkleidung. Termine legen wir nach Ihren Wünschen - auch zu Zeiten, wenn Nachbarn nicht da sind. Die Räumung erfolgt schrittweise oder komplett, je nach Ihrem Wunsch und Ihrer Belastbarkeit. Auf Wunsch sortieren wir gemeinsam mit Ihnen, um wichtige Gegenstände zu sichern. Bei starker Vermüllung arbeiten wir mit Schutzausrüstung, bei Geruchsbelastung setzen wir professionelle Neutralisatoren ein. Alles geschieht vertraulich - wir behandeln jeden Fall mit Respekt und Verschwiegenheit.'
-        },
-        {
-          heading: 'Was kostet eine Messie-Wohnungsräumung in Stuttgart?',
-          content: 'Die Kosten variieren je nach Grad der Vermüllung, Wohnungsgröße und Zusatzleistungen wie Desinfektion oder Geruchsbeseitigung. Eine leichte Messie-Situation in einer 2-Zimmer-Wohnung beginnt bei etwa 1.500 Euro. Mittelschwere Fälle kosten 2.500-4.000 Euro, extreme Fälle mit Geruchsbeseitigung, Desinfektion und Ungezieferbehandlung können 5.000-8.000 Euro oder mehr erreichen. Wir erstellen nach vertraulicher Besichtigung ein individuelles Angebot. Oft gibt es Unterstützungsmöglichkeiten durch Sozialämter, Krankenkassen oder Betreuungsstellen - wir beraten Sie gern dazu.'
-        },
-        {
-          heading: 'Arbeiten Sie mit Therapeuten und Beratungsstellen zusammen?',
-          content: 'Ja, auf Wunsch arbeiten wir eng mit therapeutischen Einrichtungen, Sozialberatungsstellen und Betreuern zusammen. Die Räumung allein löst das Problem oft nicht nachhaltig - psychologische Begleitung ist wichtig. Wir haben Kontakte zu Messie-Selbsthilfegruppen und Beratungsstellen in Stuttgart und können Empfehlungen aussprechen. Bei der Räumung selbst können Betreuer oder Therapeuten auf Wunsch anwesend sein. Unser Ziel ist nicht nur eine saubere Wohnung, sondern ein Neuanfang mit Perspektive.'
-        }
-      ]
-    },
-    faq: [
-      {
-        question: 'Wie diskret arbeiten Sie wirklich bei Messie-Räumungen?',
-        answer: 'Diskretion ist für uns selbstverständlich. Wir kommen in neutralen Fahrzeugen ohne Firmenbeschriftung, arbeiten in Zivilkleidung und vereinbaren Termine nach Ihren Wünschen. Nachbarn erfahren nichts vom Grund unseres Einsatzes. Wir tragen nichts offen durch Treppenhäuser, sondern nutzen Säcke und geschlossene Container. Unsere Mitarbeiter sind geschult, vertraulich zu arbeiten und respektvoll zu kommunizieren.'
-      },
-      {
-        question: 'Wie gehen Sie mit Erinnerungsstücken und wichtigen Dokumenten um?',
-        answer: 'Bevor wir räumen, besprechen wir genau, welche Gegenstände wichtig für Sie sind. Auf Wunsch sortieren wir gemeinsam mit Ihnen und legen Erinnerungsstücke, Dokumente, Wertgegenstände beiseite. Bei extremer Vermüllung durchsuchen unsere Mitarbeiter systematisch alle Bereiche, um nichts Wichtiges zu übersehen. Wir wissen, dass zwischen Müll oft Wertvolles versteckt ist und gehen entsprechend sorgfältig vor.'
-      },
-      {
-        question: 'Können Sie auch Geruchsbeseitigung und Desinfektion durchführen?',
-        answer: 'Ja, das gehört zu unseren Spezialleistungen. Wir setzen professionelle Geruchsneutralisierer ein, die Gerüche nicht überdecken, sondern chemisch binden. Nach der Räumung erfolgt eine gründliche Desinfektion aller Oberflächen, Böden und Sanitärbereiche. Bei Bedarf führen wir auch eine Ozonbehandlung durch, die selbst hartnäckige Gerüche beseitigt. Die Wohnung wird wieder bewohnbar und riecht neutral.'
-      },
-      {
-        question: 'Was passiert, wenn Ungeziefer in der Wohnung ist?',
-        answer: 'Ungezieferbefall kommt bei Messie-Wohnungen leider häufig vor. Wir arbeiten mit zertifizierten Schädlingsbekämpfern zusammen und koordinieren die Behandlung. Zunächst erfolgt die Räumung, dann die professionelle Schädlingsbekämpfung, anschließend Desinfektion und Geruchsbeseitigung. Wir betrachten die Situation ohne Ekel oder Vorurteile - für uns ist es ein Job, den wir professionell erledigen.'
-      },
-      {
-        question: 'Kann die Räumung in mehreren Etappen erfolgen?',
-        answer: 'Ja, das ist oft sogar besser. Viele Betroffene sind mit einer Komplettumg überfordert. Wir können schrittweise vorgehen - erst ein Raum, dann der nächste. So haben Sie Zeit zu verarbeiten und können sich an die Veränderung gewöhnen. Therapeutisch begleitete Räumungen erfolgen fast immer etappenweise. Wir richten uns nach Ihrem Tempo und Ihrer Belastbarkeit.'
-      },
-      {
-        question: 'Gibt es finanzielle Unterstützung für Messie-Räumungen?',
-        answer: 'In manchen Fällen ja. Sozialämter können bei nachgewiesener Bedürftigkeit Kosten übernehmen. Manche Krankenkassen bezuschussen die Räumung, wenn sie medizinisch notwendig ist und therapeutisch begleitet wird. Auch gesetzliche Betreuer können Kostenübernahmen beantragen. Wir stellen Ihnen ordentliche Rechnungen aus und beraten Sie zu Unterstützungsmöglichkeiten. Sprechen Sie mit Ihrem Sozialarbeiter oder Therapeuten darüber.'
-      }
-    ],
-    relatedServices: ['entruempelung', 'haushaltsaufloesung', 'immobilienraemung']
+    emotional: 'Ein Messie-Syndrom ist keine Charakterschwäche, sondern eine ernstzunehmende Belastung. Wir begegnen jedem Menschen mit Respekt und ohne Bewertung. Unser Team arbeitet ruhig, verständnisvoll und in dem Tempo, das für die Situation passend ist. Auf Wunsch begleiten wir die Räumung gemeinsam mit Betreuern oder Angehörigen. Unser Ziel ist nicht nur eine leere Wohnung, sondern ein sicherer, würdevoller Neuanfang.'
   },
+
+  whatWeOffer: {
+    title: 'Spezialisierte Messie-Räumung in Stuttgart',
+    description: 'Wir bieten mehr als Entrümpelung – wir schaffen die Grundlage für einen neuen Anfang.',
+    included: [
+      'Vertrauliches Erstgespräch und einfühlsame Beratung',
+      'Diskrete Besichtigung nach Terminabsprache',
+      'Individuelle Planung – schrittweise oder vollständige Räumung',
+      'Geschultes, sensibles Personal',
+      'Systematische Sicherung wichtiger Dokumente und Erinnerungsstücke',
+      'Professionelle Entrümpelung stark vermüllter Wohnungen',
+      'Fachgerechte Entsorgung inklusive Sondermüll',
+      'Desinfektion und hygienische Spezialreinigung',
+      'Professionelle Geruchsbeseitigung',
+      'Koordination mit Sozialdiensten oder Betreuern auf Wunsch',
+      'Unauffällige Durchführung und absolute Vertraulichkeit'
+    ]
+  },
+
+  benefits: [
+    'Absolute Diskretion und respektvoller Umgang',
+    'Spezialisierung auf Messie- und Extremräumungen',
+    'Einfühlsame Vorgehensweise ohne Druck',
+    'Professionelle Desinfektion und Geruchsneutralisation',
+    'Fachgerechte Entsorgung nach Hygienestandards',
+    'Flexible Durchführung – Schritt für Schritt oder komplett',
+    'Zusammenarbeit mit Betreuern und sozialen Stellen möglich',
+    'Ziel: wieder sichere, bewohnbare Räume'
+  ],
+
+  process: [
+    'Vertrauliche Kontaktaufnahme',
+    'Diskrete Besichtigung und Beratung',
+    'Individueller Räumungsplan',
+    'Behutsame Durchführung der Messie-Räumung',
+    'Spezialreinigung, Desinfektion und Geruchsbeseitigung',
+    'Besenreine Übergabe oder weiterführende Maßnahmen'
+  ],
+
+  features: ['Absolute Diskretion', 'Geschultes Fachpersonal', 'Spezialreinigung & Geruchsbeseitigung'],
+
+  localRelevance: {
+    areas: [
+      'Stuttgart-Mitte','Stuttgart-West','Stuttgart-Ost','Stuttgart-Süd','Bad Cannstatt',
+      'Vaihingen','Feuerbach','Zuffenhausen','Möhringen','Degerloch',
+      'Esslingen','Ludwigsburg','Waiblingen','Sindelfingen'
+    ],
+    description: 'Gerade in dicht besiedelten Stadtteilen Stuttgarts ist Diskretion entscheidend. Wir arbeiten unauffällig, in neutraler Kleidung und auf Wunsch zu Randzeiten. Unser Team kennt die örtlichen Gegebenheiten und geht rücksichtsvoll vor – gegenüber Betroffenen ebenso wie gegenüber Nachbarn.'
+  },
+
+  cta: {
+    title: 'Vertrauliche Beratung zur Messie-Räumung in Stuttgart',
+    description: 'Nehmen Sie diskret Kontakt zu uns auf. Wir beraten Sie einfühlsam und entwickeln ein individuelles Vorgehen für Ihre Situation.'
+  },
+
+  additionalContent: {
+    title: 'Wissenswertes zur Messie-Wohnungsräumung',
+    sections: [
+      {
+        heading: 'Was ist das Messie-Syndrom?',
+        content: 'Das Messie-Syndrom beschreibt ein komplexes Krankheitsbild, bei dem das Loslassen und Ordnen von Gegenständen schwerfällt. Die Räumung ist meist nur ein Teil des Weges – psychologische und soziale Begleitung sind wichtig für nachhaltige Veränderungen.'
+      },
+      {
+        heading: 'Wie läuft eine diskrete Messie-Räumung ab?',
+        content: 'Wir arbeiten unauffällig, in neutraler Kleidung und ohne Aufsehen. Auf Wunsch sortieren wir gemeinsam, sichern wichtige Dinge und gehen etappenweise vor.'
+      },
+      {
+        heading: 'Was kostet eine Messie-Räumung in Stuttgart?',
+        content: 'Die Kosten hängen von Wohnungsgröße, Vermüllungsgrad und Zusatzleistungen ab. Nach einer vertraulichen Besichtigung erstellen wir ein individuelles Angebot.'
+      },
+      {
+        heading: 'Arbeiten Sie mit Beratungsstellen zusammen?',
+        content: 'Ja. Auf Wunsch kooperieren wir mit Betreuern, Sozialdiensten und Therapeuten. Unser Ziel ist nicht nur Sauberkeit, sondern Stabilität.'
+      }
+    ]
+  },
+
+  faq: [
+    {
+      question: 'Wie diskret arbeiten Sie?',
+      answer: 'Wir kommen unauffällig, arbeiten vertraulich und passen Termine Ihren Bedürfnissen an.'
+    },
+    {
+      question: 'Sichern Sie wichtige Gegenstände?',
+      answer: 'Ja. Dokumente, Erinnerungsstücke und Wertsachen werden sorgfältig aussortiert.'
+    },
+    {
+      question: 'Übernehmen Sie Geruchsbeseitigung und Desinfektion?',
+      answer: 'Ja. Wir führen professionelle Geruchsneutralisation und hygienische Reinigung durch.'
+    },
+    {
+      question: 'Was ist bei Ungezieferbefall?',
+      answer: 'Wir koordinieren Schädlingsbekämpfung, Räumung und Desinfektion als Gesamtprozess.'
+    },
+    {
+      question: 'Kann die Räumung in Etappen erfolgen?',
+      answer: 'Ja. Wir richten uns nach der emotionalen Belastbarkeit der Betroffenen.'
+    },
+    {
+      question: 'Gibt es finanzielle Unterstützung?',
+      answer: 'In manchen Fällen sind Zuschüsse über Sozialstellen möglich. Wir beraten Sie dazu.'
+    }
+  ],
+
+  relatedServices: ['entruempelung', 'haushaltsaufloesung', 'immobilienraemung']
+},
   {
     slug: 'keller-dachboden',
     icon: Warehouse,
