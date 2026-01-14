@@ -43,158 +43,138 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: 'haushaltsaufloesung',
-    icon: Home,
-    title: 'Haushaltsauflösung in Stuttgart',
-    shortDescription: 'Professionelle Wohnungsauflösung nach Todesfall, bei Umzug ins Pflegeheim oder Immobilienverkauf. Komplettservice mit Wertanrechnung, fachgerechter Entsorgung und besenreiner Übergabe in Stuttgart und Umgebung.',
-    fullDescription: 'Eine Haushaltsauflösung in Stuttgart ist oft mehr als nur Entrümpelung. Nach einem Todesfall, beim Umzug ins betreute Wohnen oder bei der Auflösung eines Erbes stehen Angehörige vor einer emotional belastenden Aufgabe. Serviceplus begleitet Sie mit Erfahrung, Respekt und Einfühlungsvermögen durch diesen Prozess. Als etabliertes Unternehmen für Wohnungsauflösungen in Stuttgart und der Region übernehmen wir die komplette Abwicklung Ihrer Haushaltsauflösung - von der ersten Beratung über die Bewertung verwertbarer Gegenstände bis zur besenreinen Übergabe der Immobilie. Unser Team kennt die Stuttgarter Besonderheiten, arbeitet diskret und zuverlässig. Mit über zehn Jahren Erfahrung in der professionellen Nachlassauflösung verstehen wir die sensiblen Situationen unserer Kunden und bieten Lösungen, die entlasten statt zu belasten. Ob komplette Haushaltsauflösung, Entrümpelung einzelner Räume oder besenreine Übergabe für den Immobilienverkauf - wir sind Ihr Partner in Stuttgart.',
-    intro: {
-      forWhom: 'Unsere Haushaltsauflösungen in Stuttgart richten sich an Angehörige nach einem Todesfall in der Familie, Familien beim Umzug ins Pflegeheim oder betreute Wohnen, Erbengemeinschaften vor dem Immobilienverkauf, Hausverwaltungen bei Wohnungsübergabe, Senioren beim Wechsel in eine kleinere Wohnung sowie alle, die vor der Herausforderung einer kompletten Wohnungsauflösung stehen und professionelle Unterstützung benötigen.',
-      situations: [
-        'Haushaltsauflösung nach Todesfall - mit Respekt und Einfühlungsvermögen in einer schweren Zeit',
-        'Umzug ins Pflegeheim oder betreutes Wohnen - schnelle und diskrete Wohnungsauflösung',
-        'Nachlassauflösung für Erbengemeinschaften - faire Bewertung und zügige Abwicklung',
-        'Immobilienverkauf vorbereiten - besenreine Übergabe für optimale Vermarktung',
-        'Wohnungsverkleinerung im Alter - Übergang in eine kleinere Wohnung begleiten',
-        'Umzug ins Ausland - komplette Haushaltsabwicklung und Entsorgung vor der Abreise',
-        'Räumung bei Mieterwechsel - schnelle Objektfreimachung für Vermieter'
-      ],
-      emotional: 'Eine Haushaltsauflösung bedeutet oft Abschied. Abschied von einem geliebten Menschen, von einem Lebensabschnitt oder von vertrauten Räumen. In diesen Momenten sind es nicht nur Möbel und Gegenstände, die bewegt werden - es sind Erinnerungen, Geschichten und emotionale Werte. Unser Team von Serviceplus versteht diese besondere Situation. Wir arbeiten nicht nur professionell und zügig, sondern vor allem mit Respekt, Einfühlungsvermögen und Diskretion. Wir nehmen uns Zeit für Ihre Anliegen, gehen behutsam mit persönlichen Gegenständen um und schaffen einen Raum, in dem Sie sich sicher fühlen. Die organisatorische und körperliche Last nehmen wir Ihnen ab, damit Sie sich auf das Wesentliche konzentrieren können - auf die Verarbeitung, auf wichtige Entscheidungen oder einfach auf sich selbst.'
-    },
-    whatWeOffer: {
-      title: 'Unser Komplettservice für Haushaltsauflösungen in Stuttgart',
-      description: 'Von der kostenlosen Erstberatung bis zur schlüsselfertigen Übergabe übernehmen wir jeden Schritt Ihrer Wohnungsauflösung. Mit Erfahrung, Transparenz und fairen Festpreisen - so funktioniert professionelle Haushaltsauflösung in Stuttgart.',
-      included: [
-        'Kostenlose Vor-Ort-Besichtigung und ausführliche Beratung in ganz Stuttgart und Umgebung',
-        'Detailliertes Festpreis-Angebot mit transparenter Aufstellung aller Kosten',
-        'Faire Bewertung und Wertanrechnung für verwertbare Gegenstände - Möbel, Antiquitäten, Hausrat',
-        'Professionelle Demontage von Einbauküchen, Möbeln und fest installierten Einbauten',
-        'Komplette Räumung aller Wohn- und Nebenräume inklusive Keller, Dachboden und Garage',
-        'Fachgerechte Sortierung und Trennung nach Verwertbarkeit und Entsorgungsart',
-        'Umweltbewusste Entsorgung nach gesetzlichen Vorgaben mit Recycling-Nachweis',
-        'Weitergabe brauchbarer Gegenstände an soziale Einrichtungen und Bedürftige',
-        'Besenreine Endreinigung aller Räume oder optional schlüsselfertige Übergabe',
-        'Flexible Terminplanung - auch kurzfristig und am Wochenende möglich',
-        'Diskrete Arbeitsweise ohne auffällige Firmenbeschriftung auf Wunsch',
-        'Respektvoller Umgang mit persönlichen Gegenständen und Erinnerungsstücken',
-        'Koordination mit Behörden, Vermietern und Maklern auf Wunsch',
-        'Fotodokumentation vorher/nachher für Ihre Unterlagen'
-      ]
-    },
-    benefits: [
-      'Alles aus einer Hand - ein Ansprechpartner für die gesamte Haushaltsauflösung',
-      'Über 10 Jahre Erfahrung mit Wohnungsauflösungen in Stuttgart und Region',
-      'Diskrete und respektvolle Durchführung in jeder Phase der Auflösung',
-      'Termingerechte und zuverlässige Übergabe - besenrein oder schlüsselfertig',
-      'Wertanrechnung senkt Ihre Kosten erheblich - oft Nulltarif oder Auszahlung möglich',
-      'Professionelle Entsorgung nach aktuellen gesetzlichen Vorgaben',
-      'Faire und transparente Festpreise ohne versteckte Zusatzkosten oder Nachforderungen',
-      'Kurze Reaktionszeiten - häufig noch in derselben Woche Termine verfügbar',
-      'Versicherter Transport und vollständig haftpflichtversichertes Team',
-      'Lokale Expertise für Stuttgarter Besonderheiten - Altbauten, Hanglagen, Parksituation',
-      'Nachhaltige Arbeitsweise durch Recycling und Weitergabe brauchbarer Gegenstände',
-      'Kostenlose Beratung zu steuerlichen Absetzbarkeit und Fördermöglichkeiten'
+  slug: 'haushaltsaufloesung',
+  icon: Home,
+  title: 'Haushaltsauflösung in Stuttgart',
+  shortDescription: 'Professionelle Wohnungsauflösung nach Todesfall, bei Umzug ins Pflegeheim oder Immobilienverkauf. Komplettservice mit Wertanrechnung, fachgerechter Entsorgung und besenreiner Übergabe in Stuttgart und Umgebung.',
+  fullDescription: 'Eine Haushaltsauflösung in Stuttgart ist oft mehr als nur Entrümpelung. Nach einem Todesfall, beim Umzug ins betreute Wohnen oder bei der Auflösung eines Erbes stehen Angehörige vor einer emotional belastenden Aufgabe. Serviceplus begleitet Sie in dieser Situation strukturiert, respektvoll und mit Einfühlungsvermögen. Als Unternehmen für Wohnungsauflösungen in Stuttgart und der Region übernehmen wir die komplette Abwicklung Ihrer Haushaltsauflösung – von der ersten Beratung über die Bewertung verwertbarer Gegenstände bis zur besenreinen Übergabe der Immobilie. Unser Team kennt die Stuttgarter Besonderheiten, arbeitet diskret und zuverlässig. Mit klaren Abläufen, transparenter Kommunikation und einem hohen Anspruch an Sorgfalt bieten wir Lösungen, die entlasten statt zusätzlich zu belasten. Ob komplette Haushaltsauflösung, Entrümpelung einzelner Räume oder besenreine Übergabe für den Immobilienverkauf – wir sind Ihr verlässlicher Ansprechpartner in Stuttgart.',
+
+  intro: {
+    forWhom: 'Unsere Haushaltsauflösungen in Stuttgart richten sich an Angehörige nach einem Todesfall in der Familie, Familien beim Umzug ins Pflegeheim oder betreute Wohnen, Erbengemeinschaften vor dem Immobilienverkauf, Hausverwaltungen bei Wohnungsübergaben, Senioren beim Wechsel in eine kleinere Wohnung sowie alle, die vor der Herausforderung einer kompletten Wohnungsauflösung stehen und professionelle Unterstützung wünschen.',
+    situations: [
+      'Haushaltsauflösung nach Todesfall – respektvolle Begleitung in einer schweren Zeit',
+      'Umzug ins Pflegeheim oder betreutes Wohnen – schnelle und diskrete Wohnungsauflösung',
+      'Nachlassauflösung für Erbengemeinschaften – faire Bewertung und strukturierte Abwicklung',
+      'Immobilienverkauf vorbereiten – besenreine Übergabe für Verkauf oder Vermietung',
+      'Wohnungsverkleinerung im Alter – Übergang in eine kleinere Wohnung begleiten',
+      'Umzug ins Ausland – komplette Haushaltsabwicklung vor der Abreise',
+      'Räumung bei Mieterwechsel – schnelle Objektfreimachung für Vermieter'
     ],
-    process: [
-      'Kostenlose Vor-Ort-Besichtigung mit ausführlicher Beratung zu Ablauf und Möglichkeiten',
-      'Professionelle Bewertung verwertbarer Gegenstände durch erfahrene Experten vor Ort',
-      'Transparentes Festpreis-Angebot mit detaillierter Aufstellung und Wertanrechnung',
-      'Flexible Terminabsprache nach Ihren Wünschen - auch kurzfristig und am Wochenende',
-      'Sorgfältige Sortierung wertvoller Gegenstände und Erinnerungsstücke gemeinsam mit Ihnen',
-      'Professionelle Räumung durch unser geschultes, erfahrenes und versichertes Personal',
-      'Fachgerechte Trennung und umweltbewusste Entsorgung aller Materialien mit Nachweis',
-      'Besenreine Endreinigung oder optional schlüsselfertige Übergabe der Immobilie',
-      'Abschließende Dokumentation und Übergabeprotokoll für Vermieter oder Käufer'
-    ],
-    features: ['Komplette Abwicklung', 'Diskrete Durchführung', 'Termingerechte Übergabe'],
-    localRelevance: {
-      areas: [
-        'Stuttgart-Mitte',
-        'Stuttgart-West',
-        'Stuttgart-Ost',
-        'Stuttgart-Süd',
-        'Stuttgart-Nord',
-        'Bad Cannstatt',
-        'Vaihingen',
-        'Degerloch',
-        'Feuerbach',
-        'Zuffenhausen',
-        'Möhringen',
-        'Hedelfingen',
-        'Plieningen',
-        'Ludwigsburg',
-        'Esslingen',
-        'Böblingen',
-        'Sindelfingen',
-        'Leonberg',
-        'Waiblingen',
-        'Fellbach',
-        'Kornwestheim',
-        'Filderstadt'
-      ],
-      description: 'Als etabliertes Stuttgarter Unternehmen für Haushaltsauflösungen kennen wir die Region wie unsere Westentasche. Die Besonderheiten der Stuttgarter Architektur - enge Treppenhäuser in Gründerzeit-Altbauten, steile Hanglagen in Degerloch oder am Killesberg, verwinkelte Kellergeschosse und historische Gebäudestrukturen - stellen uns vor keine Probleme. Wir wissen, wo man kurzfristig Parkgenehmigungen beantragen muss, kennen die besten Zufahrtswege und haben Erfahrung mit den örtlichen Entsorgungsbetrieben und Wertstoffhöfen. Unser Team ist täglich in Stuttgart und den umliegenden Landkreisen unterwegs und kann daher oft sehr kurzfristig reagieren. In dringenden Fällen sind Termine manchmal sogar noch am selben Tag möglich. Durch unser lokales Netzwerk aus Partnern, sozialen Einrichtungen und Verwertungsbetrieben können wir Ihnen faire Konditionen bieten und gleichzeitig nachhaltig arbeiten. Wir verstehen die Stuttgarter Mentalität, sprechen die Sprache unserer Kunden und wissen, was in sensiblen Situationen wichtig ist - Zuverlässigkeit, Diskretion und ein vertrauensvolles Miteinander.'
-    },
-    cta: {
-      title: 'Kostenlose Erstberatung für Ihre Haushaltsauflösung',
-      description: 'Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch. Wir besichtigen die Räumlichkeiten kostenlos und erstellen Ihnen ein transparentes Festpreis-Angebot für Ihre Wohnungsauflösung in Stuttgart.'
-    },
-    additionalContent: {
-      title: 'Wissenswert zur Haushaltsauflösung in Stuttgart',
-      sections: [
-        {
-          heading: 'Was kostet eine Haushaltsauflösung in Stuttgart?',
-          content: 'Die Kosten einer Haushaltsauflösung in Stuttgart hängen von verschiedenen Faktoren ab: Größe der Wohnung, Menge des Hausrats, Zugänglichkeit der Räume und Verwertbarkeit der Gegenstände. Eine 3-Zimmer-Wohnung kostet durchschnittlich zwischen 800 und 2.500 Euro. Wichtig ist die Wertanrechnung: Gut erhaltene Möbel, Antiquitäten oder wertvoller Hausrat werden fair bewertet und vom Gesamtpreis abgezogen. In vielen Fällen reduzieren sich die Kosten dadurch erheblich - manchmal entstehen sogar gar keine Kosten oder es wird eine Auszahlung fällig. Wir erstellen nach der kostenlosen Besichtigung ein transparentes Festpreis-Angebot, sodass Sie genau wissen, was auf Sie zukommt. Keine versteckten Kosten, keine Nachforderungen.'
-        },
-        {
-          heading: 'Wie läuft eine professionelle Wohnungsauflösung ab?',
-          content: 'Eine professionelle Haushaltsauflösung in Stuttgart beginnt immer mit einer kostenlosen Besichtigung vor Ort. Dabei schauen wir uns alle Räume an, besprechen Ihre Wünsche und Anforderungen und bewerten verwertbare Gegenstände. Danach erhalten Sie ein detailliertes Festpreis-Angebot. Nach Ihrer Beauftragung vereinbaren wir einen Termin - oft schon in derselben Woche. Am Räumungstag kommt unser Team pünktlich, arbeitet systematisch durch alle Räume, sortiert dabei wichtige Gegenstände aus und kümmert sich um den fachgerechten Abtransport. Wertvolle Stücke werden separat behandelt, Erinnerungsstücke beiseite gelegt. Am Ende übergeben wir die Wohnung besenrein oder auf Wunsch schlüsselfertig. Die gesamte Abwicklung dauert je nach Größe zwischen einem halben und zwei Tagen.'
-        },
-        {
-          heading: 'Haushaltsauflösung nach Todesfall - Was ist zu beachten?',
-          content: 'Nach einem Todesfall steht die Haushaltsauflösung oft unter emotionalem und zeitlichem Druck. Besonders wichtig: Nehmen Sie sich Zeit für die Entscheidung, welche Gegenstände Sie behalten möchten. Wir unterstützen Sie dabei mit Geduld und Verständnis. Rechtlich sollten Sie vor der Auflösung klären: Gibt es ein Testament, wer sind die Erben, gibt es Auflagen zur Wohnungsübergabe? Wertvolle Gegenstände sollten zunächst zurückgestellt werden. Unser Team kennt diese sensiblen Situationen und arbeitet mit Respekt vor der Lebensgeschichte des Verstorbenen. Wir nehmen uns Zeit, gehen behutsam vor und respektieren emotionale Momente. Viele Angehörige schätzen unsere Erfahrung in diesen schweren Zeiten.'
-        },
-        {
-          heading: 'Kann man eine Haushaltsauflösung steuerlich absetzen?',
-          content: 'Ja, die Kosten einer Haushaltsauflösung können unter bestimmten Umständen steuerlich geltend gemacht werden. Bei einer Erbschaft lassen sich die Kosten als Nachlassverbindlichkeiten von der Erbschaftssteuer abziehen. Wenn die Auflösung aufgrund eines Umzugs in ein Pflegeheim oder betreutes Wohnen erfolgt, können die Kosten als außergewöhnliche Belastungen oder haushaltsnahe Dienstleistungen abgesetzt werden. Wichtig ist eine ordentliche Rechnung mit ausgewiesener Mehrwertsteuer und detaillierter Leistungsbeschreibung - genau das liefern wir Ihnen. Wir empfehlen, die steuerliche Absetzbarkeit im Vorfeld mit Ihrem Steuerberater zu besprechen. Gerne erstellen wir die Rechnung so, dass sie alle erforderlichen Angaben für das Finanzamt enthält.'
-        }
-      ]
-    },
-    faq: [
-      {
-        question: 'Wie schnell können Sie eine Haushaltsauflösung in Stuttgart durchführen?',
-        answer: 'In den meisten Fällen können wir innerhalb einer Woche nach Ihrer Anfrage mit der Haushaltsauflösung beginnen. Bei dringenden Fällen - etwa wenn ein Räumungstermin unmittelbar bevorsteht - sind oft auch kurzfristigere Termine möglich, manchmal sogar innerhalb von 2-3 Tagen. Die eigentliche Räumung dauert je nach Wohnungsgröße zwischen einem halben Tag und zwei Tagen. Kontaktieren Sie uns einfach, und wir finden gemeinsam einen passenden Termin.'
-      },
-      {
-        question: 'Was passiert mit den Möbeln und dem Hausrat?',
-        answer: 'Wir sortieren alle Gegenstände nach Verwertbarkeit. Gut erhaltene Möbel und brauchbarer Hausrat werden entweder an Aufkäufer vermittelt, an soziale Einrichtungen weitergegeben oder auf dem Gebrauchtwarenmarkt verkauft. Der Wert wird Ihnen angerechnet. Wertlose oder beschädigte Gegenstände werden fachgerecht nach gesetzlichen Vorgaben entsorgt und professionell recycelt. Sie können vorab festlegen, wenn bestimmte Dinge gesondert behandelt werden sollen.'
-      },
-      {
-        question: 'Müssen wir bei der Haushaltsauflösung anwesend sein?',
-        answer: 'Das ist nicht zwingend erforderlich, aber oft empfehlenswert - zumindest zu Beginn. Bei der ersten Besichtigung sollte jemand dabei sein, um wichtige Details zu besprechen. Während der eigentlichen Räumung können Sie selbst entscheiden: Viele Kunden möchten dabei sein, um letzte persönliche Gegenstände zu sichern. Andere ziehen es vor, sich nicht der emotionalen Belastung auszusetzen und überlassen uns die Arbeit komplett. Beides ist möglich - wir richten uns nach Ihren Wünschen.'
-      },
-      {
-        question: 'Wie wird der Wert der Gegenstände ermittelt?',
-        answer: 'Unsere Mitarbeiter haben langjährige Erfahrung in der Bewertung von Hausrat, Möbeln und Wertgegenständen. Wir orientieren uns an aktuellen Marktpreisen für Gebrauchtware, berücksichtigen Zustand, Alter, Marke und Nachfrage. Bei besonders wertvollen Stücken wie Antiquitäten oder Kunst können wir bei Bedarf Experten hinzuziehen. Die Bewertung erfolgt transparent und nachvollziehbar - jeder bewertete Gegenstand wird in unserem Angebot aufgeführt. Sie können die Bewertung jederzeit nachvollziehen und bei Bedarf auch diskutieren.'
-      },
-      {
-        question: 'Was ist eine besenreine Übergabe?',
-        answer: 'Besenrein bedeutet, dass die Wohnung vollständig geräumt und grob gereinigt ist - also in einem Zustand, wie man ihn mit einem Besen erreichen kann. Alle Möbel und Gegenstände sind entfernt, grober Schmutz ist beseitigt, die Räume sind frei zugänglich. Eine besenreine Übergabe ist der Standard bei den meisten Mietverträgen. Auf Wunsch bieten wir auch eine schlüsselfertige Übergabe an - mit gründlicher Endreinigung, kleinen Ausbesserungen und vollständig vermietbarem Zustand.'
-      },
-      {
-        question: 'Übernehmen Sie auch die Entsorgung von Sondermüll?',
-        answer: 'Ja, wir kümmern uns um die fachgerechte Entsorgung aller Arten von Hausrat, einschließlich Sondermüll wie alte Farben, Lacke, Chemikalien, Elektrogeräte oder Batterien. Wir trennen professionell nach gesetzlichen Vorgaben und bringen alles zu den entsprechenden Entsorgungsstellen. Sie müssen sich um nichts kümmern - wir haben die nötigen Genehmigungen und Kontakte zu allen relevanten Entsorgungsbetrieben in Stuttgart.'
-      },
-      {
-        question: 'Arbeiten Sie auch am Wochenende?',
-        answer: 'Ja, wir bieten nach Absprache auch Termine am Samstag an. Dies ist besonders praktisch, wenn Sie unter der Woche beruflich eingespannt sind oder wenn die Haushaltsauflösung diskret außerhalb der normalen Geschäftszeiten erfolgen soll. Samstags-Termine sollten rechtzeitig vereinbart werden, da diese Zeitfenster oft stark nachgefragt sind.'
-      },
-      {
-        question: 'Was unterscheidet Sie von anderen Entrümpelungsfirmen in Stuttgart?',
-        answer: 'Als lokales Unternehmen mit über 10 Jahren Erfahrung kennen wir Stuttgart und die Region genau. Wir arbeiten nicht nur professionell und zuverlässig, sondern vor allem mit Respekt und Einfühlungsvermögen in sensiblen Situationen. Unsere Preise sind fair und transparent, die Wertanrechnung ist ehrlich, und wir legen Wert auf Nachhaltigkeit. Viele Kunden schätzen unsere persönliche Betreuung, kurze Reaktionszeiten und die Tatsache, dass wir Termine verbindlich einhalten. Sie haben einen festen Ansprechpartner vom ersten Kontakt bis zur Übergabe.'
-      }
-    ],
-    relatedServices: ['entruempelung', 'wertanrechnung', 'immobilienraemung']
+    emotional: 'Eine Haushaltsauflösung bedeutet oft Abschied. Abschied von einem geliebten Menschen, von einem Lebensabschnitt oder von vertrauten Räumen. In diesen Momenten sind es nicht nur Möbel und Gegenstände, die bewegt werden – es sind Erinnerungen, Geschichten und emotionale Werte. Unser Team von Serviceplus arbeitet mit Respekt, Einfühlungsvermögen und Diskretion. Wir nehmen uns Zeit für Ihre Anliegen, gehen behutsam mit persönlichen Gegenständen um und schaffen einen Rahmen, in dem Sie sich sicher fühlen können. Die organisatorische und körperliche Last nehmen wir Ihnen ab, damit Sie sich auf das Wesentliche konzentrieren können.'
   },
+
+  whatWeOffer: {
+    title: 'Unser Komplettservice für Haushaltsauflösungen in Stuttgart',
+    description: 'Von der kostenlosen Erstberatung bis zur schlüsselfertigen oder besenreinen Übergabe übernehmen wir jeden Schritt Ihrer Wohnungsauflösung. Transparent, strukturiert und zu fairen Festpreisen.',
+    included: [
+      'Kostenlose Vor-Ort-Besichtigung und ausführliche Beratung in Stuttgart und Umgebung',
+      'Detailliertes Festpreis-Angebot mit transparenter Aufstellung aller Leistungen',
+      'Faire Bewertung und Wertanrechnung verwertbarer Gegenstände',
+      'Professionelle Demontage von Möbeln und fest installierten Einbauten',
+      'Komplette Räumung aller Wohn- und Nebenräume inklusive Keller, Dachboden und Garage',
+      'Fachgerechte Sortierung und Trennung nach Verwertbarkeit und Entsorgungsart',
+      'Umweltbewusste Entsorgung nach gesetzlichen Vorgaben',
+      'Weitergabe brauchbarer Gegenstände an soziale Einrichtungen',
+      'Besenreine Endreinigung oder optional schlüsselfertige Übergabe',
+      'Flexible Terminplanung – auch kurzfristig möglich',
+      'Diskrete Arbeitsweise und respektvoller Umgang mit persönlichen Gegenständen',
+      'Koordination mit Vermietern, Maklern oder Hausverwaltungen auf Wunsch'
+    ]
+  },
+
+  benefits: [
+    'Alles aus einer Hand – ein fester Ansprechpartner',
+    'Strukturierte, professionelle Arbeitsweise mit klaren Abläufen',
+    'Diskrete und respektvolle Durchführung',
+    'Termingerechte, besenreine Übergabe',
+    'Wertanrechnung kann Ihre Kosten deutlich senken',
+    'Transparente Festpreise ohne Nachforderungen',
+    'Kurze Reaktionszeiten',
+    'Haftpflichtversichertes Team',
+    'Lokale Kenntnisse der Stuttgarter Gegebenheiten',
+    'Nachhaltige Entsorgung und Weiterverwertung'
+  ],
+
+  process: [
+    'Kostenlose Vor-Ort-Besichtigung und Beratung',
+    'Bewertung verwertbarer Gegenstände',
+    'Transparentes Festpreis-Angebot',
+    'Terminabsprache nach Ihren Möglichkeiten',
+    'Sorgfältige Sortierung persönlicher Gegenstände',
+    'Professionelle Haushaltsauflösung',
+    'Fachgerechte Entsorgung und Recycling',
+    'Besenreine oder schlüsselfertige Übergabe',
+    'Abschluss und Übergabeprotokoll'
+  ],
+
+  features: ['Komplette Abwicklung', 'Diskrete Durchführung', 'Termingerechte Übergabe'],
+
+  localRelevance: {
+    areas: [
+      'Stuttgart-Mitte','Stuttgart-West','Stuttgart-Ost','Stuttgart-Süd','Stuttgart-Nord',
+      'Bad Cannstatt','Vaihingen','Degerloch','Feuerbach','Zuffenhausen','Möhringen',
+      'Hedelfingen','Plieningen','Ludwigsburg','Esslingen','Böblingen','Sindelfingen',
+      'Leonberg','Waiblingen','Fellbach','Kornwestheim','Filderstadt'
+    ],
+    description: 'Als lokales Unternehmen für Haushaltsauflösungen in Stuttgart kennen wir die regionalen Gegebenheiten: enge Treppenhäuser, Hanglagen, Parksituationen und unterschiedliche Objektstrukturen. Unser Team ist regelmäßig in Stuttgart und Umgebung im Einsatz und kann oft kurzfristig reagieren. Durch unser Netzwerk aus Entsorgungsstellen, sozialen Einrichtungen und Verwertungspartnern arbeiten wir effizient, fair und nachhaltig.'
+  },
+
+  cta: {
+    title: 'Kostenlose Erstberatung für Ihre Haushaltsauflösung',
+    description: 'Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch. Wir besichtigen die Räumlichkeiten kostenlos und erstellen Ihnen ein transparentes Festpreis-Angebot.'
+  },
+
+  additionalContent: {
+    title: 'Wissenswertes zur Haushaltsauflösung in Stuttgart',
+    sections: [
+      {
+        heading: 'Was kostet eine Haushaltsauflösung in Stuttgart?',
+        content: 'Die Kosten hängen von Größe, Hausrat, Zugänglichkeit und Verwertbarkeit ab. Nach der kostenlosen Besichtigung erhalten Sie ein transparentes Festpreis-Angebot. Durch Wertanrechnung können sich die Kosten deutlich reduzieren.'
+      },
+      {
+        heading: 'Wie läuft eine professionelle Haushaltsauflösung ab?',
+        content: 'Nach der Besichtigung planen wir den Ablauf, sortieren wichtige Gegenstände und führen die Räumung strukturiert durch. Am Ende übergeben wir die Immobilie besenrein oder schlüsselfertig.'
+      },
+      {
+        heading: 'Haushaltsauflösung nach Todesfall – was ist wichtig?',
+        content: 'Nehmen Sie sich Zeit für persönliche Entscheidungen. Wir arbeiten behutsam, respektieren Erinnerungen und unterstützen Angehörige in dieser sensiblen Phase.'
+      },
+      {
+        heading: 'Kann man eine Haushaltsauflösung steuerlich absetzen?',
+        content: 'Unter bestimmten Voraussetzungen können Kosten steuerlich geltend gemacht werden. Wir stellen ordnungsgemäße Rechnungen aus.'
+      }
+    ]
+  },
+
+  faq: [
+    {
+      question: 'Wie schnell können Sie eine Haushaltsauflösung in Stuttgart durchführen?',
+      answer: 'Oft innerhalb weniger Tage, je nach Umfang und Dringlichkeit.'
+    },
+    {
+      question: 'Was passiert mit Möbeln und Hausrat?',
+      answer: 'Verwertbare Gegenstände werden angerechnet oder weitergegeben, der Rest fachgerecht entsorgt.'
+    },
+    {
+      question: 'Muss ich anwesend sein?',
+      answer: 'Nein. Auf Wunsch übernehmen wir die gesamte Durchführung eigenständig.'
+    },
+    {
+      question: 'Was bedeutet besenrein?',
+      answer: 'Die Wohnung ist vollständig geräumt und grob gereinigt, bereit zur Übergabe.'
+    },
+    {
+      question: 'Entsorgen Sie auch Sondermüll?',
+      answer: 'Ja, wir kümmern uns um fachgerechte Entsorgung von Elektrogeräten, Farben und Sonderabfällen.'
+    },
+    {
+      question: 'Was unterscheidet Sie von anderen Entrümpelungsfirmen in Stuttgart?',
+      answer: 'Wir arbeiten strukturiert, respektvoll und transparent. Unsere Kunden schätzen klare Abläufe, persönliche Betreuung und verlässliche Absprachen.'
+    }
+  ],
+
+  relatedServices: ['entruempelung', 'wertanrechnung', 'immobilienraemung']
+},
   {
     slug: 'entruempelung',
     icon: Trash2,
