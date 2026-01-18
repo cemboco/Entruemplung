@@ -4,6 +4,11 @@ import { useEffect } from 'react';
 
 export default function Impressum() {
   useEffect(() => {
+    const existingScript = document.getElementById('CookieDeclaration');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
     const script = document.createElement('script');
     script.id = 'CookieDeclaration';
     script.src = 'https://consent.cookiebot.com/aed5b767-c7e2-4c13-80f6-9ac2c23ef45b/cd.js';
@@ -16,8 +21,9 @@ export default function Impressum() {
     }
 
     return () => {
-      if (container && script.parentNode === container) {
-        container.removeChild(script);
+      const scriptToRemove = document.getElementById('CookieDeclaration');
+      if (scriptToRemove) {
+        scriptToRemove.remove();
       }
     };
   }, []);
