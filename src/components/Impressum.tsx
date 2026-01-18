@@ -1,7 +1,27 @@
 import { ArrowLeft, MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Impressum() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.id = 'CookieDeclaration';
+    script.src = 'https://consent.cookiebot.com/aed5b767-c7e2-4c13-80f6-9ac2c23ef45b/cd.js';
+    script.type = 'text/javascript';
+    script.async = true;
+
+    const container = document.getElementById('cookie-declaration-container');
+    if (container) {
+      container.appendChild(script);
+    }
+
+    return () => {
+      if (container && script.parentNode === container) {
+        container.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,6 +154,11 @@ export default function Impressum() {
               auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
               Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-medium text-midnight mb-4">Cookie-Erklärung</h2>
+            <div id="cookie-declaration-container" className="text-gray-700 font-light"></div>
           </section>
         </div>
       </div>
