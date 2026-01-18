@@ -2341,4 +2341,66 @@ Ordentliche Rückgabe der Immobilie.</p>
     created_at: '2026-01-11T09:00:00.000Z',
     updated_at: '2026-01-11T09:00:00.000Z'
   },
+    {
+    id: '15',
+    title: 'Nicht alles ist Müll: Was passiert eigentlich mit Ihren Sachen?',
+    slug: 'nachhaltige-entruempelung-stuttgart-recycling-spenden',
+    excerpt: 'Wegwerfen tut weh. Deshalb landet bei uns nicht alles im Container. Erfahren Sie, wie wir mit Recycling und Spenden dafür sorgen, dass Omas Möbel ein zweites Leben bekommen.',
+    featured_image: '/nachhaltige-entruempelung-recycling.png',
+    content: `
+<p>Eine der häufigsten Sorgen unserer Kunden ist gar nicht der Preis oder der Zeitaufwand. Es ist das schlechte Gewissen. Gerade bei Haushaltsauflösungen von Angehörigen hören wir oft den Satz: "Es tut mir in der Seele weh, das alles wegzuwerfen."</p>
+
+<p>Die gute Nachricht ist: Eine professionelle Entrümpelung bedeutet heute nicht mehr, dass alles blind im Müllwagen gepresst wird. Im Gegenteil. Wir bei ServicePlus Stuttgart sehen uns als Rohstoff-Manager und Vermittler. Unser Ziel ist es, so wenig wie möglich endgültig zu entsorgen und so viel wie möglich im Kreislauf zu halten.</p>
+
+<h2>Inhaltsverzeichnis</h2>
+<ol>
+  <li><a href="#kapitel1">Das Prinzip "Zweites Leben": Spenden statt Verschwenden</a></li>
+  <li><a href="#kapitel2">Rohstoffe retten: Warum Mülltrennung Klimaschutz ist</a></li>
+  <li><a href="#kapitel3">Problemstoffe sicher entsorgen (Farben, Lacke & Co.)</a></li>
+  <li><a href="#kapitel4">Datenschutz: Was passiert mit alten Akten und PCs?</a></li>
+  <li><a href="#kapitel5">Ihr gutes Gewissen inklusive</a></li>
+</ol>
+
+<h2 id="kapitel1">1. Das Prinzip "Zweites Leben": Spenden statt Verschwenden</h2>
+<p>Nur weil ein Schrank nicht mehr modern ist oder das Geschirr nicht Ihren Geschmack trifft, ist es noch lange kein Müll. Wir arbeiten eng mit sozialen Einrichtungen, Sozialkaufhäusern und gemeinnützigen Organisationen in Stuttgart zusammen.</p>
+<p>Gut erhaltene Kleidung, funktionierende Elektrogeräte, Bücher und brauchbare Möbel sortieren wir oft separat aus. Diese Dinge spenden wir weiter, wo sie dringend gebraucht werden. So wird aus Ihrer "Altlast" eine Hilfe für andere – und Omas geliebte Kommode landet nicht auf der Deponie, sondern vielleicht in der ersten eigenen Wohnung eines Studenten.</p>
+
+<h2 id="kapitel2">2. Rohstoffe retten: Warum Mülltrennung Klimaschutz ist</h2>
+<p>Was nicht gespendet werden kann, wird von uns penibel getrennt. Denn in einem durchschnittlichen Haushalt stecken wertvolle Rohstoffe:</p>
+<ul>
+  <li><strong>Altmetall & Schrott:</strong> Werden zu 100% eingeschmolzen und wiederverwertet.</li>
+  <li><strong>Papier & Pappe:</strong> Gehen zurück in die Papierproduktion.</li>
+  <li><strong>Holz:</strong> Wird je nach Kategorie (A1 bis A4) zu Spanplatten verarbeitet oder zur Energiegewinnung genutzt.</li>
+</ul>
+<p>Durch diese konsequente Trennung reduzieren wir das Volumen des Restmülls drastisch. Das spart nicht nur Entsorgungskosten (die wir an Sie weitergeben), sondern schont massiv Ressourcen.</p>
+
+<h2 id="kapitel3">3. Problemstoffe sicher entsorgen (Farben, Lacke & Co.)</h2>
+<p>In fast jedem Keller finden wir sie: Alte Farbeimer, Lackdosen, Reinigungsmittel oder Leuchtstoffröhren. Diese Dinge dürfen auf keinen Fall in den Hausmüll oder in den normalen Container. Sie sind Gift für die Umwelt.</p>
+<p>Als Fachbetrieb nehmen wir diese Verantwortung ernst. Wir sortieren Problemstoffe aus und bringen sie zu speziellen Sammelstellen der Stadt Stuttgart. Dort werden sie fachgerecht und sicher vernichtet, ohne das Grundwasser zu gefährden.</p>
+
+<h2 id="kapitel4">4. Datenschutz: Was passiert mit alten Akten und PCs?</h2>
+<p>Nachhaltigkeit bedeutet auch Verantwortung für Daten. Alte Kontoauszüge, Briefe oder Festplatten werfen wir nicht einfach offen in den Container. Sensible Dokumente behandeln wir diskret. Auf Wunsch bieten wir auch eine zertifizierte Aktenvernichtung an, damit Ihre privaten Daten auch privat bleiben.</p>
+
+<h2 id="kapitel5">Ihr gutes Gewissen inklusive</h2>
+<p>Wenn Sie ServicePlus beauftragen, buchen Sie nicht nur eine leere Wohnung. Sie buchen das gute Gefühl, verantwortlich gehandelt zu haben. Sie müssen sich nicht fragen, ob Ihre Sachen illegal im Wald landen oder ob Ressourcen verschwendet werden.</p>
+<p>Wir kümmern uns darum, dass alles dort landet, wo es hingehört: Im Kreislauf, bei Bedürftigen – oder sicher in der fachgerechten Entsorgung.</p>
+`,
+    author: 'ServicePlus Stuttgart Team',
+    category: 'Nachhaltigkeit & Umwelt',
+    tags: [
+      'Nachhaltige Entrümpelung',
+      'Recycling Stuttgart',
+      'Spenden statt wegwerfen',
+      'Mülltrennung',
+      'Umweltschutz',
+      'Soziale Verantwortung'
+    ],
+    meta_description: 'Nachhaltige Entrümpelung in Stuttgart: Wir spenden Möbel, recyceln Rohstoffe und entsorgen fachgerecht. So bekommt Omas Hausrat eine zweite Chance.',
+    meta_keywords: 'Nachhaltige Entrümpelung Stuttgart, Möbel spenden, Recycling Haushaltsauflösung, Umweltgerechte Entsorgung',
+    published: true,
+    published_at: '2026-01-18T09:00:00.000Z',
+    views: 0,
+    created_at: '2026-01-18T09:00:00.000Z',
+    updated_at: '2026-01-18T09:00:00.000Z'
+  },
     ];
