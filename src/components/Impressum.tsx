@@ -48,7 +48,7 @@ export default function Impressum() {
               <p className="font-medium">Serviceplus Entrümpelung GbR</p>
               <p>Geschäftsführer und Gesellschafter: Cemil Bocohonsi, Jermaine Anderson</p>
               <p>Karlsbaderweg 5</p>
-              <p>73652 Welzheim</p>
+              <p>73642 Welzheim</p>
             </div>
           </section>
 
