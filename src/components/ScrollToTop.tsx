@@ -9,10 +9,12 @@ export default function ScrollToTop() {
     if (!hash) {
       window.scrollTo(0, 0);
     }
-    
-    // Track page view on route change
-    trackPageView(pathname, document.title);
   }, [pathname, hash]);
+
+  // Track page view only on pathname change (not hash changes)
+  useEffect(() => {
+    trackPageView(pathname, document.title);
+  }, [pathname]);
 
   return null;
 }
