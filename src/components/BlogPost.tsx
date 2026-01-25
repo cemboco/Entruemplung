@@ -10,8 +10,11 @@ interface BlogPostProps {
 
 export default function BlogPost({ slug }: BlogPostProps) {
   const navigate = useNavigate();
-  const [post, setPost] = useState<BlogPostType | null>(null);
-  const [loading, setLoading] = useState(true);
+  // Initialize with fallback data for SSR - allows prerendering of blog posts
+  const fallbackPost = fallbackPosts.find(p => p.slug === slug);
+  const [post, setPost] = useState<BlogPostType | null>(fallbackPost || null);
+  // Only show loading if no fallback data available (will load from Supabase on client)
+  const [loading, setLoading] = useState(fallbackPost ? false : true);
   const [readingProgress, setReadingProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const articleRef = useRef<HTMLElement>(null);
@@ -161,6 +164,23 @@ export default function BlogPost({ slug }: BlogPostProps) {
 
   const isServer = typeof window === "undefined";
 
+  // During SSR, never render NotFound - render neutral shell instead
+  // Let client-side router handle 404 detection after hydration
+  if (!post && isServer) {
+    // Return minimal loading shell for SSR
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 pt-28 pb-16">
+        <div className="text-center max-w-md mx-auto px-4">
+          <div className="animate-pulse">
+            <div className="h-8 bg-gray-200 rounded w-3/4 mx-auto mb-4"></div>
+            <div className="h-4 bg-gray-200 rounded w-1/2 mx-auto"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Client-side: show NotFound if post doesn't exist
   if (!post && !isServer) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
