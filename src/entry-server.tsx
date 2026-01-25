@@ -4,7 +4,7 @@ import AppRoutes from './AppRoutes';
 
 export function render(url: string) {
   const html = renderToString(
-    <MemoryRouter initialEntries={[url]} initialIndex={0}>
+    <MemoryRouter initialEntries={['/']}>
       <AppRoutes />
     </MemoryRouter>
   );
