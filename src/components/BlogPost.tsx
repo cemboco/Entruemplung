@@ -10,8 +10,10 @@ interface BlogPostProps {
 
 export default function BlogPost({ slug }: BlogPostProps) {
   const navigate = useNavigate();
-  const [post, setPost] = useState<BlogPostType | null>(null);
-  const [loading, setLoading] = useState(true);
+  // Initialize with fallback data for SSR
+  const fallbackPost = fallbackPosts.find(p => p.slug === slug);
+  const [post, setPost] = useState<BlogPostType | null>(fallbackPost || null);
+  const [loading, setLoading] = useState(!fallbackPost); // Only show loading if no fallback
   const [readingProgress, setReadingProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const articleRef = useRef<HTMLElement>(null);
