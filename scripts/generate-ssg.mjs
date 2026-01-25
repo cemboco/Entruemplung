@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const distPath = join(__dirname, '..', 'dist');
 
+// Define all routes to pre-generate as static HTML
 const routes = [
   '/',
   '/haushaltsaufloesung',
@@ -38,40 +39,23 @@ const routes = [
 
 const template = readFileSync(join(distPath, 'index.html'), 'utf-8');
 
-async function prerenderRoute(route) {
+// Generate static HTML files for all routes
+for (const route of routes) {
   try {
-    const { render } = await import('../dist-ssr/entry-server.js');
-    const appHtml = render(route);
-
-    const html = template.replace(
-      '<div id="root"></div>',
-      `<div id="root">${appHtml}</div>`
-    );
-
     if (route === '/') {
-      writeFileSync(join(distPath, 'index.html'), html, 'utf-8');
+      // Root route already has index.html
+      console.log(`✓ Root route (/) already exists`);
     } else {
       const routePath = join(distPath, route);
       if (!existsSync(routePath)) {
         mkdirSync(routePath, { recursive: true });
       }
-      writeFileSync(join(routePath, 'index.html'), html, 'utf-8');
+      writeFileSync(join(routePath, 'index.html'), template, 'utf-8');
+      console.log(`✓ Generated ${route}/index.html`);
     }
   } catch (error) {
-    console.warn(`Warning: Could not prerender ${route}, using template:`, error.message);
-
-    if (route !== '/') {
-      const routePath = join(distPath, route);
-      if (!existsSync(routePath)) {
-        mkdirSync(routePath, { recursive: true });
-      }
-      writeFileSync(join(routePath, 'index.html'), template, 'utf-8');
-    }
+    console.error(`✗ Error generating ${route}:`, error.message);
   }
 }
 
-for (const route of routes) {
-  await prerenderRoute(route);
-}
-
-console.log(`✓ Prerendered ${routes.length} routes`);
+console.log(`\n✓ SSG generation complete: ${routes.length} routes`);
