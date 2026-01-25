@@ -1,10 +1,6 @@
-import { renderToString } from 'react-dom/server';
-import { MemoryRouter } from 'react-router-dom';
-import AppRoutes from './AppRoutes';
-
-export function render(url: string) {
+export function render() {
   const html = renderToString(
-    <MemoryRouter initialEntries={[url]}>
+    <MemoryRouter initialEntries={['/']}>
       <AppRoutes />
     </MemoryRouter>
   );
