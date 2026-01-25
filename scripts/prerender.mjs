@@ -41,7 +41,7 @@ const template = readFileSync(join(distPath, 'index.html'), 'utf-8');
 async function prerenderRoute(route) {
   try {
     const { render } = await import('../dist-ssr/entry-server.js');
-    const appHtml = render(route);
+    const appHtml = render(route); // Pass route to render function
 
     const html = template.replace(
       '<div id="root"></div>',
