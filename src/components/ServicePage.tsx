@@ -36,7 +36,9 @@ export default function ServicePage() {
     window.scrollTo(0, 0);
   }, [actualSlug]);
 
-  if (!service) {
+  const isServer = typeof window === "undefined";
+
+  if (!service && !isServer) {
     return (
       <div className="min-h-screen flex items-center justify-center pt-32 pb-16 px-4">
         <div className="text-center">
@@ -52,6 +54,10 @@ export default function ServicePage() {
         </div>
       </div>
     );
+  }
+
+  if (!service) {
+    return null;
   }
 
   const Icon = service.icon;

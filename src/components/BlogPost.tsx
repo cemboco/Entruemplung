@@ -159,7 +159,9 @@ export default function BlogPost({ slug }: BlogPostProps) {
     );
   }
 
-  if (!post) {
+  const isServer = typeof window === "undefined";
+
+  if (!post && !isServer) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center max-w-md mx-auto px-4">
@@ -178,6 +180,10 @@ export default function BlogPost({ slug }: BlogPostProps) {
         </div>
       </div>
     );
+  }
+
+  if (!post) {
+    return null;
   }
 
   const structuredData = {
