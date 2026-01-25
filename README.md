@@ -15,7 +15,12 @@ npm run dev
 npm run build
 ```
 
-The build command creates a `dist` folder containing the production-ready files.
+The build command performs the following steps:
+1. Builds the SSR (Server-Side Rendering) version
+2. Builds the client-side application
+3. Prerenders pages for better SEO
+
+This process creates a `dist` folder containing the production-ready files.
 
 **Note**: The `dist` folder is not tracked in version control (excluded via `.gitignore`). It is generated during the build process and used for deployment.
 
