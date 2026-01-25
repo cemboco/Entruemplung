@@ -10,10 +10,11 @@ interface BlogPostProps {
 
 export default function BlogPost({ slug }: BlogPostProps) {
   const navigate = useNavigate();
-  // Initialize with fallback data for SSR
+  // Initialize with fallback data for SSR - allows prerendering of blog posts
   const fallbackPost = fallbackPosts.find(p => p.slug === slug);
   const [post, setPost] = useState<BlogPostType | null>(fallbackPost || null);
-  const [loading, setLoading] = useState(!fallbackPost); // Only show loading if no fallback
+  // Only show loading if no fallback data available (will load from Supabase on client)
+  const [loading, setLoading] = useState(fallbackPost ? false : true);
   const [readingProgress, setReadingProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const articleRef = useRef<HTMLElement>(null);
