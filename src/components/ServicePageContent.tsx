@@ -1,72 +1,26 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
-import { getServiceBySlug, services } from '../data/services';
+import { Service } from '../data/services';
 import { ArrowLeft, Check, Phone } from 'lucide-react';
-import { useEffect } from 'react';
 import { trackPhoneClick } from '../utils/analytics';
 
-// Normalize German umlauts to their ASCII equivalents
-function normalizeUmlauts(str: string): string {
-  return str
-    .replace(/ä/g, 'ae')
-    .replace(/ö/g, 'oe')
-    .replace(/ü/g, 'ue')
-    .replace(/Ä/g, 'Ae')
-    .replace(/Ö/g, 'Oe')
-    .replace(/Ü/g, 'Ue')
-    .replace(/ß/g, 'ss');
+interface ServicePageContentProps {
+  service: Service;
+  allServices: Service[];
 }
 
-export default function ServicePage() {
-  const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
-
-  const rawSlug = slug || '';
-  const actualSlug = normalizeUmlauts(rawSlug);
-  const service = actualSlug ? getServiceBySlug(actualSlug) : undefined;
-
-  // Redirect to normalized URL if umlauts are present
-  useEffect(() => {
-    if (rawSlug !== actualSlug && service) {
-      navigate(`/${actualSlug}`, { replace: true });
-    }
-  }, [rawSlug, actualSlug, navigate, service]);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [actualSlug]);
-
-  // If service doesn't exist, show NotFound
-  if (!service) {
-    return (
-      <div className="min-h-screen flex items-center justify-center pt-32 pb-16 px-4">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-midnight mb-4">Service nicht gefunden</h1>
-          <p className="text-gray-600 mb-8">Die angeforderte Leistung existiert nicht.</p>
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-midnight hover:text-midnight/80 transition-colors"
-          >
-            <ArrowLeft size={20} />
-            Zurück zur Startseite
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
+export default function ServicePageContent({ service, allServices }: ServicePageContentProps) {
   const Icon = service.icon;
 
   return (
     <div className="min-h-screen bg-white">
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <button
-            onClick={() => navigate('/')}
+          <a
+            href="/"
             className="inline-flex items-center gap-2 text-gray-600 hover:text-midnight transition-colors mb-8"
           >
             <ArrowLeft size={20} />
             Zurück zur Übersicht
-          </button>
+          </a>
 
           <div className="flex items-start gap-6 mb-8">
             <div className="w-16 h-16 bg-midnight/5 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -192,12 +146,12 @@ export default function ServicePage() {
                 <Phone size={20} />
                 01573 2649483
               </a>
-              <Link
-                to="/#kontakt"
+              <a
+                href="/#kontakt"
                 className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300 border border-white/20"
               >
                 Online anfragen
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -207,13 +161,13 @@ export default function ServicePage() {
             <h3 className="text-2xl font-bold text-midnight mb-6">Weitere Leistungen für Sie</h3>
             <div className="grid md:grid-cols-3 gap-6">
               {service.relatedServices.map((relatedSlug) => {
-                const relatedService = services.find(s => s.slug === relatedSlug);
+                const relatedService = allServices.find(s => s.slug === relatedSlug);
                 if (!relatedService) return null;
                 const ServiceIcon = relatedService.icon;
                 return (
-                  <Link
+                  <a
                     key={relatedSlug}
-                    to={`/${relatedSlug}`}
+                    href={`/${relatedSlug}`}
                     className="block p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                   >
                     <div className="flex items-center gap-3 mb-3">
@@ -226,7 +180,7 @@ export default function ServicePage() {
                     <div className="mt-4 text-sm font-medium text-midnight flex items-center gap-1">
                       Mehr erfahren <ArrowLeft size={16} className="rotate-180" />
                     </div>
-                  </Link>
+                  </a>
                 );
               })}
             </div>
