@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate, useLocation } from 'react-router-dom';
 import { getServiceBySlug, services } from '../data/services';
 import { ArrowLeft, Check, Phone } from 'lucide-react';
 import { useEffect } from 'react';
@@ -19,8 +19,9 @@ function normalizeUmlauts(str: string): string {
 export default function ServicePage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const rawSlug = slug || '';
+  const rawSlug = slug || location.pathname.replace('/', '');
   const actualSlug = normalizeUmlauts(rawSlug);
   const service = actualSlug ? getServiceBySlug(actualSlug) : undefined;
 
@@ -35,8 +36,26 @@ export default function ServicePage() {
     window.scrollTo(0, 0);
   }, [actualSlug]);
 
-  // If service doesn't exist, show NotFound
-  if (!service) {
+  const isServer = typeof window === "undefined";
+
+  // During SSR, never render NotFound - render neutral shell instead
+  // Let client-side router handle 404 detection after hydration
+  if (!service && isServer) {
+    // Return minimal loading shell for SSR
+    return (
+      <div className="min-h-screen bg-white pt-32 pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="animate-pulse">
+            <div className="h-8 bg-gray-200 rounded w-3/4 mb-4"></div>
+            <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Client-side: show NotFound if service doesn't exist
+  if (!service && !isServer) {
     return (
       <div className="min-h-screen flex items-center justify-center pt-32 pb-16 px-4">
         <div className="text-center">
@@ -52,6 +71,10 @@ export default function ServicePage() {
         </div>
       </div>
     );
+  }
+
+  if (!service) {
+    return null;
   }
 
   const Icon = service.icon;

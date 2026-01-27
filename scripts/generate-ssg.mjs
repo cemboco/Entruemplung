@@ -5,20 +5,18 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const distPath = join(__dirname, '..', 'dist');
 
-// Import services data to generate routes dynamically
-const servicesModule = await import('../src/data/services.ts');
-const services = servicesModule.services;
-
-// Get all service slugs dynamically from the services data
-const serviceSlugs = services.map(s => s.slug);
-
-console.log('📦 Services found:', serviceSlugs.length);
-console.log('📋 Service slugs:', serviceSlugs.join(', '));
-
 // Define all routes to pre-generate as static HTML
 const routes = [
   '/',
-  ...serviceSlugs.map(slug => `/${slug}`), // Dynamically add service routes
+  '/haushaltsaufloesung',
+  '/entruempelung',
+  '/messie-wohnungen',
+  '/keller-dachboden',
+  '/sperrmuell-entsorgung',
+  '/gewerbe-entruempelung',
+  '/immobilienraeumung',
+  '/moebel-entsorgung',
+  '/wertanrechnung',
   '/blog',
   '/blog/entruempelung-stuttgart-leitfaden-2026',
   '/blog/haushaltsaufloesung-stuttgart-beachten',
@@ -61,7 +59,3 @@ for (const route of routes) {
 }
 
 console.log(`\n✓ SSG generation complete: ${routes.length} routes`);
-console.log('\n📊 Summary:');
-console.log(`   - ${serviceSlugs.length} service pages`);
-console.log(`   - ${routes.length - serviceSlugs.length} other pages`);
-console.log(`   - Total: ${routes.length} static pages generated`);
