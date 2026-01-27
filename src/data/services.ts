@@ -1039,3 +1039,6 @@ export const services: Service[] = [
 export const getServiceBySlug = (slug: string): Service | undefined => {
   return services.find(service => service.slug === slug);
 };
+
+// Fallback service for SSR/SSG support (specifically for haushaltsaufloesung)
+export const fallbackHaushaltsaufloesung = services.find(s => s.slug === 'haushaltsaufloesung');

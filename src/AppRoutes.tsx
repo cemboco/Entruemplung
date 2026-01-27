@@ -22,6 +22,7 @@ import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import ThankYou from './components/ThankYou';
 import ServicePage from './components/ServicePage';
+import HaushaltsauflösungPage from './components/HaushaltsauflösungPage';
 
 const BlogPostWrapper = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -67,7 +68,7 @@ export default function AppRoutes() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/haushaltsaufloesung" element={<ServicePage />} />
+        <Route path="/haushaltsaufloesung" element={<HaushaltsauflösungPage />} />
         <Route path="/entruempelung" element={<ServicePage />} />
         <Route path="/messie-wohnungen" element={<ServicePage />} />
         <Route path="/keller-dachboden" element={<ServicePage />} />
