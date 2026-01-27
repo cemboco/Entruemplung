@@ -8,16 +8,25 @@ export default function Hero() {
     setIsVisible(true);
 
     // Load werkenntdenBESTEN.de widget script
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://www.wkdb-siegel.de/v1/widget-*U1KYzBZGieGz5GptkUDuCJIV4R6NOe5sMjZX168rmGZaUdiFz-qpDfTnARRuzbdCR2RdntLcw3mLjaoyOoxa2xc2n5QOPEpvVMyHR4urVFPem2XgdpRbGLTEw8cyuERJBmy9f5YJ2gwnP7xrmTdLG4YxDD71XNwNh6POtkZHQIM.js';
-    script.async = true;
-    document.body.appendChild(script);
+    const widgetScriptId = 'wkdb-widget-script';
+    
+    // Check if script already exists
+    if (!document.getElementById(widgetScriptId)) {
+      const script = document.createElement('script');
+      script.id = widgetScriptId;
+      script.type = 'text/javascript';
+      script.src = 'https://www.wkdb-siegel.de/v1/widget-*U1KYzBZGieGz5GptkUDuCJIV4R6NOe5sMjZX168rmGZaUdiFz-qpDfTnARRuzbdCR2RdntLcw3mLjaoyOoxa2xc2n5QOPEpvVMyHR4urVFPem2XgdpRbGLTEw8cyuERJBmy9f5YJ2gwnP7xrmTdLG4YxDD71XNwNh6POtkZHQIM.js';
+      script.async = true;
+      document.body.appendChild(script);
 
-    return () => {
-      // Cleanup script on unmount
-      document.body.removeChild(script);
-    };
+      return () => {
+        // Cleanup script on unmount - use remove() to safely remove
+        const scriptElement = document.getElementById(widgetScriptId);
+        if (scriptElement) {
+          scriptElement.remove();
+        }
+      };
+    }
   }, []);
 
   return (
