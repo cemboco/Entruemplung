@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Mail, MessageSquare } from 'lucide-react';
+import { ArrowRight, Phone, Mail } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Hero() {
@@ -6,6 +6,18 @@ export default function Hero() {
 
   useEffect(() => {
     setIsVisible(true);
+
+    // Load werkenntdenBESTEN.de widget script
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://www.wkdb-siegel.de/v1/widget-*U1KYzBZGieGz5GptkUDuCJIV4R6NOe5sMjZX168rmGZaUdiFz-qpDfTnARRuzbdCR2RdntLcw3mLjaoyOoxa2xc2n5QOPEpvVMyHR4urVFPem2XgdpRbGLTEw8cyuERJBmy9f5YJ2gwnP7xrmTdLG4YxDD71XNwNh6POtkZHQIM.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -82,6 +94,11 @@ export default function Hero() {
           </div>
 
         </div>
+      </div>
+
+      {/* werkenntdenBESTEN.de Widget - Bottom Right */}
+      <div className="absolute bottom-8 right-8 z-20">
+        <div id="wkdb-widget"></div>
       </div>
 
     </section>
