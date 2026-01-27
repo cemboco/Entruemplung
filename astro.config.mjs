@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
-  trailingSlash: 'never',
+  trailingSlash: 'ignore',
   vite: {
     ssr: {
       noExternal: ['lucide-react'],

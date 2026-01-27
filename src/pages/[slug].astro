@@ -19,10 +19,10 @@ const { service } = Astro.props;
 ---
 
 <BaseLayout title={service.title} description={service.shortDescription}>
-  <StructuredData client:load />
-  <HeaderStatic client:load />
+  <StructuredData client:only="react" />
+  <HeaderStatic client:idle />
   <ServicePageContent service={service} allServices={services} client:load />
-  <FooterStatic client:load />
-  <WhatsAppButton client:load />
-  <QuickQuoteTab client:load />
+  <FooterStatic client:idle />
+  <WhatsAppButton client:idle />
+  <QuickQuoteTab client:idle />
 </BaseLayout>
