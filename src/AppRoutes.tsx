@@ -28,6 +28,7 @@ import EntruempelungPage from './components/EntruempelungPage';
 import MessieWohnungPage from './components/MessieWohnungPage';
 import KellerDachbodenPage from './components/KellerDachbodenPage';
 import SperrmuellEntsorgungPage from './components/SperrmuellEntsorgungPage';
+import PageMeta from './components/PageMeta';
 import { 
   fallbackImmobilienraeumung, 
   fallbackMoebelEntsorgung, 
@@ -63,6 +64,12 @@ const WertanrechnungPage = () => {
 
 const HomePage = () => (
   <>
+    <PageMeta
+      title="Entrümpelung Stuttgart | Schnell & diskret"
+      description="Professionelle Entrümpelung in Stuttgart und Umgebung. Faire Festpreise, diskret und zuverlässig. Serviceplus - Jetzt kostenlos beraten lassen."
+      canonical="https://serviceplus-entruempelung.de"
+      keywords="Entrümpelung Stuttgart, Haushaltsauflösung Stuttgart, Messie Entrümpelung, Sperrmüll abholen Stuttgart, Wohnungsauflösung Stuttgart günstig"
+    />
     <Hero />
     <ChecklistDownload />
     <LocationTicker />
