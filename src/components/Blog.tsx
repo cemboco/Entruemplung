@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react';
 import { supabase, isSupabaseConfigured, BlogPost } from '../lib/supabase';
 import { fallbackPosts } from '../data/blogPosts';
+import PageMeta from './PageMeta';
 
 export default function Blog() {
   const [posts, setPosts] = useState<BlogPost[]>(fallbackPosts);
@@ -85,6 +86,11 @@ export default function Blog() {
 
   return (
     <section id="blog" className="pt-32 pb-20 bg-gray-50 min-h-screen">
+      <PageMeta
+        title="Blog - Ratgeber & Tipps zur Entrümpelung"
+        description="Nützliche Tipps und Ratgeber rund um Entrümpelung, Haushaltsauflösung und Wohnungsräumung in Stuttgart. Praktische Hinweise von Experten."
+        canonical="https://serviceplus-entruempelung.de/blog"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-ocean text-sm font-semibold tracking-wider uppercase mb-2">
