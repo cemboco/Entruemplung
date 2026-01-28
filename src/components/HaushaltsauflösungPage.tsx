@@ -69,9 +69,9 @@ export default function HaushaltsauflösungPage() {
   return (
     <div className="min-h-screen bg-white">
       <PageMeta
-        title={service.title}
-        description={service.shortDescription}
-        canonical={`https://serviceplus-entruempelung.de/${service.slug}`}
+        title="Haushaltsauflösung Stuttgart | Serviceplus Entrümpelung"
+        description="Professionelle Haushaltsauflösung in Stuttgart bei Umzug, Erbfall oder Pflegeheim. Wertanrechnung, diskrete Abwicklung & fachgerechte Entsorgung inklusive."
+        canonical="https://serviceplus-entruempelung.de/haushaltsaufloesung"
       />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -28,6 +28,9 @@ import EntruempelungPage from './components/EntruempelungPage';
 import MessieWohnungPage from './components/MessieWohnungPage';
 import KellerDachbodenPage from './components/KellerDachbodenPage';
 import SperrmuellEntsorgungPage from './components/SperrmuellEntsorgungPage';
+import ImmobilienraeumungPage from './components/ImmobilienraeumungPage';
+import MoebelEntsorgungPage from './components/MoebelEntsorgungPage';
+import WertanrechnungPage from './components/WertanrechnungPage';
 import PageMeta from './components/PageMeta';
 import { 
   fallbackImmobilienraeumung, 
@@ -38,28 +41,6 @@ import {
 const BlogPostWrapper = () => {
   const { slug } = useParams<{ slug: string }>();
   return <BlogPost slug={slug || ''} />;
-};
-
-// SSR-enabled service page wrappers with fallback data
-const ImmobilienraeumungPage = () => {
-  if (!fallbackImmobilienraeumung) {
-    return <ServicePage />;
-  }
-  return <ServicePageWithSSR service={fallbackImmobilienraeumung} />;
-};
-
-const MoebelEntsorgungPage = () => {
-  if (!fallbackMoebelEntsorgung) {
-    return <ServicePage />;
-  }
-  return <ServicePageWithSSR service={fallbackMoebelEntsorgung} />;
-};
-
-const WertanrechnungPage = () => {
-  if (!fallbackWertanrechnung) {
-    return <ServicePage />;
-  }
-  return <ServicePageWithSSR service={fallbackWertanrechnung} />;
 };
 
 const HomePage = () => (
