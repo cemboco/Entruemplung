@@ -1,9 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Service } from '../data/services';
+import { Service, services } from '../data/services';
 import { ArrowLeft, Check, Phone } from 'lucide-react';
 import { useEffect } from 'react';
 import { trackPhoneClick } from '../utils/analytics';
-import { services } from '../data/services';
 
 interface ServicePageWithSSRProps {
   service: Service;
