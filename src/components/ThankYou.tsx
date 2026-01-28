@@ -2,6 +2,7 @@ import { CheckCircle, Phone, Mail, ArrowLeft } from 'lucide-react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { trackConversion } from '../utils/analytics';
+import PageMeta from './PageMeta';
 
 export default function ThankYou() {
   useEffect(() => {
@@ -10,6 +11,11 @@ export default function ThankYou() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 py-20">
+      <PageMeta
+        title="Vielen Dank für Ihre Anfrage | ServicePlus Stuttgart"
+        description="Ihre Anfrage wurde erfolgreich übermittelt. Wir melden uns innerhalb von 24 Stunden bei Ihnen zurück."
+        canonical="https://serviceplus-entruempelung.de/danke"
+      />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6">

@@ -3,6 +3,7 @@ import { fallbackMessieWohnungen, services, Service } from '../data/services';
 import { ArrowLeft, Check, Phone } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { trackPhoneClick } from '../utils/analytics';
+import PageMeta from './PageMeta';
 
 // Normalize German umlauts to their ASCII equivalents
 function normalizeUmlauts(str: string): string {
@@ -67,6 +68,12 @@ export default function MessieWohnungPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <PageMeta
+        title="Messie-Wohnung Stuttgart | Serviceplus Entrümpelung"
+        description="Diskrete Messie-Räumung in Stuttgart. Einfühlsame Entrümpelung stark vermüllter Wohnungen. Inklusive Desinfektion, Geruchsbeseitigung & Sonderentsorgung. Respektvoll & professionell."
+        canonical="https://serviceplus-entruempelung.de/messie-wohnungen"
+        keywords="Messie Wohnung Stuttgart, Messie Räumung, vermüllte Wohnung entrümpeln Stuttgart, Messie Hilfe Stuttgart, diskrete Entrümpelung"
+      />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <button

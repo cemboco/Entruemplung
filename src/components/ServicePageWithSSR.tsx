@@ -3,6 +3,7 @@ import { Service, services } from '../data/services';
 import { ArrowLeft, Check, Phone } from 'lucide-react';
 import { useEffect } from 'react';
 import { trackPhoneClick } from '../utils/analytics';
+import PageMeta from './PageMeta';
 
 interface ServicePageWithSSRProps {
   service: Service;
@@ -30,8 +31,18 @@ export default function ServicePageWithSSR({ service }: ServicePageWithSSRProps)
 
   const Icon = service.icon;
 
+  // Generate SEO-optimized title based on service
+  const seoTitle = service.title.includes('Stuttgart') 
+    ? `${service.title} | Serviceplus Entrümpelung`
+    : `${service.title} Stuttgart | Serviceplus Entrümpelung`;
+
   return (
     <div className="min-h-screen bg-white">
+      <PageMeta
+        title={seoTitle}
+        description={service.shortDescription}
+        canonical={`https://serviceplus-entruempelung.de/${service.slug}`}
+      />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
