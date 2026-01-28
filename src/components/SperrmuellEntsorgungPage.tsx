@@ -15,5 +15,13 @@ export default function SperrmuellEntsorgungPage() {
     throw new Error('sperrmuell-entsorgung service not found - required for SSR');
   }
 
-  return <ServicePageWithSSR service={fallbackSperrmuellEntsorgung} />;
+  return (
+    <ServicePageWithSSR 
+      service={fallbackSperrmuellEntsorgung}
+      customMeta={{
+        title: "Sperrmüll Entsorgung Stuttgart | Serviceplus Entrümpelung",
+        description: "Professionelle Sperrmüll-Entsorgung in Stuttgart. Schnelle Abholung von Möbeln und Großgeräten. Umweltgerechte Entsorgung und flexible Terminvereinbarung."
+      }}
+    />
+  );
 }

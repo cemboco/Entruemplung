@@ -7,6 +7,10 @@ import PageMeta from './PageMeta';
 
 interface ServicePageWithSSRProps {
   service: Service;
+  customMeta?: {
+    title?: string;
+    description?: string;
+  };
 }
 
 /**
@@ -22,7 +26,7 @@ interface ServicePageWithSSRProps {
  * - No client/server divergence
  * - No slug lookup needed
  */
-export default function ServicePageWithSSR({ service }: ServicePageWithSSRProps) {
+export default function ServicePageWithSSR({ service, customMeta }: ServicePageWithSSRProps) {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,15 +36,17 @@ export default function ServicePageWithSSR({ service }: ServicePageWithSSRProps)
   const Icon = service.icon;
 
   // Generate SEO-optimized title based on service
-  const seoTitle = service.title.includes('Stuttgart') 
+  const seoTitle = customMeta?.title || (service.title.includes('Stuttgart') 
     ? `${service.title} | ServicePlus Entrümpelung`
-    : `${service.title} Stuttgart | ServicePlus Entrümpelung`;
+    : `${service.title} Stuttgart | ServicePlus Entrümpelung`);
+  
+  const seoDescription = customMeta?.description || service.shortDescription;
 
   return (
     <div className="min-h-screen bg-white">
       <PageMeta
         title={seoTitle}
-        description={service.shortDescription}
+        description={seoDescription}
         canonical={`https://serviceplus-entruempelung.de/${service.slug}`}
       />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">

@@ -15,5 +15,13 @@ export default function KellerDachbodenPage() {
     throw new Error('keller-dachboden service not found - required for SSR');
   }
 
-  return <ServicePageWithSSR service={fallbackKellerDachboden} />;
+  return (
+    <ServicePageWithSSR 
+      service={fallbackKellerDachboden}
+      customMeta={{
+        title: "Keller & Dachboden Entrümpelung Stuttgart | Serviceplus Entrümpelung",
+        description: "Professionelle Keller- & Dachbodenräumung in Stuttgart. Schnelle Entrümpelung, fachgerechte Entsorgung und Wertanrechnung. Kostenlose Besichtigung vor Ort."
+      }}
+    />
+  );
 }
