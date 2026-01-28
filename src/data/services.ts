@@ -1040,11 +1040,19 @@ export const getServiceBySlug = (slug: string): Service | undefined => {
   return services.find(service => service.slug === slug);
 };
 
-// Fallback service for SSR/SSG support (specifically for haushaltsaufloesung)
+// Fallback services for SSR/SSG support
 // This follows the BlogPost pattern where fallback data enables SSR/SSG rendering
 export const fallbackHaushaltsaufloesung = services.find(s => s.slug === 'haushaltsaufloesung');
+export const fallbackEntruempelung = services.find(s => s.slug === 'entruempelung');
+export const fallbackMessieWohnungen = services.find(s => s.slug === 'messie-wohnungen');
 
-// Build-time assertion to ensure the service exists
+// Build-time assertions to ensure services exist
 if (!fallbackHaushaltsaufloesung) {
   throw new Error('haushaltsaufloesung service not found in services array - required for SSR/SSG');
+}
+if (!fallbackEntruempelung) {
+  throw new Error('entruempelung service not found in services array - required for SSR/SSG');
+}
+if (!fallbackMessieWohnungen) {
+  throw new Error('messie-wohnungen service not found in services array - required for SSR/SSG');
 }
