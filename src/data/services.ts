@@ -1045,6 +1045,8 @@ export const getServiceBySlug = (slug: string): Service | undefined => {
 export const fallbackHaushaltsaufloesung = services.find(s => s.slug === 'haushaltsaufloesung');
 export const fallbackEntruempelung = services.find(s => s.slug === 'entruempelung');
 export const fallbackMessieWohnungen = services.find(s => s.slug === 'messie-wohnungen');
+export const fallbackKellerDachboden = services.find(s => s.slug === 'keller-dachboden');
+export const fallbackSperrmuellEntsorgung = services.find(s => s.slug === 'sperrmuell-entsorgung');
 
 // Build-time assertions to ensure services exist
 if (!fallbackHaushaltsaufloesung) {
@@ -1055,4 +1057,10 @@ if (!fallbackEntruempelung) {
 }
 if (!fallbackMessieWohnungen) {
   throw new Error('messie-wohnungen service not found in services array - required for SSR/SSG');
+}
+if (!fallbackKellerDachboden) {
+  throw new Error('keller-dachboden service not found in services array - required for SSR/SSG');
+}
+if (!fallbackSperrmuellEntsorgung) {
+  throw new Error('sperrmuell-entsorgung service not found in services array - required for SSR/SSG');
 }
