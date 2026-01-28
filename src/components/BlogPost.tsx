@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Calendar, Clock, ArrowLeft, Tag, Share2, Phone, ChevronUp } from 'lucide-react';
 import { supabase, isSupabaseConfigured, BlogPost as BlogPostType } from '../lib/supabase';
 import { fallbackPosts } from '../data/blogPosts';
+import PageMeta from './PageMeta';
 
 interface BlogPostProps {
   slug: string;
@@ -49,9 +50,6 @@ export default function BlogPost({ slug }: BlogPostProps) {
     if (!isSupabaseConfigured || !supabase) {
       const fallbackPost = fallbackPosts.find(p => p.slug === slug);
       setPost(fallbackPost || null);
-      if (fallbackPost) {
-        document.title = `${fallbackPost.title} | ServicePlus Stuttgart`;
-      }
       setLoading(false);
       return;
     }
@@ -78,28 +76,13 @@ export default function BlogPost({ slug }: BlogPostProps) {
             .eq('id', data.id);
         } catch (viewError) {
         }
-
-        if (data.meta_description) {
-          const metaDescription = document.querySelector('meta[name="description"]');
-          if (metaDescription) {
-            metaDescription.setAttribute('content', data.meta_description);
-          }
-        }
-
-        document.title = `${data.title} | ServicePlus Stuttgart`;
       } else {
         const fallbackPost = fallbackPosts.find(p => p.slug === slug);
         setPost(fallbackPost || null);
-        if (fallbackPost) {
-          document.title = `${fallbackPost.title} | ServicePlus Stuttgart`;
-        }
       }
     } catch (error) {
       const fallbackPost = fallbackPosts.find(p => p.slug === slug);
       setPost(fallbackPost || null);
-      if (fallbackPost) {
-        document.title = `${fallbackPost.title} | ServicePlus Stuttgart`;
-      }
     } finally {
       setLoading(false);
     }
@@ -228,12 +211,20 @@ export default function BlogPost({ slug }: BlogPostProps) {
     dateModified: post.updated_at,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': window.location.href
+      '@id': typeof window !== 'undefined' ? window.location.href : `https://serviceplus-entruempelung.de/blog/${post.slug}`
     }
   };
 
   return (
     <>
+      <PageMeta
+        title={post.title}
+        description={post.excerpt || post.meta_description || ''}
+        canonical={`https://serviceplus-entruempelung.de/blog/${post.slug}`}
+        ogType="article"
+        ogImage={post.featured_image}
+        jsonLd={structuredData}
+      />
       <div
         className="fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50"
         style={{ marginTop: '72px' }}
@@ -245,9 +236,6 @@ export default function BlogPost({ slug }: BlogPostProps) {
       </div>
 
       <article ref={articleRef} className="min-h-screen bg-gray-50 pt-28 pb-16">
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
