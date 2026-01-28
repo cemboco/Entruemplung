@@ -1048,6 +1048,11 @@ export const fallbackMessieWohnungen = services.find(s => s.slug === 'messie-woh
 export const fallbackKellerDachboden = services.find(s => s.slug === 'keller-dachboden');
 export const fallbackSperrmuellEntsorgung = services.find(s => s.slug === 'sperrmuell-entsorgung');
 
+// Fallback services for new SSR-enabled pages
+export const fallbackImmobilienraeumung = services.find(s => s.slug === 'immobilienraeumung');
+export const fallbackMoebelEntsorgung = services.find(s => s.slug === 'moebel-entsorgung');
+export const fallbackWertanrechnung = services.find(s => s.slug === 'wertanrechnung');
+
 // Build-time assertions to ensure services exist
 if (!fallbackHaushaltsaufloesung) {
   throw new Error('haushaltsaufloesung service not found in services array - required for SSR/SSG');

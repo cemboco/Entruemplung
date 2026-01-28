@@ -22,15 +22,43 @@ import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import ThankYou from './components/ThankYou';
 import ServicePage from './components/ServicePage';
+import ServicePageWithSSR from './components/ServicePageWithSSR';
 import HaushaltsauflösungPage from './components/HaushaltsauflösungPage';
 import EntruempelungPage from './components/EntruempelungPage';
 import MessieWohnungPage from './components/MessieWohnungPage';
 import KellerDachbodenPage from './components/KellerDachbodenPage';
 import SperrmuellEntsorgungPage from './components/SperrmuellEntsorgungPage';
+import { 
+  fallbackImmobilienraeumung, 
+  fallbackMoebelEntsorgung, 
+  fallbackWertanrechnung 
+} from './data/services';
 
 const BlogPostWrapper = () => {
   const { slug } = useParams<{ slug: string }>();
   return <BlogPost slug={slug || ''} />;
+};
+
+// SSR-enabled service page wrappers with fallback data
+const ImmobilienraeumungPage = () => {
+  if (!fallbackImmobilienraeumung) {
+    return <ServicePage />;
+  }
+  return <ServicePageWithSSR service={fallbackImmobilienraeumung} />;
+};
+
+const MoebelEntsorgungPage = () => {
+  if (!fallbackMoebelEntsorgung) {
+    return <ServicePage />;
+  }
+  return <ServicePageWithSSR service={fallbackMoebelEntsorgung} />;
+};
+
+const WertanrechnungPage = () => {
+  if (!fallbackWertanrechnung) {
+    return <ServicePage />;
+  }
+  return <ServicePageWithSSR service={fallbackWertanrechnung} />;
 };
 
 const HomePage = () => (
@@ -78,9 +106,9 @@ export default function AppRoutes() {
         <Route path="/keller-dachboden" element={<KellerDachbodenPage />} />
         <Route path="/sperrmuell-entsorgung" element={<SperrmuellEntsorgungPage />} />
         <Route path="/gewerbe-entruempelung" element={<ServicePage />} />
-        <Route path="/immobilienraeumung" element={<ServicePage />} />
-        <Route path="/moebel-entsorgung" element={<ServicePage />} />
-        <Route path="/wertanrechnung" element={<ServicePage />} />
+        <Route path="/immobilienraeumung" element={<ImmobilienraeumungPage />} />
+        <Route path="/moebel-entsorgung" element={<MoebelEntsorgungPage />} />
+        <Route path="/wertanrechnung" element={<WertanrechnungPage />} />
         <Route path="/blog" element={<BlogListPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/impressum" element={<ImpressumPage />} />
