@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider, FilledContext } from 'react-helmet-async';
 import AppRoutes from './AppRoutes';
 
 export function render(url: string) {
-  const helmetContext = {} as any;
+  const helmetContext = {} as FilledContext;
   
   const html = renderToString(
     <StrictMode>

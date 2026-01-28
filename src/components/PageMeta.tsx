@@ -14,7 +14,7 @@ export default function PageMeta({
   title,
   description,
   canonical,
-  ogImage = 'https://serviceplus-entruempelung.de/ChatGPT Image 5. Nov. 2025, 21_16_33 copy.png',
+  ogImage = 'https://serviceplus-entruempelung.de/Serviceplus-entruempelung-stuttgart.jpg',
   ogType = 'website',
   keywords,
   jsonLd

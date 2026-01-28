@@ -34,6 +34,9 @@ const routes = [
 
 console.log(`\nPrerendering ${routes.length} routes...\n`);
 
+const failedRoutes = [];
+const criticalRoutes = ['/', '/blog', '/haushaltsaufloesung'];
+
 for (const url of routes) {
   try {
     const { html, helmet } = render(url);
@@ -70,7 +73,21 @@ for (const url of routes) {
     console.log(`✓ Prerendered ${url}`);
   } catch (error) {
     console.error(`✗ Error prerendering ${url}:`, error.message);
+    failedRoutes.push({ url, error: error.message });
+    
+    // Fail build if critical route fails
+    if (criticalRoutes.includes(url)) {
+      console.error(`\n❌ Critical route ${url} failed to prerender. Build cannot continue.\n`);
+      process.exit(1);
+    }
   }
+}
+
+if (failedRoutes.length > 0) {
+  console.warn(`\n⚠️  Warning: ${failedRoutes.length} route(s) failed to prerender:`);
+  failedRoutes.forEach(({ url, error }) => {
+    console.warn(`   - ${url}: ${error}`);
+  });
 }
 
 console.log(`\n✓ Prerendering complete!\n`);
