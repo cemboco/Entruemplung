@@ -1,6 +1,7 @@
 import { ArrowLeft, MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import PageMeta from './PageMeta';
 
 export default function Impressum() {
   useEffect(() => {
@@ -30,6 +31,11 @@ export default function Impressum() {
 
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
+      <PageMeta
+        title="Impressum | ServicePlus Stuttgart"
+        description="Impressum und rechtliche Angaben der ServicePlus Entrümpelung GbR. Kontaktdaten, Geschäftsführung und gesetzlich vorgeschriebene Informationen."
+        canonical="https://serviceplus-entruempelung.de/impressum"
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           to="/"

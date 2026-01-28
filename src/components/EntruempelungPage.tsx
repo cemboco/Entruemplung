@@ -3,6 +3,7 @@ import { fallbackEntruempelung, services, Service } from '../data/services';
 import { ArrowLeft, Check, Phone } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { trackPhoneClick } from '../utils/analytics';
+import PageMeta from './PageMeta';
 
 // Normalize German umlauts to their ASCII equivalents
 function normalizeUmlauts(str: string): string {
@@ -67,6 +68,12 @@ export default function EntruempelungPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <PageMeta
+        title="Entrümpelung Stuttgart | ServicePlus Entrümpelung"
+        description="Professionelle Entrümpelung in Stuttgart vom Fachbetrieb. Wohnungen, Keller, Dachböden & Garagen. Festpreis, Wertanrechnung, fachgerechte Entsorgung inklusive."
+        canonical="https://serviceplus-entruempelung.de/entruempelung"
+        keywords="Entrümpelung Stuttgart, Wohnungsentrümpelung Stuttgart, Kellerentrümpelung, Dachbodenräumung Stuttgart, Räumungsfirma"
+      />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
