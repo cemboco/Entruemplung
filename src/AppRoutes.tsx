@@ -25,6 +25,8 @@ import ServicePage from './components/ServicePage';
 import HaushaltsauflösungPage from './components/HaushaltsauflösungPage';
 import EntruempelungPage from './components/EntruempelungPage';
 import MessieWohnungPage from './components/MessieWohnungPage';
+import KellerDachbodenPage from './components/KellerDachbodenPage';
+import SperrmuellEntsorgungPage from './components/SperrmuellEntsorgungPage';
 
 const BlogPostWrapper = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -73,8 +75,8 @@ export default function AppRoutes() {
         <Route path="/haushaltsaufloesung" element={<HaushaltsauflösungPage />} />
         <Route path="/entruempelung" element={<EntruempelungPage />} />
         <Route path="/messie-wohnungen" element={<MessieWohnungPage />} />
-        <Route path="/keller-dachboden" element={<ServicePage />} />
-        <Route path="/sperrmuell-entsorgung" element={<ServicePage />} />
+        <Route path="/keller-dachboden" element={<KellerDachbodenPage />} />
+        <Route path="/sperrmuell-entsorgung" element={<SperrmuellEntsorgungPage />} />
         <Route path="/gewerbe-entruempelung" element={<ServicePage />} />
         <Route path="/immobilienraeumung" element={<ServicePage />} />
         <Route path="/moebel-entsorgung" element={<ServicePage />} />
