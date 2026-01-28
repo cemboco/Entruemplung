@@ -7,7 +7,7 @@ export default function Datenschutz() {
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <PageMeta
         title="Datenschutzerklärung | ServicePlus Stuttgart"
-        description="Datenschutzerklärung der Serviceplus Entrümpelung. Informationen über Datenerfassung, -verarbeitung und Ihre Rechte gemäß DSGVO."
+        description="Datenschutzerklärung der ServicePlus Entrümpelung. Informationen über Datenerfassung, -verarbeitung und Ihre Rechte gemäß DSGVO."
         canonical="https://serviceplus-entruempelung.de/datenschutz"
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

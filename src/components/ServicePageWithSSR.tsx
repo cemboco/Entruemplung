@@ -33,8 +33,8 @@ export default function ServicePageWithSSR({ service }: ServicePageWithSSRProps)
 
   // Generate SEO-optimized title based on service
   const seoTitle = service.title.includes('Stuttgart') 
-    ? `${service.title} | Serviceplus Entrümpelung`
-    : `${service.title} Stuttgart | Serviceplus Entrümpelung`;
+    ? `${service.title} | ServicePlus Entrümpelung`
+    : `${service.title} Stuttgart | ServicePlus Entrümpelung`;
 
   return (
     <div className="min-h-screen bg-white">
