@@ -23,6 +23,8 @@ import Datenschutz from './components/Datenschutz';
 import ThankYou from './components/ThankYou';
 import ServicePage from './components/ServicePage';
 import HaushaltsauflösungPage from './components/HaushaltsauflösungPage';
+import EntruempelungPage from './components/EntruempelungPage';
+import MessieWohnungPage from './components/MessieWohnungPage';
 
 const BlogPostWrapper = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -69,8 +71,8 @@ export default function AppRoutes() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/haushaltsaufloesung" element={<HaushaltsauflösungPage />} />
-        <Route path="/entruempelung" element={<ServicePage />} />
-        <Route path="/messie-wohnungen" element={<ServicePage />} />
+        <Route path="/entruempelung" element={<EntruempelungPage />} />
+        <Route path="/messie-wohnungen" element={<MessieWohnungPage />} />
         <Route path="/keller-dachboden" element={<ServicePage />} />
         <Route path="/sperrmuell-entsorgung" element={<ServicePage />} />
         <Route path="/gewerbe-entruempelung" element={<ServicePage />} />
