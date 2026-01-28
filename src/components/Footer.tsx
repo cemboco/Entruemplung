@@ -17,24 +17,24 @@ export default function Footer() {
             <h4 className="text-xs font-medium uppercase tracking-wide mb-6">Leistungen</h4>
             <ul className="space-y-3 text-gray-400 text-sm font-light">
               <li>
-                <a href="#leistungen" className="hover:text-white transition-colors">
+                <Link to="/haushaltsaufloesung" className="hover:text-white transition-colors">
                   Haushaltsauflösungen
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#leistungen" className="hover:text-white transition-colors">
+                <Link to="/entruempelung" className="hover:text-white transition-colors">
                   Entrümpelungen
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#leistungen" className="hover:text-white transition-colors">
+                <Link to="/messie-wohnungen" className="hover:text-white transition-colors">
                   Messie-Wohnungen
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#leistungen" className="hover:text-white transition-colors">
+                <Link to="/gewerbe-entruempelung" className="hover:text-white transition-colors">
                   Gewerbe-Entrümpelung
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
