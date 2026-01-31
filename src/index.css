@@ -44,65 +44,89 @@
     animation: scroll 40s linear infinite;
   }
 
-  /* LeistungenAccordion custom styles */
-  .leistungen-accordion-item {
+  /* LeistungenAccordion - House Metaphor Design */
+  
+  /* The house container - representing the whole "house" */
+  .house-container {
+    /* Additional styling via Tailwind classes */
+  }
+  
+  /* Each room (accordion item) within the house */
+  .house-room {
     position: relative;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #e5e7eb;
+    padding: 2rem 0;
+    border-bottom: 1px solid #f3f4f6;
   }
 
-  .leistungen-accordion-item:first-child {
+  .house-room:first-child {
     padding-top: 0;
   }
 
-  .leistungen-accordion-item:last-child {
+  .house-room:last-child {
     border-bottom: none;
+    padding-bottom: 0;
   }
 
-  .leistungen-accordion-item summary {
+  /* The door (summary/title) - calm, not underlined, subtle icon */
+  .house-door {
     list-style: none;
     cursor: pointer;
-    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0;
     transition: color 0.2s ease;
-  }
-
-  .leistungen-accordion-item summary:hover {
-    color: #004080;
-  }
-
-  .leistungen-accordion-item summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .leistungen-accordion-item summary::marker {
-    display: none;
-  }
-
-  .leistungen-accordion-summary {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
   }
 
-  .leistungen-accordion-content {
+  .house-door:hover {
+    color: #004080;
+  }
+
+  .house-door::-webkit-details-marker,
+  .house-door::marker {
+    display: none;
+  }
+
+  /* Door title - calm typography, slightly elevated weight */
+  .house-door-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #003366;
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  /* Door icon (chevron) - subtle, rotates on open */
+  .house-door-icon {
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .house-room[open] .house-door-icon {
+    transform: rotate(180deg);
+  }
+
+  /* Room content - appears directly, no slide animation, optional subtle fade */
+  .house-room-content {
     font-size: 0.9375rem;
-    line-height: 1.7;
+    line-height: 1.75;
     color: #4b5563;
-    padding: 0 0 0.5rem 0;
+    padding: 0;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transform: translateY(10px);
-    transition: max-height 0.25s ease-out, opacity 0.25s ease-out, transform 0.25s ease-out;
   }
 
-  .leistungen-accordion-item[open] .leistungen-accordion-content {
-    /* max-height set to 2000px to accommodate the longest accordion content section */
-    max-height: 2000px;
+  .house-room[open] .house-room-content {
+    max-height: 3000px;
     opacity: 1;
-    transform: translateY(0);
-    padding-top: 1rem;
-    transition: max-height 0.3s ease-in, opacity 0.3s ease-in, transform 0.3s ease-in;
+    padding-top: 1.5rem;
+    transition: opacity 0.15s ease-in;
   }
 }

@@ -1,3 +1,4 @@
+import { ChevronDown } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 interface AccordionSection {
@@ -67,7 +68,7 @@ export default function LeistungenAccordion() {
             In manchen Fällen sind Wohnungen stark belastet. Das kann durch Trauer, lange Überforderung oder psychische Erkrankungen entstehen. Themen wie Chaos Wohnung Depression oder Ordnung bei Depression betreffen viele Menschen, auch wenn sie selten offen darüber sprechen.
           </p>
           <p className="mb-4">
-            Viele suchen Unterstützung, weil sie sich überfordert fühlen, nicht loslassen können oder weil die Wohnung zur zusätzlichen Belastung geworden ist. Auch das Messie-Syndrom ist häufiger, als viele denken.
+            Viele suchen Unterstützung, weil sie sich überfordert fühlen, nicht loslassen können oder weil die Wohnung zur zusätzlichen Belastung geworden ist. Auch das Messie-Syndrom ist häufiger, als viele denken. Die Suche nach Messie-Syndrom Hilfe Stuttgart zeigt, wie groß der Bedarf ist.
           </p>
           <p className="mb-4">
             Bei der{' '}
@@ -112,7 +113,7 @@ export default function LeistungenAccordion() {
             Auch eine Entrümpelung kurzfristig ist möglich, zum Beispiel bei Umzug, Neuvermietung oder Übergabe. Als erfahrene Entrümpelungsfirma Stuttgart reagieren wir flexibel und zuverlässig.
           </p>
           <p className="mb-4">
-            Für viele Menschen ist eine Entrümpelung ein Schritt in einen neuen Abschnitt. Ob nach Trennung, nach einem Todesfall oder aus dem Wunsch nach Veränderung.
+            Für viele Menschen ist eine Entrümpelung ein Schritt in einen neuen Abschnitt. Ob nach Trennung, nach einem Todesfall oder aus dem Wunsch nach Veränderung. Entrümpeln nach Trennung, Wohnung leer machen Neuanfang oder Entrümpelung loslassen lernen sind häufige Anliegen.
           </p>
           <p>
             Ordnung kann helfen, emotionale Blockaden zu lösen. Räume werden wieder nutzbar. Entscheidungen fallen leichter. Der Alltag fühlt sich ruhiger an.
@@ -131,10 +132,16 @@ export default function LeistungenAccordion() {
             Die Antwort hängt von mehreren Faktoren ab. Dazu zählen die Größe der Wohnung, die Menge der Gegenstände und die Zugänglichkeit der Räume.
           </p>
           <p className="mb-4">
-            Kleinere Wohnungen oder einzelne Räume lassen sich oft innerhalb eines Tages entrümpeln.
+            Kleinere Wohnungen oder einzelne Räume lassen sich oft innerhalb eines Tages entrümpeln. Auch das Keller ausräumen oder das Entfernen alter Möbel ist meist schnell erledigt. Größere Wohnungen, Häuser oder stark belastete Räume benötigen mehr Zeit und werden sorgfältig geplant.
+          </p>
+          <p className="mb-4">
+            Bei einer Wohnungsauflösung nach einem Todesfall oder einer Messie-Wohnung Entrümpelung ist ein ruhiges Vorgehen besonders wichtig. Hier nehmen wir uns die nötige Zeit, um strukturiert und respektvoll zu arbeiten. Trotzdem achten wir darauf, den Ablauf effizient zu gestalten.
+          </p>
+          <p className="mb-4">
+            Viele Kundinnen und Kunden wünschen sich eine Entrümpelung kurzfristig. Das ist in vielen Fällen möglich. Nach einer Besichtigung können wir meist genau sagen, wie lange die Entrümpelung dauert und wann der Termin umgesetzt werden kann.
           </p>
           <p>
-            Unser Ziel ist es, den Zeitaufwand realistisch einzuschätzen und Termine zuverlässig einzuhalten.
+            Unser Ziel ist es, den Zeitaufwand realistisch einzuschätzen und Termine zuverlässig einzuhalten. So wissen Sie von Anfang an, womit Sie rechnen können, und behalten die nötige Planungssicherheit.
           </p>
         </>
       ),
@@ -144,10 +151,26 @@ export default function LeistungenAccordion() {
       content: (
         <>
           <p className="mb-4">
-            Wir sind in Stuttgart und der Umgebung im Einsatz und reagieren flexibel auf Anfragen vor Ort.
+            Wir sind in Stuttgart und der Umgebung im Einsatz und reagieren flexibel auf Anfragen vor Ort. Kurze Anfahrtswege ermöglichen eine schnelle Planung und eine zuverlässige Umsetzung. Das gilt für Wohnungsauflösungen, Entrümpelungen nach einem Todesfall, Messie-Wohnungen oder das Keller entrümpeln in Stuttgart.
+          </p>
+          <p className="mb-4">
+            Eine Entrümpelung in Ihrer Nähe bedeutet auch persönliche Abstimmung. Besichtigungen lassen sich kurzfristig vereinbaren, Fragen klären sich schneller und der Ablauf bleibt übersichtlich. So wissen Sie von Anfang an, woran Sie sind.
           </p>
           <p>
             Unser Ziel ist es, Ihnen unkompliziert zu helfen – dort, wo Unterstützung gebraucht wird. Direkt vor Ort. Ruhig, zuverlässig und gut organisiert.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: 'Ihr Partner für professionelle Entrümpelung in Stuttgart',
+      content: (
+        <>
+          <p className="mb-4">
+            Ob Wohnungsauflösung, Entrümpelung nach Todesfall, Messie-Wohnung oder Keller entrümpeln in Stuttgart – wir arbeiten zuverlässig und diskret, gehen Schritt für Schritt vor und sorgen für einen ruhigen, übersichtlichen Ablauf.
+          </p>
+          <p>
+            Wenn Sie eine professionelle Entrümpelung in Stuttgart suchen, die menschlich, klar und strukturiert arbeitet, sind wir für Sie da. Nehmen Sie Kontakt auf. Wir beraten Sie unverbindlich und finden gemeinsam eine Lösung, die zu Ihnen passt.
           </p>
         </>
       ),
@@ -165,42 +188,47 @@ export default function LeistungenAccordion() {
   }, [openIndex]);
 
   return (
-    <div className="max-w-6xl mx-auto my-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        <div className="order-2 md:order-1">
-          <img
-            src="/Entruempelung_serviceplus_stuttgart.jpg"
-            alt="Professionelle Entrümpelung in Stuttgart – ordentlich geräumte Wohnung"
-            className="w-full h-auto rounded-lg shadow-lg"
-            loading="lazy"
-          />
-        </div>
+    <div className="max-w-4xl mx-auto my-16">
+      {/* Main Title and Subtitle */}
+      <div className="mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold text-midnight mb-3 leading-tight">
+          Entrümpelungsfirma Stuttgart – zuverlässig und organisiert
+        </h2>
+        <p className="text-base md:text-lg text-gray-600 font-light">
+          Entrümplte Wohnung nach professioneller Entrümpelung in Stuttgart
+        </p>
+      </div>
 
-        <div className="order-1 md:order-2">
-          {sections.map((section, index) => (
-            <details
-              key={index}
-              ref={(el) => (detailsRefs.current[index] = el)}
-              className="leistungen-accordion-item"
-              open={index === openIndex}
+      {/* House Container - representing the "house" metaphor */}
+      <div className="house-container bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12">
+        {sections.map((section, index) => (
+          <details
+            key={index}
+            ref={(el) => (detailsRefs.current[index] = el)}
+            className="house-room"
+            open={index === openIndex}
+          >
+            <summary
+              className="house-door"
+              onClick={(e) => {
+                e.preventDefault();
+                handleToggle(index);
+              }}
             >
-              <summary
-                className="leistungen-accordion-summary"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleToggle(index);
-                }}
-              >
-                <span className="text-lg font-semibold text-midnight">
-                  {section.title}
-                </span>
-              </summary>
-              <div className="leistungen-accordion-content">
-                {section.content}
-              </div>
-            </details>
-          ))}
-        </div>
+              <span className="house-door-title">
+                {section.title}
+              </span>
+              <ChevronDown 
+                className="house-door-icon" 
+                size={20} 
+                strokeWidth={1.5}
+              />
+            </summary>
+            <div className="house-room-content">
+              {section.content}
+            </div>
+          </details>
+        ))}
       </div>
     </div>
   );
