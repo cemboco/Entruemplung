@@ -163,7 +163,7 @@ export default function LeistungenAccordion() {
   return (
     <div className="max-w-6xl mx-auto my-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        {/* Image - shown first on mobile, left on desktop */}
+        {/* Image - shown second on mobile (below accordion), left on desktop */}
         <div className="order-2 md:order-1">
           <img
             src="/Entruempelung_serviceplus_stuttgart.jpg"
@@ -173,7 +173,7 @@ export default function LeistungenAccordion() {
           />
         </div>
 
-        {/* Accordion - shown first on mobile, right on desktop */}
+        {/* Accordion - shown first on mobile (above image), right on desktop */}
         <div className="order-1 md:order-2 space-y-4">
           {sections.map((section, index) => (
             <details

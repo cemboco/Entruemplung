@@ -75,6 +75,7 @@
   }
 
   .leistungen-accordion-item[open] .leistungen-accordion-content {
+    /* max-height set to 2000px to accommodate the longest accordion content section */
     max-height: 2000px;
     opacity: 1;
     transform: translateY(0);
