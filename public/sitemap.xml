@@ -195,12 +195,4 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Thank You Page -->
-  <url>
-    <loc>https://serviceplus-entruempelung.de/danke</loc>
-    <lastmod>2026-01-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-
 </urlset>
