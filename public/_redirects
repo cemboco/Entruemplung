@@ -6,5 +6,7 @@
 /immobilienräumung        /immobilienraeumung        301!
 /möbel-entsorgung         /moebel-entsorgung         301!
 
-# SPA fallback - all routes serve index.html
+# SPA fallback - serve index.html for non-existing routes only
+# Without the ! force flag, Netlify serves existing files first (assets, images, etc.)
+# Only non-existing paths fall back to index.html for client-side routing
 /*    /index.html   200
