@@ -220,7 +220,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
       <PageMeta
         title={post.title}
         description={post.excerpt || post.meta_description || ''}
-        canonical={`https://serviceplus-entruempelung.de/blog/${post.slug}`}
+        canonical={`https://serviceplus-entruempelung.de/blog/${post.slug}/`}
         ogType="article"
         ogImage={post.featured_image}
         jsonLd={structuredData}

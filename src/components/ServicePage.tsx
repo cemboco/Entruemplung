@@ -90,7 +90,7 @@ export default function ServicePage() {
       <PageMeta
         title={seoTitle}
         description={service.shortDescription}
-        canonical={`https://serviceplus-entruempelung.de/${service.slug}`}
+        canonical={`https://serviceplus-entruempelung.de/${service.slug}/`}
       />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

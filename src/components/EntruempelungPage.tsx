@@ -71,7 +71,7 @@ export default function EntruempelungPage() {
       <PageMeta
         title="Entrümpelung Stuttgart | ServicePlus Entrümpelung"
         description="Professionelle Entrümpelung in Stuttgart vom Fachbetrieb. Wohnungen, Keller, Dachböden & Garagen. Festpreis, Wertanrechnung, fachgerechte Entsorgung inklusive."
-        canonical="https://serviceplus-entruempelung.de/entruempelung"
+        canonical="https://serviceplus-entruempelung.de/entruempelung/"
         keywords="Entrümpelung Stuttgart, Wohnungsentrümpelung Stuttgart, Kellerentrümpelung, Dachbodenräumung Stuttgart, Räumungsfirma"
       />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
