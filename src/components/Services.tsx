@@ -2,6 +2,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { services } from '../data/services';
+import LeistungenAccordion from './LeistungenAccordion';
 
 export default function Services() {
   const [isVisible, setIsVisible] = useState(false);
@@ -97,6 +98,7 @@ export default function Services() {
             "Wir räumen auf - Sie atmen auf"
           </p>
 
+          <LeistungenAccordion />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
