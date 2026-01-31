@@ -71,7 +71,7 @@ export default function MessieWohnungPage() {
       <PageMeta
         title="Messie-Wohnung Stuttgart | ServicePlus Entrümpelung"
         description="Diskrete Messie-Räumung in Stuttgart. Einfühlsame Entrümpelung stark vermüllter Wohnungen mit Desinfektion & Geruchsbeseitigung. Respektvoll & professionell."
-        canonical="https://serviceplus-entruempelung.de/messie-wohnungen"
+        canonical="https://serviceplus-entruempelung.de/messie-wohnungen/"
         keywords="Messie Wohnung Stuttgart, Messie Räumung, vermüllte Wohnung entrümpeln Stuttgart, Messie Hilfe Stuttgart, diskrete Entrümpelung"
       />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">

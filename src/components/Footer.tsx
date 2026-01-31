@@ -17,22 +17,22 @@ export default function Footer() {
             <h4 className="text-xs font-medium uppercase tracking-wide mb-6">Leistungen</h4>
             <ul className="space-y-3 text-gray-400 text-sm font-light">
               <li>
-                <Link to="/haushaltsaufloesung" className="hover:text-white transition-colors">
+                <Link to="/haushaltsaufloesung/" className="hover:text-white transition-colors">
                   Haushaltsauflösungen
                 </Link>
               </li>
               <li>
-                <Link to="/entruempelung" className="hover:text-white transition-colors">
+                <Link to="/entruempelung/" className="hover:text-white transition-colors">
                   Entrümpelungen
                 </Link>
               </li>
               <li>
-                <Link to="/messie-wohnungen" className="hover:text-white transition-colors">
+                <Link to="/messie-wohnungen/" className="hover:text-white transition-colors">
                   Messie-Wohnungen
                 </Link>
               </li>
               <li>
-                <Link to="/gewerbe-entruempelung" className="hover:text-white transition-colors">
+                <Link to="/gewerbe-entruempelung/" className="hover:text-white transition-colors">
                   Gewerbe-Entrümpelung
                 </Link>
               </li>
@@ -101,13 +101,13 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <Link
-                to="/impressum"
+                to="/impressum/"
                 className="hover:text-gray-300 transition-colors"
               >
                 Impressum
               </Link>
               <Link
-                to="/datenschutz"
+                to="/datenschutz/"
                 className="hover:text-gray-300 transition-colors"
               >
                 Datenschutz

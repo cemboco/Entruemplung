@@ -109,7 +109,7 @@ export default function Header() {
                     {services.map((service) => (
                       <Link
                         key={service.slug}
-                        to={`/${service.slug}`}
+                        to={`/${service.slug}/`}
                         className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-midnight transition-colors"
                         onClick={() => {
                           setIsServicesDropdownOpen(false);
@@ -137,7 +137,7 @@ export default function Header() {
               </a>
             ))}
             <Link
-              to="/blog"
+              to="/blog/"
               className="text-sm font-light text-gray-600 hover:text-midnight transition-colors duration-300"
             >
               Blog
@@ -176,7 +176,7 @@ export default function Header() {
                     {services.map((service) => (
                       <Link
                         key={service.slug}
-                        to={`/${service.slug}`}
+                        to={`/${service.slug}/`}
                         onClick={() => {
                           setIsMobileMenuOpen(false);
                           setIsMobileServicesOpen(false);
@@ -204,7 +204,7 @@ export default function Header() {
                 </a>
               ))}
               <Link
-                to="/blog"
+                to="/blog/"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="px-0 py-2 text-sm font-light text-gray-600 hover:text-midnight transition-colors"
               >

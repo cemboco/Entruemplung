@@ -47,7 +47,7 @@ export default function ServicePageWithSSR({ service, customMeta }: ServicePageW
       <PageMeta
         title={seoTitle}
         description={seoDescription}
-        canonical={`https://serviceplus-entruempelung.de/${service.slug}`}
+        canonical={`https://serviceplus-entruempelung.de/${service.slug}/`}
       />
       <div className="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

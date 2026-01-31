@@ -89,7 +89,7 @@ export default function Blog() {
       <PageMeta
         title="Blog - Ratgeber & Tipps zur Entrümpelung"
         description="Nützliche Tipps und Ratgeber rund um Entrümpelung, Haushaltsauflösung und Wohnungsräumung in Stuttgart. Praktische Hinweise von Experten."
-        canonical="https://serviceplus-entruempelung.de/blog"
+        canonical="https://serviceplus-entruempelung.de/blog/"
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -143,7 +143,7 @@ export default function Blog() {
             {filteredPosts.map((post) => (
               <Link
                 key={post.id}
-                to={`/blog/${post.slug}`}
+                to={`/blog/${post.slug}/`}
                 className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
               >
                 {post.featured_image && (

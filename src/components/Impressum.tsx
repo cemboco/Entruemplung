@@ -8,7 +8,7 @@ export default function Impressum() {
       <PageMeta
         title="Impressum | ServicePlus Stuttgart"
         description="Impressum und rechtliche Angaben der ServicePlus Entrümpelung GbR. Kontaktdaten, Geschäftsführung und gesetzlich vorgeschriebene Informationen."
-        canonical="https://serviceplus-entruempelung.de/impressum"
+        canonical="https://serviceplus-entruempelung.de/impressum/"
       />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
