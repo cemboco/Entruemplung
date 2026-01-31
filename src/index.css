@@ -93,7 +93,7 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transform: translateY(-10px);
+    transform: translateY(10px);
     transition: max-height 0.25s ease-out, opacity 0.25s ease-out, transform 0.25s ease-out;
   }
 
