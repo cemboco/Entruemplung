@@ -1,10 +1,8 @@
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { trackContactFormSubmit, trackPhoneClick } from '../utils/analytics';
 
 export default function Contact() {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,10 +11,13 @@ export default function Contact() {
     privacyAccepted: false,
   });
   const [submitting, setSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
+    setSubmitError(null);
 
     try {
       const response = await fetch('https://formspree.io/f/myzoayyp', {
@@ -29,10 +30,13 @@ export default function Contact() {
 
       if (response.ok) {
         trackContactFormSubmit();
-        navigate('/danke');
+        setSubmitSuccess(true);
+      } else {
+        setSubmitError('Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns telefonisch.');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
+      setSubmitError('Netzwerkfehler: Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.');
     } finally {
       setSubmitting(false);
     }
@@ -61,104 +65,131 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  autoComplete="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
-                  placeholder="Ihr vollständiger Name"
-                />
+            {submitSuccess ? (
+              <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-8 sm:p-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex-shrink-0 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-10 h-10 text-green-600" />
+                  </div>
+                  <h3 className="text-2xl font-light text-midnight">
+                    Nachricht erfolgreich gesendet
+                  </h3>
+                </div>
+                <p className="text-base text-gray-700 font-light leading-relaxed mb-6">
+                  Vielen Dank für Ihre Anfrage! Wir haben Ihre Nachricht erfolgreich erhalten und melden uns zeitnah bei Ihnen.
+                </p>
+                <p className="text-sm text-gray-600 font-light leading-relaxed">
+                  In der Regel antworten wir innerhalb von 24 Stunden. Bei dringendem Bedarf rufen Sie uns gerne direkt an.
+                </p>
               </div>
-
-              <div>
-                <label htmlFor="email" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
-                  E-Mail
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  autoComplete="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
-                  placeholder="ihre@email.de"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
-                  Telefon
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  autoComplete="tel"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
-                  placeholder="01573 2649483"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
-                  Nachricht
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-gray-900 focus:outline-none focus:ring-0 transition-colors duration-300 resize-none text-gray-900"
-                  placeholder="Beschreiben Sie kurz Ihr Anliegen"
-                />
-              </div>
-
-              <div className="pt-4">
-                <label className="flex items-start gap-3 text-sm text-gray-600 cursor-pointer">
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {submitError && (
+                  <div className="bg-red-50 border-2 border-red-200 rounded-xl p-4 flex items-start gap-3">
+                    <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                    <p className="text-sm text-red-800 font-light leading-relaxed">
+                      {submitError}
+                    </p>
+                  </div>
+                )}
+                <div>
+                  <label htmlFor="name" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
+                    Name
+                  </label>
                   <input
-                    type="checkbox"
-                    name="privacyAccepted"
-                    checked={formData.privacyAccepted}
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    autoComplete="name"
+                    value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 w-4 h-4 rounded border-gray-300 text-midnight focus:ring-midnight"
+                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
+                    placeholder="Ihr vollständiger Name"
                   />
-                  <span className="font-light leading-relaxed">
-                    Mit dem Absenden des Formulars erkläre ich mich damit einverstanden, dass meine Angaben zur Kontaktaufnahme verwendet werden. Weitere Infos in der{' '}
-                    <a
-                      href="#datenschutz"
-                      className="text-midnight underline hover:text-gray-600 transition-colors"
-                    >
-                      Datenschutzerklärung
-                    </a>
-                    .
-                  </span>
-                </label>
-              </div>
+                </div>
 
-              <button
-                type="submit"
-                disabled={submitting || !formData.privacyAccepted}
-                className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {submitting ? 'Wird gesendet...' : 'Anfrage senden'}
-              </button>
-            </form>
+                <div>
+                  <label htmlFor="email" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
+                    E-Mail
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autoComplete="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
+                    placeholder="ihre@email.de"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
+                    Telefon
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    autoComplete="tel"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-midnight focus:outline-none focus:ring-0 transition-colors duration-300 text-midnight"
+                    placeholder="01573 2649483"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-xs font-medium text-midnight mb-2 uppercase tracking-wide">
+                    Nachricht
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={4}
+                    className="w-full px-0 py-3 border-0 border-b border-gray-300 focus:border-gray-900 focus:outline-none focus:ring-0 transition-colors duration-300 resize-none text-gray-900"
+                    placeholder="Beschreiben Sie kurz Ihr Anliegen"
+                  />
+                </div>
+
+                <div className="pt-4">
+                  <label className="flex items-start gap-3 text-sm text-gray-600 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      name="privacyAccepted"
+                      checked={formData.privacyAccepted}
+                      onChange={handleChange}
+                      className="mt-1 w-4 h-4 rounded border-gray-300 text-midnight focus:ring-midnight"
+                    />
+                    <span className="font-light leading-relaxed">
+                      Mit dem Absenden des Formulars erkläre ich mich damit einverstanden, dass meine Angaben zur Kontaktaufnahme verwendet werden. Weitere Infos in der{' '}
+                      <a
+                        href="#datenschutz"
+                        className="text-midnight underline hover:text-gray-600 transition-colors"
+                      >
+                        Datenschutzerklärung
+                      </a>
+                      .
+                    </span>
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={submitting || !formData.privacyAccepted}
+                  className="w-full bg-midnight text-white py-4 rounded-full font-medium text-base hover:bg-midnight-dark transition-all duration-300 mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {submitting ? 'Wird gesendet...' : 'Anfrage senden'}
+                </button>
+              </form>
+            )}
           </div>
 
           <div className="space-y-8">
