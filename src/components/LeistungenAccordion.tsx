@@ -195,7 +195,7 @@ export default function LeistungenAccordion() {
           Entrümpelungsfirma Stuttgart – zuverlässig und organisiert
         </h2>
         <p className="text-base md:text-lg text-gray-600 font-light">
-          Entrümplte Wohnung nach professioneller Entrümpelung in Stuttgart
+           Professionelle Entrümpelung in Stuttgart
         </p>
       </div>
 
