@@ -67,8 +67,9 @@ if (!fs.existsSync(indexPath)) {
     const scriptSrc = scriptMatch[1];
     console.log(`   ✅ Script reference found: ${scriptSrc}`);
     
-    // Check if referenced file exists (only for relative paths)
-    if (scriptSrc.startsWith('/')) {
+    // Check if referenced file exists (only for relative paths starting with /)
+    // External URLs (http://, https://, //) are not checked
+    if (scriptSrc.startsWith('/') && !scriptSrc.startsWith('//')) {
       const scriptPath = path.join(distDir, scriptSrc);
       if (!fs.existsSync(scriptPath)) {
         console.error(`   ❌ Referenced script file does not exist: ${scriptPath}`);
@@ -76,6 +77,8 @@ if (!fs.existsSync(indexPath)) {
       } else {
         console.log(`   ✅ Referenced script file exists`);
       }
+    } else if (scriptSrc.startsWith('//') || scriptSrc.startsWith('http')) {
+      console.log(`   ℹ️  External script URL (not checked): ${scriptSrc}`);
     }
   }
   

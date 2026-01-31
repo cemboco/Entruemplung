@@ -51,11 +51,17 @@ Die `netlify.toml` wurde erweitert für optimale Asset-Auslieferung:
 [build]
   publish = "dist"
 
-# Ensure proper MIME types for JavaScript and CSS files
+# Ensure proper MIME types and caching for assets
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/*.js"
   [headers.values]
     Content-Type = "application/javascript; charset=utf-8"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Content-Type = "text/css; charset=utf-8"
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
@@ -166,7 +172,7 @@ curl -I https://your-domain.com/assets/index-[hash].js
 
 # Sollte zurückgeben:
 # HTTP/2 200
-# content-type: application/javascript
+# content-type: application/javascript; charset=utf-8
 # cache-control: public, max-age=31536000, immutable
 ```
 
