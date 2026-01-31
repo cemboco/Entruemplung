@@ -43,4 +43,29 @@
   .animate-scroll {
     animation: scroll 40s linear infinite;
   }
+
+  /* LeistungenAccordion custom styles */
+  .leistungen-accordion-item summary {
+    list-style: none;
+  }
+
+  .leistungen-accordion-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .leistungen-accordion-item summary::marker {
+    display: none;
+  }
+
+  .leistungen-accordion-summary {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .leistungen-accordion-content {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
 }
