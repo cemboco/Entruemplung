@@ -67,5 +67,17 @@
   .leistungen-accordion-content {
     font-size: 0.9375rem;
     line-height: 1.7;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(10px);
+    transition: max-height 0.3s ease-out, opacity 0.25s ease-out, transform 0.25s ease-out;
+  }
+
+  .leistungen-accordion-item[open] .leistungen-accordion-content {
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: max-height 0.3s ease-in, opacity 0.25s ease-in, transform 0.25s ease-in;
   }
 }

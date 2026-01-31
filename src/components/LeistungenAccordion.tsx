@@ -161,29 +161,42 @@ export default function LeistungenAccordion() {
   }, [openIndex]);
 
   return (
-    <div className="max-w-4xl mx-auto my-12">
-      <div className="space-y-4">
-        {sections.map((section, index) => (
-          <details
-            key={index}
-            ref={(el) => (detailsRefs.current[index] = el)}
-            className="leistungen-accordion-item bg-white border border-gray-200 rounded-lg overflow-hidden"
-            open={index === openIndex}
-            onClick={(e) => {
-              e.preventDefault();
-              handleToggle(index);
-            }}
-          >
-            <summary className="leistungen-accordion-summary px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors">
-              <span className="text-lg font-semibold text-midnight underline decoration-2 underline-offset-4">
-                {section.title}
-              </span>
-            </summary>
-            <div className="leistungen-accordion-content px-6 py-4 text-gray-700 leading-relaxed">
-              {section.content}
-            </div>
-          </details>
-        ))}
+    <div className="max-w-6xl mx-auto my-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        {/* Image - shown first on mobile, left on desktop */}
+        <div className="order-2 md:order-1">
+          <img
+            src="/Entruempelung_serviceplus_stuttgart.jpg"
+            alt="Professionelle Entrümpelung in Stuttgart – ordentlich geräumte Wohnung"
+            className="w-full h-auto rounded-lg shadow-lg"
+            loading="lazy"
+          />
+        </div>
+
+        {/* Accordion - shown first on mobile, right on desktop */}
+        <div className="order-1 md:order-2 space-y-4">
+          {sections.map((section, index) => (
+            <details
+              key={index}
+              ref={(el) => (detailsRefs.current[index] = el)}
+              className="leistungen-accordion-item bg-white border border-gray-200 rounded-lg overflow-hidden"
+              open={index === openIndex}
+              onClick={(e) => {
+                e.preventDefault();
+                handleToggle(index);
+              }}
+            >
+              <summary className="leistungen-accordion-summary px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors">
+                <span className="text-lg font-semibold text-midnight">
+                  {section.title}
+                </span>
+              </summary>
+              <div className="leistungen-accordion-content px-6 py-4 text-gray-700 leading-relaxed">
+                {section.content}
+              </div>
+            </details>
+          ))}
+        </div>
       </div>
     </div>
   );
