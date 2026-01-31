@@ -176,24 +176,26 @@ export default function LeistungenAccordion() {
           />
         </div>
 
-        <div className="order-1 md:order-2 space-y-4">
+        <div className="order-1 md:order-2">
           {sections.map((section, index) => (
             <details
               key={index}
               ref={(el) => (detailsRefs.current[index] = el)}
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden"
+              className="leistungen-accordion-item"
               open={index === openIndex}
-              onClick={(e) => {
-                e.preventDefault();
-                handleToggle(index);
-              }}
             >
-              <summary className="px-6 py-4 cursor-pointer hover:bg-gray-50">
+              <summary
+                className="leistungen-accordion-summary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleToggle(index);
+                }}
+              >
                 <span className="text-lg font-semibold text-midnight">
                   {section.title}
                 </span>
               </summary>
-              <div className="px-6 py-4 text-gray-700 leading-relaxed">
+              <div className="leistungen-accordion-content">
                 {section.content}
               </div>
             </details>

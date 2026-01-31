@@ -45,8 +45,29 @@
   }
 
   /* LeistungenAccordion custom styles */
+  .leistungen-accordion-item {
+    position: relative;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .leistungen-accordion-item:first-child {
+    padding-top: 0;
+  }
+
+  .leistungen-accordion-item:last-child {
+    border-bottom: none;
+  }
+
   .leistungen-accordion-item summary {
     list-style: none;
+    cursor: pointer;
+    padding: 0.75rem 0;
+    transition: color 0.2s ease;
+  }
+
+  .leistungen-accordion-item summary:hover {
+    color: #004080;
   }
 
   .leistungen-accordion-item summary::-webkit-details-marker {
@@ -67,11 +88,13 @@
   .leistungen-accordion-content {
     font-size: 0.9375rem;
     line-height: 1.7;
+    color: #4b5563;
+    padding: 0 0 0.5rem 0;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transform: translateY(10px);
-    transition: max-height 0.3s ease-out, opacity 0.25s ease-out, transform 0.25s ease-out;
+    transform: translateY(-10px);
+    transition: max-height 0.25s ease-out, opacity 0.25s ease-out, transform 0.25s ease-out;
   }
 
   .leistungen-accordion-item[open] .leistungen-accordion-content {
@@ -79,6 +102,7 @@
     max-height: 2000px;
     opacity: 1;
     transform: translateY(0);
-    transition: max-height 0.3s ease-in, opacity 0.25s ease-in, transform 0.25s ease-in;
+    padding-top: 1rem;
+    transition: max-height 0.3s ease-in, opacity 0.3s ease-in, transform 0.3s ease-in;
   }
 }
