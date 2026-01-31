@@ -21,7 +21,14 @@ export default function LeistungenAccordion() {
             Gerade bei emotionalen Belastungen fällt es schwer, Dinge wegzugeben. Viele Menschen fragen sich: Warum fällt Wegwerfen so schwer? Häufig hängen Erinnerungen an materiellen Dingen, an Momenten, an Menschen oder an Lebensphasen. Manche Dinge haben einmal Freude bereitet, andere stehen für Sicherheit oder Gewohnheit.
           </p>
           <p>
-            Das gilt besonders bei einer Wohnung leer räumen nach Tod, nach Trennung oder in Phasen von Überforderung. In solchen Situationen treffen Trauer, Zeitdruck und Verantwortung aufeinander. Wir kennen diese Situationen aus unserer täglichen Arbeit und gehen respektvoll, ruhig und strukturiert damit um. Kleine Schritte sind oft hilfreicher als lange To-do-Listen, die zusätzlich belasten.
+            Das gilt besonders bei einer{' '}
+            <a
+              href="https://serviceplus-entruempelung.de/blog/entruempelung-todesfall-haushaltsaufloesung/"
+              className="text-midnight underline hover:opacity-80"
+            >
+              Wohnung leer räumen nach Tod
+            </a>
+            , nach Trennung oder in Phasen von Überforderung. In solchen Situationen treffen Trauer, Zeitdruck und Verantwortung aufeinander. Wir kennen diese Situationen aus unserer täglichen Arbeit und gehen respektvoll, ruhig und strukturiert damit um. Kleine Schritte sind oft hilfreicher als lange To-do-Listen, die zusätzlich belasten.
           </p>
         </>
       ),
@@ -34,7 +41,14 @@ export default function LeistungenAccordion() {
             Entrümpeln heißt nicht nur, Dinge zu entfernen. Es geht darum, bewusste Entscheidungen zu treffen und sich wieder auf das Wesentliche zu konzentrieren. Viele erleben dabei: Ordnung im Außen, Ordnung im Innen ist mehr als ein Spruch. Wenn Räume klarer werden, entsteht oft auch im Kopf mehr Ruhe.
           </p>
           <p className="mb-4">
-            Immer mehr Menschen interessieren sich für Minimalismus. Minimalismus bedeutet nicht Verzicht oder Leere, sondern einen bewussten Umgang mit Besitz. Die psychologische Wirkung von Minimalismus zeigt sich bei vielen darin, dass weniger Besitz mehr Übersicht, mehr Zeit und mehr innere Ruhe bringt. Leben mit weniger Dingen kann den Alltag spürbar erleichtern.
+            Immer mehr Menschen interessieren sich für{' '}
+            <a
+              href="https://serviceplus-entruempelung.de/blog/minimalismus-stuttgart-tipps-einfacher-leben/"
+              className="text-midnight underline hover:opacity-80"
+            >
+              Minimalismus
+            </a>
+            . Minimalismus bedeutet nicht Verzicht oder Leere, sondern einen bewussten Umgang mit Besitz. Die psychologische Wirkung von Minimalismus zeigt sich bei vielen darin, dass weniger Besitz mehr Übersicht, mehr Zeit und mehr innere Ruhe bringt. Leben mit weniger Dingen kann den Alltag spürbar erleichtern.
           </p>
           <p className="mb-4">
             Ein minimalistisches Leben oder ein minimalistischer Lebensstil beginnt oft mit einem ersten Schritt. Viele suchen nach Minimalismus anfangen Tipps oder fragen sich, wie minimalistisch wohnen trotz Familie möglich ist. Manche orientieren sich an bekannten Ansätzen wie der KonMari-Methode, andere finden ihren eigenen Weg. Viele berichten von befreienden Ausmisten-Erfahrungen und davon, wie gut es tut, sich von Dingen zu trennen, die keine Rolle mehr spielen.
@@ -53,10 +67,17 @@ export default function LeistungenAccordion() {
             In manchen Fällen sind Wohnungen stark belastet. Das kann durch Trauer, lange Überforderung oder psychische Erkrankungen entstehen. Themen wie Chaos Wohnung Depression oder Ordnung bei Depression betreffen viele Menschen, auch wenn sie selten offen darüber sprechen.
           </p>
           <p className="mb-4">
-            Viele suchen Unterstützung, weil sie sich überfordert fühlen, nicht loslassen können oder weil die Wohnung zur zusätzlichen Belastung geworden ist. Auch das Messie-Syndrom ist häufiger, als viele denken. Die Suche nach Messie-Syndrom Hilfe Stuttgart zeigt, wie groß der Bedarf ist.
+            Viele suchen Unterstützung, weil sie sich überfordert fühlen, nicht loslassen können oder weil die Wohnung zur zusätzlichen Belastung geworden ist. Auch das Messie-Syndrom ist häufiger, als viele denken.
           </p>
           <p className="mb-4">
-            Bei der Messie-Wohnung Entrümpelung arbeiten wir ruhig, klar und diskret. Wir wissen, dass es hier nicht nur um Müll oder Unordnung geht, sondern um Menschen und ihre Geschichte.
+            Bei der{' '}
+            <a
+              href="https://serviceplus-entruempelung.de/blog/messie-entruempelung-professionelle-hilfe/"
+              className="text-midnight underline hover:opacity-80"
+            >
+              Messie-Wohnung Entrümpelung
+            </a>{' '}
+            arbeiten wir ruhig, klar und diskret. Wir wissen, dass es hier nicht nur um Müll oder Unordnung geht, sondern um Menschen und ihre Geschichte.
           </p>
           <p>
             Deshalb handeln wir respektvoll und stimmen uns auf Wunsch mit Angehörigen oder Betreuern ab. Eine Entrümpelung ersetzt keine Therapie, kann aber entlasten. Manche erleben Entrümpeln als Therapie-nahen Schritt, weil Struktur entsteht und der Alltag wieder überschaubar wird.
@@ -91,7 +112,7 @@ export default function LeistungenAccordion() {
             Auch eine Entrümpelung kurzfristig ist möglich, zum Beispiel bei Umzug, Neuvermietung oder Übergabe. Als erfahrene Entrümpelungsfirma Stuttgart reagieren wir flexibel und zuverlässig.
           </p>
           <p className="mb-4">
-            Für viele Menschen ist eine Entrümpelung ein Schritt in einen neuen Abschnitt. Ob nach Trennung, nach einem Todesfall oder aus dem Wunsch nach Veränderung. Entrümpeln nach Trennung, Wohnung leer machen Neuanfang oder Entrümpelung loslassen lernen sind häufige Anliegen.
+            Für viele Menschen ist eine Entrümpelung ein Schritt in einen neuen Abschnitt. Ob nach Trennung, nach einem Todesfall oder aus dem Wunsch nach Veränderung.
           </p>
           <p>
             Ordnung kann helfen, emotionale Blockaden zu lösen. Räume werden wieder nutzbar. Entscheidungen fallen leichter. Der Alltag fühlt sich ruhiger an.
@@ -110,16 +131,10 @@ export default function LeistungenAccordion() {
             Die Antwort hängt von mehreren Faktoren ab. Dazu zählen die Größe der Wohnung, die Menge der Gegenstände und die Zugänglichkeit der Räume.
           </p>
           <p className="mb-4">
-            Kleinere Wohnungen oder einzelne Räume lassen sich oft innerhalb eines Tages entrümpeln. Auch das Keller ausräumen oder das Entfernen alter Möbel ist meist schnell erledigt. Größere Wohnungen, Häuser oder stark belastete Räume benötigen mehr Zeit und werden sorgfältig geplant.
-          </p>
-          <p className="mb-4">
-            Bei einer Wohnungsauflösung nach einem Todesfall oder einer Messie-Wohnung Entrümpelung ist ein ruhiges Vorgehen besonders wichtig. Hier nehmen wir uns die nötige Zeit, um strukturiert und respektvoll zu arbeiten. Trotzdem achten wir darauf, den Ablauf effizient zu gestalten.
-          </p>
-          <p className="mb-4">
-            Viele Kundinnen und Kunden wünschen sich eine Entrümpelung kurzfristig. Das ist in vielen Fällen möglich. Nach einer Besichtigung können wir meist genau sagen, wie lange die Entrümpelung dauert und wann der Termin umgesetzt werden kann.
+            Kleinere Wohnungen oder einzelne Räume lassen sich oft innerhalb eines Tages entrümpeln.
           </p>
           <p>
-            Unser Ziel ist es, den Zeitaufwand realistisch einzuschätzen und Termine zuverlässig einzuhalten. So wissen Sie von Anfang an, womit Sie rechnen können, und behalten die nötige Planungssicherheit.
+            Unser Ziel ist es, den Zeitaufwand realistisch einzuschätzen und Termine zuverlässig einzuhalten.
           </p>
         </>
       ),
@@ -129,10 +144,7 @@ export default function LeistungenAccordion() {
       content: (
         <>
           <p className="mb-4">
-            Wir sind in Stuttgart und der Umgebung im Einsatz und reagieren flexibel auf Anfragen vor Ort. Kurze Anfahrtswege ermöglichen eine schnelle Planung und eine zuverlässige Umsetzung. Das gilt für Wohnungsauflösungen, Entrümpelungen nach einem Todesfall, Messie-Wohnungen oder das Keller entrümpeln in Stuttgart.
-          </p>
-          <p className="mb-4">
-            Eine Entrümpelung in Ihrer Nähe bedeutet auch persönliche Abstimmung. Besichtigungen lassen sich kurzfristig vereinbaren, Fragen klären sich schneller und der Ablauf bleibt übersichtlich. So wissen Sie von Anfang an, woran Sie sind.
+            Wir sind in Stuttgart und der Umgebung im Einsatz und reagieren flexibel auf Anfragen vor Ort.
           </p>
           <p>
             Unser Ziel ist es, Ihnen unkompliziert zu helfen – dort, wo Unterstützung gebraucht wird. Direkt vor Ort. Ruhig, zuverlässig und gut organisiert.
@@ -142,28 +154,19 @@ export default function LeistungenAccordion() {
     },
   ];
 
-  // Handle opening/closing sections with controlled state
   const handleToggle = (index: number) => {
-    if (openIndex === index) {
-      // Don't close the current section when clicked again - keep at least one open
-      return;
-    }
-    setOpenIndex(index);
+    if (openIndex !== index) setOpenIndex(index);
   };
 
-  // Sync the details elements with React state
   useEffect(() => {
     detailsRefs.current.forEach((detail, index) => {
-      if (detail) {
-        detail.open = index === openIndex;
-      }
+      if (detail) detail.open = index === openIndex;
     });
   }, [openIndex]);
 
   return (
     <div className="max-w-6xl mx-auto my-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        {/* Image - shown second on mobile (below accordion), left on desktop */}
         <div className="order-2 md:order-1">
           <img
             src="/Entruempelung_serviceplus_stuttgart.jpg"
@@ -173,25 +176,24 @@ export default function LeistungenAccordion() {
           />
         </div>
 
-        {/* Accordion - shown first on mobile (above image), right on desktop */}
         <div className="order-1 md:order-2 space-y-4">
           {sections.map((section, index) => (
             <details
               key={index}
               ref={(el) => (detailsRefs.current[index] = el)}
-              className="leistungen-accordion-item bg-white border border-gray-200 rounded-lg overflow-hidden"
+              className="bg-white border border-gray-200 rounded-lg overflow-hidden"
               open={index === openIndex}
               onClick={(e) => {
                 e.preventDefault();
                 handleToggle(index);
               }}
             >
-              <summary className="leistungen-accordion-summary px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors">
+              <summary className="px-6 py-4 cursor-pointer hover:bg-gray-50">
                 <span className="text-lg font-semibold text-midnight">
                   {section.title}
                 </span>
               </summary>
-              <div className="leistungen-accordion-content px-6 py-4 text-gray-700 leading-relaxed">
+              <div className="px-6 py-4 text-gray-700 leading-relaxed">
                 {section.content}
               </div>
             </details>
